@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* b_01_position.css */
+
+#wrap {
+  width: 1600px; height: 2000px;
+  margin: auto;
+  background-color: #eee;
+}
+
+#headBox {
+  position: fixed; top: 0;
+  width: 1600px; height: auto;
+  margin: auto;
+}
+.head_inner {
+  width: 1200px; height: 100px;
+  margin: auto;
+  background-color: #fff;
+}
+
+h1 {
+  float: left;
+  width: 120px; width: 150px;
+  background-color: #ccc;
+}
+.navigation {
+  float: right;
+  width: 500px; height: 70px;
+  background-color: #ccc;
+}
+
+#viewBox {
+  width: 1500px; height: 700px;
+  margin: auto; 
+  background-color: #ddd;
+}
+.view_inner {
+  width: 1200px; height: 700px;
+  margin: auto; 
+  background-color: rgb(170, 160, 160);
+}
