@@ -32,6 +32,91 @@ abbr {text-decoration: none;}
 /* layout page design */
 
 #wrap {
-  width: 100%; height: 100%;
+  width: 1200px; height: auto;
+  margin-top: 50px;
+}
+
+/* headBox
+==================================== */
+#headBox {
+  width: 100%; height: 100px;
+  padding: 30px 20px; box-sizing: border-box;
+  background-color: #eee;
+}
+h1 {
+  float: left;
+  width: 200px; height: 40px;
+  background-color: #ded;
+}
+.navigation {
+  float: right;
+  width: 600px; height: 40px;
   background-color: #ddd;
 }
+.gnb { width: 100%; height: 100%; }
+.gnb li { 
+  position: relative;
+  float: left;
+  width: 25%; height: 100%;
+  box-sizing: border-box;
+  padding: 0 5px;
+  text-align: center;
+  line-height: 40px;
+}
+.gnb a { 
+  display: block;
+  width: 100%; height: 100%;
+  background-color: rgb(179, 165, 165);
+}
+
+/* viewBox
+==================================== */
+#viewBox {
+  width: 100%; height: 300px;
+  background-color: #ede;
+}
+
+/* conBox
+==================================== */
+#conBox {
+  width: 100%; height: 200px;
+  background-color: #ded;
+}
+
+.con_inner01 { 
+  float: left;
+  width: 400px; height: 200px; 
+  background-color: rgb(20, 109, 124);}
+.con_inner02 { 
+  float: left;
+  width: 400px; height: 200px; 
+  background-color: rgb(33, 122, 70);}
+.con_inner03 { 
+  float: left;
+  width: 400px; height: 200px; 
+  background-color: rgb(128, 28, 28);}
+
+/* footBox
+==================================== */
+#footBox {
+  width: 100%; height: 100px;
+  padding: 30px 20px; box-sizing: border-box;
+  background-color: #aaa;
+}
+#footBox > h2 {
+  float: left;
+  width: 200px; height: 40px;
+  background-color: #ded;
+}
+address {
+  float: left;
+  width: 600px; height: 40px;
+  margin-left: 100px;
+  background-color: #ede;
+}
+.sns {
+  float: right;
+  width: 200px; height: 40px;
+  background-color: #ded;
+}
+

@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* d_05_hover.css */
+
+#wrap {
+  width: 1200px; height: 700px;
+  margin: auto; margin-top: 50px;
+  background-color: #eee;
+}
+
+.headBox {
+  width: 1200px; height: 100px;
+  background-color: #ccc;
+}
+
+.navigation {
+  width: 1200px; height: 100px;
+  background-color: #ccc;
+}
+h1 {
+  float: left;
+  width: 200px; height: 100px;
+  background-color: #dad;
+}
+
+.menuBar {
+  float: left;
+  width: 1000px; height: 100px;
+  background-color: #fff;
+}
+
+.nav_01 {
+  margin-left: 300px;
+  background-color: #dad;
+}
+.nav_02 {
+  background-color: #faf;
+}
+.nav_03 {
+  background-color: #dad;
+}
+.nav_04 { 
+  background-color: #faf;
+}
+
+.menuBar > div {
+  float: left;
+  width: calc(600px / 4); height: 50px;
+  margin-top: 25px;
+}
+
+.menuBar > div:hover
+
+
+
+
+.viewBox {
+  width: 100%; height: 300px;
+  background-color: #ddd;
+}
+
+.contentBox {
+  width: 100%; height: 200px;
+  background-color: #ccc;
+}
+
+.notice_part {
+  float: left;
+  width: 400px; height: 200px;
+  background-color: #dad;
+}
+.banner_part {
+  float: left;
+  width: 400px; height: 200px;
+  background-color: #faf;
+}
+.go_part {
+  float: left;
+  width: 400px; height: 200px;
+  background-color: #dad;
+}
+
+.footBox {
+  width: 100%; height: 100px;
+  background-color: #ddd;
+}

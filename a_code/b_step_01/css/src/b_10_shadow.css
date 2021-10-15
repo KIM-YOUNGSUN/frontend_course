@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* b_10_shadow.css */
+
+#wrap {
+  width: 56.25rem; height: auto;
+  padding-bottom: 62.5rem;
+  box-sizing: content-box;
+}
+
+.part {
+  width: 100%; height: 45rem;
+  border-bottom: 0.0625rem solid #777;
+}
+
+.box > div {
+  float: left;
+  width: 18.75rem; height: 12.5rem;
+  margin: 1.875rem;
+  text-align: center; line-height: 12.5rem;
+  background-color: #ddd;
+}
+
+.box_shadow_01 {
+  /**그림자를 만드는 기법
+    box-shadow: x  y  blur offset color; */
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem #077;
+}
+
+.box_shadow_02 {
+  /**그림자를 만드는 기법
+    box-shadow: x  y  blur offset color; */
+    box-shadow: 0 0 0.3125rem 0.625rem #077;
+}
+
+.box_shadow_03 {
+  /**그림자를 만드는 기법
+    box-shadow: inset x  y  blur offset color; */
+    box-shadow: inset 0.3125rem 0.3125rem 0 #777;
+}
+
+.box_shadow_04 {
+  box-shadow: 0 0 0.625rem #999,
+              -0.3125rem -0.3125rem 0.3125rem #ddd,
+              0.625rem 0.625rem 0.1875rem #adf,
+              inset 0 0 0.9375rem #333;   
+}
+
+.box .star {
+  width: 0.1875rem; height: 0.1875rem;
+  background-color: #daa;
+  box-shadow: 15px 15px #0af,
+              50px 80px #f06,
+              140px 300px #fa0,
+              -40px 20px #ddf,
+              -200px -400px #171717;
+  position: fixed;
+  animation: star 5000ms infinite ease-in;
+}
+
+@keyframes star {
+  0% { top: -6.25rem; right: -12.5rem;}
+  100% { top:100%; right:100%;}
+}
+
+.text > div {
+  width: 100%; height: 3.125rem;
+  margin-bottom: 0.625rem;
+  font-size: 3rem; font-weight: 700;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.text_shadow01 {
+  /* 글씨에 그림자 주기 
+      text-shadow: x  y  blur  color;
+   */
+    text-shadow: 0.3125rem 0.3125rem 0.3125rem #777;
+}
+.text_shadow02 {
+  text-shadow: 0.3125rem 0.3125rem #47a,
+              0.625rem 0.25rem #fa0;
+  color: rgba(255,255,255,0.5);
+}
+.text_shadow03 {
+  background-image: url(../../img/background/background_04.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  color: #fff; font-size: 5rem;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ------------------------------------ */
+
+.image > div {
+  float: left;
+  width: 12.5rem; height: 12.5rem;
+  margin: 3.125rem;
+  border-radius: 100%;
+  background-image: url(../../img/icon/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 50% 50%;
+}
+
+.img_shadow_01 {
+  box-shadow: 5px 5px 5px #333;
+}
+
+.img_shadow_02 {
+  filter: drop-shadow(-5px -5px 5px #333);
+  transition: all 200mx linear;
+}
+
+.img_shadow_03 {
+  filter: blur(10px) grayscale(1);
+}
+
+.img_shadow_03:hover {
+  filter: blur(0) grayscale(0);
+}
+
+.img_shadow_04 {
+  filter: hue-rotate(180deg);
+}
