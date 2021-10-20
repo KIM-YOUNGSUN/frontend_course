@@ -2,38 +2,128 @@
 /* e_03_project_sub_login.css */
 
 #wrap {
-  width: 1440px; height: 2800px;
+  width: 1440px; height: auto;
   background-color: #eee;
 }
 
 /* headBox ================================ */
 #headBox {
+  position: relative;
   width: 100%; height: 240px;
+  margin-top: 50px; margin-bottom: 150px;  padding-top: 50px;
   background-color: #fff;
 }
 
   h1 {
-    width: 480px; height: 100px;
-    margin: auto; padding: 35px;
+    width: 100%; height: 130px;
+    margin: auto; padding: 50px;
     text-align: center; 
     background-color: #fff;
   }
 
 
   h1 > a {
+    display: block;
+    width: 100%; height: 100%;
     text-decoration: none;
   }
 
-  .unb {}
+  .unb {
+    position: absolute; top:0; left:0;
+    width: 100%; height: 50px; 
+    padding-left: 172px; padding-right: 172px;
+    background-color: #F6F1EB;
+  }
+    .nav_inner01 {
+      float: left;
+      width: 1096px; height: 50px;
+      border: 1px solid #333;
+    }
+    .search_btn  {
+      float: left;
+      width: 50px; height: 50px;
+      text-decoration: none;
+      background-image: url(../../img/search.png);
+      background-repeat: no-repeat;
+      background-position: 10px 10px;
+    }
+    .search_text_part {
+      float: left;
+      width: 60px; height: 50px;
+      border: 1px solid #333;
+    }
 
-/* viewBox ================================ */
-#viewBox {
+      .language_part {
+        float: right;
+        width: 80px; height: 50px;
+        border: 1px solid #333;
+      }
+      .login_part {
+        float: right;
+        width: 80px; height: 50px;
+        border: 1px solid #333;
+      }
+      .join_part {
+        float: right;
+        width: 80px; height: 50px;
+        border: 1px solid #333;
+      }
+
+
+  .gnb {
+    width: 100%; height: 60px;
+    background-color: #F6F1EB;
+  }
+    .nav_inner03 {
+      width: 1096px; height: 60px;
+      margin: auto;
+      border: 1px solid #333;
+    }
+    .menu_btn {
+      float: left;
+      width: 24px; height: 24px;
+      margin: 14px;
+      background-image: url(../../img/menu.png);
+      background-repeat: no-repeat;
+      background-position: 3px 3px;
+    }
+    .menu_part {
+      width: 736px; height: 60px;
+      margin: auto;
+      background-color: #fff;
+    }
+    .cart_btn {
+      
+      float: right;
+      width: 24px; height: 24px;
+      border: 1px solid #333;
+      background-image: url(../../img/bag.png);
+      background-repeat: no-repeat;
+    }
+
+/* loginBox ================================ */
+#loginBox {
   width: 100%; height: 1000px;
+  margin-bottom: 300px;
   border: 1px solid #333; /* 나중에 지우기 */
 }
+
+  .login_inner {
+    width: 1096px; height: 800px;
+    margin: auto; margin-top: 100px;
+    background-color: #d5d5d5;
+  }
 
 /* footBox ================================ */
 .footBox {
   width: 100%; height: 760px;
   border: 1px solid #333; /* 나중에 지우기 */
 }
+  .fnb {
+    width: 100%; height: 60px;
+    background-color: #F6F1EB;
+  }
+  .info_box {
+    width: 100%; height: 692px;
+    background-color: #d5d5d5;
+  }
