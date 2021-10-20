@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* e_03_project_sub_login.css */
+
+#wrap {
+  width: 1440px; height: 2800px;
+  background-color: #eee;
+}
+
+/* headBox ================================ */
+#headBox {
+  width: 100%; height: 240px;
+  background-color: #fff;
+}
+
+  h1 {
+    width: 480px; height: 100px;
+    margin: auto; padding: 35px;
+    text-align: center; 
+    background-color: #fff;
+  }
+
+
+  h1 > a {
+    text-decoration: none;
+  }
+
+  .unb {}
+
+/* viewBox ================================ */
+#viewBox {
+  width: 100%; height: 1000px;
+  border: 1px solid #333; /* 나중에 지우기 */
+}
+
+/* footBox ================================ */
+.footBox {
+  width: 100%; height: 760px;
+  border: 1px solid #333; /* 나중에 지우기 */
+}
