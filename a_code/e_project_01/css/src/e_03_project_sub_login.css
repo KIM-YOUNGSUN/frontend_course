@@ -50,8 +50,8 @@
       background-position: 10px 10px;
     }
     .search_text_part {
-      float: left;
-      width: 60px; height: 48px;
+      float: right;
+      width: 60px; height: 50px;
       border: 1px solid #333;
     }
 
@@ -168,12 +168,15 @@
     .id_search_box {
       float: left;
       width: 120px; height: 40px;
+      margin-left: 50px;
       text-align: center; line-height: 40px;
       border: 1px solid #333;
     } 
+    
     .pw_search_box {
       float: right;
       width: 120px; height: 40px;
+      margin-right: 50px;
       text-align: center; line-height: 40px;
       border: 1px solid #333;
     }
@@ -187,9 +190,20 @@
   .join_inner {
     float: right;
     width: 540px; height: 658px;
+    padding: 200px 76px;
     background-color: #dad;
   }
-
+    .join_box {
+      width: 400px; height: 80px;
+      margin-bottom: 46px;
+      text-align: center; line-height: 80px;
+      border: 1px solid #333;
+    }
+    .non_member_box {
+      width: 400px; height: 80px;
+      text-align: center; line-height: 80px;
+      border: 1px solid #333;
+    }
   
   
 /* footBox ================================ */
