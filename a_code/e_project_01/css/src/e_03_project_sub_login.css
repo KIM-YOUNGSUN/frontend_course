@@ -15,28 +15,30 @@
 }
 
   h1 {
-    width: 100%; height: 130px;
-    margin: auto; padding: 50px;
-    text-align: center; 
+    width: 480ps; height: 100px;
+    margin: auto; 
+    text-align: center; line-height: 80px;
     background-color: #fff;
   }
 
 
   h1 > a {
     display: block;
-    width: 100%; height: 100%;
+    width: 480px; height: 80px;
+    margin: auto; margin-top: 15px;
     text-decoration: none;
   }
 
   .unb {
     position: absolute; top:0; left:0;
     width: 100%; height: 50px; 
+    margin: auto;
     padding-left: 172px; padding-right: 172px;
     background-color: #F6F1EB;
   }
     .nav_inner01 {
       float: left;
-      width: 1096px; height: 50px;
+      width: 112px; height: 50px;
       border: 1px solid #333;
     }
     .search_btn  {
@@ -49,25 +51,32 @@
     }
     .search_text_part {
       float: left;
-      width: 60px; height: 50px;
+      width: 60px; height: 48px;
       border: 1px solid #333;
     }
 
+    .nav_inner02 { 
+      float: right;
+      width: 240px; height: 50px;
+      text-align: center; line-height: 50px; font-size: 14px;
+    }
+    
       .language_part {
-        float: right;
-        width: 80px; height: 50px;
+        float: left;
+        width: 80px; height: 50px; 
         border: 1px solid #333;
       }
       .login_part {
-        float: right;
-        width: 80px; height: 50px;
-        border: 1px solid #333;
+        float: left;
+        width: 80px; height: 50px; 
+        border: 1px solid #333; 
       }
       .join_part {
-        float: right;
-        width: 80px; height: 50px;
+        float: left;
+        width: 80px; height: 50px; 
         border: 1px solid #333;
       }
+      .nav_inner02 > a {display: block; width: 80px; height: 80px;}
 
 
   .gnb {
@@ -82,21 +91,21 @@
     .menu_btn {
       float: left;
       width: 24px; height: 24px;
-      margin: 14px;
+      margin-left: 10px; margin-top: 15px;
       background-image: url(../../img/menu.png);
       background-repeat: no-repeat;
       background-position: 3px 3px;
     }
     .menu_part {
-      width: 736px; height: 60px;
-      margin: auto;
+      float: left;
+      width: 736px; height: 58px;
+      margin-left: 145px; 
       background-color: #fff;
     }
     .cart_btn {
-      
       float: right;
       width: 24px; height: 24px;
-      border: 1px solid #333;
+      margin-right: 10px; margin-top: 15px;
       background-image: url(../../img/bag.png);
       background-repeat: no-repeat;
     }
@@ -104,16 +113,85 @@
 /* loginBox ================================ */
 #loginBox {
   width: 100%; height: 1000px;
-  margin-bottom: 300px;
-  border: 1px solid #333; /* 나중에 지우기 */
+  margin-bottom: 300px; 
 }
 
-  .login_inner {
+  .login_area {
     width: 1096px; height: 800px;
-    margin: auto; margin-top: 100px;
+    margin: auto; border: 1px solid #333;
     background-color: #d5d5d5;
   }
 
+    .login_title_inner {
+    width: 1096px; height: 140px;
+    margin: auto; padding: 30px 0;
+    border-bottom: 1px solid #505050;
+  } 
+    .login_title_box {
+    width: 320px; height: 80px;
+    margin: auto;
+    text-align: center; line-height: 70px;
+    border: 1px solid #333;
+  }  
+
+
+  .login_inner {
+    float: left;
+    width: 540px; height: 658px;
+    padding: 90px 74px;
+    background-color: #fff;
+  }
+    .id_box {
+      width: 400px; height: 80px;
+      margin-bottom: 45px;
+      text-align: left; line-height: 80px; 
+      border: 1px solid #333; 
+    }  
+    .pw_box {
+      width: 400px; height: 80px;
+      margin-bottom: 28px;
+      text-align: left; line-height: 80px; 
+      border: 1px solid #333;
+    } 
+    .id_check_box {
+      width: 140px; height: 30px;
+      margin-bottom: 30px;
+      text-align: right; line-height: 25px;
+      border: 1px solid #333;
+    } 
+    .login_btn {
+      width: 400px; height: 100px;
+      margin-bottom: 46px;
+      text-align: center; line-height: 100px; 
+      background-color: #333;
+    } 
+    .id_search_box {
+      float: left;
+      width: 120px; height: 40px;
+      text-align: center; line-height: 40px;
+      border: 1px solid #333;
+    } 
+    .pw_search_box {
+      float: right;
+      width: 120px; height: 40px;
+      text-align: center; line-height: 40px;
+      border: 1px solid #333;
+    }
+
+    /* .line_02 {
+        width: 1px; height: 600px;
+        margin: auto;  */ 
+        /* 큰 틀 다시 만들어 주고 난 후에 float처리 해준 뒤 넣으면 들어감 */
+    /* } */
+
+  .join_inner {
+    float: right;
+    width: 540px; height: 658px;
+    background-color: #dad;
+  }
+
+  
+  
 /* footBox ================================ */
 .footBox {
   width: 100%; height: 760px;

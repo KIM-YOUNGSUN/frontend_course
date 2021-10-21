@@ -4,43 +4,18 @@
 html,body {width: 100%; height: 100%;}
 
 #wrap {
-  width: 800px; min-height: 100%;
-  padding-top: 100px;
+  width: 800px; height: 900px;
   background-color: #eee;
+}
+.login_part {
+  width: 100%; height: 100%;
 }
 
 h1 {
-  width: 400px; height: 100px;
-  margin: auto; margin-bottom: 100px;
-  text-align: center; font-size: 4rem;
+  width: 800px; height: auto;
+  margin: auto; text-align: center;
+  background-color: #fff;
 }
-
-h1 > a {
-  display: block;
-  width: 100%; height: auto;
-  text-decoration: none; color : green;
-  margin: auto;
-}
-
-.part {
-  width: 550px; height: auto;
-  margin: auto;
-}
-
-h2 {
-  width: 100%; height: auto;
-  margin-bottom: 1rem;
-  font-size: 20px;
-}
-
-.login_area {
-  width: 100%; height: auto;
-  margin-bottom: 1rem; 
-}
-
-.member {
-  width: 100%; height: 60px;
-  margin-bottom: 50px; padding: 15px; 
-  border: 1px solid rgb(14, 12, 12);
-  border-radius: 0.5rem;
+h1  a {
+  width: 800px; height: 100px;
 }

@@ -28,31 +28,62 @@
         <nav class="unb">
           <h2 class="blind">navigation</h2>
           <div class="nav_inner01">
-            <button calss="button" class="search_btn"></button>
+            <button type="button" class="search_btn">
+              <span class="blind">검색</span>
+            </button>
             <div class="search_text_part"></div>
-          
-            <div class="language_part">language</div>
-            <div class="login_part">login</div>
-            <div class="join_part">join</div>
+          </div>
+
+          <div class="nav_inner02">
+            <div class="language_part">
+              <a href="#">language</a></div>
+            <div class="login_part">
+              <a href="#">login</a></div>
+            <div class="join_part">
+              <a href="#">join</a></div>
           </div>
         </nav>
 
         <nav class="gnb">
-          <h3 class="blind">navigation</h3>
+          <h2 class="blind">navigation</h2>
           <div class="nav_inner03">
-            <button type="button" class="menu_btn"></button>
+            <button type="button" class="menu_btn">
+              <span class="blind">메뉴</span>
+            </button>
             <div class="menu_part"></div>
-            <button type="button" class="cart_btn"></button>
-                <!-- 왜 카드 안으로 안들어가는지? 버튼 요소 써도 되는지?-->
+            <button type="button" class="cart_btn">
+              <span class="blind">카트</span>
+            </button>
+              
           </div>
         </nav>
 
       </header> <!-- headBox -->
 
       <section id="loginBox">
-        <div class="login_inner">
 
+        <div class="login_area">
+
+          <div class="login_title_inner">
+            <div class="login_title_box">login</div>
         </div>
+
+          <div class="login_inner">
+            <div class="id_box">아이디</div>
+            <div class="pw_box">비밀번호</div>
+            <div class="id_check_box">아이디 저장</div>
+            <div class="login_btn">로그인</div>
+            <div class="id_search_box">아이디 찾기</div>
+            <div class="pw_search_box">비밀번호 찾기</div>
+            <!-- <hr class="line_02" /> -->
+          </div> <!-- login_inner -->
+
+          <div class="join_inner">
+
+
+          </div> <!-- join_inner -->
+
+        </div> <!-- login_area -->
 
       </section>
 
