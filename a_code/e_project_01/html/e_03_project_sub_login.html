@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="../fonts/fontAwesome/css/all.min.css"> -->
+  <link rel="stylesheet" href="../fonts/fontAwesome/css/all.min.css">
   <!-- <link rel="stylesheet" href="../fonts/ibm_plex/IBMPlex.css"> -->
 
   <link rel="stylesheet" href="../css/common/reset.css">
@@ -23,7 +23,7 @@
     <!-- layout -->
     <div id="wrap">
       <header id="headBox">
-        <h1><a href="#">hermes</a></h1>
+        <h1><a href="#"></a></h1>
 
         <nav class="unb">
           <h2 class="blind">navigation</h2>
@@ -31,7 +31,7 @@
             <button type="button" class="search_btn">
               <span class="blind">검색</span>
             </button>
-            <div class="search_text_part"></div>
+            <div class="search_text_part"></div> <!-- 박스가 약간 삐져나오는 거 확인-->
           </div>
 
           <div class="nav_inner02">
@@ -40,7 +40,7 @@
             <div class="login_part">
               <a href="#">login</a></div>
             <div class="join_part">
-              <a href="#">join</a></div>
+              <a href="#">join us</a></div>
           </div>
         </nav>
 
@@ -50,7 +50,13 @@
             <button type="button" class="menu_btn">
               <span class="blind">메뉴</span>
             </button>
-            <div class="menu_part"></div>
+            <div class="menu_part">
+              <a href="#">MEN</a>
+              <a href="#">WOMEN</a>
+              <a href="#">BAGS</a>
+              <a href="#">SCARF</a>
+              <a href="#">BEAUTY</a>
+            </div>
             <button type="button" class="cart_btn">
               <span class="blind">카트</span>
             </button>
@@ -60,23 +66,27 @@
 
       </header> <!-- headBox -->
 
-      <section id="loginBox">
-
+      <article id="loginBox">
+        <h2 class="blind">로그인</h2>
         <div class="login_area">
 
           <div class="login_title_inner">
-            <div class="login_title_box">login</div>
-        </div>
+            <div class="login_title_box">LOGIN</div>
+          </div>
 
           <div class="login_inner">
             <div class="id_box">아이디</div>
             <div class="pw_box">비밀번호</div>
-            <div class="id_check_box">아이디 저장</div>
+            <div class="id_check_box">아이디 저장
+              <div class="check_box"></div>
+            </div>
             <div class="login_btn">로그인</div>
             <div class="id_search_box">아이디 찾기</div>
             <div class="pw_search_box">비밀번호 찾기</div>
             
-            <!-- <hr class="line_01" /> -->
+            <!-- <hr class="line_01" /> --> 
+            <!-- 아이디찾기 비밀번호 찾기 가운데 선 -->
+            <!-- login_inner와 login_inner 가운데 선 -->
             
           </div> <!-- login_inner -->
 
@@ -88,11 +98,69 @@
 
         </div> <!-- login_area -->
 
-      </section>
+      </article>
 
       <footer class="footBox">
-        <div class="fnb"></div>
-        <div class="info_box"></div>
+        <h2 class="blind">site infomation</h2>
+        <div class="fnb">
+          <div class="fnb_box">
+            <div class="sevice_part">고객 서비스</div>
+            <div class="online_part">온라인 스토어</div>
+            <div class="company_info_part">기업정보</div>
+            <div class="legal_part">법적고지</div>
+          </div>
+        </div>
+
+        <div class="info_inner">
+          <div class="cs_box">
+            <div class="cs_part">
+              <p>고객의 쇼핑을 지원합니다. <br />
+                질문이 있으신가요? <br />
+                <a href="#">자주묻는 질문</a>에서 답을 찾으실 수 있습니다. <br />
+                필요 시 에르메스 고객센터로 문의 주십시오. <br />
+                <button type="button">전화: (02)542-6622 </button>  <br />
+                <button type="button">이메일 발송 </button> <br />
+                <br />
+                월요일-일요일 오전 : 9:30 - 오후 8:00 (공휴일 제외) 
+              </p>
+            </div>
+            <div class="store_search_part">
+              <p>
+                <span>매장 찾기</span> <br />
+                <a href="#">뷰티 제품을 구매할 수 있는 매장</a>  <br />
+                <br />
+                <a href="#">에르메스 매장</a>
+              </p>
+            </div>
+            <div class="sns_part">
+              <a href="#">
+                <span class="blind">facebook</span>
+              </a>
+              <a href="#">
+                <span class="blind">kakaotalk</span>
+              </a>
+              <a href="#">
+                <span class="blind">instagram</span>
+              </a>
+              <a href="#">
+                <span class="blind">twitter</span>
+              </a>
+            </div>
+          
+          </div>
+          <address>        
+            <p >
+            © Hermès 2021. 무단 전재와 무단 복제를 금함. <br /> 
+            <br /> 
+            에르메스코리아(유) | 주소 및 연락처 : 서울시 강남구 도산대로45길 7 (02)-542-6622 <br />
+            대표자 : 악셀 듀마, 플로리앙 크랭 ㅣ사업자등록번호 : 120-81-71453 <br />
+            메일문의 : <a href="#">contact.kr@hermes.com ㅣ호스팅서비스 : 에르메스 인터내셔널</a> <br />
+            통신판매업 신고번호 : 제2020-서울강남-02965호 <a href="#">(사업자 정보 확인)</a>
+          </p>
+          </address>
+
+          <div class="foot_logo"></div>
+        </div>
       </footer>
 
 
