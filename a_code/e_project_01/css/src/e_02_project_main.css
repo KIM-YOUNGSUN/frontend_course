@@ -149,48 +149,23 @@ html,body { width: 100%; height: 100%;}
 /* contentBox_01 ============================== */
 .contentBox_01 {
   width: 1440px; height: 880px;
-  margin-bottom: 210px; padding: 10px 172px;
-  text-transform: uppercase; text-align: center; 
-  line-height: 60px; font-size: 38px;
+  margin-bottom: 210px; padding: 46px 172px;
+  text-transform: uppercase; text-align: center; line-height: 60px;
   background-color: #ddd;
 }
 
 .content_part_01 {
   width: 1094px; height: 788px;
-  margin: auto; padding: 110px 0;
+  margin: auto; 
   background-color: #eee;
 }
 
   .content_part_01 > h2 {
     width: 600px; height: 60px;
-    margin: auto; 
+    margin: auto;
     background-color: #fff;
   }
 
-  .content_inner {
-    float: left;
-    width: 534px; height: 560px;
-    background-color: #848484;
-  }
-
-  .content_img_inner {
-    float: right;
-    width: 534px; height: 560px;
-    margin-bottom: 24px;
-    background-color: #848484;
-  }
-
-  .more_btn {
-    clear: both;
-    width: 150px; height: 60px;
-    margin: auto; line-height: 50px;
-    background-color: #777;
-  }
-  .more_btn > a {
-    width: 100%; height: 100%;
-    font-size: 24px;
-  }
-    
 
 /* adBox_01==================================== */
 .adBox_01 {
@@ -202,41 +177,16 @@ html,body { width: 100%; height: 100%;}
 
 /* contentBox_02=============================== */
 .contentBox_02 {
-  width: 1440px; height: 700px;
-  margin-bottom: 210px; padding: 10px 0;
-  text-transform: uppercase; text-align: center; 
-  line-height: 60px; font-size: 38px;
+  width: 1440px; height: 650px;
+  margin-bottom: 210px;
+  text-transform: uppercase; text-align: center; line-height: 60px;
   background-color: #faf;
 }
   .contentBox_02 > h2 {
     width: 600px; height: 60px;
-    margin: auto; margin-bottom: 10px;
+    margin: auto;
     background-color: #fff;
   }
-
-  .contentBox_02 > ul {
-    width: 1350px; height: 600px; 
-    margin: auto; padding: 0 50px;
-    background-color: #333;
-  }
-  .contentBox_02 > ul > li {
-    float: left;
-    width: 300px; height: 380px; 
-    margin-right: 14px; margin-top: 50px;
-    background-color: #fff;
-  }
-  .contentBox_02  li:last-child {margin-right: 0;}
-
-  .contentBox_02 > button {
-    width: 50px; height: 50px;
-    margin-top: -80px;
-    background-color: red;
-  }
-
-
-
-
-
 
 
 /* adBox_02 ================================== */
@@ -250,9 +200,8 @@ html,body { width: 100%; height: 100%;}
 /* contentBox_03 ============================= */
 .contentBox_03 {
   width: 1440px; height: 1200px;
-  margin-bottom: 200px; padding: 10px 172px;
-  text-transform: uppercase; text-align: center; 
-  line-height: 60px; font-size: 38px;
+  margin-bottom: 200px; padding: 50px 172px;
+  text-transform: uppercase; text-align: center; line-height: 60px;
   background-color: #ddd;
 }
 .content_part_03 {

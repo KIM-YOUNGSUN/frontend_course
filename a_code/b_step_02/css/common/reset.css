@@ -33,3 +33,5 @@ select,input,textarea {cursor: pointer;}
 
 header,article, nav, section, footer, aside, 
 main, figure, figcaption, hgroup { display: block;}
+legend { width: 0; height: 0; padding: 0; bottom: 0; overflow: hidden;}
+textarea{ resize: none; cursor: text;}
