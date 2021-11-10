@@ -1,0 +1,24 @@
+/* d_07_menu_practice.scss*/
+#wrap {
+  width: 1440px;
+  height: auto;
+  margin: auto;
+}
+
+#headBox {
+  width: 100%;
+  height: auto;
+  background-color: #ccc;
+}
+
+#contentBox {
+  width: 100%;
+  height: auto;
+  background-color: #777;
+}
+
+#footBox {
+  width: 100%;
+  height: auto;
+  background-color: #555;
+}
