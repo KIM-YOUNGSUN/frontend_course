@@ -4,7 +4,6 @@
 # $ git rm -r --cached.
 # $ git add .
 # $ git commit -m "fixed untracked files"
-
 # ----------------------------------------------------
 
 # scss 변환시 해당 내용 정보처리에 대한 자료
@@ -12,3 +11,10 @@
 
 # prepros이용하여 생긴 config파일
 **/prepros.config
+
+# node-module 삭제
+**/node_modules
+node_modules
+
+# .vscode
+**/*.vscode
