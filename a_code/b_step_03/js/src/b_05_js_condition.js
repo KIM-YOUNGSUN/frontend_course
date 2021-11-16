@@ -199,3 +199,5 @@ var box1 = function(){
   console.log(list);
 }
 box1();
+
+console.clear();

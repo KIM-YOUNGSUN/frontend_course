@@ -1,0 +1,16 @@
+// b_01_scss_basic.scss
+/* b_01_scss_basic.css */
+
+@import "../common/_mixin.scss";
+@import "../common/_variable.scss";
+
+
+#wrap {
+  @include widthHeight;
+  border: 1px solid $gray1;
+  background-color: #fca;
+
+  & > div {
+    @include widthHeight;
+  }
+}
