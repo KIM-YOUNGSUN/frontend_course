@@ -41,7 +41,7 @@ var ob1 = {
   'drink': 'coffee',
   'ade':{'ice':'레몬에이드', 'hot': 'nothing'}
 };
-var cOb1 = {};
+var cOb1 = {}; //깊은 복사를 한 값을 넣어줄 객체를 먼저 생성
 
 /*
 for(var prop in ob1){
@@ -56,7 +56,7 @@ for(var prop in ob1){
       c1b1[prop][i] = data
     });
   }else{
- // ob1에 대한 객체를 체크하여 copy
+  // ob1에 대한 객체를 체크하여 copy
   cOb1[prop] = ob1[prop]; 
   }
 }
@@ -84,7 +84,7 @@ console.log(cOb1);
 console.clear();
 
 
-
+// 객체 내 배열 -> 참조 변수가 많아서 깊은 복사가 안될때 JSON을 사용한다!
 var originAr = {
   'fruits': ['딸기', '포도', '바나나', '오렌지'],
   'drink': 'coffee',
@@ -100,6 +100,8 @@ console.log(copyAr);
 document.write(originAr);
 
 // JSON(Javascript Object Notation) 형식의 기초
+// 객체 형식으로 표기한 것
+// 데이터를 담는 경량의 정보 처리 방식 표기법이 필요한데 현재 채택되고 있는 방식이 JSON
 // 1. property, value 모두 쌍따옴표로 처리(별도 저장시)
 // 2. 주석은 사용X
 // 3. 객체와 배열들의 집합

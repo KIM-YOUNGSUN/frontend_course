@@ -31,8 +31,8 @@ array.shift(); // 앞에서부터 빼기
 array.pop(); // 뒤에서부터 빼기
 console.log(array);
 
-var joinText = array.join('-');
-console.log(joinText); // 합치기
+var joinText = array.join('-'); // 합치기
+console.log(joinText); 
 
 var spliteText = joinText.split('e');
 console.log(spliteText); // 다시 분리 시키기
@@ -42,10 +42,10 @@ array.forEach(function(d,i){
 });
 
 spliteText.reverse();
-console.log(spliteText); // 배열의 목록을 뒤집기
+console.log(spliteText); // 배열의 목록을 뒤집기 -> 원본 순서를 뒤에서부터 배치
 
 spliteText.sort();
-console.log(spliteText); // 정렬하기
+console.log(spliteText); // 순서대로 정렬하기
 
 // indexOf 내부에 값을 입력하여 동일한 값이 존재하면 그 중 첫번째가 위치한 것을 파악하여 위치를 숫자로 표기
 // 존재하지 않는다면 -1;
@@ -54,7 +54,7 @@ var indexCk = array.indexOf('maker');
 console.log(array);
 console.log(indexCk);           
 
-var replaceArr = array.splice(1,0,'cam', 'mug', 'charger');  // 2번째부터(1) 0개만큼(0) 삭제하고 두의 내용을 삽입 - [].splice(순번, 삭제갯수, 삽입요소들...)
+var replaceArr = array.splice(1,0,'cam', 'mug', 'charger');  // 0번째부터(1) 0개만큼(0) 삭제하고 두의 내용을 삽입 - [].splice(순번, 삭제갯수, 삽입요소들...)
 console.log(array);
 
 var array2 = ['desktop', 'tablet', 'smartphone'];

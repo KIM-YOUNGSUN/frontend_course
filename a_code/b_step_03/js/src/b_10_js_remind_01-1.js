@@ -143,3 +143,7 @@ for(var l=0; l<3; l++){
 
 var nna = na;
 console.log( nna === na);
+
+
+
+
