@@ -1,0 +1,21 @@
+// contentBox_03.scss
+
+/* contentBox_03 ============================= */
+.contentBox_03 {
+  width: 1440px; height: 1200px;
+  margin-bottom: 200px; padding: 50px 172px;
+  text-transform: uppercase; text-align: center; line-height: 60px;
+  background-color: #ddd;
+}
+.content_part_03 {
+  width: 1094px; height: 1100px;
+  margin: auto;
+  background-color: #faf;
+}
+
+  .content_part_03 > h2 {
+    width: 600px; height: 60px;
+    margin: auto;
+    background-color: #fff;
+  }
+

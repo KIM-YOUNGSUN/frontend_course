@@ -1,0 +1,125 @@
+// headBox.scss
+
+@import "../../common/mixin";
+@import "../../common/variable";
+
+/* headBox 1440 ================================ */
+#headBox {
+  position: relative;
+  width: 100%; height: 200px;
+  padding-top: 50px;
+  background-color: $color_white_01;
+}
+
+  h1 {
+    width: 480px; height: 100px;
+    margin: auto; 
+    text-align: center; line-height: 80px;
+    background-color: $color_white_01;
+  }
+
+
+  h1 > a {
+    display: block;
+    width: 480px; height: 100px;
+    margin: auto; 
+    background-image: url(../../img/hermes_logo.svg);
+    background-repeat: no-repeat;
+    background-position: 190px;
+    text-decoration: none;
+  }
+
+
+/* unb ---------------------------------------- */
+  .unb {
+    position: absolute; top:0; left:0;
+    width: 100%; height: 50px; 
+    margin: auto;
+    text-transform: uppercase;
+    padding-left: 172px; padding-right: 172px;
+    background-color: $color_beige_01;
+  }               
+    .nav_inner01 {
+      float: left;
+      width: 150px; height: 50px;
+      padding: 0 16px;
+    }
+    .search_btn  {
+      float: left;
+      width: 48px; height: 50px;
+      margin-left: -14px;
+      text-decoration: none;
+      background-image: url(../../img/search.png);
+      background-repeat: no-repeat;
+      background-position: 10px 12px;
+    }
+    .search_text_part {
+      float: right;
+      width: 40px; height: 50px;
+      margin-right: 40px;
+      text-align: center; line-height: 50px; 
+      font-size: 12px; text-decoration: underline;
+    } 
+
+    .nav_inner02 { 
+      float: right;
+      width: 240px; height: 50px;
+      text-transform: uppercase; 
+      text-align: center; line-height: 50px; font-size: 12px;
+    }
+    
+      .language_part {
+        float: left;
+        width: 80px; height: 30px; 
+      }
+      .login_part {
+        float: left;
+        width: 80px; height: 50px; 
+        margin-right: -8px;
+      }
+      .join_part {
+        float: left;
+        width: 80px; height: 50px; 
+      }
+      .nav_inner02 > a {display: block; width: auto; height: 100%;}
+      .nav_inner02 >  button {display: block; width: auto; height: 100%; margin-right: 10px; }
+
+
+/* gnb ---------------------------------------- */
+  .gnb {
+    width: 100%; height: 60px;
+    background-color: $color_beige_01;
+  }
+    .nav_inner03 {
+      width: 1096px; height: 60px;
+      margin: auto; text-transform: uppercase; 
+    }
+    .menu_btn {
+      float: left;
+      width: 24px; height: 24px;
+      margin-left: 10px; margin-top: 15px;
+      background-image: url(../../img/menu.png);
+      background-repeat: no-repeat;
+      background-position: 3px 3px;
+    }
+    .menu_part {
+      float: left;
+      width: 736px; height: 60px;
+      margin-left: 145px; padding: 0 28px;
+    }
+      .menu_part > a {
+        display:block; 
+        float: left;
+        width: 120px; height: 60px; 
+        text-align: center; line-height: 58px; font-size: 17px;
+        margin-right: 20px;
+      }
+      .menu_part > a:last-child {margin-right: 0;}
+
+    .cart_btn {
+      float: right;
+      width: 24px; height: 24px;
+      margin-right: 10px; margin-top: 18px;
+      background-image: url(../../img/bag.png); 
+      background-repeat: no-repeat;
+    }
