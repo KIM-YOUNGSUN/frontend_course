@@ -79,7 +79,7 @@ var ul = document.querySelector('ul');
 var list = ul.children;
 console.log(list);
 
-// // prototype은 재설정, 추가 옵션을 주는 개념
+// prototype은 재설정, 추가 옵션을 주는 개념
 // 배열이 가지고 있는 본연의 기능 중 값을 배열 형식으로 처리하는 것
 var listArr = Array.prototype.slice.apply(list);
 console.log(listArr);
