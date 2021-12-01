@@ -1,9 +1,4 @@
-#wrap {
-  width: 1440px;
-  height: auto;
-  border: 1px solid #ededed;
-}
-
+/* sub_history.css */
 /* headBox 1440 ================================ */
 #headBox {
   position: relative;
@@ -222,202 +217,197 @@ h1 > a {
   background-repeat: no-repeat;
 }
 
-/* loginBox ================================ */
-#loginBox {
-  width: 100%;
-  height: 1000px;
-  margin-bottom: 300px;
-  padding: 180px;
-  text-transform: uppercase;
+@media all and (max-width: 767px) {
+  #historyBox {
+    width: 100%;
+    height: 830px;
+    padding-top: 60px;
+    background-color: #fff;
+  }
+  #historyBox h2 {
+    width: 100%;
+    height: 30px;
+    margin: auto;
+    padding-top: 7px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #ffffff;
+  }
+  #historyBox .history_area {
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    margin-top: 60px;
+    background-color: #F6F1EB;
+  }
+  #historyBox .develop_area {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+  }
+  #historyBox .develop_area h2 {
+    width: 100%;
+    height: 40px;
+    margin-top: 110px;
+  }
+  #historyBox .develop_area .develop_inner {
+    width: 100%;
+    height: 190px;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #fff;
+  }
+  #historyBox .develop_area .develop_inner p {
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+  }
 }
-
-.login_area {
-  width: 1096px;
-  height: 800px;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #ededed;
-  font-weight: 400;
+@media all and (min-width: 768px) and (max-width: 1279px) {
+  #historyBox {
+    width: 100%;
+    height: 1560px;
+    padding-top: 120px;
+    background-color: #fff;
+  }
+  #historyBox h2 {
+    width: 100%;
+    height: 120px;
+    margin: auto;
+    padding-top: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    background-color: #ffffff;
+  }
+  #historyBox .history_area {
+    width: 600px;
+    height: 700px;
+    margin: auto;
+    margin-top: 80px;
+    background-color: #F6F1EB;
+  }
+  #historyBox .develop_area {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+  }
+  #historyBox .develop_area h2 {
+    width: 100%;
+    height: 120px;
+    margin-top: 160px;
+  }
+  #historyBox .develop_area .develop_inner {
+    width: 100%;
+    height: 640px;
+    padding: 20px;
+    margin-top: 60px;
+    background-color: #fff;
+  }
+  #historyBox .develop_area .develop_inner p {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 22px;
+  }
 }
-
-.login_title_inner {
-  width: 1096px;
-  height: 140px;
-  margin: auto;
-  padding: 30px 0;
-  border-bottom: 1px solid #ededed;
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  #historyBox {
+    width: 100%;
+    height: 1600px;
+    padding-top: 120px;
+    background-color: #fff;
+  }
+  #historyBox h2 {
+    width: 100%;
+    height: 120px;
+    margin: auto;
+    padding-top: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 38px;
+    background-color: #ffffff;
+  }
+  #historyBox .history_area {
+    width: 600px;
+    height: 750px;
+    margin: auto;
+    margin-top: 80px;
+    background-color: #F6F1EB;
+  }
+  #historyBox .develop_area {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+  }
+  #historyBox .develop_area h2 {
+    width: 100%;
+    height: 120px;
+    margin-top: 160px;
+  }
+  #historyBox .develop_area .develop_inner {
+    width: 100%;
+    height: 640px;
+    padding: 70px;
+    margin-top: 60px;
+    background-color: #fff;
+  }
+  #historyBox .develop_area .develop_inner p {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 22px;
+  }
 }
-
-.login_title_box {
-  width: 320px;
-  height: 80px;
-  margin: auto;
-  text-align: center;
-  line-height: 70px;
-  font-size: 38px;
-  font-weight: 500;
+@media all and (min-width: 1440px) {
+  #historyBox {
+    width: 100%;
+    height: 1600px;
+    padding-top: 120px;
+    background-color: #fff;
+  }
+  #historyBox h2 {
+    width: 100%;
+    height: 120px;
+    margin: auto;
+    padding-top: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 38px;
+    background-color: #ffffff;
+  }
+  #historyBox .history_area {
+    width: 800px;
+    height: 750px;
+    margin: auto;
+    margin-top: 80px;
+    background-color: #F6F1EB;
+  }
+  #historyBox .develop_area {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+  }
+  #historyBox .develop_area h2 {
+    width: 100%;
+    height: 120px;
+    margin-top: 160px;
+  }
+  #historyBox .develop_area .develop_inner {
+    width: 100%;
+    height: 640px;
+    padding: 70px;
+    margin-top: 60px;
+    background-color: #fff;
+  }
+  #historyBox .develop_area .develop_inner p {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 22px;
+  }
 }
-
-/* login_inner------------------------------- */
-.login_inner {
-  width: auto;
-  min-width: 600px;
-  height: 658px;
-  padding: 0 50px;
-  color: #505050;
-  background-color: #ffffff;
-}
-
-.login_inner form {
-  margin: auto;
-  height: 100%;
-}
-
-.login_inner fieldset {
-  float: left;
-}
-
-.login_inner fieldset:last-child {
-  float: right;
-}
-
-.member_inner {
-  width: 450px;
-  height: 240px;
-  margin-top: 80px;
-  padding: 17px 25px;
-}
-
-.member_inner input {
-  width: 380px;
-  height: 80px;
-  margin: auto;
-  margin-bottom: 45px;
-  padding-left: 20px;
-  text-align: left;
-  line-height: 80px;
-  font-size: 20px;
-  border: 1px solid #ededed;
-}
-
-.member_inner input:last-child {
-  width: 380px;
-  height: 80px;
-  margin: auto;
-  margin-bottom: 10px;
-  padding-left: 20px;
-  text-align: left;
-  line-height: 80px;
-  font-size: 20px;
-  border: 1px solid #ededed;
-}
-
-.id_check_inner {
-  width: 200px;
-  height: 40px;
-  margin-top: 4px;
-  margin-bottom: 12px;
-}
-
-.id_check_inner input {
-  float: left;
-  width: 20px;
-  height: 20px;
-  margin-left: 30px;
-  border: 1px solid #ededed;
-}
-
-.id_check_box {
-  float: right;
-  width: 134px;
-  height: 40px;
-}
-
-.login_btn_inner {
-  width: 420px;
-  height: 120px;
-  margin-bottom: -10px;
-  margin-top: 20px;
-  padding: 20px 8px;
-}
-
-.login_btn_box {
-  width: 400px;
-  height: 80px;
-  margin-left: 10px;
-  text-align: center;
-  line-height: 80px;
-  font-size: 24px;
-  color: #ECECEC;
-  background-color: #333333;
-}
-
-.login_btn_box > a {
-  display: block;
-}
-
-.search_inner {
-  width: 360px;
-  height: 40px;
-  margin: auto;
-  margin-right: 54px;
-  padding: 0 80px;
-  line-height: 40px;
-  text-align: center;
-  font-size: 14px;
-}
-
-.id_search_box {
-  float: left;
-  width: 100px;
-  height: 40px;
-}
-
-.pw_search_box {
-  float: right;
-  width: 100px;
-  height: 40px;
-}
-
-.search_inner > a {
-  display: block;
-}
-
-.join_inner {
-  width: 540px;
-  height: 658px;
-  margin: -40px -50px;
-  padding: 200px 76px;
-  color: #505050;
-}
-
-.join_box {
-  width: 400px;
-  height: 80px;
-  margin-bottom: 46px;
-  text-align: center;
-  line-height: 80px;
-  font-size: 22px;
-  color: #333333;
-  border: 1px solid #333333;
-}
-
-.non_member_box {
-  width: 400px;
-  height: 80px;
-  text-align: center;
-  line-height: 80px;
-  font-size: 22px;
-  color: #333333;
-  border: 1px solid #333333;
-}
-
-.join_inner a {
-  display: block;
-  width: 400px;
-  height: 80px;
-}
-
 /* footBox ================================ */
 .footBox {
   width: 100%;
@@ -546,4 +536,4 @@ address a {
   background-position: 190px;
 }
 
-/*# sourceMappingURL=e_03_project_sub_login.css.map */
+/*# sourceMappingURL=e_05_project_sub_history.css.map */

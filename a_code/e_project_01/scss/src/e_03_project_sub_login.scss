@@ -1,0 +1,18 @@
+// sub_login.scss
+
+@import "../common/variable";
+@import "../common/mixin";
+
+// --------------------------------
+#wrap {
+  width: 1440px; height: auto;
+  border: 1px solid #ededed;
+}
+
+
+// --------------------------------
+@import "../page/base/headBox";
+
+@import "../page/sub_login/loginBox";
+
+@import "../page/base/footBox";
