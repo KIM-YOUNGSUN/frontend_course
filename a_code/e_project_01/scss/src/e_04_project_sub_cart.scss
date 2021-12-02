@@ -4,9 +4,103 @@
 @import "../common/variable";
 
 @import "../page/base/headBox";
-@import "../page/base/footBox";
+
 
 // #wrap {
 //   width: 1440px; height: auto;
 //   border: 1px solid #ededed;
 // }
+
+
+@media all and (max-width: 767px){
+  #cartBox {
+    width: 100%; height: 500px; 
+    margin-top: 100px; padding: 40px 10px;
+    background-color: $color_beige_01;
+    .cart_area {
+      width: 100%; height: 400px;
+      padding: 8px 100px;
+      background-color: #fff;
+      .cart_title {
+        width: 100%; height: 30px; 
+        font-weight: normal; font-size: 16px; 
+        text-align: center; text-transform: uppercase;
+      } // .cart_title
+    } // .cart_area 
+  } // #cartBox 
+} // 320px
+
+
+@media all and (min-width: 768px) and (max-width:1279px){
+  #cartBox {
+    width: 100%; height: 740px; 
+    margin-top: 120px; padding: 95px 15px;
+    background-color: $color_beige_01;
+    .cart_area {
+      width: 100%; height: 600px;
+      padding: 30px 210px;
+      background-color: #fff;
+      .cart_title {
+        width: 100%; height: 48px; 
+        font-weight: normal; font-size: 30px; 
+        text-align: center; text-transform: uppercase;
+      } // .cart_title
+    } // .cart_area 
+  } // #cartBox               
+}// 768px
+
+
+@media all and (min-width: 1280px) and (max-width:1439px){
+  #cartBox {
+    width: 100%; height: 1200px; 
+    margin-top: 130px; padding: 95px 15px;
+    background-color: $color_beige_01;
+    .cart_area {
+      width: 100%; height: 1000px;
+      padding: 100px 92px;
+      background-color: #fff;
+      .cart_title {
+        width: 100%; height: 48px; 
+        font-weight: normal; font-size: 38px; 
+        text-align: center; text-transform: uppercase;
+      } // .cart_title
+    } // .cart_area 
+  } // #cartBox    
+} // 1280px
+
+
+@media all and (min-width: 1440px){
+  #cartBox {
+    width: 100%; height: 1200px; 
+    margin-top: 130px; padding: 100px 170px;
+    background-color: $color_beige_01;
+    .cart_area {
+      width: 1300px; height: 1000px;
+      margin: auto;
+      padding: 30px 388px;
+      background-color: #fff;
+      .cart_title {
+        width: 100%; height: 48px; 
+        font-weight: normal; font-size: 38px; 
+        text-align: center; text-transform: uppercase;
+      } // .cart_title
+    } // .cart_area 
+  } // #cartBox    
+} // 1440px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "../page/base/footBox";
