@@ -217,6 +217,12 @@ h1 > a {
   background-repeat: no-repeat;
 }
 
+#wrap {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ededed;
+}
+
 @media all and (max-width: 767px) {
   #historyBox {
     width: 100%;
@@ -235,33 +241,46 @@ h1 > a {
     background-color: #ffffff;
   }
   #historyBox .history_area {
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    width: auto;
     height: 500px;
     margin: auto;
     margin-top: 60px;
     background-color: #F6F1EB;
   }
+  #historyBox .history_area > li {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    padding: 84px;
+    text-align: center;
+    background-color: #eee;
+  }
   #historyBox .develop_area {
     width: 100%;
-    height: auto;
+    height: 600px;
     background-color: #fff;
   }
   #historyBox .develop_area h2 {
     width: 100%;
     height: 40px;
+    margin: auto;
     margin-top: 110px;
   }
   #historyBox .develop_area .develop_inner {
     width: 100%;
-    height: 190px;
+    height: auto;
     padding: 20px;
+    margin: auto;
     margin-top: 30px;
-    background-color: #fff;
+    border: 2px solid #F6F1EB;
   }
   #historyBox .develop_area .develop_inner p {
     width: 100%;
     height: auto;
-    font-size: 15px;
+    font-size: 13px;
+    text-align: center;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1279px) {
@@ -282,34 +301,46 @@ h1 > a {
     background-color: #ffffff;
   }
   #historyBox .history_area {
-    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    width: auto;
     height: 700px;
     margin: auto;
     margin-top: 80px;
     background-color: #F6F1EB;
   }
+  #historyBox .history_area > li {
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    padding: 180px;
+    text-align: center;
+    background-color: #eee;
+  }
   #historyBox .develop_area {
     width: 100%;
-    height: auto;
+    height: 800px;
     background-color: #fff;
   }
   #historyBox .develop_area h2 {
     width: 100%;
     height: 120px;
+    margin: auto;
     margin-top: 160px;
   }
   #historyBox .develop_area .develop_inner {
     width: 100%;
-    height: 640px;
-    padding: 20px;
+    height: 300px;
+    padding: 46px;
+    margin: auto;
     margin-top: 60px;
-    background-color: #fff;
+    border: 2px solid #F6F1EB;
   }
   #historyBox .develop_area .develop_inner p {
     width: 100%;
     height: auto;
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) {
@@ -330,34 +361,46 @@ h1 > a {
     background-color: #ffffff;
   }
   #historyBox .history_area {
-    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    width: auto;
     height: 750px;
     margin: auto;
     margin-top: 80px;
     background-color: #F6F1EB;
   }
+  #historyBox .history_area > li {
+    width: 1000px;
+    height: 600px;
+    margin: auto;
+    padding: 300px;
+    text-align: center;
+    background-color: #eee;
+  }
   #historyBox .develop_area {
     width: 100%;
-    height: auto;
+    height: 1500px;
     background-color: #fff;
   }
   #historyBox .develop_area h2 {
     width: 100%;
     height: 120px;
+    margin: auto;
     margin-top: 160px;
   }
   #historyBox .develop_area .develop_inner {
     width: 100%;
-    height: 640px;
+    height: auto;
     padding: 70px;
+    margin: auto;
     margin-top: 60px;
-    background-color: #fff;
+    border: 2px solid #F6F1EB;
   }
   #historyBox .develop_area .develop_inner p {
     width: 100%;
     height: auto;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 @media all and (min-width: 1440px) {
@@ -378,34 +421,46 @@ h1 > a {
     background-color: #ffffff;
   }
   #historyBox .history_area {
-    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    width: auto;
     height: 750px;
     margin: auto;
     margin-top: 80px;
     background-color: #F6F1EB;
   }
+  #historyBox .history_area > li {
+    width: 1000px;
+    height: 600px;
+    margin: auto;
+    padding: 300px;
+    text-align: center;
+    background-color: #eee;
+  }
   #historyBox .develop_area {
     width: 100%;
-    height: auto;
+    height: 1500px;
     background-color: #fff;
   }
   #historyBox .develop_area h2 {
     width: 100%;
     height: 120px;
+    margin: auto;
     margin-top: 160px;
   }
   #historyBox .develop_area .develop_inner {
     width: 100%;
-    height: 640px;
+    height: auto;
     padding: 70px;
-    margin-top: 60px;
-    background-color: #fff;
+    margin: auto;
+    margin-top: 30px;
+    border: 2px solid #F6F1EB;
   }
   #historyBox .develop_area .develop_inner p {
     width: 100%;
     height: auto;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
