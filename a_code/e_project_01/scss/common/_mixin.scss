@@ -37,6 +37,14 @@ $imgPath:'../img/';
   @content;
 }
 
+// blind
+@mixin blind(){
+  display: block; width: 0; height: 0;
+  position: absolute; z-index: -1;
+  clip: rect(0,0,0,0);
+  overflow: hidden;
+}
+
 // size
 @mixin full($file:false, $repeat:no-repeat, $position:50% 50%, $size:initial){
   display: block; width: 100%; height: 100%;
@@ -46,10 +54,20 @@ $imgPath:'../img/';
   }
 }
 
-// a{
-//   @include full ('file.jpg');
-//   // @include img('image_01.png');
-// }
+$mobileDevice:320;
+@function vwmUnit($size, $deviceWidth:$mobileDevice){
+  @return (math.div($size, $deviceWidth) * 100)+vw;
+}
+
+$tabletDevice:768;
+@function vwtUnit($size, $deviceWidth:$tabletDevice){
+  @return (math.div($size, $deviceWidth) * 100)+vw;
+}
+
+$laptopDevice:1280;
+@function vwlUnit($size, $deviceWidth:$laptopDevice){
+  @return (math.div($size, $deviceWidth) * 100)+vw;
+}
 
 
 // unit

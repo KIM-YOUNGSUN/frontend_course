@@ -6,19 +6,19 @@
 
 // --------------------------------
 #wrap {
-  width: 1440px; height: auto;
+  width: 100%; height: auto;
   border: 1px solid $color_white_03;
+  
+  
+  // --------------------------------
+  @import "../page/base/headBox";
+  
+  @import "../page/main/viewBox";
+  @import "../page/main/contentBox_01";
+  @import "../page/main/subBox_01";
+  @import "../page/main/contentBox_02";
+  @import "../page/main/subBox_02";
+  @import "../page/main/contentBox_03";
+  
+  @import "../page/base/footBox";
 }
-
-
-// --------------------------------
-@import "../page/base/headBox";
-
-@import "../page/main/viewBox";
-@import "../page/main/contentBox_01";
-@import "../page/main/subBox_01";
-@import "../page/main/contentBox_02";
-@import "../page/main/subBox_02";
-@import "../page/main/contentBox_03";
-
-@import "../page/base/footBox";

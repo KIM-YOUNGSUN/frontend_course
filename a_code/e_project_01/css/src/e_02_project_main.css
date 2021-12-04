@@ -1,238 +1,603 @@
 /* main.css */
 #wrap {
-  width: 1440px;
-  height: auto;
-  border: 1px solid #ededed;
-}
-
-/* headBox 1440 ================================ */
-#headBox {
-  position: relative;
   width: 100%;
   height: auto;
-  padding-top: 50px;
-  background-color: #ffffff;
+  border: 1px solid #ededed;
+  /* viewBox =============================== */
+  /* contentBox_01 ============================== */
+  /* subBox_01==================================== */
+  /* contentBox_02=============================== */
+  /* subBox_02 ================================== */
+  /* contentBox_03 ============================= */
+  /* footBox ================================ */
 }
-h1 {
-  width: 480px;
-  height: 100px;
-  margin: auto;
-  text-align: center;
-  line-height: 80px;
-  background-color: #ffffff;
-}
-h1 > a {
-  display: block;
-  width: 480px;
-  height: 100px;
-  margin: auto;
-  background-image: url(../../img/hermes_logo.svg);
-  background-repeat: no-repeat;
-  background-position: 190px;
-  text-decoration: none;
-}
-
 @media all and (max-width: 767px) {
-  #headBox {
+  #wrap #headBox {
+    position: relative;
     width: 100%;
     height: auto;
-    padding-top: 30px;
+    padding-top: 40px;
   }
-  #headBox > h1 {
-    width: auto;
-    min-width: 100px;
-    height: 74px;
+  #wrap #headBox > h1 {
+    width: 100%;
+    height: 80px;
     margin: auto;
-    border-bottom: 2px solid #F6F1EB;
-  }
-  #headBox > h1 > a {
-    width: auto;
-    height: 70px;
     background-image: url(../../img/hermes_logo.svg);
     background-repeat: no-repeat;
-    background-position: 110px;
+    background-position: 50% 50%;
     text-decoration: none;
+    border-bottom: 2px solid #F6F1EB;
   }
-  #headBox > .unb {
+  #wrap #headBox > h1 > a {
+    display: block;
     width: 100%;
-    height: 30px;
+    height: 100%;
+  }
+  #wrap #headBox > .unb {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
     padding: 0 10px;
+    background-color: #F6F1EB;
   }
-  #headBox > .unb > .nav_inner01 {
-    display: none;
+  #wrap #headBox > .unb > .nav_inner01 {
+    display: flex;
+    width: 100px;
+    height: 40px;
   }
-  #headBox > .unb > .nav_inner02 {
-    display: none;
+  #wrap #headBox > .unb > .nav_inner01 > .menu_btn {
+    width: 40px;
+    height: 100%;
+    background-image: url(../../../img/menu.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  #wrap #headBox > .unb > .nav_inner01 > .search_btn {
+    width: 40px;
+    height: 100%;
+    background-image: url(../../../img/search.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  #wrap #headBox > .unb > .nav_inner01 > .search_text_part {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  #wrap #headBox > .unb > .nav_inner02 {
+    display: flex;
+    width: auto;
+    height: 40px;
+  }
+  #wrap #headBox > .unb > .nav_inner02 .language_part {
+    width: 40px;
+    height: 100%;
+    background-image: url(../../../img/internet.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  #wrap #headBox > .unb > .nav_inner02 .language_part span {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  #wrap #headBox > .unb > .nav_inner02 > .login_part {
+    width: 40px;
+    height: 100%;
+    background-image: url(../../../img/user.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  #wrap #headBox > .unb > .nav_inner02 > .login_part span {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  #wrap #headBox > .unb > .nav_inner02 > .join_part {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  #wrap #headBox > .unb > .nav_inner02 > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #wrap #headBox > .unb > .nav_inner02 > button {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #wrap #headBox > .gnb {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1279px) {
-  #headBox {
+  #wrap #headBox {
+    position: relative;
     width: 100%;
     height: auto;
+    padding-top: 50px;
   }
-  #headBox > h1 {
-    width: auto;
-    min-width: 200px;
-    height: 80px;
-    margin: auto;
-    padding: 0 144px;
-  }
-  #headBox > h1 > a {
-    width: auto;
-    height: 80px;
+  #wrap #headBox > h1 {
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
     background-image: url(../../img/hermes_logo.svg);
     background-repeat: no-repeat;
-    text-decoration: none;
+    background-position: 50% 50%;
+    background-size: contain;
   }
-  #headBox > .unb {
+  #wrap #headBox > h1 > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #wrap #headBox .unb {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 50px;
-    padding: 0 20px;
+    text-transform: uppercase;
+    background-color: #F6F1EB;
+  }
+  #wrap #headBox .unb > .nav_inner01 {
+    display: flex;
+    width: auto;
+    height: 50px;
+    padding-left: 20px;
+  }
+  #wrap #headBox .unb > .nav_inner01 > .menu_btn {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  #wrap #headBox .unb > .nav_inner01 > .search_btn {
+    width: 48px;
+    height: 50px;
+    padding-right: 10px;
+    margin-left: -14px;
+    text-decoration: none;
+    background-image: url(../../../img/search.png);
+    background-repeat: no-repeat;
+    background-position: 10px 12px;
+  }
+  #wrap #headBox .unb > .nav_inner01 > .search_text_part {
+    width: 40px;
+    height: 50px;
+    margin-right: 40px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+  #wrap #headBox .unb > .nav_inner02 {
+    display: flex;
+    width: 240px;
+    height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+  }
+  #wrap #headBox .unb > .nav_inner02 .language_part {
+    width: 80px;
+    height: 50px;
+  }
+  #wrap #headBox .unb > .nav_inner02 .language_part span {
+    text-transform: uppercase;
+  }
+  #wrap #headBox .unb > .nav_inner02 > .login_part {
+    width: 80px;
+    height: 50px;
+    margin-right: -8px;
+  }
+  #wrap #headBox .unb > .nav_inner02 > .join_part {
+    width: 80px;
+    height: 50px;
+  }
+  #wrap #headBox .unb > .nav_inner02 a {
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+  #wrap #headBox .unb > .nav_inner02 button {
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+  #wrap #headBox .gnb {
+    width: 100%;
+    height: 60px;
+    background-color: #F6F1EB;
+  }
+  #wrap #headBox .gnb > .nav_inner03 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    text-transform: uppercase;
+  }
+  #wrap #headBox .gnb > .nav_inner03 .menu_btn {
+    width: 100%;
+    height: 24px;
+    margin-top: 18px;
+    background-image: url(../../../img/menu.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  #wrap #headBox .gnb > .nav_inner03 .menu_part {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+  }
+  #wrap #headBox .gnb > .nav_inner03 .menu_part > a {
+    display: block;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    line-height: 58px;
+    font-size: 17px;
+    margin-right: 10px;
+  }
+  #wrap #headBox .gnb > .nav_inner03 .menu_part > a:last-child {
+    margin-right: 0;
+  }
+  #wrap #headBox .gnb > .nav_inner03 .cart_btn {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../img/bag.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 }
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  #wrap #headBox {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+  }
+  h1 {
+    width: 480px;
+    height: 100px;
+    margin: auto;
+    background-image: url(../../img/hermes_logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    text-align: center;
+    line-height: 80px;
+    background-color: #ffffff;
+  }
+  h1 > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 
-/* unb ---------------------------------------- */
-.unb {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  margin: auto;
-  text-transform: uppercase;
-  padding: 0 172px;
-  background-color: #F6F1EB;
+  #wrap #headBox .unb {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    text-transform: uppercase;
+    padding: 0 54px;
+    background-color: #F6F1EB;
+  }
+  #wrap #headBox .unb > .nav_inner01 {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 0 16px;
+  }
+  #wrap #headBox .unb > .nav_inner01 > .menu_btn {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  #wrap #headBox .unb > .nav_inner01 > .search_btn {
+    width: 48px;
+    height: 50px;
+    background-image: url(../../img/search.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  #wrap #headBox .unb > .nav_inner01 > .search_text_part {
+    width: 40px;
+    height: 50px;
+    margin-right: 40px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+  #wrap #headBox .unb > .nav_inner02 {
+    display: flex;
+    width: 240px;
+    height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+  }
+  #wrap #headBox .unb > .nav_inner02 .language_part {
+    width: 80px;
+    height: 30px;
+  }
+  #wrap #headBox .unb > .nav_inner02 .language_part span {
+    text-transform: capitalize;
+  }
+  #wrap #headBox .unb > .nav_inner02 > .login_part {
+    width: 80px;
+    height: 50px;
+    margin-right: -8px;
+  }
+  #wrap #headBox .unb > .nav_inner02 > .join_part {
+    width: 80px;
+    height: 50px;
+  }
+  #wrap #headBox .unb > .nav_inner02 > a {
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+  #wrap #headBox .unb > .nav_inner02 > button {
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+  #wrap #headBox .gnb {
+    width: 100%;
+    height: 60px;
+    background-color: #F6F1EB;
+  }
 }
-.unb > .nav_inner01 {
-  float: left;
-  width: 150px;
-  height: 50px;
-  padding: 0 16px;
-}
-.unb > .nav_inner01 > .search_btn {
-  float: left;
-  width: 48px;
-  height: 50px;
-  margin-left: -14px;
-  text-decoration: none;
-  background-image: url(../../img/search.png);
-  background-repeat: no-repeat;
-  background-position: 10px 12px;
-}
-.unb > .nav_inner01 > .search_text_part {
-  float: right;
-  width: 40px;
-  height: 50px;
-  margin-right: 40px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 12px;
-  text-decoration: underline;
-}
-.unb > .nav_inner02 {
-  float: right;
-  width: 240px;
-  height: 50px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 50px;
-  font-size: 12px;
-}
-.unb > .nav_inner02 .language_part {
-  float: left;
-  width: 80px;
-  height: 30px;
-}
-.unb > .nav_inner02 > .login_part {
-  float: left;
-  width: 80px;
-  height: 50px;
-  margin-right: -8px;
-}
-.unb > .nav_inner02 > .join_part {
-  float: left;
-  width: 80px;
-  height: 50px;
-}
-.unb > .nav_inner02 > a {
-  display: block;
-  width: auto;
-  height: 100%;
-}
-.unb > .nav_inner02 > button {
-  display: block;
-  width: auto;
-  height: 100%;
-  margin-right: 10px;
-}
-
-/* gnb ---------------------------------------- */
-.gnb {
-  width: 100%;
-  height: 60px;
-  background-color: #F6F1EB;
-}
-@media all and (max-width: 767px) {
-  .gnb {
+@media all and (min-width: 1280px) and (max-width: 1439px) and (max-width: 767px) {
+  #wrap #headBox .gnb {
     display: none;
   }
 }
-.gnb > .nav_inner03 {
-  width: 1096px;
-  height: 60px;
-  margin: auto;
-  text-transform: uppercase;
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  #wrap #headBox .gnb > .nav_inner03 {
+    display: flex;
+    justify-content: space-between;
+    width: 1096px;
+    height: 60px;
+    margin: auto;
+    text-transform: uppercase;
+  }
+  #wrap #headBox .gnb > .nav_inner03 .menu_btn {
+    width: 30px;
+    height: 24px;
+    padding-top: 58px;
+    background-image: url(../../../img/menu.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  #wrap #headBox .gnb > .nav_inner03 .menu_part {
+    display: flex;
+    justify-content: space-around;
+    width: 740px;
+    height: 60px;
+    text-align: center;
+    line-height: 58px;
+    font-size: 17px;
+  }
+  #wrap #headBox .gnb > .nav_inner03 .menu_part > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #wrap #headBox .gnb > .nav_inner03 .cart_btn {
+    width: 30px;
+    height: 24px;
+    padding-top: 58px;
+    background-image: url(../../../img/bag.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 }
-.gnb > .nav_inner03 .menu_btn {
-  float: left;
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  margin-top: 15px;
-  background-image: url(../../img/menu.png);
-  background-repeat: no-repeat;
-  background-position: 3px 3px;
-}
-.gnb > .nav_inner03 .menu_part {
-  float: left;
-  width: 736px;
-  height: 60px;
-  margin-left: 145px;
-  padding: 0 28px;
-}
-.gnb > .nav_inner03 .menu_part > a {
-  display: block;
-  float: left;
-  width: 120px;
-  height: 60px;
-  text-align: center;
-  line-height: 58px;
-  font-size: 17px;
-  margin-right: 20px;
-}
-.gnb > .nav_inner03 .menu_part > a:last-child {
-  margin-right: 0;
-}
-.gnb > .nav_inner03 .cart_btn {
-  float: right;
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-  margin-top: 18px;
-  background-image: url(../../img/bag.png);
-  background-repeat: no-repeat;
-}
+@media all and (min-width: 1440px) {
+  #wrap #headBox {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+  }
+  h1 {
+    width: 480px;
+    height: 100px;
+    margin: auto;
+    background-image: url(../../img/hermes_logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    text-align: center;
+    line-height: 80px;
+    background-color: #ffffff;
+  }
+  h1 > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 
-/* viewBox =============================== */
-.viewBox {
+  #wrap #headBox .unb {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    text-transform: uppercase;
+    padding: 0 140px;
+    background-color: #F6F1EB;
+  }
+  #wrap #headBox .unb > .nav_inner01 {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 0 16px;
+  }
+  #wrap #headBox .unb > .nav_inner01 > .menu_btn {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  #wrap #headBox .unb > .nav_inner01 > .search_btn {
+    width: 48px;
+    height: 50px;
+    background-image: url(../../img/search.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  #wrap #headBox .unb > .nav_inner01 > .search_text_part {
+    width: 40px;
+    height: 50px;
+    margin-right: 40px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+  #wrap #headBox .unb > .nav_inner02 {
+    display: flex;
+    width: 240px;
+    height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+  }
+  #wrap #headBox .unb > .nav_inner02 .language_part {
+    width: 80px;
+    height: 30px;
+  }
+  #wrap #headBox .unb > .nav_inner02 .language_part span {
+    text-transform: capitalize;
+  }
+  #wrap #headBox .unb > .nav_inner02 > .login_part {
+    width: 80px;
+    height: 50px;
+    margin-right: -8px;
+  }
+  #wrap #headBox .unb > .nav_inner02 > .join_part {
+    width: 80px;
+    height: 50px;
+  }
+  #wrap #headBox .unb > .nav_inner02 > a {
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+  #wrap #headBox .unb > .nav_inner02 > button {
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+  #wrap #headBox .gnb {
+    width: 100%;
+    height: 60px;
+    background-color: #F6F1EB;
+  }
+}
+@media all and (min-width: 1440px) and (max-width: 767px) {
+  #wrap #headBox .gnb {
+    display: none;
+  }
+}
+@media all and (min-width: 1440px) {
+  #wrap #headBox .gnb > .nav_inner03 {
+    display: flex;
+    justify-content: space-between;
+    width: 1096px;
+    height: 60px;
+    margin: auto;
+    text-transform: uppercase;
+  }
+  #wrap #headBox .gnb > .nav_inner03 .menu_btn {
+    width: 30px;
+    height: 24px;
+    padding-top: 58px;
+    background-image: url(../../../img/menu.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  #wrap #headBox .gnb > .nav_inner03 .menu_part {
+    display: flex;
+    justify-content: space-around;
+    width: 740px;
+    height: 60px;
+    text-align: center;
+    line-height: 58px;
+    font-size: 17px;
+  }
+  #wrap #headBox .gnb > .nav_inner03 .menu_part > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #wrap #headBox .gnb > .nav_inner03 .cart_btn {
+    width: 30px;
+    height: 24px;
+    padding-top: 58px;
+    background-image: url(../../../img/bag.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+#wrap .viewBox {
   width: 1440px;
   height: 680px;
   margin-bottom: 210px;
   background-color: #eee;
 }
-
-/* contentBox_01 ============================== */
-.contentBox_01 {
+#wrap .contentBox_01 {
   width: 1440px;
   height: 880px;
   margin-bottom: 210px;
@@ -242,31 +607,25 @@ h1 > a {
   line-height: 60px;
   background-color: #ddd;
 }
-
-.content_part_01 {
+#wrap .content_part_01 {
   width: 1094px;
   height: 788px;
   margin: auto;
   background-color: #eee;
 }
-
-.content_part_01 > h2 {
+#wrap .content_part_01 > h2 {
   width: 600px;
   height: 60px;
   margin: auto;
   background-color: #fff;
 }
-
-/* subBox_01==================================== */
-.subBox_01 {
+#wrap .subBox_01 {
   width: 1440px;
   height: 360px;
   margin-bottom: 280px;
   background-color: #555;
 }
-
-/* contentBox_02=============================== */
-.contentBox_02 {
+#wrap .contentBox_02 {
   width: 1440px;
   height: 650px;
   margin-bottom: 210px;
@@ -275,24 +634,19 @@ h1 > a {
   line-height: 60px;
   background-color: #faf;
 }
-
-.contentBox_02 > h2 {
+#wrap .contentBox_02 > h2 {
   width: 600px;
   height: 60px;
   margin: auto;
   background-color: #fff;
 }
-
-/* subBox_02 ================================== */
-.subBox_02 {
+#wrap .subBox_02 {
   width: 1440px;
   height: 260px;
   margin-bottom: 180px;
   background-color: #eee;
 }
-
-/* contentBox_03 ============================= */
-.contentBox_03 {
+#wrap .contentBox_03 {
   width: 1440px;
   height: 1200px;
   margin-bottom: 200px;
@@ -302,41 +656,34 @@ h1 > a {
   line-height: 60px;
   background-color: #ddd;
 }
-
-.content_part_03 {
+#wrap .content_part_03 {
   width: 1094px;
   height: 1100px;
   margin: auto;
   background-color: #faf;
 }
-
-.content_part_03 > h2 {
+#wrap .content_part_03 > h2 {
   width: 600px;
   height: 60px;
   margin: auto;
   background-color: #fff;
 }
-
-/* footBox ================================ */
-.footBox {
+#wrap .footBox {
   width: 100%;
   height: 692px;
 }
-
-.fnb {
+#wrap .fnb {
   width: 100%;
   height: 60px;
   background-color: #F6F1EB;
 }
-
-.fnb_box {
+#wrap .fnb_box {
   width: 1094px;
   height: 60px;
   margin: auto;
   box-sizing: border-box;
 }
-
-.fnb_box div {
+#wrap .fnb_box div {
   float: left;
   width: 164px;
   height: 60px;
@@ -344,32 +691,27 @@ h1 > a {
   text-align: center;
   line-height: 58px;
 }
-
-.fnb_box div:last-child {
+#wrap .fnb_box div:last-child {
   margin-right: 0;
 }
-
-.info_inner {
+#wrap .info_inner {
   width: 100%;
   height: 692px;
   background-color: #ffffff;
 }
-
-.cs_box {
+#wrap .cs_box {
   width: 1096px;
   height: 320px;
   margin: auto;
   padding: 46px 0;
   text-align: center;
 }
-
-.cs_box a {
+#wrap .cs_box a {
   display: block;
   font-weight: 500;
   text-decoration: underline;
 }
-
-.cs_part {
+#wrap .cs_part {
   float: left;
   width: 454px;
   height: 230px;
@@ -378,28 +720,24 @@ h1 > a {
   text-align: justify;
   border: 1px solid #000000;
 }
-
-.cs_part > button {
+#wrap .cs_part > button {
   text-decoration: underline;
   font-weight: 500;
 }
-
-.store_search_part {
+#wrap .store_search_part {
   float: left;
   width: 454px;
   height: 230px;
   border: 1px solid #000000;
 }
-
-.store_search_part span {
+#wrap .store_search_part span {
   display: block;
   padding: 40px;
   padding-bottom: 0;
   font-size: 22px;
   font-weight: 500;
 }
-
-.sns_part {
+#wrap .sns_part {
   float: right;
   width: 70px;
   height: 200px;
@@ -407,8 +745,7 @@ h1 > a {
   box-sizing: border-box;
   border: 1px solid #333333;
 }
-
-.sns_part > a {
+#wrap .sns_part > a {
   display: block;
   width: 40px;
   height: 40px;
@@ -417,8 +754,7 @@ h1 > a {
   border-radius: 100%;
   background-color: #D9D9D9;
 }
-
-address {
+#wrap address {
   width: 1096px;
   height: 242px;
   margin: auto;
@@ -426,17 +762,14 @@ address {
   padding-top: 50px;
   border: 1px solid #333333;
 }
-
-address > p {
+#wrap address > p {
   display: block;
   padding-left: 20px;
 }
-
-address a {
+#wrap address a {
   text-decoration: underline;
 }
-
-.foot_logo {
+#wrap .foot_logo {
   width: 480px;
   height: 100px;
   margin: auto;
