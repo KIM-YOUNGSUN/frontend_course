@@ -5,14 +5,13 @@
 
 // --------------------------------
 #wrap {
-  width: 1440px; height: auto;
-  border: 1px solid #ededed;
+  width: 100%; height: auto;
+  border: 1px solid $color_white_03;
 }
 
-
 // --------------------------------
-@import "../page/base/headBox";
+// @import "../page/base/headBox";
 
-@import "../page/sub_login/loginBox";
+// @import "../page/sub_login/loginBox";
 
-@import "../page/base/footBox";
+// @import "../page/base/footBox";

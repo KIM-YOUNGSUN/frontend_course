@@ -3,84 +3,374 @@
 @import "../../common/mixin";
 @import "../../common/variable";
 
-/* footBox ================================ */
-.footBox {
-  width: 100%; height: 692px;
-}
+$imgPath:'../../img/';
+$logoWhite: #{$imgPath}+'hermes_logo.svg';
+
+// mobile ==========================================
+
+@include mobile {
+    
+    #footBox {
+      width: 100%; height: auto;
+      margin:auto; 
+    
+    .fnb {
+      width: 100%; height: auto;
+      background-color: $color_beige_01;
+      
+      @at-root .fnb_box {
+          display: flex; justify-content: space-around; 
+          width: 100%; height: 40px;
+          margin: auto; 
+
+          &  div { 
+            width:auto; height: 40px; padding:0.2rem;
+            font-size: 14px; text-align: center; font-weight: bold;
+            & a {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;}            
+          }
+        } //.fnb_box
+      }// .fnb
+    
+      .info_inner {
+        position: relative; 
+        width: 100%; height: auto;
+        margin: auto;
+        background-color: $color_white_01;
+    
+        & h3 {
+          position: absolute; bottom: -100px; left: 0;
+          width: 100%; height: 80px;
+          margin: auto;
+          border-top: 2px solid $color_beige_01;
+          background-image: url($logoWhite);
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          }
+      
+        .cs_box {
+          width: 0; height: 0;
+        
+          & a {display:block; font-weight: $font_weight_bold; text-decoration: underline}
+        
+          .cs_part {@include blind}
+    
+          .store_search_part {@include blind}
+          
+          .sns_part { 
+            position: absolute; bottom: 0; right: 0;
+            display: flex; justify-content: space-between;
+            width: 134px; height: 50px;
+            padding: 8px; 
+            box-sizing: border-box;
+            &  a {
+              display:block; 
+              width: 28px; height: 28px;
+              border-radius: 100%;
+              background-color: $color_light_gray_02;
+            }
+          } // .sns_part
+        } // .cs_box
+    
+        address {
+          position: relative;
+          width: auto; height: auto;
+          margin: auto; padding: 10px;
+          border: 1px solid $color_light_gray_02;
+          & p { font-size: 13px;}
+          & a {display: block; text-decoration: underline;}
+      } //address
+    }// .info_inner
+  }// #footBox
+} // 320px mobile
+
+
+
+// tablet ==========================================
+
+@include tablet {
+  #footBox {
+    width: 100%; height: auto;
+    margin:auto; 
+  
+  .fnb {
+    width: 100%; height: 60px;
+    background-color: $color_beige_01;
+    
+      .fnb_box {
+        display: flex; justify-content: space-between;
+        width: 768px; height: 60px;
+        margin: auto; 
+        text-align: center; 
+      
+        &  div { 
+          width: 200px; height: 60px;
+          line-height: 58px;
+          & a {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;}
+        }
+      } //.fnb_box
+    }// .fnb
+  
+    .info_inner {
+      position: relative; margin: auto;
+      width: 100%; height: 690px;
+      background-color: $color_white_01;
+  
+      & h3 {
+        position: absolute; bottom: 0; left: 0;
+        width: 100%; height: 100px;
+        margin: auto; 
+        border-top: 2px solid $color_beige_01;
+        background-image: url($logoWhite);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        }
+    
+      .cs_box {
+        display: flex; justify-content: space-between;
+        width: auto; max-width: 700px; height: 320px;
+        margin: auto; padding: 46px 0;
+        text-align: center; 
+      
+        & a {display:block; font-weight: $font_weight_bold; text-decoration: underline}
+      
+        .cs_part {
+          width: 300px; height: auto; 
+          padding: 20px;
+          text-align: justify; 
+          font-size: 14px;
+          border: 1px solid $color_black;
+          & button { text-decoration: underline; font-weight: $font_weight_bold;}
+        }
+  
+        .store_search_part {
+          width: 300px; height: auto; 
+          border: 1px solid $color_black;
+          & span {
+            display:block; 
+            padding: 40px; padding-bottom: 0;
+            font-size: 22px;  font-weight: $font_weight_bold;}
+        }
+        
+        .sns_part { 
+          width: 70px; height: 200px;
+          padding: 8px; 
+          box-sizing: border-box;
+          border: 1px solid $color_gray_02;
+          &  a {
+            display:block; 
+            width: 40px; height: 40px;
+            margin:auto; margin-bottom: 8px;
+            border-radius: 100%;
+            background-color: $color_light_gray_02;
+          }
+        } // .sns_part
+      } // .cs_box
+  
+      address {
+        width: 700px; height: 242px;
+        margin: auto; margin-bottom: 15px; padding-top: 50px;
+        border: 1px solid $color_gray_02;
+        & .mobile {display: none;}
+        & p {display: block; padding-left: 20px;}
+        & a {text-decoration: underline;}
+      } //address
+    }// .info_inner
+  }// #footBox
+} // 768px tablet
+
+
+
+
+
+
+// laptop ==========================================
+
+@include laptop {
+  #footBox {
+    width: 100%; height: auto;
+    margin:auto; 
+  
+  .fnb {
+    width: 100%; height: 60px;
+    background-color: $color_beige_01;
+    
+      .fnb_box {
+        display: flex; justify-content: space-around;
+        width: 1280px; height: 60px;
+        margin: auto; 
+        text-align: center; 
+      
+        &  div { 
+          width: 200px; height: 60px;
+          line-height: 58px;
+          & a {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;}
+        }
+      } //.fnb_box
+    }// .fnb
+  
+    .info_inner {
+      position: relative; margin: auto;
+      width: 100%; height: 690px;
+      background-color: $color_white_01;
+  
+      & h3 {
+        position: absolute; bottom: 0; left: 0;
+        width: 100%; height: 100px;
+        margin: auto; 
+        border-top: 2px solid $color_beige_01;
+        background-image: url($logoWhite);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        }
+    
+      .cs_box {
+        display: flex; justify-content: space-around;
+        width: auto; max-width: 11; height: 320px;
+        margin: auto; padding: 46px 0;
+        text-align: center; 
+      
+        & a {display:block; font-weight: $font_weight_bold; text-decoration: underline}
+      
+        .cs_part {
+          width: 500px; height: auto; 
+          padding: 20px;
+          text-align: justify; 
+          font-size: 14px;
+          border: 1px solid $color_black;
+          & button { text-decoration: underline; font-weight: $font_weight_bold;}
+        }
+  
+        .store_search_part {
+          width: 500px; height: auto; 
+          border: 1px solid $color_black;
+          & span {
+            display:block; 
+            padding: 40px; padding-bottom: 0;
+            font-size: 22px;  font-weight: $font_weight_bold;}
+        }
+        
+        .sns_part { 
+          width: 70px; height: 200px;
+          padding: 8px; 
+          box-sizing: border-box;
+          border: 1px solid $color_gray_02;
+          &  a {
+            display:block; 
+            width: 40px; height: 40px;
+            margin:auto; margin-bottom: 8px;
+            border-radius: 100%;
+            background-color: $color_light_gray_02;
+          }
+        } // .sns_part
+      } // .cs_box
+  
+      address {
+        width: 1100px; height: 242px;
+        margin: auto; margin-bottom: 15px; padding-top: 50px;
+        border: 1px solid $color_gray_02;
+        & .mobile {display: none;}
+        & p {display: block; padding-left: 20px;}
+        & a {text-decoration: underline;}
+      } //address
+    }// .info_inner
+  }// #footBox
+} // 1280px laptop
+
+
+
+
+
+
+
+//  pc =============================================
+
+@include pc {
+
+#footBox {
+  width: 1440px; height: auto;
+  margin:auto; 
+
 .fnb {
   width: 100%; height: 60px;
-    background-color: $color_beige_01;
-  }
+  background-color: $color_beige_01;
+  
     .fnb_box {
-      width: 1094px; height: 60px;
-      margin: auto; box-sizing: border-box;
-    }
-    .fnb_box  div { 
-        float: left;
-        width: 164px; height: 60px;
-        margin-right: 140px;
-        text-align: center; line-height: 58px;
-    }
-    .fnb_box  div:last-child {margin-right: 0;}
-
+      display: flex; justify-content: space-between;
+      width: 1200px; height: 60px;
+      margin: auto; 
+      text-align: center; 
+    
+      &  div { 
+        width: 200px; height: 60px;
+        line-height: 58px;
+      }
+    } //.fnb_box
+  }// .fnb
 
   .info_inner {
-    width: 100%; height: 692px;
+    position: relative; margin: auto;
+    width: 1440px; height: 690px;
     background-color: $color_white_01;
-  }
+
+    & h3 {
+      position: absolute; bottom: 0; left: 0;
+      width: 100%; height: 100px;
+      margin: auto; 
+      background-image: url($logoWhite);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      }
+  
     .cs_box {
-      width: 1096px; height: 320px;
+      display: flex; justify-content: space-between;
+      width: auto; max-width: 1096px; height: 320px;
       margin: auto; padding: 46px 0;
       text-align: center; 
-    }
-      .cs_box  a {display:block; font-weight: $font_weight_bold; text-decoration: underline}
+    
+      & a {display:block; font-weight: $font_weight_bold; text-decoration: underline}
     
       .cs_part {
-        float: left;
         width: 454px; height: 230px; 
-        margin-right: 34px; padding: 20px;
+        padding: 20px;
         text-align: justify;
         border: 1px solid $color_black ;
+        & button { text-decoration: underline; font-weight: $font_weight_bold;}
       }
-        .cs_part > button { text-decoration: underline; font-weight: $font_weight_bold;}
 
       .store_search_part {
-        float: left;
         width: 454px; height: 230px; 
         border: 1px solid $color_black;
-      }
-        .store_search_part span {
+        & span {
           display:block; 
           padding: 40px; padding-bottom: 0;
           font-size: 22px;  font-weight: $font_weight_bold;}
-      
-      .sns_part { 
-        float:right; 
-        width: 70px; height: 200px;
-        padding: 8px; box-sizing: border-box;
-        border: 1px solid $color_gray_02;
       }
       
-        .sns_part > a {
+      .sns_part { 
+        width: 70px; height: 200px;
+        padding: 8px; 
+        box-sizing: border-box;
+        border: 1px solid $color_gray_02;
+        &  a {
           display:block; 
           width: 40px; height: 40px;
           margin:auto; margin-bottom: 8px;
           border-radius: 100%;
           background-color: $color_light_gray_02;
         }
-    
+      } // .sns_part
+    } // .cs_box
+
     address {
       width: 1096px; height: 242px;
       margin: auto; margin-bottom: 15px; padding-top: 50px;
       border: 1px solid $color_gray_02;
-    }
-      address > p {display: block; padding-left: 20px;}
-      address  a {text-decoration: underline;}
+      & .mobile {display: none;}
+      & p {display: block; padding-left: 20px;}
+      & a {text-decoration: underline;}
+      } //address
 
-    .foot_logo {
-      width: 480px; height: 100px;
-      margin: auto;
-      background-image: url(../../img/hermes_logo.svg);
-      background-repeat: no-repeat;
-      background-position: 190px;
-    }
+    
+    }// .info_inner
+  }// #footBox
+} // pc

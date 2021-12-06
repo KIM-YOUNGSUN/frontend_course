@@ -1,7 +1,17 @@
-#wrap {
-  width: 1440px;
-  height: auto;
-  border: 1px solid #ededed;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 5 |   border: 1px solid $color_white_03;
+ *   |                     ^^^^^^^^^^^^^^^
+ *   '
+ *   scss\src\sub_cart.scss 5:21  root stylesheet */
 
-/*# sourceMappingURL=sub_cart.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 5 \2502    border: 1px solid $color_white_03;\d\a   \2502                      ^^^^^^^^^^^^^^^\a   \2575 \a   scss\\src\\sub_cart.scss 5:21  root stylesheet";
+}

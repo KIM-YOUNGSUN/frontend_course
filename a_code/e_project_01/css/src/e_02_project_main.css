@@ -5,11 +5,9 @@
   border: 1px solid #ededed;
   /* viewBox =============================== */
   /* contentBox_01 ============================== */
-  /* subBox_01==================================== */
   /* contentBox_02=============================== */
   /* subBox_02 ================================== */
   /* contentBox_03 ============================= */
-  /* footBox ================================ */
 }
 @media all and (max-width: 767px) {
   #wrap #headBox {
@@ -174,7 +172,7 @@
     display: flex;
     width: auto;
     height: 50px;
-    padding-left: 20px;
+    padding-left: 40px;
   }
   #wrap #headBox .unb > .nav_inner01 > .menu_btn {
     display: block;
@@ -189,7 +187,7 @@
     width: 48px;
     height: 50px;
     padding-right: 10px;
-    margin-left: -14px;
+    margin-left: -20px;
     text-decoration: none;
     background-image: url(../../../img/search.png);
     background-repeat: no-repeat;
@@ -325,7 +323,6 @@
     display: flex;
     width: 100%;
     height: 50px;
-    padding: 0 16px;
   }
   #wrap #headBox .unb > .nav_inner01 > .menu_btn {
     display: block;
@@ -366,7 +363,7 @@
     height: 30px;
   }
   #wrap #headBox .unb > .nav_inner02 .language_part span {
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
   #wrap #headBox .unb > .nav_inner02 > .login_part {
     width: 80px;
@@ -441,8 +438,9 @@
 @media all and (min-width: 1440px) {
   #wrap #headBox {
     position: relative;
-    width: 100%;
+    width: 1440px;
     height: auto;
+    margin: auto;
     padding-top: 50px;
   }
   h1 {
@@ -471,14 +469,13 @@
     height: 50px;
     margin: auto;
     text-transform: uppercase;
-    padding: 0 140px;
+    padding: 0 120px;
     background-color: #F6F1EB;
   }
   #wrap #headBox .unb > .nav_inner01 {
     display: flex;
     width: 100%;
     height: 50px;
-    padding: 0 16px;
   }
   #wrap #headBox .unb > .nav_inner01 > .menu_btn {
     display: block;
@@ -519,7 +516,7 @@
     height: 30px;
   }
   #wrap #headBox .unb > .nav_inner02 .language_part span {
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
   #wrap #headBox .unb > .nav_inner02 > .login_part {
     width: 80px;
@@ -591,191 +588,482 @@
     background-position: 50% 50%;
   }
 }
-#wrap .viewBox {
-  width: 1440px;
-  height: 680px;
-  margin-bottom: 210px;
-  background-color: #eee;
+@media all and (max-width: 767px) {
+  #wrap #footBox {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  #wrap #footBox .fnb {
+    width: 100%;
+    height: auto;
+    background-color: #F6F1EB;
+  }
+  .fnb_box {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+    margin: auto;
+  }
+  .fnb_box div {
+    width: auto;
+    height: 40px;
+    padding: 0.2rem;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .fnb_box div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  #wrap #footBox .info_inner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #ffffff;
+  }
+  #wrap #footBox .info_inner h3 {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    border-top: 2px solid #F6F1EB;
+    background-image: url(../../img/hermes_logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  #wrap #footBox .info_inner .cs_box {
+    width: 0;
+    height: 0;
+  }
+  #wrap #footBox .info_inner .cs_box a {
+    display: block;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  #wrap #footBox .info_inner .cs_box .cs_part {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  #wrap #footBox .info_inner .cs_box .store_search_part {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  #wrap #footBox .info_inner .cs_box .sns_part {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 134px;
+    height: 50px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  #wrap #footBox .info_inner .cs_box .sns_part a {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    background-color: #D9D9D9;
+  }
+  #wrap #footBox .info_inner address {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #D9D9D9;
+  }
+  #wrap #footBox .info_inner address p {
+    font-size: 13px;
+  }
+  #wrap #footBox .info_inner address a {
+    display: block;
+    text-decoration: underline;
+  }
 }
-#wrap .contentBox_01 {
-  width: 1440px;
-  height: 880px;
-  margin-bottom: 210px;
-  padding: 46px 172px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 60px;
-  background-color: #ddd;
+@media all and (min-width: 768px) and (max-width: 1279px) {
+  #wrap #footBox {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  #wrap #footBox .fnb {
+    width: 100%;
+    height: 60px;
+    background-color: #F6F1EB;
+  }
+  #wrap #footBox .fnb .fnb_box {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+  }
+  #wrap #footBox .fnb .fnb_box div {
+    width: 200px;
+    height: 60px;
+    line-height: 58px;
+  }
+  #wrap #footBox .fnb .fnb_box div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  #wrap #footBox .info_inner {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 690px;
+    background-color: #ffffff;
+  }
+  #wrap #footBox .info_inner h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    border-top: 2px solid #F6F1EB;
+    background-image: url(../../img/hermes_logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  #wrap #footBox .info_inner .cs_box {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    max-width: 700px;
+    height: 320px;
+    margin: auto;
+    padding: 46px 0;
+    text-align: center;
+  }
+  #wrap #footBox .info_inner .cs_box a {
+    display: block;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  #wrap #footBox .info_inner .cs_box .cs_part {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    text-align: justify;
+    font-size: 14px;
+    border: 1px solid #000000;
+  }
+  #wrap #footBox .info_inner .cs_box .cs_part button {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  #wrap #footBox .info_inner .cs_box .store_search_part {
+    width: 300px;
+    height: auto;
+    border: 1px solid #000000;
+  }
+  #wrap #footBox .info_inner .cs_box .store_search_part span {
+    display: block;
+    padding: 40px;
+    padding-bottom: 0;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  #wrap #footBox .info_inner .cs_box .sns_part {
+    width: 70px;
+    height: 200px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #333333;
+  }
+  #wrap #footBox .info_inner .cs_box .sns_part a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 8px;
+    border-radius: 100%;
+    background-color: #D9D9D9;
+  }
+  #wrap #footBox .info_inner address {
+    width: 700px;
+    height: 242px;
+    margin: auto;
+    margin-bottom: 15px;
+    padding-top: 50px;
+    border: 1px solid #333333;
+  }
+  #wrap #footBox .info_inner address .mobile {
+    display: none;
+  }
+  #wrap #footBox .info_inner address p {
+    display: block;
+    padding-left: 20px;
+  }
+  #wrap #footBox .info_inner address a {
+    text-decoration: underline;
+  }
 }
-#wrap .content_part_01 {
-  width: 1094px;
-  height: 788px;
-  margin: auto;
-  background-color: #eee;
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  #wrap #footBox {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  #wrap #footBox .fnb {
+    width: 100%;
+    height: 60px;
+    background-color: #F6F1EB;
+  }
+  #wrap #footBox .fnb .fnb_box {
+    display: flex;
+    justify-content: space-around;
+    width: 1280px;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+  }
+  #wrap #footBox .fnb .fnb_box div {
+    width: 200px;
+    height: 60px;
+    line-height: 58px;
+  }
+  #wrap #footBox .fnb .fnb_box div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  #wrap #footBox .info_inner {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 690px;
+    background-color: #ffffff;
+  }
+  #wrap #footBox .info_inner h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    border-top: 2px solid #F6F1EB;
+    background-image: url(../../img/hermes_logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  #wrap #footBox .info_inner .cs_box {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    max-width: 11;
+    height: 320px;
+    margin: auto;
+    padding: 46px 0;
+    text-align: center;
+  }
+  #wrap #footBox .info_inner .cs_box a {
+    display: block;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  #wrap #footBox .info_inner .cs_box .cs_part {
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    text-align: justify;
+    font-size: 14px;
+    border: 1px solid #000000;
+  }
+  #wrap #footBox .info_inner .cs_box .cs_part button {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  #wrap #footBox .info_inner .cs_box .store_search_part {
+    width: 500px;
+    height: auto;
+    border: 1px solid #000000;
+  }
+  #wrap #footBox .info_inner .cs_box .store_search_part span {
+    display: block;
+    padding: 40px;
+    padding-bottom: 0;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  #wrap #footBox .info_inner .cs_box .sns_part {
+    width: 70px;
+    height: 200px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #333333;
+  }
+  #wrap #footBox .info_inner .cs_box .sns_part a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 8px;
+    border-radius: 100%;
+    background-color: #D9D9D9;
+  }
+  #wrap #footBox .info_inner address {
+    width: 1100px;
+    height: 242px;
+    margin: auto;
+    margin-bottom: 15px;
+    padding-top: 50px;
+    border: 1px solid #333333;
+  }
+  #wrap #footBox .info_inner address .mobile {
+    display: none;
+  }
+  #wrap #footBox .info_inner address p {
+    display: block;
+    padding-left: 20px;
+  }
+  #wrap #footBox .info_inner address a {
+    text-decoration: underline;
+  }
 }
-#wrap .content_part_01 > h2 {
-  width: 600px;
-  height: 60px;
-  margin: auto;
-  background-color: #fff;
-}
-#wrap .subBox_01 {
-  width: 1440px;
-  height: 360px;
-  margin-bottom: 280px;
-  background-color: #555;
-}
-#wrap .contentBox_02 {
-  width: 1440px;
-  height: 650px;
-  margin-bottom: 210px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 60px;
-  background-color: #faf;
-}
-#wrap .contentBox_02 > h2 {
-  width: 600px;
-  height: 60px;
-  margin: auto;
-  background-color: #fff;
-}
-#wrap .subBox_02 {
-  width: 1440px;
-  height: 260px;
-  margin-bottom: 180px;
-  background-color: #eee;
-}
-#wrap .contentBox_03 {
-  width: 1440px;
-  height: 1200px;
-  margin-bottom: 200px;
-  padding: 50px 172px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 60px;
-  background-color: #ddd;
-}
-#wrap .content_part_03 {
-  width: 1094px;
-  height: 1100px;
-  margin: auto;
-  background-color: #faf;
-}
-#wrap .content_part_03 > h2 {
-  width: 600px;
-  height: 60px;
-  margin: auto;
-  background-color: #fff;
-}
-#wrap .footBox {
-  width: 100%;
-  height: 692px;
-}
-#wrap .fnb {
-  width: 100%;
-  height: 60px;
-  background-color: #F6F1EB;
-}
-#wrap .fnb_box {
-  width: 1094px;
-  height: 60px;
-  margin: auto;
-  box-sizing: border-box;
-}
-#wrap .fnb_box div {
-  float: left;
-  width: 164px;
-  height: 60px;
-  margin-right: 140px;
-  text-align: center;
-  line-height: 58px;
-}
-#wrap .fnb_box div:last-child {
-  margin-right: 0;
-}
-#wrap .info_inner {
-  width: 100%;
-  height: 692px;
-  background-color: #ffffff;
-}
-#wrap .cs_box {
-  width: 1096px;
-  height: 320px;
-  margin: auto;
-  padding: 46px 0;
-  text-align: center;
-}
-#wrap .cs_box a {
-  display: block;
-  font-weight: 500;
-  text-decoration: underline;
-}
-#wrap .cs_part {
-  float: left;
-  width: 454px;
-  height: 230px;
-  margin-right: 34px;
-  padding: 20px;
-  text-align: justify;
-  border: 1px solid #000000;
-}
-#wrap .cs_part > button {
-  text-decoration: underline;
-  font-weight: 500;
-}
-#wrap .store_search_part {
-  float: left;
-  width: 454px;
-  height: 230px;
-  border: 1px solid #000000;
-}
-#wrap .store_search_part span {
-  display: block;
-  padding: 40px;
-  padding-bottom: 0;
-  font-size: 22px;
-  font-weight: 500;
-}
-#wrap .sns_part {
-  float: right;
-  width: 70px;
-  height: 200px;
-  padding: 8px;
-  box-sizing: border-box;
-  border: 1px solid #333333;
-}
-#wrap .sns_part > a {
-  display: block;
-  width: 40px;
-  height: 40px;
-  margin: auto;
-  margin-bottom: 8px;
-  border-radius: 100%;
-  background-color: #D9D9D9;
-}
-#wrap address {
-  width: 1096px;
-  height: 242px;
-  margin: auto;
-  margin-bottom: 15px;
-  padding-top: 50px;
-  border: 1px solid #333333;
-}
-#wrap address > p {
-  display: block;
-  padding-left: 20px;
-}
-#wrap address a {
-  text-decoration: underline;
-}
-#wrap .foot_logo {
-  width: 480px;
-  height: 100px;
-  margin: auto;
-  background-image: url(../../img/hermes_logo.svg);
-  background-repeat: no-repeat;
-  background-position: 190px;
+@media all and (min-width: 1440px) {
+  #wrap #footBox {
+    width: 1440px;
+    height: auto;
+    margin: auto;
+  }
+  #wrap #footBox .fnb {
+    width: 100%;
+    height: 60px;
+    background-color: #F6F1EB;
+  }
+  #wrap #footBox .fnb .fnb_box {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+  }
+  #wrap #footBox .fnb .fnb_box div {
+    width: 200px;
+    height: 60px;
+    line-height: 58px;
+  }
+  #wrap #footBox .info_inner {
+    position: relative;
+    margin: auto;
+    width: 1440px;
+    height: 690px;
+    background-color: #ffffff;
+  }
+  #wrap #footBox .info_inner h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    background-image: url(../../img/hermes_logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  #wrap #footBox .info_inner .cs_box {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    max-width: 1096px;
+    height: 320px;
+    margin: auto;
+    padding: 46px 0;
+    text-align: center;
+  }
+  #wrap #footBox .info_inner .cs_box a {
+    display: block;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  #wrap #footBox .info_inner .cs_box .cs_part {
+    width: 454px;
+    height: 230px;
+    padding: 20px;
+    text-align: justify;
+    border: 1px solid #000000;
+  }
+  #wrap #footBox .info_inner .cs_box .cs_part button {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  #wrap #footBox .info_inner .cs_box .store_search_part {
+    width: 454px;
+    height: 230px;
+    border: 1px solid #000000;
+  }
+  #wrap #footBox .info_inner .cs_box .store_search_part span {
+    display: block;
+    padding: 40px;
+    padding-bottom: 0;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  #wrap #footBox .info_inner .cs_box .sns_part {
+    width: 70px;
+    height: 200px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #333333;
+  }
+  #wrap #footBox .info_inner .cs_box .sns_part a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 8px;
+    border-radius: 100%;
+    background-color: #D9D9D9;
+  }
+  #wrap #footBox .info_inner address {
+    width: 1096px;
+    height: 242px;
+    margin: auto;
+    margin-bottom: 15px;
+    padding-top: 50px;
+    border: 1px solid #333333;
+  }
+  #wrap #footBox .info_inner address .mobile {
+    display: none;
+  }
+  #wrap #footBox .info_inner address p {
+    display: block;
+    padding-left: 20px;
+  }
+  #wrap #footBox .info_inner address a {
+    text-decoration: underline;
+  }
 }
 
 /*# sourceMappingURL=e_02_project_main.css.map */

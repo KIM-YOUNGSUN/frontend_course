@@ -6,6 +6,7 @@
 $imgPath:'../../img/';
 $logoWhite: #{$imgPath}+'hermes_logo.svg';
 
+// mobile =====================================
   
   @include mobile {
   #headBox {
@@ -116,14 +117,14 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     & > .nav_inner01 {
       display: flex;
       width: auto; height: 50px;
-      padding-left: 20px;
+      padding-left: 40px;
       
       & > .menu_btn {@include blind}
 
       & > .search_btn  {
         width: 48px; height: 50px;
         padding-right: 10px;
-        margin-left: -14px;
+        margin-left: -20px;
         text-decoration: none;
         background-image: url(../../../img/search.png);
         background-repeat: no-repeat;
@@ -210,7 +211,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
 
 
 
-
+// laptop =====================================================
 
 @include laptop {
   #headBox{
@@ -244,7 +245,6 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       & > .nav_inner01 {
         display: flex;
         width: 100%; height: 50px;
-        padding: 0 16px;
         & > .menu_btn {@include blind}
         
         & > .search_btn  {
@@ -269,7 +269,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
   
         &  .language_part {
           width: 80px; height: 30px; 
-          & span {text-transform: capitalize;}
+          & span {text-transform: uppercase;}
         }
         & >.login_part {
           width: 80px; height: 50px; 
@@ -284,7 +284,6 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     } // .nav_inner02   
   } // .unb
   .gnb {
-    // position: fixed; top: 50; left: 50; right: 50; 고정 다시 설정!
     width: 100%; height: 60px;
     background-color: $color_beige_01;
   
@@ -330,11 +329,14 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
 
 
 
+// pc ======================================================
+
 
 @include pc {
 #headBox{
   position: relative;
-  width: 100%; height: auto;
+  width: 1440px; height: auto;
+  margin: auto;
   padding-top: 50px;
 
 @at-root h1 {
@@ -350,20 +352,18 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     width: 100%; height: 100%;
   }
 }
-
   .unb {
     display: flex;
     position: absolute; top:0; left:0;
     width: 100%; height: 50px; 
     margin: auto;
     text-transform: uppercase;
-    padding: 0 140px;
+    padding: 0 120px;
     background-color: $color_beige_01;
 
     & > .nav_inner01 {
       display: flex;
       width: 100%; height: 50px;
-      padding: 0 16px;
       & > .menu_btn {@include blind}
       
       & > .search_btn  {
@@ -388,7 +388,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
 
       &  .language_part {
         width: 80px; height: 30px; 
-        & span {text-transform: capitalize;}
+        & span {text-transform: uppercase;}
       }
       & >.login_part {
         width: 80px; height: 50px; 
