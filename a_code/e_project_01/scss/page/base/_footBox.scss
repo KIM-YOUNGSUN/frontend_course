@@ -98,7 +98,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     
       .fnb_box {
         display: flex; justify-content: space-between;
-        width: 768px; height: 60px;
+        width: 100%; height: 60px;
         margin: auto; 
         text-align: center; 
       
@@ -127,7 +127,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     
       .cs_box {
         display: flex; justify-content: space-between;
-        width: auto; max-width: 700px; height: 320px;
+        width: 100%;  height: 320px;
         margin: auto; padding: 46px 0;
         text-align: center; 
       
@@ -167,9 +167,9 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       } // .cs_box
   
       address {
-        width: 700px; height: 242px;
+        width: 100%; height: auto;
         margin: auto; margin-bottom: 15px; padding-top: 50px;
-        border: 1px solid $color_gray_02;
+        // border: 1px solid $color_gray_02;
         & .mobile {display: none;}
         & p {display: block; padding-left: 20px;}
         & a {text-decoration: underline;}
@@ -178,7 +178,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
   }// #footBox
 } // 768px tablet
 
-
+// 768 footer 늘어날때 문제 생기는 부분 질문할것
 
 
 
@@ -224,8 +224,8 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
         }
     
       .cs_box {
-        display: flex; justify-content: space-around;
-        width: auto; max-width: 11; height: 320px;
+        display: flex; justify-content: space-between;
+        width: auto; max-width: 1100px; height: 320px;
         margin: auto; padding: 46px 0;
         text-align: center; 
       
@@ -235,7 +235,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
           width: 500px; height: auto; 
           padding: 20px;
           text-align: justify; 
-          font-size: 14px;
+          font-size: 15px;
           border: 1px solid $color_black;
           & button { text-decoration: underline; font-weight: $font_weight_bold;}
         }

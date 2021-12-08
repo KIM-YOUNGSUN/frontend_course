@@ -1,21 +1,234 @@
 // contentBox_01.scss
 
-/* contentBox_01 ============================== */
-// .contentBox_01 {
-//   width: 1440px; height: 880px;
-//   margin-bottom: 210px; padding: 46px 172px;
-//   text-transform: uppercase; text-align: center; line-height: 60px;
-//   background-color: #ddd;
-// }
 
-// .content_part_01 {
-//   width: 1094px; height: 788px;
-//   margin: auto; 
-//   background-color: #eee;
-// }
 
-//   .content_part_01 > h2 {
-//     width: 600px; height: 60px;
-//     margin: auto;
-//     background-color: #fff;
-//   }
+// mobile =======================================
+@include mobile {
+  .contentBox_01 {
+    width: 100%; height: 700px;
+    margin-bottom: 150px; 
+    padding-top: 20px;
+    text-transform: uppercase; text-align: center; line-height: 42px;
+    background-color: #ddd;
+    & h2 {
+      width: 200px; height: 40px;
+      margin: auto; 
+      background-color: #fff;
+    }
+    @at-root .content_area_01 {
+      width: 100%; height: 680px;
+      margin: auto;
+      background-color: #eee;
+      
+      @at-root & .fw_inner_01 {
+        width: 100%; height: 600px; 
+        padding: 10px;
+        background-color: $color_beige_01;
+        & li {
+          width: 300px; height: 280px; 
+          margin: auto; margin-bottom: 20px;
+          background-color: #ddd;}
+        & .fw_part_03 {@include blind}
+        & .fw_part_04 {@include blind}
+      } // .fw_inner_01
+      @at-root & .fw_inner_02 {@include blind}
+
+      & button {
+        width: 100px; height: auto; 
+        font-size: 20px;
+        background-color: $color_light_gray_02;}
+    } // .content_area_01 
+  } //.contentBox_01
+} // mobile 320
+
+
+
+
+
+
+
+
+
+
+// tablet =======================================
+@include tablet {
+  .contentBox_01 {
+    width: 100%; height: 850px;
+    margin-bottom: 210px;
+    text-transform: uppercase; text-align: center; line-height: 42px;
+    background-color: #ddd;
+
+    & h2 {
+      width: 500px; height: 40px;
+      margin: auto; margin-bottom: 30px;
+      font-size: 30px;
+      background-color: #fff;
+    }
+    @at-root .content_area_01 {
+      // display: flex; 
+      width: 100%; height: 745px;
+      margin: auto; padding: 20px;
+      background-color: #eee;
+      
+      @at-root & .fw_inner_01 {
+        display: flex; justify-content: space-around;
+        width: 100%; height: auto; 
+        padding: 10px;
+        background-color: $color_beige_01;
+        & li {
+          width: 340px; height: 280px; 
+          background-color: #ddd;}
+        & .fw_part_03 {@include blind}
+        & .fw_part_04 {@include blind}
+      } // .fw_inner_01
+
+      @at-root & .fw_inner_02 {
+        display: flex; justify-content: space-around;
+        width: 100%; height: auto; 
+        padding: 10px;
+        background-color: $color_beige_01;
+        & li {
+          width: 340px; height: 280px; 
+          background-color: #ddd;}
+        & .fw_part_07 {@include blind}
+        & .fw_part_08 {@include blind}
+      } // .fw_inner_02
+
+      & button {
+        width: 150px; height: auto; 
+        margin-top: 40px;
+        font-size: 25px;
+        background-color: $color_light_gray_02;}
+    } // .content_part_01 
+  } //.contentBox_01
+} // tablet 768
+
+
+
+
+
+
+
+
+
+
+
+
+
+// laptop =======================================
+@include laptop {
+  .contentBox_01 {
+    width: 100%; height: 800px;
+    margin: auto; margin-bottom: 210px; 
+    padding: 0 120px;
+    text-transform: uppercase; text-align: center; line-height: 50px;
+    background-color: #ddd;
+
+    & h2 {
+      width: 500px; height: 50px;
+      margin: auto; margin-bottom: 10px;
+      font-size: 35px;
+      background-color: #fff;
+    }
+
+    @at-root .content_area_01 {
+      position: relative;
+      width: 100%; height: 730px;
+      margin: auto; padding: 130px 20px;
+      background-color: #eee;
+      
+      .fw_wrap_01 {width: 500px; height: 500px; overflow: hidden;}
+      @at-root & .fw_inner_01 {
+        display: flex; justify-content: space-around;
+        width: 2000px; height: 540px;  
+        // padding: 50px 0;
+        // background-color: $color_black;
+        & li {
+          width: 490px; height: 480px; 
+          // margin-right: -20px;
+          background-color: #ddd;}
+      } // .fw_inner_01
+
+      @at-root & .fw_inner_02 {
+        position: absolute; top: 110px; right: 0;
+        display: flex; justify-content: space-around; flex-wrap: wrap;
+        width: 540px; height: 540px; 
+        padding: 20px;
+        // background-color: $color_beige_01;
+        & li {
+          width: 230px; height: 230px; 
+          background-color: #ddd;}
+      } // .fw_inner_02
+
+      & button {
+        width: 150px; height: auto; 
+        margin-top: 40px;
+        font-size: 30px;
+        background-color: $color_light_gray_02;}
+    } // .content_area_01
+  } //.contentBox_01
+} // laptop 1280
+
+
+
+
+
+
+
+
+
+// pc =======================================
+@include pc {
+  .contentBox_01 {
+    width: 1440px; height: 880px;
+    margin: auto; margin-bottom: 210px; 
+    padding: 0 120px;
+    text-transform: uppercase; text-align: center; line-height: 50px;
+    background-color: #ddd;
+
+    & h2 {
+      width: 500px; height: 50px;
+      margin: auto; margin-bottom: 10px;
+      font-size: 35px;
+      background-color: #fff;
+    }
+
+    @at-root .content_area_01 {
+      position: relative;
+      width: 100%; height: 800px;
+      margin: auto; padding: 100px 0;
+      background-color: #eee;
+      
+      .fw_wrap_01 {width: 600px; height: 600px; overflow: hidden;}
+      @at-root & .fw_inner_01 {
+        display: flex; justify-content: space-around;
+        width: 2400px; height: 600px;  
+        padding: 10px 0;
+        background-color: $color_beige_01;
+        & li {
+          width: 560px; height: 570px; 
+          background-color: #ddd;}
+      } // .fw_inner_01
+
+      @at-root & .fw_inner_02 {
+        position: absolute; top: 100px; right: 0;
+        display: flex; justify-content: flex-start; flex-wrap: wrap;
+        width: 600px; height: 600px; 
+        padding: 10px;
+        background-color: $color_beige_01;
+        & li {
+          width: 280px; height: 280px; 
+          background-color: #ddd;}
+      } // .fw_inner_02
+
+      & button {
+        width: 150px; height: auto; 
+        margin-top: 40px;
+        font-size: 30px;
+        background-color: $color_light_gray_02;}
+    } // .content_area_01
+  } //.contentBox_01
+} // pc 1440
+
+
+

@@ -1,9 +1,56 @@
 // viewBox.scss
 
-/* viewBox =============================== */
-// .viewBox {
-//   width: 1440px; height: 680px;
-//   margin-bottom: 210px; 
-//   background-color: #eee;
-// }
+@import "../../common/mixin";
+@import "../../common/variable";
+
+
+
+
+// mobile 320 ========================================
+@include mobile {
+  .viewBox {
+    width: 100%; height: 400px;
+    margin: auto; margin-bottom: 110px; 
+    background-color: #eee;
+  }
+} // mobile 320
+
+
+
+
+// tablet 768 =========================================
+@include tablet {
+  .viewBox {
+    width: 100%; height: 500px;
+    margin: auto; margin-bottom: 230px; 
+    background-color: #eee;
+  }
+} // tablet 768
+
+
+
+
+
+// laptop 1280 ========================================
+@include laptop {
+  .viewBox {
+    width: 100%; height: 680px;
+    margin: auto; margin-bottom: 210px; 
+    background-color: #eee;
+  }
+} // laptop 1280
+
+
+
+
+
+// pc 1440 =============================================
+@include pc {
+  .viewBox {
+    width: 1440px; height: 680px;
+    margin: auto; margin-bottom: 210px; 
+    background-color: #eee;
+  }
+} // pc 1440
+
 
