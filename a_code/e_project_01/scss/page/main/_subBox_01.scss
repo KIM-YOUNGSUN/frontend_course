@@ -1,6 +1,6 @@
 // subBox_01.scss
 
-// /* subBox_01==================================== */
+
 
 // mobile =======================================
 @include mobile {
@@ -43,7 +43,7 @@
 @include pc {
   .subBox_01 {
     width: 1440px; height: 360px;
-    margin-bottom: 280px;
+    margin: auto; margin-bottom: 280px;
     background-color: #ddd;
   } // .subBox_01
 } // pc 1440

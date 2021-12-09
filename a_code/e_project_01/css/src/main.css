@@ -1,10 +1,4 @@
 /* main.css */
-#wrap {
-  width: 100%;
-  height: auto;
-  border: 1px solid #ededed;
-}
-
 @media all and (max-width: 767px) {
   #headBox {
     position: relative;
@@ -960,6 +954,7 @@
   .subBox_01 {
     width: 1440px;
     height: 360px;
+    margin: auto;
     margin-bottom: 280px;
     background-color: #ddd;
   }
@@ -992,10 +987,11 @@
     justify-content: flex-start;
     width: 1200px;
     height: 600px;
+    padding: 40px 20px;
   }
   .contentBox_02 .best_inner_01 li {
     width: 300px;
-    height: 400px;
+    height: 300px;
     margin-right: 20px;
     background-image: linear-gradient(45deg, #ddd, #acf);
   }
@@ -1038,7 +1034,7 @@
   }
   .contentBox_02 .best_wrap {
     width: 100%;
-    height: 700px;
+    height: 500px;
     overflow: hidden;
   }
   .contentBox_02 .best_inner_01 {
@@ -1046,10 +1042,11 @@
     justify-content: flex-start;
     width: 1200px;
     height: 600px;
+    padding: 50px 20px;
   }
   .contentBox_02 .best_inner_01 li {
     width: 600px;
-    height: 500px;
+    height: 400px;
     background-color: #ddd;
     margin-right: 20px;
     background-image: linear-gradient(45deg, #ddd, #acf);
@@ -1088,7 +1085,7 @@
     width: 300px;
     height: 60px;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     background-color: #fff;
   }
   .contentBox_02 .best_wrap {
@@ -1099,12 +1096,13 @@
   .contentBox_02 .best_inner_01 {
     display: flex;
     justify-content: flex-start;
-    width: 4800px;
+    width: 1800px;
     height: 600px;
+    padding: 0 20px;
   }
   .contentBox_02 .best_inner_01 li {
-    width: 500px;
-    height: 400px;
+    width: 300px;
+    height: 500px;
     background-color: #ddd;
     margin-right: 30px;
     background-image: linear-gradient(45deg, #ddd, #acf);
@@ -1114,6 +1112,7 @@
   .contentBox_02 {
     width: 1440px;
     height: 650px;
+    margin: auto;
     margin-bottom: 210px;
     text-transform: uppercase;
     text-align: center;
@@ -1124,7 +1123,309 @@
     width: 600px;
     height: 60px;
     margin: auto;
+    margin-bottom: 50px;
+    font-size: 35px;
     background-color: #fff;
+  }
+  .contentBox_02 .best_wrap {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+  }
+  .contentBox_02 .best_inner_01 {
+    display: flex;
+    justify-content: flex-start;
+    width: 1800px;
+    height: 600px;
+    padding: 0 10px;
+  }
+  .contentBox_02 .best_inner_01 li {
+    width: 300px;
+    height: 500px;
+    background-color: #ddd;
+    margin-right: 10px;
+    background-image: linear-gradient(45deg, #ddd, #acf);
+  }
+}
+@media all and (max-width: 767px) {
+  .subBox_02 {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 200px;
+    background-color: #ddd;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1279px) {
+  .subBox_02 {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 280px;
+    background-color: #ddd;
+  }
+}
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .subBox_02 {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 280px;
+    background-color: #ddd;
+  }
+}
+@media all and (min-width: 1440px) {
+  .subBox_02 {
+    width: 1440px;
+    height: 360px;
+    margin: auto;
+    margin-bottom: 280px;
+    background-color: #ddd;
+  }
+}
+@media all and (max-width: 767px) {
+  .contentBox_03 {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 200px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 30px;
+    background-color: #ddd;
+  }
+  .contentBox_03 h2 {
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+  }
+  .contentBox_03 .content_area_03 {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    background-color: #ccc;
+  }
+  .contentBox_03 .content_area_03 .scarf_inner {
+    width: 100%;
+    height: auto;
+    background-color: #eee;
+  }
+  .contentBox_03 .content_area_03 .scarf_inner .scarf_part_01 {
+    width: 280px;
+    height: 270px;
+    margin: auto;
+    padding-top: 300px;
+    background-color: #cdc;
+  }
+  dt {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #fcf;
+  }
+
+  dd {
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #cfc;
+  }
+
+  .contentBox_03 .content_area_03 .scarf_inner li:nth-of-type(2) {
+    display: none;
+  }
+  .contentBox_03 .content_area_03 .scarf_inner li:nth-of-type(3) {
+    display: none;
+  }
+  .contentBox_03 .content_area_03 .scarf_inner li:nth-of-type(4) {
+    display: none;
+  }
+  .contentBox_03 .content_area_03 .scarf_inner li:nth-of-type(5) {
+    display: none;
+  }
+  .contentBox_03 .content_area_03 .scarf_inner li:nth-of-type(6) {
+    display: none;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1279px) {
+  .contentBox_03 {
+    width: 768px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 200px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    background-color: #ddd;
+  }
+  .contentBox_03 h2 {
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    background-color: #fff;
+  }
+  .contentBox_03 .content_area_03 {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #ccc;
+  }
+  .contentBox_03 .content_area_03 .scarf_inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1000px;
+    margin: auto;
+    padding: 50px;
+    background-color: #eee;
+  }
+  .contentBox_03 .content_area_03 .scarf_inner div {
+    width: 270px;
+    height: 260px;
+    margin: auto;
+    padding-top: 300px;
+    background-color: #cdc;
+  }
+  dt {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #fcf;
+  }
+
+  dd {
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #cfc;
+  }
+
+  .contentBox_03 .content_area_03 .scarf_inner li:nth-of-type(5) {
+    display: none;
+  }
+  .contentBox_03 .content_area_03 .scarf_inner li:nth-of-type(6) {
+    display: none;
+  }
+}
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .contentBox_03 {
+    width: 1280px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 200px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    background-color: #ddd;
+  }
+  .contentBox_03 h2 {
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    background-color: #fff;
+  }
+  .contentBox_03 .content_area_03 {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #ccc;
+  }
+  .contentBox_03 .content_area_03 .scarf_inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1000px;
+    margin: auto;
+    padding: 50px;
+    background-color: #eee;
+  }
+  .contentBox_03 .content_area_03 .scarf_inner div {
+    width: 300px;
+    height: 280px;
+    margin: auto;
+    padding-top: 300px;
+    background-color: #cdc;
+  }
+  dt {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #fcf;
+  }
+
+  dd {
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #cfc;
+  }
+}
+@media all and (min-width: 1440px) {
+  .contentBox_03 {
+    width: 1440px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 200px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    background-color: #ddd;
+  }
+  .contentBox_03 h2 {
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    background-color: #fff;
+  }
+  .contentBox_03 .content_area_03 {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #ccc;
+  }
+  .contentBox_03 .content_area_03 .scarf_inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1200px;
+    margin: auto;
+    padding: 50px;
+    background-color: #eee;
+  }
+  .contentBox_03 .content_area_03 .scarf_inner div {
+    width: 350px;
+    height: 370px;
+    margin: auto;
+    padding-top: 300px;
+    background-color: #cdc;
+  }
+  dt {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    margin-top: 80px;
+    background-color: #fcf;
+  }
+
+  dd {
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #cfc;
   }
 }
 @media all and (max-width: 767px) {

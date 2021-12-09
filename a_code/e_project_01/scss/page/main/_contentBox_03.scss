@@ -2,27 +2,53 @@
 
 
 // mobile =======================================
-// @include mobile {
-//   .contentBox_03 {
-//     width: 100%; height: 500px;
-//     // margin-bottom: 200px; 
-//     padding: 28px 0;
-//     text-transform: uppercase; text-align: center; line-height: 30px;
-//     background-color: #ddd;
-  
-//   & .content_area_03 {
-//     width: 300px; height: 450px;
-//     margin: auto;
-//     background-color: #ccc;
+@include mobile {
+  .contentBox_03 {
+    width: 100%; height: 500px;
+    margin-bottom: 200px; 
+    // padding: 20px 0;
+    text-transform: uppercase; text-align: center; line-height: 30px;
+    background-color: #ddd;
 
-//     & h2 {
-//       width: 200px; height: 30px;
-//       margin: auto;
-//       background-color: #fff;
-//       }
-//     } // .content_area_03
-//   } // .contentBox_03
-// } // mobile 320
+    & h2 {
+      width: 200px; height: 30px;
+      margin: auto; margin-bottom: 20px;
+      background-color: #fff;
+      }
+  
+  & .content_area_03 {
+    width: 300px; height: auto;
+    margin: auto;
+    background-color: #ccc;
+
+
+    @at-root & .scarf_inner {
+      width: 100%; height: auto; 
+      // padding-bottom: 20px;
+      background-color: #eee;
+      & .scarf_part_01 {
+        width: 280px; height: 270px; 
+        margin: auto; padding-top: 300px;
+        background-color: #cdc;
+        @at-root dt {
+          width: 200px; height: 50px;
+          margin: auto; margin-top: 10px;
+          background-color: #fcf;}
+        @at-root dd {
+          width: 150px; height: 50px; 
+          margin: auto; margin-top: 10px;
+          background-color: #cfc;}
+      } //.scarf_part_01
+
+      & li:nth-of-type(2) {display: none;}
+      & li:nth-of-type(3) {display: none;} 
+      & li:nth-of-type(4) {display: none;}
+      & li:nth-of-type(5) {display: none;}
+      & li:nth-of-type(6) {display: none;} 
+    }
+    } // .content_area_03
+  } // .contentBox_03
+} // mobile 320
 
 
 
@@ -33,34 +59,153 @@
 
 
 // // tablet =======================================
-// // @include tablet {} // tablet 768
-// // laptop =======================================
-// // @include laptop {} // laptop 1280
+@include tablet {
+  .contentBox_03 {
+    width: 768px; height: auto; margin: auto;
+    margin-bottom: 200px; 
+    // padding: 20px 0;
+    text-transform: uppercase; text-align: center; line-height: 50px;
+    background-color: #ddd;
+
+    & h2 {
+      width: 300px; height: 50px;
+      margin: auto; margin-bottom: 20px; 
+      font-size: 30px;
+      background-color: #fff;
+      }
+  
+  & .content_area_03 {
+    width: 100%; height: auto;
+    margin: auto;
+    background-color: #ccc;
+
+
+    @at-root & .scarf_inner {
+      display: flex; justify-content: space-around; flex-wrap: wrap;
+      width: 100%; height: 1000px; 
+      margin: auto;
+      padding: 50px;
+      background-color: #eee;
+      & div {
+        width: 270px; height: 260px; 
+        margin: auto; padding-top: 300px; 
+        background-color: #cdc;
+        @at-root dt {
+          width: 200px; height: 50px;
+          margin: auto; margin-top: 10px;
+          background-color: #fcf;}
+        @at-root dd {
+          width: 150px; height: 50px; 
+          margin: auto; margin-top: 10px;
+          background-color: #cfc;}
+      } //div
+
+      & li:nth-of-type(5) {display: none;}
+      & li:nth-of-type(6) {display: none;} 
+      } // .scarf_inner
+    } // .content_area_03
+  } // .contentBox_03
+} // tablet 768  
+
+
+
+// laptop =======================================
+@include laptop {
+  .contentBox_03 {
+    width: 1280px; height: auto;
+    margin: auto; margin-bottom: 200px; 
+    // padding: 20px 0;
+    text-transform: uppercase; text-align: center; line-height: 50px;
+    background-color: #ddd;
+
+    & h2 {
+      width: 300px; height: 50px;
+      margin: auto; margin-bottom: 20px;
+      font-size: 30px;
+      background-color: #fff;
+      }
+  
+  & .content_area_03 {
+    width: 100%; height: auto;
+    margin: auto;
+    background-color: #ccc;
+
+
+    @at-root & .scarf_inner {
+      display: flex; justify-content: space-around; flex-wrap: wrap;
+      width: 100%; height: 1000px; 
+      margin: auto;
+      padding: 50px;
+      background-color: #eee;
+      & div {
+        width: 300px; height: 280px; 
+        margin: auto; padding-top: 300px; 
+        background-color: #cdc;
+        @at-root dt {
+          width: 200px; height: 50px;
+          margin: auto; margin-top: 10px;
+          background-color: #fcf;}
+        @at-root dd {
+          width: 150px; height: 50px; 
+          margin: auto; margin-top: 10px;
+          background-color: #cfc;}
+        } //div
+      } // .scarf_inner
+    } // .content_area_03
+  } // .contentBox_03
+} // laptop 1280
+
+
+
+
 
 
 
 
 // // pc =======================================
-// @include pc {
-//   .contentBox_03 {
-//     width: 1440px; height: 1200px;
-//     margin-bottom: 200px; padding: 50px 172px;
-//     text-transform: uppercase; text-align: center; line-height: 60px;
-//     background-color: #ddd;
+@include pc {
+  .contentBox_03 {
+    width: 1440px; height: auto;
+    margin: auto; margin-bottom: 200px; 
+    // padding: 20px 0;
+    text-transform: uppercase; text-align: center; line-height: 50px;
+    background-color: #ddd;
+
+    & h2 {
+      width: 300px; height: 50px;
+      margin: auto; margin-bottom: 20px;
+      font-size: 30px;
+      background-color: #fff;
+      }
   
-//   & .content_area_03 {
-//     width: 1094px; height: 1100px;
-//     margin: auto;
-//     background-color: #ccc;
-  
-  
-//     & h2 {
-//       width: 600px; height: 60px;
-//       margin: auto;
-//       background-color: #fff;
-//       }
-//     } // .content_area_03
-//   } // .contentBox_03
-// } // pc 1440
+  & .content_area_03 {
+    width: 100%; height: auto;
+    margin: auto;
+    background-color: #ccc;
+
+
+    @at-root & .scarf_inner {
+      display: flex; justify-content: space-around; flex-wrap: wrap;
+      width: 100%; height: 1200px; 
+      margin: auto;
+      padding: 50px;
+      background-color: #eee;
+      & div {
+        width: 350px; height: 370px; 
+        margin: auto; padding-top: 300px; 
+        background-color: #cdc;
+        @at-root dt {
+          width: 200px; height: 50px;
+          margin: auto; margin-top: 80px;
+          background-color: #fcf;}
+        @at-root dd {
+          width: 150px; height: 50px; 
+          margin: auto; margin-top: 10px;
+          background-color: #cfc;}
+        } //div
+      } // .scarf_inner
+    } // .content_area_03
+  } // .contentBox_03
+} // pc 1440
 
 
