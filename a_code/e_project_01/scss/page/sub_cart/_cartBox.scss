@@ -1,9 +1,6 @@
-@import "../../common/mixin";
-@import "../../common/variable";
 
 
-
-@media all and (max-width: 767px){
+@include mobile {
   #cartBox {
     width: 100%; height: 500px; 
     margin: 100px 0; padding: 40px 10px;
@@ -22,7 +19,7 @@
 } // 320px
 
 
-@media all and (min-width: 768px) and (max-width:1279px){
+@include tablet {
   #cartBox {
     width: 100%; height: 740px; 
     margin: 120px 0; padding: 95px 15px;
@@ -41,7 +38,7 @@
 }// 768px
 
 
-@media all and (min-width: 1280px) and (max-width:1439px){
+@include laptop {
   #cartBox {
     width: 100%; height: 1200px; 
     margin: 130px 0; padding: 95px 15px;
@@ -60,7 +57,7 @@
 } // 1280px
 
 
-@media all and (min-width: 1440px){
+@include pc {
   #cartBox {
     width: 100%; height: 1200px; 
     margin: 130px 0; padding: 100px 170px;

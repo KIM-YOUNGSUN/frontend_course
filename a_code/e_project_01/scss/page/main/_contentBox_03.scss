@@ -4,40 +4,36 @@
 // mobile =======================================
 @include mobile {
   .contentBox_03 {
-    width: 100%; height: 500px;
-    margin-bottom: 200px; 
-    // padding: 20px 0;
-    text-transform: uppercase; text-align: center; line-height: 30px;
-    background-color: #ddd;
+    width: 100%; height: 550px;
+    margin-bottom: 200px; padding: 20px 10px;
+    text-transform: uppercase; text-align: center; line-height: 30px; 
+    border: $line1;
 
     & h2 {
       width: 200px; height: 30px;
-      margin: auto; margin-bottom: 20px;
-      background-color: #fff;
+      margin: auto; margin-bottom: 10px;
       }
   
   & .content_area_03 {
     width: 300px; height: auto;
-    margin: auto;
-    background-color: #ccc;
-
+    margin: auto; 
 
     @at-root & .scarf_inner {
       width: 100%; height: auto; 
-      // padding-bottom: 20px;
-      background-color: #eee;
+
       & .scarf_part_01 {
         width: 280px; height: 270px; 
         margin: auto; padding-top: 300px;
-        background-color: #cdc;
+        background-color: $color_light_gray_02;
+          
         @at-root dt {
           width: 200px; height: 50px;
-          margin: auto; margin-top: 10px;
-          background-color: #fcf;}
+          margin: auto; margin-top: 26px;
+          background-color: $color_light_gray_01;}
         @at-root dd {
           width: 150px; height: 50px; 
-          margin: auto; margin-top: 10px;
-          background-color: #cfc;}
+          margin: auto; margin-top: 14px;
+          background-color: $color_light_gray_01;;}
       } //.scarf_part_01
 
       & li:nth-of-type(2) {display: none;}
@@ -45,7 +41,7 @@
       & li:nth-of-type(4) {display: none;}
       & li:nth-of-type(5) {display: none;}
       & li:nth-of-type(6) {display: none;} 
-    }
+      }
     } // .content_area_03
   } // .contentBox_03
 } // mobile 320
@@ -61,43 +57,40 @@
 // // tablet =======================================
 @include tablet {
   .contentBox_03 {
-    width: 768px; height: auto; margin: auto;
-    margin-bottom: 200px; 
-    // padding: 20px 0;
+    width: 100%;  height: auto; 
+    margin: auto; margin-bottom: 200px; padding-top: 30px;
     text-transform: uppercase; text-align: center; line-height: 50px;
-    background-color: #ddd;
+    border: $line1;
 
     & h2 {
       width: 300px; height: 50px;
-      margin: auto; margin-bottom: 20px; 
+      margin: auto; margin-bottom: 20px;
       font-size: 30px;
-      background-color: #fff;
       }
   
   & .content_area_03 {
-    width: 100%; height: auto;
+    width: 100%; max-width: 768px; height: auto;
     margin: auto;
-    background-color: #ccc;
 
 
     @at-root & .scarf_inner {
       display: flex; justify-content: space-around; flex-wrap: wrap;
       width: 100%; height: 1000px; 
       margin: auto;
-      padding: 50px;
-      background-color: #eee;
+      padding: 20px 65px;
+
       & div {
         width: 270px; height: 260px; 
         margin: auto; padding-top: 300px; 
-        background-color: #cdc;
+        background-color: $color_light_gray_02;
         @at-root dt {
           width: 200px; height: 50px;
           margin: auto; margin-top: 10px;
-          background-color: #fcf;}
+          background-color: $color_light_gray_01;}
         @at-root dd {
           width: 150px; height: 50px; 
           margin: auto; margin-top: 10px;
-          background-color: #cfc;}
+          background-color: $color_light_gray_01;}
       } //div
 
       & li:nth-of-type(5) {display: none;}
@@ -112,43 +105,41 @@
 // laptop =======================================
 @include laptop {
   .contentBox_03 {
-    width: 1280px; height: auto;
-    margin: auto; margin-bottom: 200px; 
-    // padding: 20px 0;
+    width: 100%; height: auto;
+    margin: auto; margin-bottom: 200px; padding-top: 20px;
     text-transform: uppercase; text-align: center; line-height: 50px;
-    background-color: #ddd;
+    border: $line1;
 
     & h2 {
       width: 300px; height: 50px;
       margin: auto; margin-bottom: 20px;
       font-size: 30px;
-      background-color: #fff;
       }
   
   & .content_area_03 {
-    width: 100%; height: auto;
+    width: 100%; max-width: 1280px; height: auto;
     margin: auto;
-    background-color: #ccc;
 
 
     @at-root & .scarf_inner {
       display: flex; justify-content: space-around; flex-wrap: wrap;
       width: 100%; height: 1000px; 
       margin: auto;
-      padding: 50px;
-      background-color: #eee;
+      padding: 30px 50px;
+
       & div {
         width: 300px; height: 280px; 
         margin: auto; padding-top: 300px; 
-        background-color: #cdc;
+        background-color: $color_light_gray_02;
+
         @at-root dt {
           width: 200px; height: 50px;
-          margin: auto; margin-top: 10px;
-          background-color: #fcf;}
+          margin: auto; margin-top: 20px;
+          background-color: $color_light_gray_01;}
         @at-root dd {
           width: 150px; height: 50px; 
           margin: auto; margin-top: 10px;
-          background-color: #cfc;}
+          background-color: $color_light_gray_01;}
         } //div
       } // .scarf_inner
     } // .content_area_03
@@ -166,42 +157,38 @@
 @include pc {
   .contentBox_03 {
     width: 1440px; height: auto;
-    margin: auto; margin-bottom: 200px; 
-    // padding: 20px 0;
+    margin: auto; margin-bottom: 200px; padding-top: 30px;
     text-transform: uppercase; text-align: center; line-height: 50px;
-    background-color: #ddd;
+    border: $line1;
 
     & h2 {
       width: 300px; height: 50px;
-      margin: auto; margin-bottom: 20px;
+      margin: auto; margin-bottom: 10px;
       font-size: 30px;
-      background-color: #fff;
       }
   
   & .content_area_03 {
     width: 100%; height: auto;
     margin: auto;
-    background-color: #ccc;
-
 
     @at-root & .scarf_inner {
       display: flex; justify-content: space-around; flex-wrap: wrap;
       width: 100%; height: 1200px; 
       margin: auto;
       padding: 50px;
-      background-color: #eee;
+
       & div {
         width: 350px; height: 370px; 
         margin: auto; padding-top: 300px; 
-        background-color: #cdc;
+        background-color: $color_light_gray_02;
         @at-root dt {
           width: 200px; height: 50px;
-          margin: auto; margin-top: 80px;
-          background-color: #fcf;}
+          margin: auto; margin-top: 90px;
+          background-color: $color_light_gray_01}
         @at-root dd {
           width: 150px; height: 50px; 
           margin: auto; margin-top: 10px;
-          background-color: #cfc;}
+          background-color: $color_light_gray_01;}
         } //div
       } // .scarf_inner
     } // .content_area_03

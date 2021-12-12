@@ -1,11 +1,5 @@
 
 
-#wrap {
-  width: 100%; height: auto;
-  border: 1px solid #ededed;
-
-
-
 @include mobile{
   #historyBox {width: 100%; height: 830px; 
     padding-top: 60px; 
@@ -164,6 +158,5 @@
   } // #historyBox
 }  // 1440px     
 
-}  //wrap
 
-// @import "../page/base/footBox";
+
