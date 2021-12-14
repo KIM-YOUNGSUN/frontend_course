@@ -581,48 +581,45 @@
 @media all and (max-width: 767px) {
   #loginBox {
     width: 100%;
-    height: 500px;
-    margin: 200px 0;
+    height: auto;
+    margin: 150px 0;
     text-transform: uppercase;
   }
   #loginBox .login_area {
     width: 300px;
-    height: 500px;
+    height: auto;
     margin: auto;
-    border: 1px solid #ededed;
     font-weight: 400;
   }
   #loginBox .login_area .login_title_inner {
-    width: 300px;
-    height: 50px;
-    background-color: #ddd;
+    width: 298px;
+    height: 70px;
+    border-bottom: 2px solid #F6F1EB;
   }
   #loginBox .login_area .login_title_inner .login_title_box {
     width: 100px;
     height: 50px;
     margin: auto;
     text-align: center;
-    line-height: 50px;
-    font-size: 20px;
+    line-height: 70px;
+    font-size: 24px;
     font-weight: 500;
-    background-color: #eee;
   }
   #loginBox .login_area .login_inner {
     width: auto;
     height: 100%;
-    background-color: #ccc;
   }
   #loginBox .login_area .login_inner .member_inner {
     width: 300px;
     height: 200px;
-    padding: 20px 25px;
+    padding: 40px 25px;
   }
   #loginBox .login_area .login_inner .member_inner input {
     width: 250px;
-    height: 60px;
+    height: 56px;
     margin-bottom: 20px;
     font-size: 15px;
-    background-color: #daad;
+    border: 1px solid #ededed;
   }
 
   #loginBox .login_area .login_inner .id_check_inner {
@@ -630,19 +627,87 @@
     justify-content: space-between;
     width: 120px;
     height: 20px;
-    margin-top: -30px;
+    margin-top: -20px;
   }
   #loginBox .login_area .login_inner .id_check_inner input {
     width: 16px;
     height: 16px;
-    margin-left: 30px;
+    margin-left: 28px;
     border: 1px solid #ededed;
   }
   #loginBox .login_area .login_inner .id_check_inner .id_check_box {
-    width: 90px;
+    width: 100px;
     height: 14px;
-    margin-left: 5px;
+    margin-left: 4px;
     font-size: 11px;
+    line-height: 16px;
+  }
+
+  #loginBox .login_area .login_inner .login_btn_inner {
+    width: 260px;
+    height: 60px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  #loginBox .login_area .login_inner .login_btn_inner .login_btn_box {
+    width: 260px;
+    height: 60px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 60px;
+    color: #ECECEC;
+    background-color: #333333;
+  }
+  #loginBox .login_area .login_inner .login_btn_inner .login_btn_box a {
+    display: block;
+  }
+
+  #loginBox .login_area .login_inner .search_inner {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 20px;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  #loginBox .login_area .login_inner .search_inner .id_search_box {
+    width: 100px;
+    height: 30px;
+  }
+  #loginBox .login_area .login_inner .search_inner .pw_search_box {
+    width: 100px;
+    height: 30px;
+  }
+  #loginBox .login_area .login_inner .search_inner a {
+    display: block;
+  }
+
+  #loginBox .login_area .login_inner .join_inner {
+    width: 298px;
+    height: 200px;
+    margin-top: 20px;
+    padding-top: 30px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 15px;
+    border-top: 2px solid #F6F1EB;
+  }
+  #loginBox .login_area .login_inner .join_inner .join_box {
+    width: 260px;
+    height: 60px;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 1px solid #505050;
+  }
+  #loginBox .login_area .login_inner .join_inner .non_member_box {
+    width: 260px;
+    height: 60px;
+    margin: auto;
+    border: 1px solid #505050;
+  }
+  #loginBox .login_area .login_inner .join_inner a {
+    display: block;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1279px) {
@@ -706,20 +771,21 @@
   #loginBox .login_area .login_inner .id_check_inner {
     display: flex;
     justify-content: space-between;
-    width: 150px;
-    height: 40px;
+    width: 140px;
+    height: 30px;
     margin-top: -40px;
   }
   #loginBox .login_area .login_inner .id_check_inner input {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     margin-left: 30px;
     border: 1px solid #ededed;
   }
   #loginBox .login_area .login_inner .id_check_inner .id_check_box {
     width: 90px;
     height: 20px;
-    line-height: 20px;
+    line-height: 18px;
+    font-size: 14px;
   }
 
   #loginBox .login_area .login_inner .login_btn_inner {
