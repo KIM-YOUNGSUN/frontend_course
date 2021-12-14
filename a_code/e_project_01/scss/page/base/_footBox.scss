@@ -9,8 +9,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
 // mobile ==========================================
 
 @include mobile {
-    
-    #footBox {
+  #footBox {
       width: 100%; height: auto;
       margin:auto; 
     

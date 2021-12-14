@@ -1,136 +1,67 @@
 // loginBox.scss
 
-
 // mobile =========================================
 @include mobile {
   #loginBox {
-    width: 100%; height: 1000px;
-    margin-bottom: 300px;
-    //  padding: 180px;
+    width: 100%; height: 500px;
+    margin: 200px 0; 
+    // padding: 20px; 
     text-transform: uppercase; 
-  
+
     @at-root & .login_area {
-      width: 300px; height: 430px; 
-      margin: auto; padding: 0;
-      border: 1px solid $color_white_03; font-weight: $font_weight_normal;
-    
-      & .login_title_inner {
-      width: 300px; height: 140px;
-      margin: auto; padding: 30px 0;
-      border-bottom: 1px solid $color_white_03;
-    
-      & .login_title_box {
-      width: 100px; height: 40px;
+      width: 300px; height: 500px;
       margin: auto;
-      text-align: center; line-height: 70px; font-size: 38px; font-weight: $font_weight_bold;
-    }  
-  } // .login_title_inner
-  
+      border: 1px solid $color_white_03; font-weight: $font_weight_normal;
+
+      & .login_title_inner {
+        width: 300px; height: 50px;
+        background-color: #ddd;
+
+      & .login_title_box {
+        width: 100px; height: 50px;
+        margin: auto;
+        text-align: center; line-height: 50px; font-size: 20px; font-weight: $font_weight_bold;
+        background-color: #eee;
+        }
+      } //.login_title_inner
+
     @at-root & .login_inner {
-      width: auto;
-      min-width: 600px; height: 658px;
-      padding: 0 50px; 
-      color: $color_gray_01; 
-      background-color: $color_white_01;
-    
-      & form {margin: auto; height: 100%;}
-      & fieldset {float: left;}
-      & fieldset:last-child {float: right;}
-  
+      width: auto; height: 100%;
+      background-color: #ccc;
+
+          // & fieldset {width:100%; height: 500px;} 
+
     @at-root & .member_inner {
-      width: 450px; height: 240px; 
-      margin-top: 80px;
-      padding: 17px 25px;
-    
+      width: 300px; height: 200px;
+      padding: 20px 25px;
+
       & input {
-        width: 380px; height: 80px;
-        margin: auto; margin-bottom: 45px; padding-left: 20px; 
-        text-align: left; line-height: 80px; font-size: 20px; 
-        border: 1px solid $color_white_03; 
-      }  
-      & input:last-child {
-        width: 380px; height: 80px;
-        margin: auto; margin-bottom: 10px; padding-left: 20px; 
-        text-align: left; line-height: 80px; font-size: 20px;
-        border: 1px solid $color_white_03;
-      } 
-    } // .member_inner
-    
+        width: 250px; height: 60px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        background-color: #daad; // 색바꾸기 border: 1px solid $color_white_03; 
+        }
+      } // .member_inner
+
     @at-root & .id_check_inner {
-      width: 200px; height: 40px; 
-      margin-top: 4px; margin-bottom: 12px;
-    
-  
+      display: flex; justify-content: space-between;
+      width: 120px; height: 20px;
+      margin-top: -30px;
+
       & input {
-        float: left;
-        width: 20px; height: 20px; 
+        width: 16px; height: 16px;  
         margin-left: 30px;
-        border: 1px solid $color_white_03;
-      } 
-        & .id_check_box {
-          float: right;
-          width: 134px; height: 40px; 
-        } 
-    } // .id_check_inner
-  
-  
-    @at-root & .login_btn_inner {
-      width: 420px; height: 120px; 
-      margin-bottom: -10px; margin-top: 20px; padding: 20px 8px; 
-  
-      & .login_btn_box {
-        width: 400px; height: 80px;
-        margin-left: 10px;
-        text-align: center; line-height: 80px; font-size: 24px;
-        color: $color_light_gray_01;
-        background-color: $color_gray_02;
-      
-        & a {display: block; }
-  
-      } // .login_btn_box
-    } // .login_btn_inner
-  
-    @at-root & .search_inner {
-      width: 360px; height: 40px;
-      margin: auto;  margin-right: 54px; padding: 0 80px;
-      line-height: 40px; text-align: center; font-size: 14px;
-      
-      & .id_search_box {
-        float: left;
-        width: 100px; height: 40px;
-      } 
-      
-      & .pw_search_box {
-        float: right;
-        width: 100px; height: 40px;
-      }
-        & a {display: block; }
-    } // .search_inner
-    
-    @at-root & .join_inner {
-      width: 540px; height: 658px;
-      margin:-40px -50px; padding: 200px 76px; 
-      color: $color_gray_01;
-    
-      & .join_box {
-        width: 400px; height: 80px;
-        margin-bottom: 46px;
-        text-align: center; line-height: 80px; 
-        font-size: 22px; color: $color_gray_02;
-        border: 1px solid $color_gray_02;
-      }
-      & .non_member_box {
-        width: 400px; height: 80px;
-        text-align: center; line-height: 80px; 
-        font-size: 22px; color: $color_gray_02;
-        border: 1px solid $color_gray_02;
-      }
-      & a {display: block; width: 400px; height: 80px;}
-  
-          } // .join_inner
-        } // .login_inner
-      } // .login_area
-    } // #loginiBox  
+        border: 1px solid $color_white_03;}
+      & .id_check_box {
+        width: 90px; height: 14px; 
+        margin-left: 5px;
+        font-size: 11px;}
+      } // .id_check_inner
+
+
+      } // .login_inner
+    } // .login_area
+  } // #loginiBox 
 } // mobile 320px
 
 
@@ -147,7 +78,7 @@
     text-transform: uppercase; 
   
     @at-root & .login_area {
-      width: 700px; height: 750px; 
+      width: 700px; height: 700px; 
       margin: auto; padding: 0;
       border: 1px solid $color_white_03; font-weight: $font_weight_normal;
     
@@ -164,32 +95,31 @@
   } // .login_title_inner
   
     @at-root & .login_inner {
+      display: flex; justify-content: space-between;
       width: auto; height: 100%;
-      // padding: 0 30px; 
       color: $color_gray_01; 
       background-color: $color_white_01;
-    
-      & form {margin: auto; height: 100%;}
-      & fieldset {float: left;}
-      & fieldset:last-child {float: right;}
+
+      // & form { height: 100%; margin: auto;}
   
     @at-root & .member_inner {
       width: 340px; height: 250px; 
       margin-top: 80px;
-      padding: 40px 20px;
+      padding: 20px;
     
       & input {
-        width: 300px; height: 80px;
+        width: 300px; height: 70px;
         margin: auto; margin-bottom: 30px; padding-left: 20px; 
-        text-align: left; line-height: 80px; font-size: 20px; 
+        text-align: left; line-height: 70px; font-size: 18px; 
         border: 1px solid $color_white_03; 
       }  
     } // .member_inner
     
     @at-root & .id_check_inner {
       display: flex; justify-content: space-between;
-      width: 200px; height: 40px; 
-      padding: 10px 20px;
+      width: 150px; height: 40px; 
+      margin-top: -40px;
+      // padding: 10px 10px;
     
   
       & input {
@@ -198,7 +128,7 @@
         border: 1px solid $color_white_03;
       } 
         & .id_check_box {
-          width: 100px; height: 20px; line-height: 20px;
+          width: 90px; height: 20px; line-height: 20px;
         } 
     } // .id_check_inner
   
@@ -208,8 +138,8 @@
       margin-bottom: -10px; margin-top: 20px; padding: 20px 8px; 
   
       & .login_btn_box {
-        width: 300px; height: 80px;
-        margin-left: 10px;
+        width: 320px; height: 80px;
+        margin-left: 5px;
         text-align: center; line-height: 80px; font-size: 24px;
         color: $color_light_gray_01;
         background-color: $color_gray_02;
@@ -220,25 +150,25 @@
     } // .login_btn_inner
   
     @at-root & .search_inner {
-      width: 240px; height: 40px;
-      padding: 0 20px; margin-left: 40px;
+      display: flex; justify-content: space-between;
+      width: 240px; height: 30px;
+      padding: 0 20px; margin-left: 46px;
       line-height: 40px; text-align: center; font-size: 14px;
       
       & .id_search_box {
-        float: left;
-        width: 100px; height: 40px;
+        width: 100px; height: 30px;
       } 
       
       & .pw_search_box {
-        float: right;
-        width: 100px; height: 40px;
+        width: 100px; height: 30px;
       }
         & a {display: block; }
     } // .search_inner
     
     @at-root & .join_inner {
-      width: 350px; height: 508px;
-      padding: 150px 30px; 
+      width: 350px; height: 598px;
+      padding: 150px 26px;
+      border-left: $line1;
       color: $color_gray_01;
     
       & .join_box {
@@ -289,15 +219,12 @@
   } // .login_title_inner
   
     @at-root & .login_inner {
-      width: auto;
-      min-width: 600px; height: 658px;
+      display: flex; justify-content: space-between;
+      width: auto; min-width: 600px; height: 658px;
       padding: 0 50px; 
       color: $color_gray_01; 
       background-color: $color_white_01;
     
-      & form {margin: auto; height: 100%;}
-      & fieldset {float: left;}
-      & fieldset:last-child {float: right;}
   
     @at-root & .member_inner {
       width: 450px; height: 240px; 
@@ -319,18 +246,17 @@
     } // .member_inner
     
     @at-root & .id_check_inner {
+      display: flex; justify-content: space-between;
       width: 200px; height: 40px; 
       margin-top: 4px; margin-bottom: 12px;
     
   
       & input {
-        float: left;
         width: 20px; height: 20px; 
         margin-left: 30px;
         border: 1px solid $color_white_03;
       } 
         & .id_check_box {
-          float: right;
           width: 134px; height: 40px; 
         } 
     } // .id_check_inner
@@ -353,25 +279,25 @@
     } // .login_btn_inner
   
     @at-root & .search_inner {
+      display: flex; justify-content: space-between;
       width: 360px; height: 40px;
       margin: auto;  margin-right: 54px; padding: 0 80px;
       line-height: 40px; text-align: center; font-size: 14px;
       
       & .id_search_box {
-        float: left;
         width: 100px; height: 40px;
       } 
       
       & .pw_search_box {
-        float: right;
         width: 100px; height: 40px;
       }
         & a {display: block; }
     } // .search_inner
     
     @at-root & .join_inner {
-      width: 540px; height: 658px;
-      margin:-40px -50px; padding: 200px 76px; 
+      width: 500px; height: 658px;
+      padding: 180px 80px; 
+      border-left: $line1;
       color: $color_gray_01;
     
       & .join_box {
@@ -406,128 +332,126 @@
 // pc =========================================
 @include pc {
 
-#loginBox {
-  width: 100%; height: 1000px;
-  margin-bottom: 300px; padding: 180px;
-  text-transform: uppercase; 
+  #loginBox {
+    width: 100%; height: 1000px;
+    margin-bottom: 300px; padding: 180px;
+    text-transform: uppercase; 
 
-  @at-root & .login_area {
-    width: 1096px; height: 800px; 
-    margin: auto; padding: 0;
-    border: 1px solid $color_white_03; font-weight: $font_weight_normal;
-  
-    & .login_title_inner {
-    width: 1096px; height: 140px;
-    margin: auto; padding: 30px 0;
-    border-bottom: 1px solid $color_white_03;
-  
-    & .login_title_box {
-    width: 320px; height: 80px;
-    margin: auto;
-    text-align: center; line-height: 70px; font-size: 38px; font-weight: $font_weight_bold;
-  }  
-} // .login_title_inner
-
-  @at-root & .login_inner {
-    width: auto;
-    min-width: 600px; height: 658px;
-    padding: 0 50px; 
-    color: $color_gray_01; 
-    background-color: $color_white_01;
-  
-    & form {margin: auto; height: 100%;}
-    & fieldset {float: left;}
-    & fieldset:last-child {float: right;}
-
-  @at-root & .member_inner {
-    width: 450px; height: 240px; 
-    margin-top: 80px;
-    padding: 17px 25px;
-  
-    & input {
-      width: 380px; height: 80px;
-      margin: auto; margin-bottom: 45px; padding-left: 20px; 
-      text-align: left; line-height: 80px; font-size: 20px; 
-      border: 1px solid $color_white_03; 
+    @at-root & .login_area {
+      width: 1096px; height: 800px; 
+      margin: auto; padding: 0;
+      border: 1px solid $color_white_03; font-weight: $font_weight_normal;
+    
+      & .login_title_inner {
+      width: 1096px; height: 140px;
+      margin: auto; padding: 30px 0;
+      border-bottom: 1px solid $color_white_03;
+      
+      & .login_title_box {
+      width: 320px; height: 80px;
+      margin: auto;
+      text-align: center; line-height: 70px; font-size: 38px; font-weight: $font_weight_bold;
     }  
-    & input:last-child {
-      width: 380px; height: 80px;
-      margin: auto; margin-bottom: 10px; padding-left: 20px; 
-      text-align: left; line-height: 80px; font-size: 20px;
-      border: 1px solid $color_white_03;
-    } 
-  } // .member_inner
-  
-  @at-root & .id_check_inner {
-    width: 200px; height: 40px; 
-    margin-top: 4px; margin-bottom: 12px;
-  
+  } // .login_title_inner
 
-    & input {
-      float: left;
-      width: 20px; height: 20px; 
-      margin-left: 30px;
-      border: 1px solid $color_white_03;
-    } 
-      & .id_check_box {
-        float: right;
-        width: 134px; height: 40px; 
+    @at-root & .login_inner {
+      display: flex; justify-content: space-between;
+      width: auto; min-width: 600px; height: 658px;
+      padding: 0 50px; 
+      color: $color_gray_01; 
+      background-color: $color_white_01;
+    
+      & form {margin: auto; height: 100%;}
+
+    @at-root & .member_inner {
+      width: 450px; height: 240px; 
+      margin-top: 80px;
+      padding: 17px 25px;
+    
+      & input {
+        width: 380px; height: 80px;
+        margin: auto; margin-bottom: 45px; padding-left: 20px; 
+        text-align: left; line-height: 80px; font-size: 20px; 
+        border: 1px solid $color_white_03; 
+      }  
+      & input:last-child {
+        width: 380px; height: 80px;
+        margin: auto; margin-bottom: 10px; padding-left: 20px; 
+        text-align: left; line-height: 80px; font-size: 20px;
+        border: 1px solid $color_white_03;
       } 
-  } // .id_check_inner
+    } // .member_inner
 
-
-  @at-root & .login_btn_inner {
-    width: 420px; height: 120px; 
-    margin-bottom: -10px; margin-top: 20px; padding: 20px 8px; 
-
-    & .login_btn_box {
-      width: 400px; height: 80px;
-      margin-left: 10px;
-      text-align: center; line-height: 80px; font-size: 24px;
-      color: $color_light_gray_01;
-      background-color: $color_gray_02;
+    @at-root & .id_check_inner {
+      display: flex; justify-content: space-between;
+      width: 200px; height: 40px; 
+      margin-top: 4px; margin-bottom: 12px;
     
-      & a {display: block; }
 
-    } // .login_btn_box
-  } // .login_btn_inner
+      & input {
+        width: 20px; height: 20px; 
+        margin-left: 30px;
+        border: 1px solid $color_white_03;
+      } 
+        & .id_check_box {
+          width: 134px; height: 40px; 
+        } 
+    } // .id_check_inner
 
-  @at-root & .search_inner {
-    width: 360px; height: 40px;
-    margin: auto;  margin-right: 54px; padding: 0 80px;
-    line-height: 40px; text-align: center; font-size: 14px;
+
+    @at-root & .login_btn_inner {
+      width: 420px; height: 120px; 
+      margin-bottom: -10px; margin-top: 20px; padding: 20px 8px; 
+
+      & .login_btn_box {
+        width: 400px; height: 80px;
+        margin-left: 10px;
+        text-align: center; line-height: 80px; font-size: 24px;
+        color: $color_light_gray_01;
+        background-color: $color_gray_02;
+      
+        & a {display: block; }
+
+      } // .login_btn_box
+    } // .login_btn_inner
+
+    @at-root & .search_inner {
+      display: flex; justify-content: space-between;
+      width: 360px; height: 40px;
+      margin: auto;  margin-right: 54px; padding: 0 80px;
+      line-height: 40px; text-align: center; font-size: 14px;
+
+      & .id_search_box {
+        width: 100px; height: 40px;
+      } 
+
+      & .pw_search_box {
+        width: 100px; height: 40px;
+      }
+        & a {display: block; }
+    } // .search_inner
+
+    @at-root & .join_inner {
+      width: 500px; height: 658px;
+      padding: 180px 80px; 
+      border-left: $line1;
+      color: $color_gray_01;
     
-    & .id_search_box {
-      float: left;
-      width: 100px; height: 40px;
-    } 
     
-    & .pw_search_box {
-      float: right;
-      width: 100px; height: 40px;
-    }
-      & a {display: block; }
-  } // .search_inner
-  
-  @at-root & .join_inner {
-    width: 540px; height: 658px;
-    margin:-40px -50px; padding: 200px 76px; 
-    color: $color_gray_01;
-  
-    & .join_box {
-      width: 400px; height: 80px;
-      margin-bottom: 46px;
-      text-align: center; line-height: 80px; 
-      font-size: 22px; color: $color_gray_02;
-      border: 1px solid $color_gray_02;
-    }
-    & .non_member_box {
-      width: 400px; height: 80px;
-      text-align: center; line-height: 80px; 
-      font-size: 22px; color: $color_gray_02;
-      border: 1px solid $color_gray_02;
-    }
-    & a {display: block; width: 400px; height: 80px;}
+      & .join_box {
+        width: 400px; height: 80px;
+        margin-bottom: 46px;
+        text-align: center; line-height: 80px; 
+        font-size: 22px; color: $color_gray_02;
+        border: 1px solid $color_gray_02;
+      }
+      & .non_member_box {
+        width: 400px; height: 80px;
+        text-align: center; line-height: 80px; 
+        font-size: 22px; color: $color_gray_02;
+        border: 1px solid $color_gray_02;
+      }
+      & a {display: block; width: 400px; height: 80px;}
 
         } // .join_inner
       } // .login_inner
