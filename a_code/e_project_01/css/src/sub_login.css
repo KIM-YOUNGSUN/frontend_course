@@ -21,7 +21,7 @@
     width: 100%;
     height: 100%;
   }
-  #headBox > .unb {
+  .unb {
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -32,26 +32,28 @@
     padding: 0 10px;
     background-color: #F6F1EB;
   }
-  #headBox > .unb > .nav_inner01 {
+  .nav_inner01 {
     display: flex;
     width: 100px;
     height: 40px;
   }
-  #headBox > .unb > .nav_inner01 > .menu_btn {
+  .menu_btn {
     width: 40px;
     height: 100%;
     background-image: url(../../../img/menu.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox > .unb > .nav_inner01 > .search_btn {
+
+  .search_btn {
     width: 40px;
     height: 100%;
     background-image: url(../../../img/search.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox > .unb > .nav_inner01 > .search_text_part {
+
+  .search_text_part {
     display: block;
     width: 0;
     height: 0;
@@ -60,19 +62,20 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #headBox > .unb > .nav_inner02 {
+
+  .nav_inner02 {
     display: flex;
     width: auto;
     height: 40px;
   }
-  #headBox > .unb > .nav_inner02 .language_part {
+  .language_part {
     width: 40px;
     height: 100%;
     background-image: url(../../../img/internet.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox > .unb > .nav_inner02 .language_part span {
+  .language_part span {
     display: block;
     width: 0;
     height: 0;
@@ -81,14 +84,15 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #headBox > .unb > .nav_inner02 > .login_part {
+
+  .login_part {
     width: 40px;
     height: 100%;
     background-image: url(../../../img/user.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox > .unb > .nav_inner02 > .login_part span {
+  .login_part span {
     display: block;
     width: 0;
     height: 0;
@@ -97,7 +101,8 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #headBox > .unb > .nav_inner02 > .join_part {
+
+  .nav_inner02 > .join_part {
     display: block;
     width: 0;
     height: 0;
@@ -106,16 +111,17 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #headBox > .unb > .nav_inner02 > a {
+  .nav_inner02 > a {
     display: block;
     width: 100%;
     height: 100%;
   }
-  #headBox > .unb > .nav_inner02 > button {
+  .nav_inner02 > button {
     display: block;
     width: 100%;
     height: 100%;
   }
+
   #headBox > .gnb {
     display: block;
     width: 0;
@@ -134,7 +140,7 @@
     padding-top: 50px;
   }
   #headBox > h1 {
-    width: 200px;
+    width: 100%;
     height: 100px;
     margin: 0 auto;
     background-image: url(../../img/hermes_logo.svg);
@@ -147,7 +153,7 @@
     width: 100%;
     height: 100%;
   }
-  #headBox .unb {
+  .unb {
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -158,13 +164,13 @@
     text-transform: uppercase;
     background-color: #F6F1EB;
   }
-  #headBox .unb > .nav_inner01 {
+  .nav_inner01 {
     display: flex;
     width: auto;
     height: 50px;
     padding-left: 40px;
   }
-  #headBox .unb > .nav_inner01 > .menu_btn {
+  .nav_inner01 .menu_btn {
     display: block;
     width: 0;
     height: 0;
@@ -173,7 +179,8 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #headBox .unb > .nav_inner01 > .search_btn {
+
+  .search_btn {
     width: 48px;
     height: 50px;
     padding-right: 10px;
@@ -183,7 +190,8 @@
     background-repeat: no-repeat;
     background-position: 10px 12px;
   }
-  #headBox .unb > .nav_inner01 > .search_text_part {
+
+  .search_text_part {
     width: 40px;
     height: 50px;
     margin-right: 40px;
@@ -192,54 +200,59 @@
     font-size: 12px;
     text-decoration: underline;
   }
-  #headBox .unb > .nav_inner02 {
+
+  .nav_inner02 {
     display: flex;
-    width: 240px;
+    width: auto;
     height: 50px;
     text-transform: uppercase;
     text-align: center;
     line-height: 50px;
     font-size: 12px;
   }
-  #headBox .unb > .nav_inner02 .language_part {
+  .language_part {
     width: 80px;
     height: 50px;
   }
-  #headBox .unb > .nav_inner02 .language_part span {
+  .language_part span {
     text-transform: uppercase;
   }
-  #headBox .unb > .nav_inner02 > .login_part {
+
+  .login_part {
     width: 80px;
     height: 50px;
     margin-right: -8px;
   }
-  #headBox .unb > .nav_inner02 > .join_part {
+
+  .join_part {
     width: 80px;
     height: 50px;
   }
-  #headBox .unb > .nav_inner02 a {
+
+  .nav_inner02 a {
     display: block;
     width: auto;
     height: 100%;
   }
-  #headBox .unb > .nav_inner02 button {
+  .nav_inner02 button {
     display: block;
     width: auto;
     height: 100%;
   }
-  #headBox .gnb {
+
+  .gnb {
     width: 100%;
     height: 60px;
     background-color: #F6F1EB;
   }
-  #headBox .gnb > .nav_inner03 {
+  .nav_inner03 {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 60px;
     text-transform: uppercase;
   }
-  #headBox .gnb > .nav_inner03 .menu_btn {
+  .menu_btn {
     width: 100%;
     height: 24px;
     margin-top: 18px;
@@ -247,13 +260,14 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox .gnb > .nav_inner03 .menu_part {
+
+  .menu_part {
     display: flex;
     justify-content: space-around;
     width: 100%;
     height: 60px;
   }
-  #headBox .gnb > .nav_inner03 .menu_part > a {
+  .menu_part > a {
     display: block;
     width: 100px;
     height: 60px;
@@ -262,10 +276,11 @@
     font-size: 17px;
     margin-right: 10px;
   }
-  #headBox .gnb > .nav_inner03 .menu_part > a:last-child {
+  .menu_part > a:last-child {
     margin-right: 0;
   }
-  #headBox .gnb > .nav_inner03 .cart_btn {
+
+  .cart_btn {
     width: 100%;
     height: 100%;
     background-image: url(../../../img/bag.png);
@@ -297,7 +312,7 @@
     height: 100%;
   }
 
-  #headBox .unb {
+  .unb {
     display: flex;
     position: absolute;
     top: 0;
@@ -309,12 +324,12 @@
     padding: 0 54px;
     background-color: #F6F1EB;
   }
-  #headBox .unb > .nav_inner01 {
+  .nav_inner01 {
     display: flex;
     width: 100%;
     height: 50px;
   }
-  #headBox .unb > .nav_inner01 > .menu_btn {
+  .nav_inner01 > .menu_btn {
     display: block;
     width: 0;
     height: 0;
@@ -323,14 +338,15 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #headBox .unb > .nav_inner01 > .search_btn {
+  .search_btn {
     width: 48px;
     height: 50px;
     background-image: url(../../img/search.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox .unb > .nav_inner01 > .search_text_part {
+
+  .search_text_part {
     width: 40px;
     height: 50px;
     margin-right: 40px;
@@ -339,7 +355,8 @@
     font-size: 12px;
     text-decoration: underline;
   }
-  #headBox .unb > .nav_inner02 {
+
+  .nav_inner02 {
     display: flex;
     width: 240px;
     height: 50px;
@@ -348,45 +365,49 @@
     line-height: 50px;
     font-size: 12px;
   }
-  #headBox .unb > .nav_inner02 .language_part {
+  .language_part {
     width: 80px;
     height: 30px;
   }
-  #headBox .unb > .nav_inner02 .language_part span {
+  .language_part span {
     text-transform: uppercase;
   }
-  #headBox .unb > .nav_inner02 > .login_part {
+
+  .login_part {
     width: 80px;
     height: 50px;
     margin-right: -8px;
   }
-  #headBox .unb > .nav_inner02 > .join_part {
+
+  .join_part {
     width: 80px;
     height: 50px;
   }
-  #headBox .unb > .nav_inner02 > a {
+
+  .nav_inner02 > a {
     display: block;
     width: auto;
     height: 100%;
   }
-  #headBox .unb > .nav_inner02 > button {
+  .nav_inner02 > button {
     display: block;
     width: auto;
     height: 100%;
   }
-  #headBox .gnb {
+
+  .gnb {
     width: 100%;
     height: 60px;
     background-color: #F6F1EB;
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) and (max-width: 767px) {
-  #headBox .gnb {
+  .gnb {
     display: none;
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) {
-  #headBox .gnb > .nav_inner03 {
+  .nav_inner03 {
     display: flex;
     justify-content: space-between;
     width: 1096px;
@@ -394,7 +415,7 @@
     margin: auto;
     text-transform: uppercase;
   }
-  #headBox .gnb > .nav_inner03 .menu_btn {
+  .menu_btn {
     width: 30px;
     height: 24px;
     padding-top: 58px;
@@ -402,7 +423,8 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox .gnb > .nav_inner03 .menu_part {
+
+  .menu_part {
     display: flex;
     justify-content: space-around;
     width: 740px;
@@ -411,12 +433,13 @@
     line-height: 58px;
     font-size: 17px;
   }
-  #headBox .gnb > .nav_inner03 .menu_part > a {
+  .menu_part > a {
     display: block;
     width: 100%;
     height: 100%;
   }
-  #headBox .gnb > .nav_inner03 .cart_btn {
+
+  .cart_btn {
     width: 30px;
     height: 24px;
     padding-top: 58px;
@@ -450,7 +473,7 @@
     height: 100%;
   }
 
-  #headBox .unb {
+  .unb {
     display: flex;
     position: absolute;
     top: 0;
@@ -462,12 +485,12 @@
     padding: 0 120px;
     background-color: #F6F1EB;
   }
-  #headBox .unb > .nav_inner01 {
+  .nav_inner01 {
     display: flex;
     width: 100%;
     height: 50px;
   }
-  #headBox .unb > .nav_inner01 > .menu_btn {
+  .nav_inner01 .menu_btn {
     display: block;
     width: 0;
     height: 0;
@@ -476,14 +499,15 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #headBox .unb > .nav_inner01 > .search_btn {
+  .search_btn {
     width: 48px;
     height: 50px;
     background-image: url(../../img/search.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox .unb > .nav_inner01 > .search_text_part {
+
+  .search_text_part {
     width: 40px;
     height: 50px;
     margin-right: 40px;
@@ -492,7 +516,8 @@
     font-size: 12px;
     text-decoration: underline;
   }
-  #headBox .unb > .nav_inner02 {
+
+  .nav_inner02 {
     display: flex;
     width: 240px;
     height: 50px;
@@ -501,45 +526,49 @@
     line-height: 50px;
     font-size: 12px;
   }
-  #headBox .unb > .nav_inner02 .language_part {
+  .language_part {
     width: 80px;
     height: 30px;
   }
-  #headBox .unb > .nav_inner02 .language_part span {
+  .language_part span {
     text-transform: uppercase;
   }
-  #headBox .unb > .nav_inner02 > .login_part {
+
+  .login_part {
     width: 80px;
     height: 50px;
     margin-right: -8px;
   }
-  #headBox .unb > .nav_inner02 > .join_part {
+
+  .join_part {
     width: 80px;
     height: 50px;
   }
-  #headBox .unb > .nav_inner02 > a {
+
+  .nav_inner02 > a {
     display: block;
     width: auto;
     height: 100%;
   }
-  #headBox .unb > .nav_inner02 > button {
+  .nav_inner02 > button {
     display: block;
     width: auto;
     height: 100%;
   }
-  #headBox .gnb {
+
+  .gnb {
     width: 100%;
     height: 60px;
     background-color: #F6F1EB;
   }
 }
 @media all and (min-width: 1440px) and (max-width: 767px) {
-  #headBox .gnb {
+  .gnb {
     display: none;
   }
 }
 @media all and (min-width: 1440px) {
-  #headBox .gnb > .nav_inner03 {
+  .nav_inner03 {
     display: flex;
     justify-content: space-between;
     width: 1096px;
@@ -547,7 +576,7 @@
     margin: auto;
     text-transform: uppercase;
   }
-  #headBox .gnb > .nav_inner03 .menu_btn {
+  .menu_btn {
     width: 30px;
     height: 24px;
     padding-top: 58px;
@@ -555,7 +584,8 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox .gnb > .nav_inner03 .menu_part {
+
+  .menu_part {
     display: flex;
     justify-content: space-around;
     width: 740px;
@@ -564,12 +594,13 @@
     line-height: 58px;
     font-size: 17px;
   }
-  #headBox .gnb > .nav_inner03 .menu_part > a {
+  .menu_part > a {
     display: block;
     width: 100%;
     height: 100%;
   }
-  #headBox .gnb > .nav_inner03 .cart_btn {
+
+  .cart_btn {
     width: 30px;
     height: 24px;
     padding-top: 58px;
@@ -582,21 +613,21 @@
   #loginBox {
     width: 100%;
     height: auto;
-    margin: 150px 0;
+    margin: 130px 0;
     text-transform: uppercase;
   }
-  #loginBox .login_area {
+  .login_area {
     width: 300px;
     height: auto;
     margin: auto;
     font-weight: 400;
   }
-  #loginBox .login_area .login_title_inner {
+  .login_title_inner {
     width: 298px;
     height: 70px;
     border-bottom: 2px solid #F6F1EB;
   }
-  #loginBox .login_area .login_title_inner .login_title_box {
+  .login_title_box {
     width: 100px;
     height: 50px;
     margin: auto;
@@ -605,16 +636,17 @@
     font-size: 24px;
     font-weight: 500;
   }
-  #loginBox .login_area .login_inner {
+
+  .login_inner {
     width: auto;
     height: 100%;
   }
-  #loginBox .login_area .login_inner .member_inner {
+  .member_inner {
     width: 300px;
     height: 200px;
     padding: 40px 25px;
   }
-  #loginBox .login_area .login_inner .member_inner input {
+  .member_inner input {
     width: 250px;
     height: 56px;
     margin-bottom: 20px;
@@ -622,20 +654,20 @@
     border: 1px solid #ededed;
   }
 
-  #loginBox .login_area .login_inner .id_check_inner {
+  .id_check_inner {
     display: flex;
     justify-content: space-between;
     width: 120px;
     height: 20px;
     margin-top: -20px;
   }
-  #loginBox .login_area .login_inner .id_check_inner input {
+  .id_check_inner input {
     width: 16px;
     height: 16px;
     margin-left: 28px;
     border: 1px solid #ededed;
   }
-  #loginBox .login_area .login_inner .id_check_inner .id_check_box {
+  .id_check_box {
     width: 100px;
     height: 14px;
     margin-left: 4px;
@@ -643,13 +675,13 @@
     line-height: 16px;
   }
 
-  #loginBox .login_area .login_inner .login_btn_inner {
+  .login_btn_inner {
     width: 260px;
     height: 60px;
     margin: auto;
     margin-top: 20px;
   }
-  #loginBox .login_area .login_inner .login_btn_inner .login_btn_box {
+  .login_btn_box {
     width: 260px;
     height: 60px;
     text-align: center;
@@ -658,11 +690,11 @@
     color: #ECECEC;
     background-color: #333333;
   }
-  #loginBox .login_area .login_inner .login_btn_inner .login_btn_box a {
+  .login_btn_box a {
     display: block;
   }
 
-  #loginBox .login_area .login_inner .search_inner {
+  .login_inner .search_inner {
     display: flex;
     justify-content: space-between;
     width: 150px;
@@ -671,19 +703,21 @@
     margin-top: 10px;
     font-size: 10px;
   }
-  #loginBox .login_area .login_inner .search_inner .id_search_box {
+  .id_search_box {
     width: 100px;
     height: 30px;
   }
-  #loginBox .login_area .login_inner .search_inner .pw_search_box {
+
+  .pw_search_box {
     width: 100px;
     height: 30px;
   }
-  #loginBox .login_area .login_inner .search_inner a {
+
+  .login_inner .search_inner a {
     display: block;
   }
 
-  #loginBox .login_area .login_inner .join_inner {
+  .login_inner .join_inner {
     width: 298px;
     height: 200px;
     margin-top: 20px;
@@ -693,20 +727,22 @@
     font-size: 15px;
     border-top: 2px solid #F6F1EB;
   }
-  #loginBox .login_area .login_inner .join_inner .join_box {
+  .join_box {
     width: 260px;
     height: 60px;
     margin: auto;
     margin-bottom: 20px;
     border: 1px solid #505050;
   }
-  #loginBox .login_area .login_inner .join_inner .non_member_box {
+
+  .non_member_box {
     width: 260px;
     height: 60px;
     margin: auto;
     border: 1px solid #505050;
   }
-  #loginBox .login_area .login_inner .join_inner a {
+
+  .login_inner .join_inner a {
     display: block;
   }
 }
@@ -718,7 +754,7 @@
     padding: 20px;
     text-transform: uppercase;
   }
-  #loginBox .login_area {
+  .login_area {
     width: 700px;
     height: 700px;
     margin: auto;
@@ -726,14 +762,14 @@
     border: 1px solid #ededed;
     font-weight: 400;
   }
-  #loginBox .login_area .login_title_inner {
+  .login_title_inner {
     width: 700px;
     height: 100px;
     margin: auto;
     padding: 30px 0;
     border-bottom: 1px solid #ededed;
   }
-  #loginBox .login_area .login_title_inner .login_title_box {
+  .login_title_box {
     width: 320px;
     height: 80px;
     margin: auto;
@@ -742,7 +778,8 @@
     font-size: 35px;
     font-weight: 500;
   }
-  #loginBox .login_area .login_inner {
+
+  .login_inner {
     display: flex;
     justify-content: space-between;
     width: auto;
@@ -750,13 +787,13 @@
     color: #505050;
     background-color: #ffffff;
   }
-  #loginBox .login_area .login_inner .member_inner {
+  .member_inner {
     width: 340px;
     height: 250px;
     margin-top: 80px;
     padding: 20px;
   }
-  #loginBox .login_area .login_inner .member_inner input {
+  .member_inner input {
     width: 300px;
     height: 70px;
     margin: auto;
@@ -768,34 +805,34 @@
     border: 1px solid #ededed;
   }
 
-  #loginBox .login_area .login_inner .id_check_inner {
+  .id_check_inner {
     display: flex;
     justify-content: space-between;
     width: 140px;
     height: 30px;
     margin-top: -40px;
   }
-  #loginBox .login_area .login_inner .id_check_inner input {
+  .id_check_inner input {
     width: 16px;
     height: 16px;
     margin-left: 30px;
     border: 1px solid #ededed;
   }
-  #loginBox .login_area .login_inner .id_check_inner .id_check_box {
+  .id_check_box {
     width: 90px;
     height: 20px;
     line-height: 18px;
     font-size: 14px;
   }
 
-  #loginBox .login_area .login_inner .login_btn_inner {
+  .login_btn_inner {
     width: 320px;
     height: 120px;
     margin-bottom: -10px;
     margin-top: 20px;
     padding: 20px 8px;
   }
-  #loginBox .login_area .login_inner .login_btn_inner .login_btn_box {
+  .login_btn_box {
     width: 320px;
     height: 80px;
     margin-left: 5px;
@@ -805,11 +842,11 @@
     color: #ECECEC;
     background-color: #333333;
   }
-  #loginBox .login_area .login_inner .login_btn_inner .login_btn_box a {
+  .login_btn_box a {
     display: block;
   }
 
-  #loginBox .login_area .login_inner .search_inner {
+  .search_inner {
     display: flex;
     justify-content: space-between;
     width: 240px;
@@ -820,26 +857,28 @@
     text-align: center;
     font-size: 14px;
   }
-  #loginBox .login_area .login_inner .search_inner .id_search_box {
+  .id_search_box {
     width: 100px;
     height: 30px;
   }
-  #loginBox .login_area .login_inner .search_inner .pw_search_box {
+
+  .pw_search_box {
     width: 100px;
     height: 30px;
   }
-  #loginBox .login_area .login_inner .search_inner a {
+
+  .search_inner a {
     display: block;
   }
 
-  #loginBox .login_area .login_inner .join_inner {
+  .join_inner {
     width: 350px;
     height: 598px;
     padding: 150px 26px;
     border-left: 2px solid #F6F1EB;
     color: #505050;
   }
-  #loginBox .login_area .login_inner .join_inner .join_box {
+  .join_box {
     width: 300px;
     height: 80px;
     margin-bottom: 46px;
@@ -849,7 +888,8 @@
     color: #333333;
     border: 1px solid #333333;
   }
-  #loginBox .login_area .login_inner .join_inner .non_member_box {
+
+  .non_member_box {
     width: 300px;
     height: 80px;
     text-align: center;
@@ -858,7 +898,8 @@
     color: #333333;
     border: 1px solid #333333;
   }
-  #loginBox .login_area .login_inner .join_inner a {
+
+  .join_inner a {
     display: block;
   }
 }
@@ -870,7 +911,7 @@
     padding: 100px;
     text-transform: uppercase;
   }
-  #loginBox .login_area {
+  .login_area {
     width: 1096px;
     height: 800px;
     margin: auto;
@@ -878,14 +919,14 @@
     border: 1px solid #ededed;
     font-weight: 400;
   }
-  #loginBox .login_area .login_title_inner {
+  .login_title_inner {
     width: 1096px;
     height: 140px;
     margin: auto;
     padding: 30px 0;
     border-bottom: 1px solid #ededed;
   }
-  #loginBox .login_area .login_title_inner .login_title_box {
+  .login_title_box {
     width: 320px;
     height: 80px;
     margin: auto;
@@ -894,7 +935,8 @@
     font-size: 38px;
     font-weight: 500;
   }
-  #loginBox .login_area .login_inner {
+
+  .login_inner {
     display: flex;
     justify-content: space-between;
     width: auto;
@@ -904,13 +946,13 @@
     color: #505050;
     background-color: #ffffff;
   }
-  #loginBox .login_area .login_inner .member_inner {
+  .member_inner {
     width: 450px;
     height: 240px;
     margin-top: 80px;
     padding: 17px 25px;
   }
-  #loginBox .login_area .login_inner .member_inner input {
+  .member_inner input {
     width: 380px;
     height: 80px;
     margin: auto;
@@ -921,7 +963,7 @@
     font-size: 20px;
     border: 1px solid #ededed;
   }
-  #loginBox .login_area .login_inner .member_inner input:last-child {
+  .member_inner input:last-child {
     width: 380px;
     height: 80px;
     margin: auto;
@@ -933,7 +975,7 @@
     border: 1px solid #ededed;
   }
 
-  #loginBox .login_area .login_inner .id_check_inner {
+  .id_check_inner {
     display: flex;
     justify-content: space-between;
     width: 200px;
@@ -941,25 +983,25 @@
     margin-top: 4px;
     margin-bottom: 12px;
   }
-  #loginBox .login_area .login_inner .id_check_inner input {
+  .id_check_inner input {
     width: 20px;
     height: 20px;
     margin-left: 30px;
     border: 1px solid #ededed;
   }
-  #loginBox .login_area .login_inner .id_check_inner .id_check_box {
+  .id_check_box {
     width: 134px;
     height: 40px;
   }
 
-  #loginBox .login_area .login_inner .login_btn_inner {
+  .login_btn_inner {
     width: 420px;
     height: 120px;
     margin-bottom: -10px;
     margin-top: 20px;
     padding: 20px 8px;
   }
-  #loginBox .login_area .login_inner .login_btn_inner .login_btn_box {
+  .login_btn_box {
     width: 400px;
     height: 80px;
     margin-left: 10px;
@@ -969,11 +1011,11 @@
     color: #ECECEC;
     background-color: #333333;
   }
-  #loginBox .login_area .login_inner .login_btn_inner .login_btn_box a {
+  .login_btn_box a {
     display: block;
   }
 
-  #loginBox .login_area .login_inner .search_inner {
+  .search_inner {
     display: flex;
     justify-content: space-between;
     width: 360px;
@@ -985,26 +1027,28 @@
     text-align: center;
     font-size: 14px;
   }
-  #loginBox .login_area .login_inner .search_inner .id_search_box {
+  .id_search_box {
     width: 100px;
     height: 40px;
   }
-  #loginBox .login_area .login_inner .search_inner .pw_search_box {
+
+  .pw_search_box {
     width: 100px;
     height: 40px;
   }
-  #loginBox .login_area .login_inner .search_inner a {
+
+  .search_inner a {
     display: block;
   }
 
-  #loginBox .login_area .login_inner .join_inner {
+  .join_inner {
     width: 500px;
     height: 658px;
     padding: 180px 80px;
     border-left: 2px solid #F6F1EB;
     color: #505050;
   }
-  #loginBox .login_area .login_inner .join_inner .join_box {
+  .join_box {
     width: 400px;
     height: 80px;
     margin-bottom: 46px;
@@ -1014,7 +1058,8 @@
     color: #333333;
     border: 1px solid #333333;
   }
-  #loginBox .login_area .login_inner .join_inner .non_member_box {
+
+  .non_member_box {
     width: 400px;
     height: 80px;
     text-align: center;
@@ -1023,7 +1068,8 @@
     color: #333333;
     border: 1px solid #333333;
   }
-  #loginBox .login_area .login_inner .join_inner a {
+
+  .join_inner a {
     display: block;
     width: 400px;
     height: 80px;
@@ -1037,7 +1083,7 @@
     padding: 180px;
     text-transform: uppercase;
   }
-  #loginBox .login_area {
+  .login_area {
     width: 1096px;
     height: 800px;
     margin: auto;
@@ -1045,14 +1091,14 @@
     border: 1px solid #ededed;
     font-weight: 400;
   }
-  #loginBox .login_area .login_title_inner {
+  .login_title_inner {
     width: 1096px;
     height: 140px;
     margin: auto;
     padding: 30px 0;
     border-bottom: 1px solid #ededed;
   }
-  #loginBox .login_area .login_title_inner .login_title_box {
+  .login_title_box {
     width: 320px;
     height: 80px;
     margin: auto;
@@ -1061,7 +1107,8 @@
     font-size: 38px;
     font-weight: 500;
   }
-  #loginBox .login_area .login_inner {
+
+  .login_inner {
     display: flex;
     justify-content: space-between;
     width: auto;
@@ -1071,17 +1118,17 @@
     color: #505050;
     background-color: #ffffff;
   }
-  #loginBox .login_area .login_inner form {
+  .login_inner form {
     margin: auto;
     height: 100%;
   }
-  #loginBox .login_area .login_inner .member_inner {
+  .member_inner {
     width: 450px;
     height: 240px;
     margin-top: 80px;
     padding: 17px 25px;
   }
-  #loginBox .login_area .login_inner .member_inner input {
+  .member_inner input {
     width: 380px;
     height: 80px;
     margin: auto;
@@ -1092,7 +1139,7 @@
     font-size: 20px;
     border: 1px solid #ededed;
   }
-  #loginBox .login_area .login_inner .member_inner input:last-child {
+  .member_inner input:last-child {
     width: 380px;
     height: 80px;
     margin: auto;
@@ -1104,7 +1151,7 @@
     border: 1px solid #ededed;
   }
 
-  #loginBox .login_area .login_inner .id_check_inner {
+  .id_check_inner {
     display: flex;
     justify-content: space-between;
     width: 200px;
@@ -1112,25 +1159,25 @@
     margin-top: 4px;
     margin-bottom: 12px;
   }
-  #loginBox .login_area .login_inner .id_check_inner input {
+  .id_check_inner input {
     width: 20px;
     height: 20px;
     margin-left: 30px;
     border: 1px solid #ededed;
   }
-  #loginBox .login_area .login_inner .id_check_inner .id_check_box {
+  .id_check_box {
     width: 134px;
     height: 40px;
   }
 
-  #loginBox .login_area .login_inner .login_btn_inner {
+  .login_btn_inner {
     width: 420px;
     height: 120px;
     margin-bottom: -10px;
     margin-top: 20px;
     padding: 20px 8px;
   }
-  #loginBox .login_area .login_inner .login_btn_inner .login_btn_box {
+  .login_btn_box {
     width: 400px;
     height: 80px;
     margin-left: 10px;
@@ -1140,11 +1187,11 @@
     color: #ECECEC;
     background-color: #333333;
   }
-  #loginBox .login_area .login_inner .login_btn_inner .login_btn_box a {
+  .login_btn_box a {
     display: block;
   }
 
-  #loginBox .login_area .login_inner .search_inner {
+  .search_inner {
     display: flex;
     justify-content: space-between;
     width: 360px;
@@ -1156,26 +1203,28 @@
     text-align: center;
     font-size: 14px;
   }
-  #loginBox .login_area .login_inner .search_inner .id_search_box {
+  .id_search_box {
     width: 100px;
     height: 40px;
   }
-  #loginBox .login_area .login_inner .search_inner .pw_search_box {
+
+  .pw_search_box {
     width: 100px;
     height: 40px;
   }
-  #loginBox .login_area .login_inner .search_inner a {
+
+  .search_inner a {
     display: block;
   }
 
-  #loginBox .login_area .login_inner .join_inner {
+  .join_inner {
     width: 500px;
     height: 658px;
     padding: 180px 80px;
     border-left: 2px solid #F6F1EB;
     color: #505050;
   }
-  #loginBox .login_area .login_inner .join_inner .join_box {
+  .join_box {
     width: 400px;
     height: 80px;
     margin-bottom: 46px;
@@ -1185,7 +1234,8 @@
     color: #333333;
     border: 1px solid #333333;
   }
-  #loginBox .login_area .login_inner .join_inner .non_member_box {
+
+  .non_member_box {
     width: 400px;
     height: 80px;
     text-align: center;
@@ -1194,7 +1244,8 @@
     color: #333333;
     border: 1px solid #333333;
   }
-  #loginBox .login_area .login_inner .join_inner a {
+
+  .join_inner a {
     display: block;
     width: 400px;
     height: 80px;
@@ -1206,7 +1257,7 @@
     height: auto;
     margin: auto;
   }
-  #footBox .fnb {
+  .fnb {
     width: 100%;
     height: auto;
     background-color: #F6F1EB;
@@ -1235,13 +1286,13 @@
     height: 100%;
   }
 
-  #footBox .info_inner {
+  .info_inner {
     position: relative;
     width: 100%;
     height: auto;
     margin: auto;
   }
-  #footBox .info_inner h3 {
+  .info_inner h3 {
     position: absolute;
     bottom: -100px;
     left: 0;
@@ -1253,16 +1304,16 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #footBox .info_inner .cs_box {
+  .cs_box {
     width: 0;
     height: 0;
   }
-  #footBox .info_inner .cs_box a {
+  .cs_box a {
     display: block;
     font-weight: 500;
     text-decoration: underline;
   }
-  #footBox .info_inner .cs_box .cs_part {
+  .cs_box .cs_part {
     display: block;
     width: 0;
     height: 0;
@@ -1271,7 +1322,7 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #footBox .info_inner .cs_box .store_search_part {
+  .cs_box .store_search_part {
     display: block;
     width: 0;
     height: 0;
@@ -1280,7 +1331,7 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #footBox .info_inner .cs_box .sns_part {
+  .sns_part {
     position: absolute;
     bottom: -20px;
     right: 0;
@@ -1291,24 +1342,25 @@
     padding: 8px;
     box-sizing: border-box;
   }
-  #footBox .info_inner .cs_box .sns_part a {
+  .sns_part a {
     display: block;
     width: 28px;
     height: 28px;
     border-radius: 100%;
     background-color: #D9D9D9;
   }
-  #footBox .info_inner address {
+
+  address {
     position: relative;
     width: auto;
     height: auto;
     margin: auto;
     padding: 10px;
   }
-  #footBox .info_inner address p {
+  address p {
     font-size: 13px;
   }
-  #footBox .info_inner address a {
+  address a {
     display: block;
     text-decoration: underline;
   }
@@ -1319,12 +1371,12 @@
     height: auto;
     margin: auto;
   }
-  #footBox .fnb {
+  .fnb {
     width: 100%;
     height: 60px;
     background-color: #F6F1EB;
   }
-  #footBox .fnb .fnb_box {
+  .fnb_box {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -1332,25 +1384,26 @@
     margin: auto;
     text-align: center;
   }
-  #footBox .fnb .fnb_box div {
+  .fnb_box div {
     width: 200px;
     height: 60px;
     line-height: 58px;
   }
-  #footBox .fnb .fnb_box div a {
+  .fnb_box div a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
   }
-  #footBox .info_inner {
+
+  .info_inner {
     position: relative;
     margin: auto;
     width: auto;
     height: 600px;
   }
-  #footBox .info_inner h3 {
+  .info_inner h3 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1363,7 +1416,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #footBox .info_inner .cs_box {
+  .cs_box {
     display: flex;
     justify-content: space-between;
     width: auto;
@@ -1373,40 +1426,42 @@
     padding: 20px 0;
     text-align: center;
   }
-  #footBox .info_inner .cs_box a {
+  .cs_box a {
     display: block;
     font-weight: 500;
     text-decoration: underline;
   }
-  #footBox .info_inner .cs_box .cs_part {
+  .cs_part {
     width: 350px;
     height: 200px;
     padding: 20px;
     text-align: justify;
     font-size: 14px;
   }
-  #footBox .info_inner .cs_box .cs_part button {
+  .cs_part button {
     text-decoration: underline;
     font-weight: 500;
   }
-  #footBox .info_inner .cs_box .store_search_part {
+
+  .store_search_part {
     width: 320px;
     height: 200px;
   }
-  #footBox .info_inner .cs_box .store_search_part span {
+  .store_search_part span {
     display: block;
     padding: 40px;
     padding-bottom: 0;
     font-size: 22px;
     font-weight: 500;
   }
-  #footBox .info_inner .cs_box .sns_part {
+
+  .sns_part {
     width: 70px;
     height: 200px;
     padding: 8px;
     box-sizing: border-box;
   }
-  #footBox .info_inner .cs_box .sns_part a {
+  .sns_part a {
     display: block;
     width: 40px;
     height: 40px;
@@ -1415,21 +1470,22 @@
     border-radius: 100%;
     background-color: #D9D9D9;
   }
-  #footBox .info_inner address {
+
+  address {
     width: 800px;
     height: auto;
     margin: auto;
     padding: 60px 0;
     border-top: 2px solid #F6F1EB;
   }
-  #footBox .info_inner address .mobile {
+  address .mobile {
     display: none;
   }
-  #footBox .info_inner address p {
+  address p {
     display: block;
     padding-left: 20px;
   }
-  #footBox .info_inner address a {
+  address a {
     text-decoration: underline;
   }
 }
@@ -1439,12 +1495,12 @@
     height: auto;
     margin: auto;
   }
-  #footBox .fnb {
+  .fnb {
     width: 100%;
     height: 60px;
     background-color: #F6F1EB;
   }
-  #footBox .fnb .fnb_box {
+  .fnb_box {
     display: flex;
     justify-content: space-around;
     width: 1280px;
@@ -1452,25 +1508,26 @@
     margin: auto;
     text-align: center;
   }
-  #footBox .fnb .fnb_box div {
+  .fnb_box div {
     width: 200px;
     height: 60px;
     line-height: 58px;
   }
-  #footBox .fnb .fnb_box div a {
+  .fnb_box div a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
   }
-  #footBox .info_inner {
+
+  .info_inner {
     position: relative;
     margin: auto;
     width: 100%;
     height: 600px;
   }
-  #footBox .info_inner h3 {
+  .info_inner h3 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1483,7 +1540,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #footBox .info_inner .cs_box {
+  .cs_box {
     display: flex;
     justify-content: space-between;
     width: auto;
@@ -1493,40 +1550,42 @@
     padding: 40px 0;
     text-align: center;
   }
-  #footBox .info_inner .cs_box a {
+  .cs_box a {
     display: block;
     font-weight: 500;
     text-decoration: underline;
   }
-  #footBox .info_inner .cs_box .cs_part {
+  .cs_part {
     width: 400px;
     height: 250px;
     padding: 20px;
     text-align: justify;
     font-size: 15px;
   }
-  #footBox .info_inner .cs_box .cs_part button {
+  .cs_part button {
     text-decoration: underline;
     font-weight: 500;
   }
-  #footBox .info_inner .cs_box .store_search_part {
+
+  .store_search_part {
     width: 400px;
     height: 250px;
   }
-  #footBox .info_inner .cs_box .store_search_part span {
+  .store_search_part span {
     display: block;
     padding: 40px;
     padding-bottom: 0;
     font-size: 22px;
     font-weight: 500;
   }
-  #footBox .info_inner .cs_box .sns_part {
+
+  .sns_part {
     width: 70px;
     height: 200px;
     padding: 8px;
     box-sizing: border-box;
   }
-  #footBox .info_inner .cs_box .sns_part a {
+  .sns_part a {
     display: block;
     width: 40px;
     height: 40px;
@@ -1535,7 +1594,8 @@
     border-radius: 100%;
     background-color: #D9D9D9;
   }
-  #footBox .info_inner address {
+
+  address {
     width: 1000px;
     height: 242px;
     margin: auto;
@@ -1543,14 +1603,14 @@
     padding-top: 30px;
     border-top: 2px solid #F6F1EB;
   }
-  #footBox .info_inner address .mobile {
+  address .mobile {
     display: none;
   }
-  #footBox .info_inner address p {
+  address p {
     display: block;
     padding-left: 20px;
   }
-  #footBox .info_inner address a {
+  address a {
     text-decoration: underline;
   }
 }
@@ -1560,12 +1620,12 @@
     height: auto;
     margin: auto;
   }
-  #footBox .fnb {
+  .fnb {
     width: 100%;
     height: 60px;
     background-color: #F6F1EB;
   }
-  #footBox .fnb .fnb_box {
+  .fnb_box {
     display: flex;
     justify-content: space-between;
     width: 1200px;
@@ -1573,18 +1633,19 @@
     margin: auto;
     text-align: center;
   }
-  #footBox .fnb .fnb_box div {
+  .fnb_box div {
     width: 200px;
     height: 60px;
     line-height: 58px;
   }
-  #footBox .info_inner {
+
+  .info_inner {
     position: relative;
     margin: auto;
     width: 1440px;
     height: 690px;
   }
-  #footBox .info_inner h3 {
+  .info_inner h3 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1597,7 +1658,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #footBox .info_inner .cs_box {
+  .cs_box {
     display: flex;
     justify-content: space-between;
     width: auto;
@@ -1607,39 +1668,41 @@
     padding: 46px 0;
     text-align: center;
   }
-  #footBox .info_inner .cs_box a {
+  .cs_box a {
     display: block;
     font-weight: 500;
     text-decoration: underline;
   }
-  #footBox .info_inner .cs_box .cs_part {
+  .cs_part {
     width: 454px;
     height: 230px;
     padding: 20px;
     text-align: justify;
   }
-  #footBox .info_inner .cs_box .cs_part button {
+  .cs_part button {
     text-decoration: underline;
     font-weight: 500;
   }
-  #footBox .info_inner .cs_box .store_search_part {
+
+  .store_search_part {
     width: 454px;
     height: 230px;
   }
-  #footBox .info_inner .cs_box .store_search_part span {
+  .store_search_part span {
     display: block;
     padding: 40px;
     padding-bottom: 0;
     font-size: 22px;
     font-weight: 500;
   }
-  #footBox .info_inner .cs_box .sns_part {
+
+  .sns_part {
     width: 70px;
     height: 200px;
     padding: 8px;
     box-sizing: border-box;
   }
-  #footBox .info_inner .cs_box .sns_part a {
+  .sns_part a {
     display: block;
     width: 40px;
     height: 40px;
@@ -1648,7 +1711,8 @@
     border-radius: 100%;
     background-color: #D9D9D9;
   }
-  #footBox .info_inner address {
+
+  address {
     width: 1096px;
     height: 242px;
     margin: auto;
@@ -1656,14 +1720,14 @@
     padding-top: 60px;
     border-top: 2px solid #F6F1EB;
   }
-  #footBox .info_inner address .mobile {
+  address .mobile {
     display: none;
   }
-  #footBox .info_inner address p {
+  address p {
     display: block;
     padding-left: 20px;
   }
-  #footBox .info_inner address a {
+  address a {
     text-decoration: underline;
   }
 }

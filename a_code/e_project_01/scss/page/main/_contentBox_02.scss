@@ -15,8 +15,8 @@
       margin: auto; 
     }
 
-    & .best_wrap {width: 100%; height: 400px; overflow: hidden;}
-    @at-root  & .best_inner_01 {
+    @at-root .best_wrap {width: 100%; height: 400px; overflow: hidden;}
+    @at-root .best_inner_01 {
       display: flex; justify-content: flex-start;
       width: 1200px; height: 400px;
 
@@ -47,8 +47,8 @@
       margin: auto; margin-bottom: 20px;
     }
 
-    & .best_wrap {width: 100%; height: 600px; overflow: hidden;}
-    @at-root  & .best_inner_01 {
+    @at-root .best_wrap {width: 100%; height: 600px; overflow: hidden;}
+    @at-root .best_inner_01 {
       display: flex; justify-content: flex-start;
       width: 1600px; height: 600px; 
       padding: 50px 20px;
@@ -82,8 +82,8 @@
       margin: auto; margin-bottom: 40px;
     }
 
-    & .best_wrap {width: 100%; height: 600px; overflow: hidden;}
-    @at-root  & .best_inner_01 {
+    @at-root .best_wrap {width: 100%; height: 600px; overflow: hidden;}
+    @at-root .best_inner_01 {
       display: flex; justify-content: flex-start;
       width: 2400px; height: 600px;
       padding: 0 20px;
@@ -120,8 +120,8 @@
       font-size: 35px;
     }
 
-    & .best_wrap {width: 100%; height: 700px; overflow: hidden; }
-    @at-root  & .best_inner_01 {
+    @at-root .best_wrap {width: 100%; height: 700px; overflow: hidden; }
+    @at-root .best_inner_01 {
       display: flex; justify-content: flex-start;
       width: 2400px; height: 600px;
       padding: 60px 10px;

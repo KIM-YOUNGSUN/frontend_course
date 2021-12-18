@@ -13,7 +13,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       width: 100%; height: auto;
       margin:auto;
     
-    .fnb {
+    @at-root .fnb {
       width: 100%; height: auto;
       background-color: $color_beige_01;
       
@@ -22,7 +22,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
           width: 100%; height: 40px;
           margin: auto; margin-bottom: 20px;
 
-          &  div { 
+          @at-root & div { 
             width:auto; height: 40px; padding:0.2rem;
             font-size: 14px; text-align: center; font-weight: bold;
             & a {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;}            
@@ -30,7 +30,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
         } //.fnb_box
       }// .fnb
     
-      .info_inner {
+      @at-root .info_inner {
         position: relative; 
         width: 100%; height: auto;
         margin: auto;
@@ -45,7 +45,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
           background-position: 50% 50%;
           }
       
-        .cs_box {
+        @at-root .cs_box {
           width: 0; height: 0;
         
           & a {display:block; font-weight: $font_weight_bold; text-decoration: underline}
@@ -54,12 +54,13 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     
           .store_search_part {@include blind}
           
-          .sns_part { 
+          @at-root .sns_part { 
             position: absolute; bottom: -20px; right: 0;
             display: flex; justify-content: space-between;
             width: 134px; height: 50px;
             padding: 8px; 
             box-sizing: border-box;
+            
             &  a {
               display:block; 
               width: 28px; height: 28px;
@@ -69,7 +70,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
           } // .sns_part
         } // .cs_box
     
-        address {
+        @at-root address {
           position: relative;
           width: auto; height: auto;
           margin: auto; padding: 10px;
@@ -89,11 +90,11 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     width: 100%; height: auto;
     margin:auto; 
   
-  .fnb {
+    @at-root .fnb {
     width: 100%; height: 60px;
     background-color: $color_beige_01;
     
-      .fnb_box {
+    @at-root .fnb_box {
         display: flex; justify-content: space-between;
         width: 100%; height: 60px;
         margin: auto; 
@@ -107,7 +108,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       } //.fnb_box
     }// .fnb
   
-    .info_inner {
+    @at-root .info_inner {
       position: relative; margin: auto;
       width: auto; height: 600px;
   
@@ -121,7 +122,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
         background-position: 50% 50%;
         }
     
-      .cs_box {
+        @at-root .cs_box {
         display: flex; justify-content: space-between;
         width: auto; max-width: 800px; height: 250px;
         margin: auto; padding: 20px 0;
@@ -129,7 +130,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       
         & a {display:block; font-weight: $font_weight_bold; text-decoration: underline}
       
-        .cs_part {
+        @at-root .cs_part {
           width: 350px; height: 200px; 
           padding: 20px;
           text-align: justify;
@@ -138,7 +139,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
           & button { text-decoration: underline; font-weight: $font_weight_bold;}
         }
   
-        .store_search_part {
+        @at-root .store_search_part {
           width: 320px; height: 200px; 
 
           & span {
@@ -147,7 +148,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
             font-size: 22px;  font-weight: $font_weight_bold;}
         }
         
-        .sns_part { 
+        @at-root .sns_part { 
           width: 70px; height: 200px;
           padding: 8px; 
           box-sizing: border-box;
@@ -162,7 +163,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
         } // .sns_part
       } // .cs_box
   
-      address {
+      @at-root address {
         width: 800px; height: auto;
         margin: auto;  padding: 60px 0;
         border-top: $line1;
@@ -186,11 +187,11 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     width: 100%; height: auto;
     margin:auto; 
   
-  .fnb {
+    @at-root .fnb {
     width: 100%; height: 60px;
     background-color: $color_beige_01;
     
-      .fnb_box {
+    @at-root .fnb_box {
         display: flex; justify-content: space-around;
         width: 1280px; height: 60px;
         margin: auto; 
@@ -204,7 +205,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       } //.fnb_box
     }// .fnb
   
-    .info_inner {
+    @at-root .info_inner {
       position: relative; margin: auto;
       width: 100%; height: 600px;
   
@@ -218,7 +219,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
         background-position: 50% 50%;
         }
     
-      .cs_box {
+        @at-root .cs_box {
         display: flex; justify-content: space-between;
         width: auto; max-width: 1000px; height: 300px;
         margin: auto; padding: 40px 0;
@@ -226,7 +227,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       
         & a {display:block; font-weight: $font_weight_bold; text-decoration: underline}
       
-        .cs_part {
+        @at-root .cs_part {
           width: 400px; height: 250px; 
           padding: 20px;
           text-align: justify; 
@@ -235,7 +236,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
           & button { text-decoration: underline; font-weight: $font_weight_bold;}
         }
   
-        .store_search_part {
+        @at-root .store_search_part {
           width: 400px; height: 250px; 
 
           & span {
@@ -244,7 +245,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
             font-size: 22px;  font-weight: $font_weight_bold;}
         }
         
-        .sns_part { 
+        @at-root .sns_part { 
           width: 70px; height: 200px;
           padding: 8px; 
           box-sizing: border-box;
@@ -259,7 +260,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
         } // .sns_part
       } // .cs_box
   
-      address {
+      @at-root address {
         width: 1000px; height: 242px;
         margin: auto; margin-bottom: 20px; padding-top: 30px;
         border-top: $line1;
@@ -285,11 +286,11 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
   width: 1440px; height: auto;
   margin:auto; 
 
-.fnb {
+  @at-root .fnb {
   width: 100%; height: 60px;
   background-color: $color_beige_01;
   
-    .fnb_box {
+  @at-root .fnb_box {
       display: flex; justify-content: space-between;
       width: 1200px; height: 60px;
       margin: auto; 
@@ -302,7 +303,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     } //.fnb_box
   }// .fnb
 
-  .info_inner {
+  @at-root .info_inner {
     position: relative; margin: auto;
     width: 1440px; height: 690px;
 
@@ -316,7 +317,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       background-position: 50% 50%;
       }
   
-    .cs_box {
+      @at-root .cs_box {
       display: flex; justify-content: space-between;
       width: auto; max-width: 1096px; height: 320px;
       margin: auto; padding: 46px 0;
@@ -324,7 +325,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     
       & a {display:block; font-weight: $font_weight_bold; text-decoration: underline}
     
-      .cs_part {
+      @at-root .cs_part {
         width: 454px; height: 230px; 
         padding: 20px;
         text-align: justify;
@@ -332,7 +333,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
         & button { text-decoration: underline; font-weight: $font_weight_bold;}
       }
 
-      .store_search_part {
+      @at-root .store_search_part {
         width: 454px; height: 230px; 
 
         & span {
@@ -341,7 +342,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
           font-size: 22px; font-weight: $font_weight_bold;}
       }
       
-      .sns_part { 
+      @at-root .sns_part { 
         width: 70px; height: 200px;
         padding: 8px; 
         box-sizing: border-box;
@@ -356,7 +357,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       } // .sns_part
     } // .cs_box
 
-    address {
+    @at-root address {
       width: 1096px; height: 242px;
       margin: auto; margin-bottom: 15px; padding-top: 60px;
       border-top: $line1;

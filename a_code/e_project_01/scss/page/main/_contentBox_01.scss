@@ -18,7 +18,7 @@
       width: 100%; height: 680px;
       margin: auto;
       
-      @at-root & .fw_inner_01 {
+      @at-root .fw_inner_01 {
         width: 100%; height: 600px; 
         padding: 10px;
 
@@ -29,7 +29,7 @@
         & .fw_part_03 {@include blind}
         & .fw_part_04 {@include blind}
       } // .fw_inner_01
-      @at-root & .fw_inner_02 {@include blind}
+      @at-root .fw_inner_02 {@include blind}
 
       & button {
         width: 100px; height: auto; 
@@ -65,7 +65,7 @@
       width: 100%; height: 745px;
       margin: auto; padding: 20px;
       
-      @at-root & .fw_inner_01 {
+      @at-root .fw_inner_01 {
         display: flex; justify-content: space-around;
         width: 100%; height: auto; 
         padding: 10px;
@@ -77,7 +77,7 @@
         & .fw_part_04 {@include blind}
       } // .fw_inner_01
 
-      @at-root & .fw_inner_02 {
+      @at-root .fw_inner_02 {
         display: flex; justify-content: space-around;
         width: 100%; height: auto; 
         padding: 10px;
@@ -131,7 +131,7 @@
       margin: auto; padding: 50px 20px;
       
       .fw_wrap_01 {width: 500px; height: 500px; overflow: hidden;}
-      @at-root & .fw_inner_01 {
+      @at-root .fw_inner_01 {
         display: flex; justify-content: space-around;
         width: 2000px; height: 500px;  
 
@@ -140,7 +140,7 @@
           background-color: $color_light_gray_02;}
       } // .fw_inner_01
 
-      @at-root & .fw_inner_02 {
+      @at-root .fw_inner_02 {
         position: absolute; top: 110px; right: 0;
         display: flex; justify-content: space-around; flex-wrap: wrap;
         width: 500px; height: 500px; 
@@ -189,7 +189,7 @@
       margin: auto; padding: 50px 0;
       
       .fw_wrap_01 {width: 600px; height: 600px; overflow: hidden;}
-      @at-root & .fw_inner_01 {
+      @at-root .fw_inner_01 {
         display: flex; justify-content: space-around;
         width: 2400px; height: 600px;  
         padding: 10px 0;
@@ -199,7 +199,7 @@
           background-color: $color_light_gray_02;}
       } // .fw_inner_01
 
-      @at-root & .fw_inner_02 {
+      @at-root .fw_inner_02 {
         position: absolute; top: 100px; right: 0px;
         display: flex; justify-content: space-around; flex-wrap: wrap;
         width: 600px; height: 600px; 

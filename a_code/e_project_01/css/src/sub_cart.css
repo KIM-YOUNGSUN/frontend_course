@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
   }
-  #headBox > .unb {
+  .unb {
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -31,26 +31,28 @@
     padding: 0 10px;
     background-color: #F6F1EB;
   }
-  #headBox > .unb > .nav_inner01 {
+  .nav_inner01 {
     display: flex;
     width: 100px;
     height: 40px;
   }
-  #headBox > .unb > .nav_inner01 > .menu_btn {
+  .menu_btn {
     width: 40px;
     height: 100%;
     background-image: url(../../../img/menu.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox > .unb > .nav_inner01 > .search_btn {
+
+  .search_btn {
     width: 40px;
     height: 100%;
     background-image: url(../../../img/search.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox > .unb > .nav_inner01 > .search_text_part {
+
+  .search_text_part {
     display: block;
     width: 0;
     height: 0;
@@ -59,19 +61,20 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #headBox > .unb > .nav_inner02 {
+
+  .nav_inner02 {
     display: flex;
     width: auto;
     height: 40px;
   }
-  #headBox > .unb > .nav_inner02 .language_part {
+  .language_part {
     width: 40px;
     height: 100%;
     background-image: url(../../../img/internet.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox > .unb > .nav_inner02 .language_part span {
+  .language_part span {
     display: block;
     width: 0;
     height: 0;
@@ -80,14 +83,15 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #headBox > .unb > .nav_inner02 > .login_part {
+
+  .login_part {
     width: 40px;
     height: 100%;
     background-image: url(../../../img/user.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox > .unb > .nav_inner02 > .login_part span {
+  .login_part span {
     display: block;
     width: 0;
     height: 0;
@@ -96,7 +100,8 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #headBox > .unb > .nav_inner02 > .join_part {
+
+  .nav_inner02 > .join_part {
     display: block;
     width: 0;
     height: 0;
@@ -105,16 +110,17 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #headBox > .unb > .nav_inner02 > a {
+  .nav_inner02 > a {
     display: block;
     width: 100%;
     height: 100%;
   }
-  #headBox > .unb > .nav_inner02 > button {
+  .nav_inner02 > button {
     display: block;
     width: 100%;
     height: 100%;
   }
+
   #headBox > .gnb {
     display: block;
     width: 0;
@@ -133,7 +139,7 @@
     padding-top: 50px;
   }
   #headBox > h1 {
-    width: 200px;
+    width: 100%;
     height: 100px;
     margin: 0 auto;
     background-image: url(../../img/hermes_logo.svg);
@@ -146,7 +152,7 @@
     width: 100%;
     height: 100%;
   }
-  #headBox .unb {
+  .unb {
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -157,13 +163,13 @@
     text-transform: uppercase;
     background-color: #F6F1EB;
   }
-  #headBox .unb > .nav_inner01 {
+  .nav_inner01 {
     display: flex;
     width: auto;
     height: 50px;
     padding-left: 40px;
   }
-  #headBox .unb > .nav_inner01 > .menu_btn {
+  .nav_inner01 .menu_btn {
     display: block;
     width: 0;
     height: 0;
@@ -172,7 +178,8 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #headBox .unb > .nav_inner01 > .search_btn {
+
+  .search_btn {
     width: 48px;
     height: 50px;
     padding-right: 10px;
@@ -182,7 +189,8 @@
     background-repeat: no-repeat;
     background-position: 10px 12px;
   }
-  #headBox .unb > .nav_inner01 > .search_text_part {
+
+  .search_text_part {
     width: 40px;
     height: 50px;
     margin-right: 40px;
@@ -191,54 +199,59 @@
     font-size: 12px;
     text-decoration: underline;
   }
-  #headBox .unb > .nav_inner02 {
+
+  .nav_inner02 {
     display: flex;
-    width: 240px;
+    width: auto;
     height: 50px;
     text-transform: uppercase;
     text-align: center;
     line-height: 50px;
     font-size: 12px;
   }
-  #headBox .unb > .nav_inner02 .language_part {
+  .language_part {
     width: 80px;
     height: 50px;
   }
-  #headBox .unb > .nav_inner02 .language_part span {
+  .language_part span {
     text-transform: uppercase;
   }
-  #headBox .unb > .nav_inner02 > .login_part {
+
+  .login_part {
     width: 80px;
     height: 50px;
     margin-right: -8px;
   }
-  #headBox .unb > .nav_inner02 > .join_part {
+
+  .join_part {
     width: 80px;
     height: 50px;
   }
-  #headBox .unb > .nav_inner02 a {
+
+  .nav_inner02 a {
     display: block;
     width: auto;
     height: 100%;
   }
-  #headBox .unb > .nav_inner02 button {
+  .nav_inner02 button {
     display: block;
     width: auto;
     height: 100%;
   }
-  #headBox .gnb {
+
+  .gnb {
     width: 100%;
     height: 60px;
     background-color: #F6F1EB;
   }
-  #headBox .gnb > .nav_inner03 {
+  .nav_inner03 {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 60px;
     text-transform: uppercase;
   }
-  #headBox .gnb > .nav_inner03 .menu_btn {
+  .menu_btn {
     width: 100%;
     height: 24px;
     margin-top: 18px;
@@ -246,13 +259,14 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox .gnb > .nav_inner03 .menu_part {
+
+  .menu_part {
     display: flex;
     justify-content: space-around;
     width: 100%;
     height: 60px;
   }
-  #headBox .gnb > .nav_inner03 .menu_part > a {
+  .menu_part > a {
     display: block;
     width: 100px;
     height: 60px;
@@ -261,10 +275,11 @@
     font-size: 17px;
     margin-right: 10px;
   }
-  #headBox .gnb > .nav_inner03 .menu_part > a:last-child {
+  .menu_part > a:last-child {
     margin-right: 0;
   }
-  #headBox .gnb > .nav_inner03 .cart_btn {
+
+  .cart_btn {
     width: 100%;
     height: 100%;
     background-image: url(../../../img/bag.png);
@@ -296,7 +311,7 @@
     height: 100%;
   }
 
-  #headBox .unb {
+  .unb {
     display: flex;
     position: absolute;
     top: 0;
@@ -308,12 +323,12 @@
     padding: 0 54px;
     background-color: #F6F1EB;
   }
-  #headBox .unb > .nav_inner01 {
+  .nav_inner01 {
     display: flex;
     width: 100%;
     height: 50px;
   }
-  #headBox .unb > .nav_inner01 > .menu_btn {
+  .nav_inner01 > .menu_btn {
     display: block;
     width: 0;
     height: 0;
@@ -322,14 +337,15 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #headBox .unb > .nav_inner01 > .search_btn {
+  .search_btn {
     width: 48px;
     height: 50px;
     background-image: url(../../img/search.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox .unb > .nav_inner01 > .search_text_part {
+
+  .search_text_part {
     width: 40px;
     height: 50px;
     margin-right: 40px;
@@ -338,7 +354,8 @@
     font-size: 12px;
     text-decoration: underline;
   }
-  #headBox .unb > .nav_inner02 {
+
+  .nav_inner02 {
     display: flex;
     width: 240px;
     height: 50px;
@@ -347,45 +364,49 @@
     line-height: 50px;
     font-size: 12px;
   }
-  #headBox .unb > .nav_inner02 .language_part {
+  .language_part {
     width: 80px;
     height: 30px;
   }
-  #headBox .unb > .nav_inner02 .language_part span {
+  .language_part span {
     text-transform: uppercase;
   }
-  #headBox .unb > .nav_inner02 > .login_part {
+
+  .login_part {
     width: 80px;
     height: 50px;
     margin-right: -8px;
   }
-  #headBox .unb > .nav_inner02 > .join_part {
+
+  .join_part {
     width: 80px;
     height: 50px;
   }
-  #headBox .unb > .nav_inner02 > a {
+
+  .nav_inner02 > a {
     display: block;
     width: auto;
     height: 100%;
   }
-  #headBox .unb > .nav_inner02 > button {
+  .nav_inner02 > button {
     display: block;
     width: auto;
     height: 100%;
   }
-  #headBox .gnb {
+
+  .gnb {
     width: 100%;
     height: 60px;
     background-color: #F6F1EB;
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) and (max-width: 767px) {
-  #headBox .gnb {
+  .gnb {
     display: none;
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) {
-  #headBox .gnb > .nav_inner03 {
+  .nav_inner03 {
     display: flex;
     justify-content: space-between;
     width: 1096px;
@@ -393,7 +414,7 @@
     margin: auto;
     text-transform: uppercase;
   }
-  #headBox .gnb > .nav_inner03 .menu_btn {
+  .menu_btn {
     width: 30px;
     height: 24px;
     padding-top: 58px;
@@ -401,7 +422,8 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox .gnb > .nav_inner03 .menu_part {
+
+  .menu_part {
     display: flex;
     justify-content: space-around;
     width: 740px;
@@ -410,12 +432,13 @@
     line-height: 58px;
     font-size: 17px;
   }
-  #headBox .gnb > .nav_inner03 .menu_part > a {
+  .menu_part > a {
     display: block;
     width: 100%;
     height: 100%;
   }
-  #headBox .gnb > .nav_inner03 .cart_btn {
+
+  .cart_btn {
     width: 30px;
     height: 24px;
     padding-top: 58px;
@@ -449,7 +472,7 @@
     height: 100%;
   }
 
-  #headBox .unb {
+  .unb {
     display: flex;
     position: absolute;
     top: 0;
@@ -461,12 +484,12 @@
     padding: 0 120px;
     background-color: #F6F1EB;
   }
-  #headBox .unb > .nav_inner01 {
+  .nav_inner01 {
     display: flex;
     width: 100%;
     height: 50px;
   }
-  #headBox .unb > .nav_inner01 > .menu_btn {
+  .nav_inner01 .menu_btn {
     display: block;
     width: 0;
     height: 0;
@@ -475,14 +498,15 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #headBox .unb > .nav_inner01 > .search_btn {
+  .search_btn {
     width: 48px;
     height: 50px;
     background-image: url(../../img/search.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox .unb > .nav_inner01 > .search_text_part {
+
+  .search_text_part {
     width: 40px;
     height: 50px;
     margin-right: 40px;
@@ -491,7 +515,8 @@
     font-size: 12px;
     text-decoration: underline;
   }
-  #headBox .unb > .nav_inner02 {
+
+  .nav_inner02 {
     display: flex;
     width: 240px;
     height: 50px;
@@ -500,45 +525,49 @@
     line-height: 50px;
     font-size: 12px;
   }
-  #headBox .unb > .nav_inner02 .language_part {
+  .language_part {
     width: 80px;
     height: 30px;
   }
-  #headBox .unb > .nav_inner02 .language_part span {
+  .language_part span {
     text-transform: uppercase;
   }
-  #headBox .unb > .nav_inner02 > .login_part {
+
+  .login_part {
     width: 80px;
     height: 50px;
     margin-right: -8px;
   }
-  #headBox .unb > .nav_inner02 > .join_part {
+
+  .join_part {
     width: 80px;
     height: 50px;
   }
-  #headBox .unb > .nav_inner02 > a {
+
+  .nav_inner02 > a {
     display: block;
     width: auto;
     height: 100%;
   }
-  #headBox .unb > .nav_inner02 > button {
+  .nav_inner02 > button {
     display: block;
     width: auto;
     height: 100%;
   }
-  #headBox .gnb {
+
+  .gnb {
     width: 100%;
     height: 60px;
     background-color: #F6F1EB;
   }
 }
 @media all and (min-width: 1440px) and (max-width: 767px) {
-  #headBox .gnb {
+  .gnb {
     display: none;
   }
 }
 @media all and (min-width: 1440px) {
-  #headBox .gnb > .nav_inner03 {
+  .nav_inner03 {
     display: flex;
     justify-content: space-between;
     width: 1096px;
@@ -546,7 +575,7 @@
     margin: auto;
     text-transform: uppercase;
   }
-  #headBox .gnb > .nav_inner03 .menu_btn {
+  .menu_btn {
     width: 30px;
     height: 24px;
     padding-top: 58px;
@@ -554,7 +583,8 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #headBox .gnb > .nav_inner03 .menu_part {
+
+  .menu_part {
     display: flex;
     justify-content: space-around;
     width: 740px;
@@ -563,12 +593,13 @@
     line-height: 58px;
     font-size: 17px;
   }
-  #headBox .gnb > .nav_inner03 .menu_part > a {
+  .menu_part > a {
     display: block;
     width: 100%;
     height: 100%;
   }
-  #headBox .gnb > .nav_inner03 .cart_btn {
+
+  .cart_btn {
     width: 30px;
     height: 24px;
     padding-top: 58px;
@@ -582,22 +613,28 @@
     width: 100%;
     height: 500px;
     margin: 100px 0;
-    padding: 40px 10px;
-    background-color: #F6F1EB;
+    padding: 30px 10px;
+    border: 2px solid #F6F1EB;
   }
-  #cartBox .cart_area {
-    width: 100%;
-    height: 400px;
-    padding: 8px 100px;
-    background-color: #fff;
-  }
-  #cartBox .cart_area .cart_title {
+  h2 {
     width: 100%;
     height: 30px;
+    margin-bottom: 20px;
     font-weight: normal;
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  .cart_area {
+    width: 100%;
+    height: 400px;
+  }
+  .selectBox {
+    width: 100%;
+    height: 36px;
+    border-top: 2px solid #F6F1EB;
+    border-bottom: 2px solid #F6F1EB;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1279px) {
@@ -605,22 +642,28 @@
     width: 100%;
     height: 740px;
     margin: 120px 0;
-    padding: 95px 15px;
-    background-color: #F6F1EB;
+    padding: 40px 15px;
+    border: 2px solid #F6F1EB;
   }
-  #cartBox .cart_area {
-    width: 100%;
-    height: 600px;
-    padding: 30px 210px;
-    background-color: #fff;
-  }
-  #cartBox .cart_area .cart_title {
+  h2 {
     width: 100%;
     height: 48px;
+    margin-bottom: 20px;
     font-weight: normal;
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  .cart_area {
+    width: 100%;
+    height: 600px;
+  }
+  .selectBox {
+    width: 100%;
+    height: 36px;
+    border-top: 2px solid #F6F1EB;
+    border-bottom: 2px solid #F6F1EB;
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) {
@@ -628,46 +671,59 @@
     width: 100%;
     height: 1200px;
     margin: 130px 0;
-    padding: 95px 15px;
-    background-color: #F6F1EB;
+    padding: 50px 15px;
+    border: 2px solid #F6F1EB;
   }
-  #cartBox .cart_area {
-    width: 100%;
-    height: 1000px;
-    padding: 100px 92px;
-    background-color: #fff;
-  }
-  #cartBox .cart_area .cart_title {
+  h2 {
     width: 100%;
     height: 48px;
+    margin-bottom: 30px;
     font-weight: normal;
     font-size: 38px;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  .cart_area {
+    width: 100%;
+    height: 1000px;
+  }
+  .selectBox {
+    width: 100%;
+    height: 46px;
+    border-top: 2px solid #F6F1EB;
+    border-bottom: 2px solid #F6F1EB;
   }
 }
 @media all and (min-width: 1440px) {
   #cartBox {
-    width: 100%;
+    width: 1440px;
     height: 1200px;
-    margin: 130px 0;
-    padding: 100px 170px;
-    background-color: #F6F1EB;
+    margin: 130px auto;
+    padding: 50px 60px;
+    border: 2px solid #F6F1EB;
   }
-  #cartBox .cart_area {
-    width: 1300px;
-    height: 1000px;
-    margin: auto;
-    padding: 30px 388px;
-    background-color: #fff;
-  }
-  #cartBox .cart_area .cart_title {
+  h2 {
     width: 100%;
     height: 48px;
+    margin-bottom: 30px;
     font-weight: normal;
     font-size: 38px;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  .cart_area {
+    width: 1300px;
+    height: 1000px;
+    margin: auto;
+  }
+  .selectBox {
+    width: 100%;
+    height: 46px;
+    margin: auto;
+    border-top: 2px solid #F6F1EB;
+    border-bottom: 2px solid #F6F1EB;
   }
 }
 @media all and (max-width: 767px) {
@@ -676,7 +732,7 @@
     height: auto;
     margin: auto;
   }
-  #footBox .fnb {
+  .fnb {
     width: 100%;
     height: auto;
     background-color: #F6F1EB;
@@ -705,13 +761,13 @@
     height: 100%;
   }
 
-  #footBox .info_inner {
+  .info_inner {
     position: relative;
     width: 100%;
     height: auto;
     margin: auto;
   }
-  #footBox .info_inner h3 {
+  .info_inner h3 {
     position: absolute;
     bottom: -100px;
     left: 0;
@@ -723,16 +779,16 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #footBox .info_inner .cs_box {
+  .cs_box {
     width: 0;
     height: 0;
   }
-  #footBox .info_inner .cs_box a {
+  .cs_box a {
     display: block;
     font-weight: 500;
     text-decoration: underline;
   }
-  #footBox .info_inner .cs_box .cs_part {
+  .cs_box .cs_part {
     display: block;
     width: 0;
     height: 0;
@@ -741,7 +797,7 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #footBox .info_inner .cs_box .store_search_part {
+  .cs_box .store_search_part {
     display: block;
     width: 0;
     height: 0;
@@ -750,7 +806,7 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #footBox .info_inner .cs_box .sns_part {
+  .sns_part {
     position: absolute;
     bottom: -20px;
     right: 0;
@@ -761,24 +817,25 @@
     padding: 8px;
     box-sizing: border-box;
   }
-  #footBox .info_inner .cs_box .sns_part a {
+  .sns_part a {
     display: block;
     width: 28px;
     height: 28px;
     border-radius: 100%;
     background-color: #D9D9D9;
   }
-  #footBox .info_inner address {
+
+  address {
     position: relative;
     width: auto;
     height: auto;
     margin: auto;
     padding: 10px;
   }
-  #footBox .info_inner address p {
+  address p {
     font-size: 13px;
   }
-  #footBox .info_inner address a {
+  address a {
     display: block;
     text-decoration: underline;
   }
@@ -789,12 +846,12 @@
     height: auto;
     margin: auto;
   }
-  #footBox .fnb {
+  .fnb {
     width: 100%;
     height: 60px;
     background-color: #F6F1EB;
   }
-  #footBox .fnb .fnb_box {
+  .fnb_box {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -802,25 +859,26 @@
     margin: auto;
     text-align: center;
   }
-  #footBox .fnb .fnb_box div {
+  .fnb_box div {
     width: 200px;
     height: 60px;
     line-height: 58px;
   }
-  #footBox .fnb .fnb_box div a {
+  .fnb_box div a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
   }
-  #footBox .info_inner {
+
+  .info_inner {
     position: relative;
     margin: auto;
     width: auto;
     height: 600px;
   }
-  #footBox .info_inner h3 {
+  .info_inner h3 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -833,7 +891,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #footBox .info_inner .cs_box {
+  .cs_box {
     display: flex;
     justify-content: space-between;
     width: auto;
@@ -843,40 +901,42 @@
     padding: 20px 0;
     text-align: center;
   }
-  #footBox .info_inner .cs_box a {
+  .cs_box a {
     display: block;
     font-weight: 500;
     text-decoration: underline;
   }
-  #footBox .info_inner .cs_box .cs_part {
+  .cs_part {
     width: 350px;
     height: 200px;
     padding: 20px;
     text-align: justify;
     font-size: 14px;
   }
-  #footBox .info_inner .cs_box .cs_part button {
+  .cs_part button {
     text-decoration: underline;
     font-weight: 500;
   }
-  #footBox .info_inner .cs_box .store_search_part {
+
+  .store_search_part {
     width: 320px;
     height: 200px;
   }
-  #footBox .info_inner .cs_box .store_search_part span {
+  .store_search_part span {
     display: block;
     padding: 40px;
     padding-bottom: 0;
     font-size: 22px;
     font-weight: 500;
   }
-  #footBox .info_inner .cs_box .sns_part {
+
+  .sns_part {
     width: 70px;
     height: 200px;
     padding: 8px;
     box-sizing: border-box;
   }
-  #footBox .info_inner .cs_box .sns_part a {
+  .sns_part a {
     display: block;
     width: 40px;
     height: 40px;
@@ -885,21 +945,22 @@
     border-radius: 100%;
     background-color: #D9D9D9;
   }
-  #footBox .info_inner address {
+
+  address {
     width: 800px;
     height: auto;
     margin: auto;
     padding: 60px 0;
     border-top: 2px solid #F6F1EB;
   }
-  #footBox .info_inner address .mobile {
+  address .mobile {
     display: none;
   }
-  #footBox .info_inner address p {
+  address p {
     display: block;
     padding-left: 20px;
   }
-  #footBox .info_inner address a {
+  address a {
     text-decoration: underline;
   }
 }
@@ -909,12 +970,12 @@
     height: auto;
     margin: auto;
   }
-  #footBox .fnb {
+  .fnb {
     width: 100%;
     height: 60px;
     background-color: #F6F1EB;
   }
-  #footBox .fnb .fnb_box {
+  .fnb_box {
     display: flex;
     justify-content: space-around;
     width: 1280px;
@@ -922,25 +983,26 @@
     margin: auto;
     text-align: center;
   }
-  #footBox .fnb .fnb_box div {
+  .fnb_box div {
     width: 200px;
     height: 60px;
     line-height: 58px;
   }
-  #footBox .fnb .fnb_box div a {
+  .fnb_box div a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
   }
-  #footBox .info_inner {
+
+  .info_inner {
     position: relative;
     margin: auto;
     width: 100%;
     height: 600px;
   }
-  #footBox .info_inner h3 {
+  .info_inner h3 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -953,7 +1015,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #footBox .info_inner .cs_box {
+  .cs_box {
     display: flex;
     justify-content: space-between;
     width: auto;
@@ -963,40 +1025,42 @@
     padding: 40px 0;
     text-align: center;
   }
-  #footBox .info_inner .cs_box a {
+  .cs_box a {
     display: block;
     font-weight: 500;
     text-decoration: underline;
   }
-  #footBox .info_inner .cs_box .cs_part {
+  .cs_part {
     width: 400px;
     height: 250px;
     padding: 20px;
     text-align: justify;
     font-size: 15px;
   }
-  #footBox .info_inner .cs_box .cs_part button {
+  .cs_part button {
     text-decoration: underline;
     font-weight: 500;
   }
-  #footBox .info_inner .cs_box .store_search_part {
+
+  .store_search_part {
     width: 400px;
     height: 250px;
   }
-  #footBox .info_inner .cs_box .store_search_part span {
+  .store_search_part span {
     display: block;
     padding: 40px;
     padding-bottom: 0;
     font-size: 22px;
     font-weight: 500;
   }
-  #footBox .info_inner .cs_box .sns_part {
+
+  .sns_part {
     width: 70px;
     height: 200px;
     padding: 8px;
     box-sizing: border-box;
   }
-  #footBox .info_inner .cs_box .sns_part a {
+  .sns_part a {
     display: block;
     width: 40px;
     height: 40px;
@@ -1005,7 +1069,8 @@
     border-radius: 100%;
     background-color: #D9D9D9;
   }
-  #footBox .info_inner address {
+
+  address {
     width: 1000px;
     height: 242px;
     margin: auto;
@@ -1013,14 +1078,14 @@
     padding-top: 30px;
     border-top: 2px solid #F6F1EB;
   }
-  #footBox .info_inner address .mobile {
+  address .mobile {
     display: none;
   }
-  #footBox .info_inner address p {
+  address p {
     display: block;
     padding-left: 20px;
   }
-  #footBox .info_inner address a {
+  address a {
     text-decoration: underline;
   }
 }
@@ -1030,12 +1095,12 @@
     height: auto;
     margin: auto;
   }
-  #footBox .fnb {
+  .fnb {
     width: 100%;
     height: 60px;
     background-color: #F6F1EB;
   }
-  #footBox .fnb .fnb_box {
+  .fnb_box {
     display: flex;
     justify-content: space-between;
     width: 1200px;
@@ -1043,18 +1108,19 @@
     margin: auto;
     text-align: center;
   }
-  #footBox .fnb .fnb_box div {
+  .fnb_box div {
     width: 200px;
     height: 60px;
     line-height: 58px;
   }
-  #footBox .info_inner {
+
+  .info_inner {
     position: relative;
     margin: auto;
     width: 1440px;
     height: 690px;
   }
-  #footBox .info_inner h3 {
+  .info_inner h3 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1067,7 +1133,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #footBox .info_inner .cs_box {
+  .cs_box {
     display: flex;
     justify-content: space-between;
     width: auto;
@@ -1077,39 +1143,41 @@
     padding: 46px 0;
     text-align: center;
   }
-  #footBox .info_inner .cs_box a {
+  .cs_box a {
     display: block;
     font-weight: 500;
     text-decoration: underline;
   }
-  #footBox .info_inner .cs_box .cs_part {
+  .cs_part {
     width: 454px;
     height: 230px;
     padding: 20px;
     text-align: justify;
   }
-  #footBox .info_inner .cs_box .cs_part button {
+  .cs_part button {
     text-decoration: underline;
     font-weight: 500;
   }
-  #footBox .info_inner .cs_box .store_search_part {
+
+  .store_search_part {
     width: 454px;
     height: 230px;
   }
-  #footBox .info_inner .cs_box .store_search_part span {
+  .store_search_part span {
     display: block;
     padding: 40px;
     padding-bottom: 0;
     font-size: 22px;
     font-weight: 500;
   }
-  #footBox .info_inner .cs_box .sns_part {
+
+  .sns_part {
     width: 70px;
     height: 200px;
     padding: 8px;
     box-sizing: border-box;
   }
-  #footBox .info_inner .cs_box .sns_part a {
+  .sns_part a {
     display: block;
     width: 40px;
     height: 40px;
@@ -1118,7 +1186,8 @@
     border-radius: 100%;
     background-color: #D9D9D9;
   }
-  #footBox .info_inner address {
+
+  address {
     width: 1096px;
     height: 242px;
     margin: auto;
@@ -1126,14 +1195,14 @@
     padding-top: 60px;
     border-top: 2px solid #F6F1EB;
   }
-  #footBox .info_inner address .mobile {
+  address .mobile {
     display: none;
   }
-  #footBox .info_inner address p {
+  address p {
     display: block;
     padding-left: 20px;
   }
-  #footBox .info_inner address a {
+  address a {
     text-decoration: underline;
   }
 }
