@@ -2,13 +2,13 @@
 
 @include mobile {
   #cartBox {
-    width: 100%; height: 500px; 
-    margin: 100px 0; padding: 30px 10px;
+    width: 100%; height: auto; 
+    margin: 100px 0; padding: 20px;
     border: $line1;
     @at-root h2 {
       width: 100%; height: 30px; 
-      margin-bottom: 20px;
-      font-weight: normal; font-size: 16px; 
+      margin-bottom: 10px;
+      font-weight: normal; font-size: 20px; 
       text-align: center; text-transform: uppercase;
     }
     @at-root .cart_area {
@@ -16,8 +16,15 @@
 
       @at-root .selectBox {
         width: 100%; height: 36px;
-        border-top: $line1; border-bottom: $line1;
+        margin: auto;
+        border-top: $line2; border-bottom: $line2;
       } // .selectBox
+
+      @at-root .itemBox {
+        width: 100%; height: 180px;
+        margin: auto;
+        border-bottom: $line2;
+      } // .itemBox
     } // .cart_area 
   } // #cartBox 
 } // 320px
@@ -40,8 +47,14 @@
 
       @at-root .selectBox {
         width: 100%; height: 36px;
-        border-top: $line1; border-bottom: $line1;
+        border-top: $line2; border-bottom: $line2;
       } // .selectBox
+
+      @at-root .itemBox {
+        width: 100%; height: 300px;
+        margin: auto;
+        border-bottom: $line2;
+      } // .itemBox
     } // .cart_area 
   } // #cartBox               
 }// 768px
@@ -50,7 +63,7 @@
 @include laptop {
   #cartBox {
     width: 100%; height: 1200px; 
-    margin: 130px 0; padding: 50px 15px;
+    margin: 130px 0; padding: 50px 70px;
     border: $line1;
     @at-root h2 {
       width: 100%; height: 48px; 
@@ -64,8 +77,14 @@
 
       @at-root .selectBox {
         width: 100%; height: 46px;
-        border-top: $line1; border-bottom: $line1;
+        border-top: $line2; border-bottom: $line2;
       } // .selectBox
+
+      @at-root .itemBox {
+        width: 100%; height: 350px;
+        margin: auto;
+        border-bottom: $line2;
+      } // .itemBox
     } // .cart_area 
   } // #cartBox    
 } // 1280px
@@ -74,8 +93,7 @@
 @include pc {
   #cartBox {
     width: 1440px; height: 1200px; 
-    margin: 130px auto;
-    padding: 50px 60px;
+    margin: 130px auto; padding: 50px 70px;
     border: $line1;
     @at-root h2 {
       width: 100%; height: 48px; 
@@ -91,8 +109,14 @@
       @at-root .selectBox {
         width: 100%; height: 46px;
         margin: auto;
-        border-top: $line1; border-bottom: $line1;
+        border-top: $line2; border-bottom: $line2;
       } // .selectBox
+
+      @at-root .itemBox {
+        width: 100%; height: 400px;
+        margin: auto;
+        border-bottom: $line2;
+      } // .itemBox
     } // .cart_area 
   } // #cartBox    
 } // 1440px

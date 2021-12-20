@@ -19,22 +19,31 @@
     margin: auto; 
 
     @at-root .scarf_inner {
-      width: 100%; height: auto; 
+      width: 270px; height: auto; 
+      margin: auto;
 
-      @at-root .scarf_part_01 {
-        width: 280px; height: 270px; 
-        margin: auto; padding-top: 300px;
-        background-color: $color_light_gray_02;
-          
-        @at-root dt {
-          width: 200px; height: 50px;
-          margin: auto; margin-top: 26px;
-          background-color: $color_light_gray_01;}
-        @at-root dd {
-          width: 150px; height: 50px; 
-          margin: auto; margin-top: 14px;
-          background-color: $color_light_gray_01;;}
-      } //.scarf_part_01
+      & li {
+        width: 270px; height: auto;
+        
+        @at-root .scarf_part_01 {
+          width: 260px; height: 260px; 
+          background-color: $color_light_gray_02;
+        } //.scarf_part_01
+
+        & dl {
+            width: 260px; height: 150px;
+            padding: 20px;
+          & dt {
+            width: 180px; height: 50px;
+            margin: auto; 
+            background-color: $color_light_gray_01;}
+          & dd {
+            width: 140px; height: 50px; 
+            margin: auto; margin-top: 14px;
+            background-color: $color_light_gray_01;;}
+          } // dl  
+        } // li
+      
 
       & li:nth-of-type(2) {display: none;}
       & li:nth-of-type(3) {display: none;} 
@@ -68,33 +77,39 @@
       font-size: 30px;
       }
   
-      @at-root .content_area_03 {
-    width: 100%; max-width: 768px; height: auto;
-    margin: auto;
+    @at-root .content_area_03 {
+      width: 100%; max-width: 768px; height: auto;
+      margin: auto; padding: 20px;
 
 
     @at-root .scarf_inner {
       display: flex; justify-content: space-around; flex-wrap: wrap;
-      width: 100%; height: 1000px; 
+      width: 740px; height: 1000px; 
       margin: auto;
-      padding: 20px 65px;
 
+      & li {
+        width: 270px; height: auto;
+      
       & div {
         width: 270px; height: 260px; 
-        margin: auto; padding-top: 300px; 
         background-color: $color_light_gray_02;
-        @at-root dt {
-          width: 200px; height: 50px;
-          margin: auto; margin-top: 10px;
-          background-color: $color_light_gray_01;}
-        @at-root dd {
-          width: 150px; height: 50px; 
-          margin: auto; margin-top: 10px;
-          background-color: $color_light_gray_01;}
       } //div
 
-      & li:nth-of-type(5) {display: none;}
-      & li:nth-of-type(6) {display: none;} 
+      & dl {
+        width: 270px; height: 150px;
+        padding: 20px;
+        & dt {
+          width: 180px; height: 50px;
+          margin: auto; 
+          background-color: $color_light_gray_01;}
+        & dd {
+          width: 140px; height: 50px; 
+          margin: auto; margin-top: 10px;
+          background-color: $color_light_gray_01;}
+          } // dl
+        } // li 
+        & li:nth-of-type(5) {display: none;}
+        & li:nth-of-type(6) {display: none;} 
       } // .scarf_inner
     } // .content_area_03
   } // .contentBox_03
@@ -123,24 +138,31 @@
 
     @at-root .scarf_inner {
       display: flex; justify-content: space-around; flex-wrap: wrap;
-      width: 100%; height: 1000px; 
+      width: 1200px; height: 1000px; 
       margin: auto;
       padding: 30px 50px;
-
-      & div {
-        width: 300px; height: 280px; 
-        margin: auto; padding-top: 300px; 
-        background-color: $color_light_gray_02;
-
-        @at-root dt {
-          width: 200px; height: 50px;
-          margin: auto; margin-top: 20px;
-          background-color: $color_light_gray_01;}
-        @at-root dd {
-          width: 150px; height: 50px; 
-          margin: auto; margin-top: 10px;
-          background-color: $color_light_gray_01;}
-        } //div
+      & li {
+        width: 300px; height: auto;
+      
+        & div {
+          width: 300px; height: 370px; 
+          background-color: $color_light_gray_02;
+        } // div
+  
+        & dl {
+          width: 300px; height: 150px;
+          padding: 20px;
+  
+          & dt {
+            width: 200px; height: 50px;
+            margin: auto; 
+            background-color: $color_light_gray_01}
+          & dd {
+            width: 150px; height: 50px; 
+            margin: auto; margin-top: 10px;
+            background-color: $color_light_gray_01;}
+          } // dl
+          } // li
       } // .scarf_inner
     } // .content_area_03
   } // .contentBox_03
@@ -173,23 +195,31 @@
 
     @at-root .scarf_inner {
       display: flex; justify-content: space-around; flex-wrap: wrap;
-      width: 100%; height: 1200px; 
+      width: 1200px; height: 1300px; 
       margin: auto;
       padding: 50px;
-
+    & li {
+      width: 300px; height: auto;
+    
       & div {
-        width: 350px; height: 370px; 
-        margin: auto; padding-top: 300px; 
+        width: 300px; height: 370px; 
         background-color: $color_light_gray_02;
-        @at-root dt {
+      } // div
+
+      & dl {
+        width: 300px; height: 150px;
+        padding: 20px;
+
+        & dt {
           width: 200px; height: 50px;
-          margin: auto; margin-top: 90px;
+          margin: auto; 
           background-color: $color_light_gray_01}
-        @at-root dd {
+        & dd {
           width: 150px; height: 50px; 
           margin: auto; margin-top: 10px;
           background-color: $color_light_gray_01;}
-        } //div
+        } // dl
+        } // li
       } // .scarf_inner
     } // .content_area_03
   } // .contentBox_03
