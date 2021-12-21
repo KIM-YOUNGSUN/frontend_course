@@ -132,7 +132,7 @@
       }
   
     @at-root .content_area_03 {
-    width: 100%; max-width: 1280px; height: auto;
+    width: 100%; max-width: 1280px; height: 1100px;
     margin: auto;
 
 
@@ -178,7 +178,7 @@
 // // pc =======================================
 @include pc {
   .contentBox_03 {
-    width: 1440px; height: auto;
+    width: 1440px; height: 1300px;
     margin: auto; margin-bottom: 200px; padding-top: 30px;
     text-transform: uppercase; text-align: center; line-height: 50px;
     border: $line1;
@@ -190,7 +190,7 @@
       }
   
     @at-root .content_area_03 {
-    width: 100%; height: auto;
+    width: 100%; height: 1500px;
     margin: auto;
 
     @at-root .scarf_inner {

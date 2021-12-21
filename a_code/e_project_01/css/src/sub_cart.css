@@ -268,7 +268,7 @@
   }
   .menu_part a {
     display: block;
-    width: 100px;
+    width: 80px;
     height: 60px;
     text-align: center;
     line-height: 58px;
@@ -399,13 +399,6 @@
     height: 60px;
     background-color: #F6F1EB;
   }
-}
-@media all and (min-width: 1280px) and (max-width: 1439px) and (max-width: 767px) {
-  .gnb {
-    display: none;
-  }
-}
-@media all and (min-width: 1280px) and (max-width: 1439px) {
   .nav_inner03 {
     display: flex;
     justify-content: space-between;
@@ -426,7 +419,7 @@
   .menu_part {
     display: flex;
     justify-content: space-around;
-    width: 740px;
+    width: 700px;
     height: 60px;
     text-align: center;
     line-height: 58px;
@@ -434,8 +427,8 @@
   }
   .menu_part a {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 100PX;
+    height: auto;
   }
 
   .cart_btn {
@@ -531,6 +524,8 @@
   }
   .language_part span {
     text-transform: uppercase;
+    text-align: center;
+    line-height: 52px;
   }
 
   .login_part {
@@ -595,7 +590,7 @@
   }
   .menu_part a {
     display: block;
-    width: 100%;
+    width: 100px;
     height: 100%;
   }
 
@@ -752,7 +747,7 @@
 }
 @media all and (min-width: 1440px) {
   #cartBox {
-    width: 100%;
+    width: 1440px;
     height: 1200px;
     margin: 130px auto;
     padding: 50px 80px;
@@ -761,6 +756,7 @@
   h2 {
     width: 1200px;
     height: 48px;
+    margin: auto;
     margin-bottom: 30px;
     font-weight: normal;
     font-size: 38px;
@@ -772,12 +768,12 @@
     position: relative;
     width: 1200px;
     height: 1000px;
+    margin: auto;
   }
 
   .selectBox {
     width: 1200px;
     height: 46px;
-    margin: auto;
     border-top: 2px solid #D9D9D9;
     border-bottom: 2px solid #D9D9D9;
   }
@@ -824,12 +820,24 @@
     text-align: center;
     font-weight: bold;
   }
-  .fnb_box div a {
+  .fnb_box div button {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
+  }
+  .fnb_box div a {
+    display: block;
+  }
+  .fnb_box div ul {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
   }
 
   .info_inner {
@@ -920,6 +928,7 @@
   .fnb {
     width: 100%;
     height: 60px;
+    margin-bottom: 600px;
     background-color: #F6F1EB;
   }
   .fnb_box {
@@ -935,12 +944,22 @@
     height: 60px;
     line-height: 58px;
   }
-  .fnb_box div a {
+  .fnb_box div button {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
+  }
+  .fnb_box div a {
+    display: block;
+  }
+  .fnb_box div ul {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    font-size: 14px;
+    background-color: #ccc;
   }
 
   .info_inner {
@@ -1044,6 +1063,7 @@
   .fnb {
     width: 100%;
     height: 60px;
+    margin-bottom: 600px;
     background-color: #F6F1EB;
   }
   .fnb_box {
@@ -1059,12 +1079,15 @@
     height: 60px;
     line-height: 58px;
   }
-  .fnb_box div a {
+  .fnb_box div button {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
+  }
+  .fnb_box div a {
+    display: block;
   }
 
   .info_inner {
@@ -1169,6 +1192,7 @@
   .fnb {
     width: 100%;
     height: 60px;
+    margin-bottom: 600px;
     background-color: #F6F1EB;
   }
   .fnb_box {
@@ -1183,6 +1207,9 @@
     width: 200px;
     height: 60px;
     line-height: 58px;
+  }
+  .fnb_box div a {
+    display: block;
   }
 
   .info_inner {
