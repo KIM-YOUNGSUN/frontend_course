@@ -73,5 +73,3 @@ fnRel().then( console.log );
 
 // 순차 수행을 원할하게 처리하기 위해 나온 기능
 // Promise - Promise, fetch, async/await  + then()
-
-

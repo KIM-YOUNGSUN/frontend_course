@@ -1,4 +1,4 @@
-/* c_11_dom_insert_data.scss */
+/* c_11_dom_insert_data.css */
 #wrap {
   width: 90%;
   min-width: 500px;
@@ -32,7 +32,7 @@
   height: auto;
   min-height: 100px;
   border: 2px solid #1a5d54;
-  background-color: rgba(85, 85, 85, 0.3);
+  background-color: rgba(85, 85, 85, 0.1);
 }
 .card li {
   display: flex;

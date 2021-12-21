@@ -11,29 +11,34 @@
       font-weight: normal; font-size: 20px; 
       text-align: center; text-transform: uppercase;
     }
-    @at-root .cart_area {
-      width: 100%; height: 400px;
-
-      @at-root .selectBox {
-        width: 100%; height: 36px;
-        margin: auto;
-        border-top: $line2; border-bottom: $line2;
-      } // .selectBox
-
-      @at-root .itemBox {
-        width: 100%; height: 180px;
-        margin: auto;
-        border-bottom: $line2;
-      } // .itemBox
-    } // .cart_area 
   } // #cartBox 
+
+  .cart_area {position: relative; width: 100%; height: 400px;} // .cart_area 
+
+  .selectBox {
+    width: 100%; height: 36px;
+    margin: auto;
+    border-top: $line2; border-bottom: $line2;
+  } // .selectBox
+
+  .itemBox {
+    width: 100%; height: 180px;
+    margin: auto;
+    border-bottom: $line2;
+  } // .itemBox
+
+  .otherBox {
+    position: absolute; bottom: 145px; right: 0;
+    width: 200px; height: 40px;
+    background-color: #ccc;
+  } // .otherBox
 } // 320px
 
 
 @include tablet {
   #cartBox {
     width: 100%; height: 740px; 
-    margin: 120px 0; padding: 40px 15px;
+    margin: 120px 0; padding: 40px 60px;
     border: $line1;
     @at-root h2 {
       width: 100%; height: 48px; 
@@ -41,29 +46,32 @@
       font-weight: normal; font-size: 30px; 
       text-align: center; text-transform: uppercase;
     }
+  } // #cartBox      
+  .cart_area {position: relative; width: 100%; height: 600px;} // .cart_area  
 
-    @at-root .cart_area {
-      width: 100%; height: 600px;
+    .selectBox {
+      width: 100%; height: 36px;
+      border-top: $line2; border-bottom: $line2;
+    } // .selectBox
 
-      @at-root .selectBox {
-        width: 100%; height: 36px;
-        border-top: $line2; border-bottom: $line2;
-      } // .selectBox
+    .itemBox {
+      width: 100%; height: 300px;
+      margin: auto;
+      border-bottom: $line2;
+    } // .itemBox
 
-      @at-root .itemBox {
-        width: 100%; height: 300px;
-        margin: auto;
-        border-bottom: $line2;
-      } // .itemBox
-    } // .cart_area 
-  } // #cartBox               
+    .otherBox {
+      position: absolute; bottom: 190px; right: 0;
+      width: 350px; height: 74px;
+      background-color: #ccc;
+    } // .otherBox
 }// 768px
 
 
 @include laptop {
   #cartBox {
     width: 100%; height: 1200px; 
-    margin: 130px 0; padding: 50px 70px;
+    margin: 130px 0; padding: 50px 150px;
     border: $line1;
     @at-root h2 {
       width: 100%; height: 48px; 
@@ -71,54 +79,61 @@
       font-weight: normal; font-size: 38px; 
       text-align: center; text-transform: uppercase;
     }
+  } // #cartBox   
 
-    @at-root .cart_area {
-      width: 100%; height: 1000px;
+  .cart_area {position: relative; width: 100%; height: 1000px;} // .cart_area  
 
-      @at-root .selectBox {
-        width: 100%; height: 46px;
-        border-top: $line2; border-bottom: $line2;
-      } // .selectBox
+    .selectBox {
+      width: 100%; height: 46px;
+      border-top: $line2; border-bottom: $line2;
+    } // .selectBox
 
-      @at-root .itemBox {
-        width: 100%; height: 350px;
-        margin: auto;
-        border-bottom: $line2;
-      } // .itemBox
-    } // .cart_area 
-  } // #cartBox    
+    .itemBox {
+      width: 100%; height: 350px;
+      margin: auto;
+      border-bottom: $line2;
+    } // .itemBox
+  
+    .otherBox {
+      position: absolute; bottom: 530px; right: 0;
+      width: 350px; height: 74px;
+      background-color: #ccc;
+    } // .otherBox
 } // 1280px
 
 
 @include pc {
   #cartBox {
-    width: 1440px; height: 1200px; 
-    margin: 130px auto; padding: 50px 70px;
+    width: 100%; height: 1200px; 
+    margin: 130px auto; padding: 50px 80px;
     border: $line1;
     @at-root h2 {
-      width: 100%; height: 48px; 
+      width: 1200px; height: 48px; 
       margin-bottom: 30px;
       font-weight: normal; font-size: 38px; 
       text-align: center; text-transform: uppercase;
     }
-
-    @at-root .cart_area {
-      width: 1300px; height: 1000px;
-      margin: auto;
-
-      @at-root .selectBox {
-        width: 100%; height: 46px;
-        margin: auto;
-        border-top: $line2; border-bottom: $line2;
-      } // .selectBox
-
-      @at-root .itemBox {
-        width: 100%; height: 400px;
-        margin: auto;
-        border-bottom: $line2;
-      } // .itemBox
-    } // .cart_area 
   } // #cartBox    
+
+  .cart_area {position: relative; width: 1200px; height: 1000px;} // .cart_area 
+
+    .selectBox {
+      width: 1200px; height: 46px;
+      margin: auto;
+      border-top: $line2; border-bottom: $line2;
+    } // .selectBox
+
+    .itemBox {
+      width: 100%; height: 400px;
+      // margin: auto;
+      border-bottom: $line2;
+    } // .itemBox
+    // 가운데 정렬 틀어진거 다시 보기
+    .otherBox { 
+      position: absolute; bottom: 480px; right: 0;
+      width: 350px; height: 74px;
+      background-color: #ccc;
+    } // .otherBox
 } // 1440px
 
 

@@ -9,6 +9,7 @@
 // 영역 내부에 담기   : 선택자.innerHTML, 선택자.append
 // ----------------------------------------------------
 // 불러올 data
+(()=>{
 const headBox = '/temp/header.html';
 const viewBox = '/temp/slide_area2.html';
 const scriptData = "/dist/src/e_02_slide_area-002.js";
@@ -16,34 +17,43 @@ const scriptData = "/dist/src/e_02_slide_area-002.js";
 // 선택 요소
 const body = document.querySelector('body');
 const elWrap = document.querySelector('#wrap');
-
 // 생성요소
 const mkHeadBox = document.createElement('header');
 mkHeadBox.id = 'headBox';
-
 const mkViewBox = document.createElement('section');
 mkViewBox.setAttribute('id','viewBox');
 // ---------------------------------------------
-// 코드 삽입 함수
-const fnMakeEl = (selectorEl, insertEl)=>{
-  selectorEl.innerHTML = insertEl;
-  elWrap.append(selectorEl);
+// 코드삽입 함수
+const fnMakeEl = (selectEl, insertEl)=>{
+  selectEl.innerHTML = insertEl;
+  elWrap.append(selectEl);
 };
 
 const fnScript = (codeUrl) => {
   const script = document.createElement('script');
   script.src = codeUrl;
-  body.append(script);
+  body.append(script); // bod 내부에 뒤에 첨부 <--> 
 };
+
+
 // ---------------------------------------------
 fetch(headBox)
   .then( response => response.text() )
-  .then( (textElement) => fnMakeEl(mkHeadBox, textElement));
-  
-fetch(viewBox)
-  .then(response => response.text())
-  .then(textElement =>{
-    fnMakeEl(mkViewBox, textElement);
-    fnScript(scriptData);
-  });
+  .then( (textElement) => fnMakeEl(mkHeadBox, textElement) )
+  .then(()=>{  
+    fetch(viewBox)
+      .then(response => response.text())
+      .then(textElement => {
+        fnMakeEl(mkViewBox, textElement);
+        fnScript(scriptData);
+      });
+})
 // --------------------------------------------
+})()
+
+
+
+//before : 선택자 이전에 형제로 첨부 
+//after : 선택자 이후에 형제로 첨부 
+//append : 선택자 내부에 자식으로 끝에 첨부
+//prepend : 선택자 내부에 자식으로 앞에 첨부

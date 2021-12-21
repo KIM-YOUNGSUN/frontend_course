@@ -44,7 +44,6 @@
   width: 100%;
   height: 350px;
   background-color: #fdd;
-  transition: background-color 500ms ease;
 }
 #contentBox > .content_area > ul {
   width: 100%;

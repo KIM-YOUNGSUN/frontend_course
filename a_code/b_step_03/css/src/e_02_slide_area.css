@@ -135,8 +135,8 @@ main, figure, figcaption, hgroup {
 .container {
   width: 100%;
   max-width: 1200px;
-  margin: auto;
   height: 100%;
+  margin: auto;
   padding-top: 20px;
   padding-bottom: 10px;
   background-color: #ddd;
@@ -174,6 +174,7 @@ h1 {
 }
 
 #viewBox {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -181,6 +182,7 @@ h1 {
   height: auto;
   margin: 3rem auto;
   padding: 0.2rem;
+  padding-bottom: 4rem;
   border: 0.0625rem solid #333;
 }
 #viewBox h2 {
@@ -224,6 +226,58 @@ h1 {
 #viewBox .slide_btn > .next {
   order: 1;
 }
+#viewBox .indicator {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 2rem;
+}
+#viewBox .indicator > .indicator_part {
+  display: flex;
+  width: auto;
+  height: 100%;
+  margin-right: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  background-color: #fff;
+}
+#viewBox .indicator > .indicator_part > li {
+  width: 50px;
+  height: 100%;
+  margin-left: 0.5rem;
+  border-radius: 2rem;
+  background-color: #a93;
+}
+#viewBox .indicator > .indicator_part > li:first-child {
+  margin-left: 0;
+}
+#viewBox .indicator > .indicator_part > li.on {
+  width: 90px;
+  background-color: #a22;
+}
+#viewBox .indicator > .indicator_part a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+#viewBox .indicator .count_part {
+  width: auto;
+  height: 100%;
+  padding: 0.2rem 1rem;
+  text-align: right;
+  text-decoration: none;
+  background-color: #fa9;
+  border-radius: 5rem;
+}
+#viewBox .indicator .total_count {
+  font-weight: 700;
+  color: #07a;
+}
 #viewBox .slide_content {
   width: 100%;
   height: 350px;
@@ -237,26 +291,46 @@ h1 {
   background-color: #afa;
 }
 #viewBox .slide_wrapper > li {
+  position: relative;
+  z-index: 0;
   width: 25%;
   height: 100%;
   padding: 3rem;
   color: #fff;
   font-size: 1rem;
   border: 1px solid #aaa;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#viewBox .slide_wrapper > li:nth-child(1) {
+#viewBox .slide_wrapper > li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#viewBox .slide_wrapper > li.slide_con_01 {
+  background-image: url("../../multi/img/event/bg_01.png");
   background-color: #4BA686;
 }
-#viewBox .slide_wrapper > li:nth-child(2) {
+#viewBox .slide_wrapper > li.slide_con_02 {
+  background-image: url("../../multi/img/event/bg_02.png");
   background-color: #609263;
 }
-#viewBox .slide_wrapper > li:nth-child(3) {
+#viewBox .slide_wrapper > li.slide_con_03 {
+  background-image: url("../../multi/img/event/bg_03.png");
   background-color: #AA0CA7;
 }
-#viewBox .slide_wrapper > li:nth-child(4) {
+#viewBox .slide_wrapper > li.slide_con_04 {
+  background-image: url("../../multi/img/event/bg_04.png");
   background-color: #ABA1F4;
 }
-#viewBox .slide_wrapper > li:nth-child(5) {
+#viewBox .slide_wrapper > li.slide_con_05 {
+  background-image: url("../../multi/img/event/bg_05.png");
   background-color: #333;
 }
 #viewBox h3 {

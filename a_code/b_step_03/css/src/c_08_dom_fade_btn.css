@@ -47,6 +47,9 @@
   width: 100%;
   height: 100%;
 }
+.card > a:focus {
+  outline: 3px solid rgba(51, 51, 51, 0.5);
+}
 .card > a > .img_zone {
   width: 100%;
   height: 200px;
@@ -68,7 +71,7 @@
   width: 100%;
 }
 .card:nth-of-type(1) .img_zone {
-  background-image: url(../../multi/img/cookie.jpg);
+  background-image: url(../../multi/img/bottle.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -83,7 +86,7 @@
   overflow: hidden;
 }
 .card:nth-of-type(2) .img_zone {
-  background-image: url(../../multi/img/drink.jpg);
+  background-image: url(../../multi/img/cookie.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -98,7 +101,7 @@
   overflow: hidden;
 }
 .card:nth-of-type(3) .img_zone {
-  background-image: url(../../multi/img/shrimp.jpg);
+  background-image: url(../../multi/img/juice.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -127,6 +130,7 @@
   padding-top: 5rem;
   border-radius: 0.25rem;
   color: #ffffff;
+  font-size: 1.3rem;
   background-color: #505050;
 }
 .new_area_modal:before {
@@ -157,10 +161,13 @@
   background-color: #ffffff;
 }
 .new_area_modal .close_btn > button:focus {
+  transform: scale(1.2);
+  border: 3px solid #ffffff;
   background-color: #ffbd55;
   font-weight: 900;
 }
 .new_area_modal .close_btn > button:hover {
+  transform: scale(1.2);
   background-color: #f7e9d3;
 }
 

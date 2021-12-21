@@ -132,7 +132,7 @@ const fnNum = function(n){
   .catch(function(error){ console.log( error ); });
 };
 
-// --------------------------------------------
+// -----------------------------------------
 const input = document.querySelector('#num');
 const btn = document.querySelector('button');
 
@@ -143,13 +143,26 @@ btn.addEventListener('click', function(e){
   fnNum(_n);
 });
 
-// -------------------------------------------------
-// 문제 : 여러분의 현재 점수의 합을 계산하시오
-// 국어점수 : 1, 3, 5
-// 영어점수 : 1, 3, 5
-// 수학점수 : 1, 3, 5
-// 그 점수 합 + 5
-// 현재의 총점 * 5
 
-// 점수 도출: => 최종 점수 : ///
-// 메세지 : 점수 도출이 되지 않으면 다시 입력하세요!!
+// -----------------------------------------------------
+// 문제 : 여러분의 현재 점수의 합을 계산하시오?
+// 국어점수  :  5점 이하의 값
+// 영어점수  :  5점 이하의 값
+// 수학점수  :  5점 이하의 값
+// 그점수 합 + 5
+// 현재의 총점 * 5 
+
+//점수도출 :  => 최종 점수 : ///
+//메세지 : 점수도출이 되지 않으면 다시 입력하세요!! 
+
+// 문제2 : const tel = '01027771234'; // -> const telN = ['010', '2777', '1234']
+//배열메소드: split, slice, join
+/*
+  // const tel = '01027771234';
+  // const telArr = tel.split('');
+  // const firstN = telArr.slice(0,3).join('');
+  // const lastN = telArr.slice(-4).join('');
+  // const middleN = telArr.slice(3,-4).join('');
+  // const userNum = [firstN, lastN, middleN];
+  // console.log( telArr, userNum );
+*/

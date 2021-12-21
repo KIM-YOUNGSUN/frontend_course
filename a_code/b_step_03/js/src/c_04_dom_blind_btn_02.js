@@ -1,5 +1,3 @@
-// c_04_dom_blind_btn_02.js
-
 
 // javascript를 이용하여, 
 // 버튼 클릭시 높이값이 0이 되도록처리
@@ -65,7 +63,7 @@ var countFn = function(n){
     console.log( red+green+blue );  
     var randomColor = '#'+red+green+blue;
 
-    // var ram = Math.floor( Math.random()*12 ) // 배열안에 있는 숫자들을 랜덤으로 뽑아냄 (setInterval) 은 멈추지 않고 계속 (setTimeout)은 누를때마다 랜덤 숫자 발생
+    // var ram = Math.floor( Math.random()*12 )
     // console.log( arr[ram] );
     jsContentArea.style.backgroundColor = randomColor;
   },500);
@@ -90,7 +88,7 @@ var slideDownFn = function(baseHeight){
       if(setH < originH){
         setH += 1;
         jsContentArea.style.height = setH + 'px'; 
-        console.log('높이값변경중:', setH);
+        // console.log('높이값변경중:', setH);
       }else{
         // jsContentArea.style = null;
         permission = true;
@@ -116,42 +114,26 @@ jsOpenBtn.addEventListener('click', function(event){
 
 jsContentArea.classList.add('on');
 
-// jsToggleBtn 클릭 이벤트 : jsOpenBtn 기능과 jsCloseBtn 기능을 모두 처리
+// jsToggleBtn 클릭 이벤트 : jsOpenBtn기능과, jsCloseBtn 기능을 모두 처리
 jsToggleBtn.addEventListener('click', function(event){
   event.preventDefault();
   /*
   var onState = jsContentArea.classList.contains('on');
-  if(onState){
+  if (onState) { 
     // console.log('현재 내용이 보이는 상태입니다.');
-    slideUpFn(conHResult);
+    slideUpFn(conHResult);  
     jsContentArea.classList.remove('on');
-  }else{
+  } else {
     // console.log('현재 내용이 보이지 않습니다.');
-    slideDownFn(conHResult);
+    slideDownFn(conHResult);  
     jsContentArea.classList.add('on');
   }
   */
   var viewState = getComputedStyle(jsContentArea).display === 'block';
-  (viewState) ? slideUpFn(conHResult) : slideDownFn(conHResult);
+  (viewState) ? slideUpFn(conHResult)  : slideDownFn(conHResult);
 });
-
-
-
-
-
-
-
 
 // -------------------------------------------------------------------------
 // 과제: modal window 만들기 (하나의box만) : 샘플사이트 http://fancybox.net/
 // opacity:100%; -> opacity:0; display:none;
 // display:block; -> opacity:100%; 
-
-
-
-
-
-
-
-
-

@@ -1,5 +1,7 @@
 // c_12_dom_list_modal.js
 
+
+
 // 시나리오
 // 1. li 가져와서 여러개 생성
 
@@ -32,7 +34,7 @@ var i=0;
 var dataLen = data.length;
 
 // 기능
-// 요소생성방법 1 (element로 인식)
+// 요소생성방법 1 (element로인식)
 // var mkLi = document.createElement('li');
 // mkLi.innerHTML = '<a href="#">li 내용을 복사해서 사용해 봅시다!!!</a>';
 
@@ -90,4 +92,8 @@ var elLi = elCardPart.querySelectorAll('li > a');
 elLi.forEach(function(element, index){
   element.addEventListener('click', fnClickLi);
 });
+
+
+
+
 

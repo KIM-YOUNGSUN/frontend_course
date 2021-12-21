@@ -24,6 +24,8 @@ require("core-js/modules/web.dom-collections.iterator.js");
 
 require("core-js/modules/es.object.to-string.js");
 
+require("core-js/modules/web.dom-collections.for-each.js");
+
 require("core-js/modules/es.object.keys.js");
 
 require("core-js/modules/es.object.values.js");
@@ -47,7 +49,10 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 // d_08_for_of.js
-var arr = [1, 2, 3, 4, 5, 6, 7];
+var _require = require("lodash"),
+    forEach = _require.forEach;
+
+var arr = [1, 2, 3, 4, 5, 6, 7, '-----'];
 console.log(arr);
 
 for (var i = 0; i < arr.length; i++) {
@@ -61,22 +66,21 @@ arr.forEach(function (data) {
 for (var _i = 0, _arr = arr; _i < _arr.length; _i++) {
   var _i2 = _arr[_i];
   console.log(_i2);
-} // -----------------------------------------
+} // ----------------------------------------------------
 
 
-var text = 'javascript'; // console.log(text[1]);
-
-for (var _i3 = 0; _i3 < text.length; _i3++) {
-  console.log(text[_i3]);
-}
+var text = 'javascript'; // console.log( text[1] );
+// for(let i=0; i<text.length; i++){
+//   console.log( text[i]);
+// }
 
 var _iterator = _createForOfIteratorHelper(text),
     _step;
 
 try {
   for (_iterator.s(); !(_step = _iterator.n()).done;) {
-    var _i6 = _step.value;
-    console.log(_i6);
+    var _i5 = _step.value;
+    console.log(_i5);
   }
 } catch (err) {
   _iterator.e(err);
@@ -88,17 +92,21 @@ var obj = {
   'samsung': 'galaxy',
   'apple': 'iphone',
   'lg': 'wing',
-  'nokia': 'N series'
-};
+  'nokia': 'N serize'
+}; // for( var i in obj){
+//   console.log( i );
+// }
+// 객체를 순환하기 위해 처리하는 메서드( keys, values, entries )
+
 var key = Object.keys(obj);
 var val = Object.values(obj);
-var ent = Object.entries(obj); // console.log(key, val);
-// console.log(ent);
+var ent = Object.entries(obj); // console.log( key, val );
+// console.log( ent );
 
-for (var _i4 = 0, _ent = ent; _i4 < _ent.length; _i4++) {
-  var _ent$_i = _slicedToArray(_ent[_i4], 2),
-      _i5 = _ent$_i[0],
+for (var _i3 = 0, _ent = ent; _i3 < _ent.length; _i3++) {
+  var _ent$_i = _slicedToArray(_ent[_i3], 2),
+      _i4 = _ent$_i[0],
       v = _ent$_i[1];
 
-  console.log("".concat(_i5, ":").concat(v));
+  console.log("".concat(_i4, " : ").concat(v));
 }
