@@ -37,7 +37,7 @@ btn.addEventListener('click', function(e){
 });
 
 // -------------------------------------------------
-console.clear();
+// console.clear();
 
 
 
