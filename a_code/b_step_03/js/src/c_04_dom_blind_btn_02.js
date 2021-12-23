@@ -46,28 +46,28 @@ var slideUpFn = function(height){
 };
 // ------------------------------------------
 // 함수 샘플:setInterval/setTimeout 슬라이드 기능으로 나타나는 기능 테스트 ---------------
-// var countFn = function(n){
-//   // setTimeout : 일정시간 뒤에 한번만 수행
-//   // setInterval : 일정시간 마다 수행 - clearInterval
-//   var arr = [2,4,7,10, 20, 30, 50, 90, 432, 654, 777, 963];
+var countFn = function(n){
+  // setTimeout : 일정시간 뒤에 한번만 수행
+  // setInterval : 일정시간 마다 수행 - clearInterval
+  var arr = [2,4,7,10, 20, 30, 50, 90, 432, 654, 777, 963];
   
-//   var red, green, blue;
-//   setInterval( function(){
-//     red = (Math.floor(Math.random() * 256)).toString(16);
-//     green = (Math.floor(Math.random() * 256)).toString(16);
-//     blue = (Math.floor(Math.random() * 256)).toString(16);
+  var red, green, blue;
+  setInterval( function(){
+    red = (Math.floor(Math.random() * 256)).toString(16);
+    green = (Math.floor(Math.random() * 256)).toString(16);
+    blue = (Math.floor(Math.random() * 256)).toString(16);
 
-//     if( red.length   !== 2)  { red   = '0' + red;   }
-//     if( green.length !== 2)  { green = '0' + green; }
-//     if( blue.length  !== 2) { blue   = '0' + blue;  }
-//     console.log( red+green+blue );  
-//     var randomColor = '#'+red+green+blue;
+    if( red.length   !== 2)  { red   = '0' + red;   }
+    if( green.length !== 2)  { green = '0' + green; }
+    if( blue.length  !== 2) { blue   = '0' + blue;  }
+    console.log( red+green+blue );  
+    var randomColor = '#'+red+green+blue;
 
-//     // var ram = Math.floor( Math.random()*12 )
-//     // console.log( arr[ram] );
-//     jsContentArea.style.backgroundColor = randomColor;
-//   },500);
-// };
+    // var ram = Math.floor( Math.random()*12 )
+    // console.log( arr[ram] );
+    jsContentArea.style.backgroundColor = randomColor;
+  },500);
+};
 
 // 함수2: open버튼 클릭시 사라진 내용을 나타나게 만들기 ----------------------------------
 // jsContentArea 상태가 'none' 일때, 'block'으로 처리와 동시에, 
@@ -112,28 +112,28 @@ jsOpenBtn.addEventListener('click', function(event){
   slideDownFn(conHResult);
 });
 
-// jsContentArea.classList.add('on');
+jsContentArea.classList.add('on');
 
 // jsToggleBtn 클릭 이벤트 : jsOpenBtn기능과, jsCloseBtn 기능을 모두 처리
-// jsToggleBtn.addEventListener('click', function(event){
-//   event.preventDefault();
-//   /*
-//   var onState = jsContentArea.classList.contains('on');
-//   if (onState) { 
-//     // console.log('현재 내용이 보이는 상태입니다.');
-//     slideUpFn(conHResult);  
-//     jsContentArea.classList.remove('on');
-//   } else {
-//     // console.log('현재 내용이 보이지 않습니다.');
-//     slideDownFn(conHResult);  
-//     jsContentArea.classList.add('on');
-//   }
-//   */
-//   var viewState = getComputedStyle(jsContentArea).display === 'block';
-//   (viewState) ? slideUpFn(conHResult)  : slideDownFn(conHResult);
-// });
+jsToggleBtn.addEventListener('click', function(event){
+  event.preventDefault();
+  /*
+  var onState = jsContentArea.classList.contains('on');
+  if (onState) { 
+    // console.log('현재 내용이 보이는 상태입니다.');
+    slideUpFn(conHResult);  
+    jsContentArea.classList.remove('on');
+  } else {
+    // console.log('현재 내용이 보이지 않습니다.');
+    slideDownFn(conHResult);  
+    jsContentArea.classList.add('on');
+  }
+  */
+  var viewState = getComputedStyle(jsContentArea).display === 'block';
+  (viewState) ? slideUpFn(conHResult)  : slideDownFn(conHResult);
+});
 
-// // -------------------------------------------------------------------------
-// // 과제: modal window 만들기 (하나의box만) : 샘플사이트 http://fancybox.net/
+// -------------------------------------------------------------------------
+// 과제: modal window 만들기 (하나의box만) : 샘플사이트 http://fancybox.net/
 // opacity:100%; -> opacity:0; display:none;
 // display:block; -> opacity:100%; 

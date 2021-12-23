@@ -34,9 +34,18 @@
         <h2 class="blind">navigation</h2>
         <div class="nav_inner01">
           <h3 class="blind">unb</h3>
-          <button type="button" class="menu_btn">
+          <div class="menu_btn_part">
+            <button type="button" class="menu_btn">
             <span class="blind">메뉴</span>
-          </button>
+            </button>
+            <ul class="menu_btn_inner">
+              <li><a href="#">여성</a></li>
+              <li><a href="#">남성</a></li>
+              <li><a href="#">뷰티</a></li>
+              <li><a href="#">스카프</a></li>
+            </ul>
+          </div>
+
           <button type="button" class="search_btn">
             <span class="blind">검색</span>
           </button>
@@ -49,11 +58,15 @@
           <div class="language_part">
             <button type="button"><span>language</span></button>
           </div>
-          <div class="login_part">
+          <div class="login_part interval_btn">
             <a href="#"><span>login</span></a>
           </div>
           <div class="join_part">
             <a href="#">join us</a>
+          </div>
+          <div class="login_part_modal">
+            <p>로그인 상세 페이지</p>
+            <div class="close_btn"><button type="button">닫기</button></div>
           </div>
         </div><!--nav_inner02-->
       </nav>
@@ -129,7 +142,42 @@
           <li class="best_part_05"></li>
           <li class="best_part_06"></li>
         </ul>
-      </div> 
+      </div>
+      <div class="indiBox">
+        <ul class="indicator">
+          <li>
+            <button type="button">
+              <span class="blind">버튼1</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span class="blind">버튼2</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span class="blind">버튼3</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span class="blind">버튼4</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span class="blind">버튼5</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span class="blind">버튼6</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      
     </article>
 
     <aside class="subBox_02">
@@ -198,8 +246,11 @@
       <div class="fnb">
         <h3 class="blind">navigation</h3>
         <div class="fnb_box">
-          <div class="sevice_part">
-            <button type="button">고객서비스</button>
+
+          <div class="service_part">
+            <div class="btn_part">
+              <button type="button" class="btn">고객서비스</button>
+            </div>
             <ul class="service_inner">
               <li>
                 <a href="#">문의하기</a>
@@ -220,10 +271,12 @@
                 <a href="#">제품 관리 및 수선</a>
               </li>
             </ul>
-          </div> <!--sevice_part -->
+          </div> <!--service_part -->
 
           <div class="online_part">
-            <button type="button">온라인 스토어</button>
+            <div class="btn_part">
+              <button type="button">온라인 스토어</button>
+            </div>
             <ul class="online_inner">
               <li>
                 <a href="#">회원가입</a>
@@ -244,7 +297,9 @@
           </div> <!--online_part -->
 
           <div class="company_info_part">
-            <button type="button">기업정보</button>
+            <div class="btn_part">
+              <button type="button">기업정보</button>
+            </div>
             <ul class="company_info_inner">
               <li>
                 <a href="#">지속 가능한 성장</a>
@@ -265,7 +320,9 @@
           </div> <!--company_info_part -->
 
           <div class="legal_part">
-            <button type="button">법적고지</button>
+            <div class="btn_part">
+              <button type="button">법적고지</button>
+            </div>
             <ul class="legal_inner">
               <li>
                 <a href="#">이용약관</a>

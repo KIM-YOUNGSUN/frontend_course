@@ -37,14 +37,34 @@
     width: 100px;
     height: 40px;
   }
-  .menu_btn {
+  .nav_inner01 .menu_btn_part {
     width: 40px;
     height: 100%;
+  }
+  .nav_inner01 .menu_btn_part .menu_btn {
+    width: 40px;
+    height: 100%;
+    margin: auto;
     background-image: url(../../../img/menu.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-
+  .nav_inner01 .menu_btn_part button {
+    display: block;
+  }
+  .nav_inner01 .menu_btn_part ul {
+    display: none;
+    width: 110%;
+    height: auto;
+    font-size: 12px;
+    background-color: #ccc;
+  }
+  .nav_inner01 .menu_btn_part ul.on {
+    display: block;
+  }
+  .nav_inner01 .menu_btn_part ul a {
+    display: block;
+  }
   .search_btn {
     width: 40px;
     height: 100%;
@@ -100,6 +120,38 @@
     z-index: -1;
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
+  }
+  .login_part > dl {
+    width: 100%;
+    height: 180px;
+  }
+  .login_part dt {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-transform: uppercase;
+  }
+  .login_part dd {
+    width: 100%;
+  }
+
+  .login_part_modal {
+    display: none;
+    width: 70%;
+    height: 60%;
+    background-color: #ddd;
+  }
+  .login_part_modal:before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 80, 80, 0.5);
   }
 
   .nav_inner02 .join_part {
@@ -371,6 +423,9 @@
   }
   .language_part span {
     text-transform: uppercase;
+    text-align: center;
+    line-height: 52px;
+    font-size: 12px;
   }
 
   .login_part {
@@ -526,7 +581,8 @@
   .language_part span {
     text-transform: uppercase;
     text-align: center;
-    line-height: 52px;
+    line-height: 50px;
+    font-size: 12px;
   }
 
   .login_part {
@@ -1398,9 +1454,7 @@
     line-height: 58px;
   }
   .fnb_box div button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     width: 100%;
     height: 100%;
   }
@@ -1408,11 +1462,15 @@
     display: block;
   }
   .fnb_box div ul {
+    display: none;
     width: 100%;
     height: auto;
     margin: auto;
     font-size: 14px;
     background-color: #ccc;
+  }
+  .fnb_box div ul.on {
+    display: block;
   }
 
   .info_inner {
@@ -1533,13 +1591,22 @@
     line-height: 58px;
   }
   .fnb_box div button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     width: 100%;
     height: 100%;
   }
-  .fnb_box div a {
+  .fnb_box div ul {
+    display: none;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    font-size: 15px;
+    background-color: #ccc;
+  }
+  .fnb_box div ul.on {
+    display: block;
+  }
+  .fnb_box div ul a {
     display: block;
   }
 
@@ -1661,7 +1728,25 @@
     height: 60px;
     line-height: 58px;
   }
-  .fnb_box div a {
+  .fnb_box div button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+  }
+  .fnb_box div ul {
+    display: none;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    font-size: 16px;
+    background-color: #ccc;
+  }
+  .fnb_box div ul.on {
+    display: block;
+  }
+  .fnb_box div ul a {
     display: block;
   }
 
@@ -1708,6 +1793,9 @@
   .cs_part button {
     text-decoration: underline;
     font-weight: 500;
+  }
+  .cs_part button.on {
+    background-color: #ddd;
   }
 
   .store_search_part {

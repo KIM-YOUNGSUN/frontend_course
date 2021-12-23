@@ -37,14 +37,34 @@
     width: 100px;
     height: 40px;
   }
-  .menu_btn {
+  .nav_inner01 .menu_btn_part {
     width: 40px;
     height: 100%;
+  }
+  .nav_inner01 .menu_btn_part .menu_btn {
+    width: 40px;
+    height: 100%;
+    margin: auto;
     background-image: url(../../../img/menu.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-
+  .nav_inner01 .menu_btn_part button {
+    display: block;
+  }
+  .nav_inner01 .menu_btn_part ul {
+    display: none;
+    width: 110%;
+    height: auto;
+    font-size: 12px;
+    background-color: #ccc;
+  }
+  .nav_inner01 .menu_btn_part ul.on {
+    display: block;
+  }
+  .nav_inner01 .menu_btn_part ul a {
+    display: block;
+  }
   .search_btn {
     width: 40px;
     height: 100%;
@@ -100,6 +120,38 @@
     z-index: -1;
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
+  }
+  .login_part > dl {
+    width: 100%;
+    height: 180px;
+  }
+  .login_part dt {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-transform: uppercase;
+  }
+  .login_part dd {
+    width: 100%;
+  }
+
+  .login_part_modal {
+    display: none;
+    width: 70%;
+    height: 60%;
+    background-color: #ddd;
+  }
+  .login_part_modal:before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 80, 80, 0.5);
   }
 
   .nav_inner02 .join_part {
@@ -371,6 +423,9 @@
   }
   .language_part span {
     text-transform: uppercase;
+    text-align: center;
+    line-height: 52px;
+    font-size: 12px;
   }
 
   .login_part {
@@ -526,7 +581,8 @@
   .language_part span {
     text-transform: uppercase;
     text-align: center;
-    line-height: 52px;
+    line-height: 50px;
+    font-size: 12px;
   }
 
   .login_part {
@@ -996,7 +1052,7 @@
     display: flex;
     justify-content: flex-start;
     width: 1200px;
-    height: 400px;
+    height: 350px;
   }
   .best_inner_01 li {
     width: 300px;
@@ -1015,6 +1071,45 @@
     overflow: hidden;
   }
   .best_inner_01 .best_part_06 {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+
+  .indiBox {
+    width: 70px;
+    height: 50px;
+    margin: auto;
+  }
+  .indiBox .indicator {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .indiBox .indicator li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #333;
+  }
+  .indiBox .indicator li button {
+    display: block;
+  }
+  .indiBox .indicator li:nth-child(5) {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  .indiBox .indicator li:nth-child(6) {
     display: block;
     width: 0;
     height: 0;
@@ -1044,7 +1139,7 @@
   }
   .best_wrap {
     width: 100%;
-    height: 600px;
+    height: 500px;
     overflow: hidden;
   }
 
@@ -1052,7 +1147,7 @@
     display: flex;
     justify-content: flex-start;
     width: 1600px;
-    height: 600px;
+    height: 450px;
     padding: 50px 20px;
   }
   .best_inner_01 li {
@@ -1079,6 +1174,27 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
+
+  .indiBox {
+    width: 100px;
+    height: 50px;
+    margin: auto;
+  }
+  .indiBox .indicator {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .indiBox .indicator li {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #333;
+  }
+  .indiBox .indicator li button {
+    display: block;
+  }
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) {
   .contentBox_02 {
@@ -1100,7 +1216,7 @@
   }
   .best_wrap {
     width: 100%;
-    height: 600px;
+    height: 500px;
     overflow: hidden;
   }
 
@@ -1108,7 +1224,7 @@
     display: flex;
     justify-content: flex-start;
     width: 2400px;
-    height: 600px;
+    height: 450px;
     padding: 0 20px;
   }
   .best_inner_01 li {
@@ -1116,6 +1232,27 @@
     height: 450px;
     margin-right: 30px;
     background-image: linear-gradient(45deg, #F6F1EB, #F5F5F5);
+  }
+
+  .indiBox {
+    width: 100px;
+    height: 50px;
+    margin: auto;
+  }
+  .indiBox .indicator {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .indiBox .indicator li {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #333;
+  }
+  .indiBox .indicator li button {
+    display: block;
   }
 }
 @media all and (min-width: 1440px) {
@@ -1138,7 +1275,7 @@
   }
   .best_wrap {
     width: 100%;
-    height: 700px;
+    height: 600px;
     overflow: hidden;
   }
 
@@ -1147,13 +1284,34 @@
     justify-content: flex-start;
     width: 2400px;
     height: 600px;
-    padding: 60px 10px;
+    padding: 50px 10px;
   }
   .best_inner_01 li {
     width: 400px;
     height: 500px;
     margin-right: 30px;
     background-image: linear-gradient(45deg, #F6F1EB, #F5F5F5);
+  }
+
+  .indiBox {
+    width: 100px;
+    height: 50px;
+    margin: auto;
+  }
+  .indiBox .indicator {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .indiBox .indicator li {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #333;
+  }
+  .indiBox .indicator li button {
+    display: block;
   }
 }
 @media all and (max-width: 767px) {
@@ -1603,9 +1761,7 @@
     line-height: 58px;
   }
   .fnb_box div button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     width: 100%;
     height: 100%;
   }
@@ -1613,11 +1769,15 @@
     display: block;
   }
   .fnb_box div ul {
+    display: none;
     width: 100%;
     height: auto;
     margin: auto;
     font-size: 14px;
     background-color: #ccc;
+  }
+  .fnb_box div ul.on {
+    display: block;
   }
 
   .info_inner {
@@ -1738,13 +1898,22 @@
     line-height: 58px;
   }
   .fnb_box div button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     width: 100%;
     height: 100%;
   }
-  .fnb_box div a {
+  .fnb_box div ul {
+    display: none;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    font-size: 15px;
+    background-color: #ccc;
+  }
+  .fnb_box div ul.on {
+    display: block;
+  }
+  .fnb_box div ul a {
     display: block;
   }
 
@@ -1866,7 +2035,25 @@
     height: 60px;
     line-height: 58px;
   }
-  .fnb_box div a {
+  .fnb_box div button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+  }
+  .fnb_box div ul {
+    display: none;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    font-size: 16px;
+    background-color: #ccc;
+  }
+  .fnb_box div ul.on {
+    display: block;
+  }
+  .fnb_box div ul a {
     display: block;
   }
 
@@ -1913,6 +2100,9 @@
   .cs_part button {
     text-decoration: underline;
     font-weight: 500;
+  }
+  .cs_part button.on {
+    background-color: #ddd;
   }
 
   .store_search_part {
