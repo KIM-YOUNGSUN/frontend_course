@@ -34,7 +34,7 @@
   }
   .nav_inner01 {
     display: flex;
-    width: 100px;
+    width: 100%;
     height: 40px;
   }
   .nav_inner01 .menu_btn_part {
@@ -54,10 +54,19 @@
   }
   .nav_inner01 .menu_btn_part ul {
     display: none;
-    width: 110%;
-    height: auto;
+    width: 300px;
+    height: 78px;
     font-size: 12px;
     background-color: #ccc;
+  }
+  .nav_inner01 .menu_btn_part ul li {
+    float: left;
+    width: 60px;
+    height: auto;
+    padding: 30px 0;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
   }
   .nav_inner01 .menu_btn_part ul.on {
     display: block;
@@ -65,6 +74,7 @@
   .nav_inner01 .menu_btn_part ul a {
     display: block;
   }
+
   .search_btn {
     width: 40px;
     height: 100%;
@@ -136,24 +146,6 @@
     width: 100%;
   }
 
-  .login_part_modal {
-    display: none;
-    width: 70%;
-    height: 60%;
-    background-color: #ddd;
-  }
-  .login_part_modal:before {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(80, 80, 80, 0.5);
-  }
-
   .nav_inner02 .join_part {
     display: block;
     width: 0;
@@ -223,6 +215,16 @@
     padding-left: 40px;
   }
   .nav_inner01 .menu_btn {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+
+  .nav_inner01 .menu_btn_part {
     display: block;
     width: 0;
     height: 0;
@@ -304,13 +306,42 @@
     height: 60px;
     text-transform: uppercase;
   }
-  .menu_btn {
+  .nav_inner03 .menu_btn_part {
+    width: 100%;
+    height: 100%;
+  }
+  .nav_inner03 .menu_btn_part .menu_btn {
     width: 100%;
     height: 24px;
     margin-top: 18px;
     background-image: url(../../../img/menu.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
+  .nav_inner03 .menu_btn_part button {
+    display: block;
+  }
+  .nav_inner03 .menu_btn_part ul {
+    display: none;
+    width: 100px;
+    height: auto;
+    font-size: 12px;
+    background-color: #ccc;
+  }
+  .nav_inner03 .menu_btn_part ul li {
+    width: 60px;
+    height: auto;
+    padding: 30px 0;
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .nav_inner03 .menu_btn_part ul.on {
+    display: block;
+  }
+  .nav_inner03 .menu_btn_part ul a {
+    display: block;
   }
 
   .menu_part {
@@ -381,7 +412,16 @@
     width: 100%;
     height: 50px;
   }
-  .nav_inner01 > .menu_btn {
+  .nav_inner01 .menu_btn {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  .nav_inner01 .menu_btn_part {
     display: block;
     width: 0;
     height: 0;
@@ -539,6 +579,15 @@
     height: 50px;
   }
   .nav_inner01 .menu_btn {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  .nav_inner01 .menu_btn_part {
     display: block;
     width: 0;
     height: 0;
@@ -1322,18 +1371,14 @@
     margin-bottom: 20px;
   }
   .fnb_box div {
-    width: auto;
+    width: 80px;
     height: 40px;
-    padding: 0.2rem;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     font-weight: bold;
   }
   .fnb_box div button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    width: 80px;
     height: 100%;
   }
   .fnb_box div a {
@@ -1442,21 +1487,22 @@
   }
   .fnb_box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     height: 60px;
     margin: auto;
     text-align: center;
   }
   .fnb_box div {
-    width: 200px;
+    width: 100%;
     height: 60px;
     line-height: 58px;
   }
   .fnb_box div button {
     display: block;
-    width: 100%;
+    width: 180px;
     height: 100%;
+    margin: auto;
   }
   .fnb_box div a {
     display: block;
@@ -1484,7 +1530,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    width: 800px;
+    width: 767px;
     height: 100px;
     margin: auto;
     border-top: 2px solid #F6F1EB;
@@ -1548,7 +1594,7 @@
   }
 
   address {
-    width: 800px;
+    width: 100%;
     height: auto;
     margin: auto;
     padding: 60px 0;
@@ -1586,14 +1632,15 @@
     text-align: center;
   }
   .fnb_box div {
-    width: 200px;
+    width: 100%;
     height: 60px;
     line-height: 58px;
   }
   .fnb_box div button {
     display: block;
-    width: 100%;
+    width: 200px;
     height: 100%;
+    margin: auto;
   }
   .fnb_box div ul {
     display: none;
@@ -1724,14 +1771,16 @@
     text-align: center;
   }
   .fnb_box div {
-    width: 200px;
+    width: 100%;
     height: 60px;
     line-height: 58px;
+    font-size: 18px;
   }
   .fnb_box div button {
     display: block;
-    width: 100%;
+    width: 200px;
     height: 100%;
+    margin: auto;
     text-align: center;
     line-height: 60px;
   }

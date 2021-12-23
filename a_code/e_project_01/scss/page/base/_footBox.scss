@@ -23,9 +23,11 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
           margin: auto; margin-bottom: 20px;
 
           @at-root & div { 
-            width:auto; height: 40px; padding:0.2rem;
-            font-size: 14px; text-align: center; font-weight: bold;
-            & button {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;}            
+            width:80px; height: 40px; 
+            // padding:0.2rem;
+            font-size: 12px; text-align: center; 
+            font-weight: bold; 
+            & button { width: 80px; height: 100%;}            
             & a {display: block;}
             & ul {@include blind;}
           }
@@ -98,22 +100,23 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     background-color: $color_beige_01;
     
     @at-root .fnb_box {
-        display: flex; justify-content: space-between;
+        display: flex; justify-content: space-around;
         width: 100%; height: 60px;
         margin: auto; 
         text-align: center; 
       
         &  div { 
-          width: 200px; height: 60px;
+          width: 100%; height: 60px;
           line-height: 58px;
-          & button {display: block; width: 100%; height: 100%;}
+          & button {display: block; width: 180px; height: 100%;margin: auto;} 
           & a {display: block;}
           & ul {
             display:none;
             width: 100%; height: auto; 
             margin: auto;
-            font-size: 14px;
+            font-size: 14px; 
             background-color: #ccc; 
+            
           &.on{display:block;}
           }
         }
@@ -124,9 +127,9 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       position: relative; margin: auto;
       width: auto; height: 600px;
   
-      & h3 {
+      & h3 { 
         position: absolute; bottom: 0; left: 0; right: 0;
-        width: 800px; height: 100px;
+        width: 767px; height: 100px;
         margin: auto; 
         border-top: $line1;
         background-image: url($logoWhite);
@@ -176,7 +179,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       } // .cs_box
   
       @at-root address {
-        width: 800px; height: auto;
+        width: 100%; height: auto;
         margin: auto;  padding: 60px 0;
         border-top: $line1;
         & .mobile {display: none;}
@@ -211,9 +214,9 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
         text-align: center; 
       
         &  div { 
-          width: 200px; height: 60px;
+          width: 100%; height: 60px;
           line-height: 58px;
-          & button {display: block; width: 100%; height: 100%;}
+          & button {display: block; width: 200px; height: 100%; margin: auto;}
           & ul {
             display:none;
             width: 100%; height: auto; 
@@ -321,11 +324,12 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       text-align: center; 
 
       &  div { 
-        width: 200px; height: 60px;
-        line-height: 58px;
+        width: 100%; height: 60px;
+        line-height: 58px; font-size: 18px;
           & button {
             display: block; 
-            width: 100%; height: 100%;
+            width: 200px; height: 100%;
+            margin: auto;
             text-align: center;  line-height: 60px;}
         
         & ul {

@@ -77,10 +77,11 @@
 // });
 
 
-// 햄버거 메뉴
+// 햄버거 메뉴 
+
 const elMenuBtnPart = document.querySelector('.menu_btn_part');
-const elMenuBtn = elMenuBtnPart.querySelector('.menu_btn');
-const elMenuBtnInner = elMenuBtnPart.querySelector('.menu_btn_inner');
+const elMenuBtn = document.querySelector('.menu_btn');
+const elMenuBtnInner = document.querySelector('.menu_btn_inner');
 
 elMenuBtn.addEventListener('click', e => {
   e.preventDefault();
@@ -88,6 +89,7 @@ elMenuBtn.addEventListener('click', e => {
   // let check = elMenuBtnInner.classList.contains('on');
   // (check) ? elMenuBtnInner.classList.remove('on') : elMenuBtnInner.classList.add('on');
   elMenuBtnInner.classList.toggle('on');
+  
 });
 
 
@@ -101,19 +103,17 @@ elMenuBtn.addEventListener('click', e => {
 
 
 
-
-
 // ------------------------------------------------------------------------
-// const elFnbBox = document.querySelector('.fnb_box');
-// const elFnbChildren = elFnbBox.querySelectorAll('.btn_part');
-// const elFnbList = [].slice.call(elFnbChildren);
+const elFnbBox = document.querySelector('.fnb_box');
+const elFnbChildren = elFnbBox.querySelectorAll('.btn_part');
+const elFnbList = [].slice.call(elFnbChildren);
 
-// // 한꺼번에 처리한 경우
-// elFnbList.forEach( (el,i)=>{ // forEach는 각각 클릭 될수 있게 만드는 것
-//   el.addEventListener('click', e=>{
-//     e.preventDefault();
-//     let ul = el.nextElementSibling; // ul 바로 뒤에 오는 애들을 호출 -> li
-//     ul.classList.toggle('on');
-//   });
-// });
+// 한꺼번에 처리한 경우
+elFnbList.forEach( (el,i)=>{ // forEach는 각각 클릭 될수 있게 만드는 것
+  el.addEventListener('click', e=>{
+    e.preventDefault();
+    let ul = el.nextElementSibling; // ul 바로 뒤에 오는 애들을 호출 -> li
+    ul.classList.toggle('on');
+  });
+});
 
