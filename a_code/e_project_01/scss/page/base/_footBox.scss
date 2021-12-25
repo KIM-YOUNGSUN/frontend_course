@@ -95,29 +95,31 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     margin:auto; 
   
     @at-root .fnb {
-    width: 100%; height: 60px;
-    margin-bottom: 600px; // 나중에 지울것
-    background-color: $color_beige_01;
+      position: relative; z-index: 100;
+      width: 100%; height: 60px;
+      background-color: $color_beige_01;
+      border-bottom: $line3;
     
     @at-root .fnb_box {
         display: flex; justify-content: space-around;
         width: 100%; height: 60px;
         margin: auto; 
         text-align: center; 
-      
+
         &  div { 
           width: 100%; height: 60px;
-          line-height: 58px;
-          & button {display: block; width: 180px; height: 100%;margin: auto;} 
+          line-height: 50px; 
+          & button {display: block; width: 180px; height: 100%; margin: auto;} 
           & a {display: block;}
           & ul {
             display:none;
             width: 100%; height: auto; 
             margin: auto;
             font-size: 14px; 
-            background-color: #ccc; 
+            background-color: $color_beige_01; 
             
           &.on{display:block;}
+          & a {display: block;}
           }
         }
       } //.fnb_box
@@ -203,9 +205,10 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     margin:auto; 
   
     @at-root .fnb {
-    width: 100%; height: 60px;
-    margin-bottom: 600px; // 나중에 지울것
-    background-color: $color_beige_01;
+      position: relative; z-index: 100;
+      width: 100%; height: 60px;
+      background-color: $color_beige_01;
+      border-bottom: $line3;
     
     @at-root .fnb_box {
         display: flex; justify-content: space-around;
@@ -218,11 +221,11 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
           line-height: 58px;
           & button {display: block; width: 200px; height: 100%; margin: auto;}
           & ul {
-            display:none;
+            display: none;
             width: 100%; height: auto; 
             margin: auto;
             font-size: 15px;
-            background-color: #ccc; 
+            background-color: $color_beige_01;
 
             &.on{display:block;}
             & a {display: block;}
@@ -313,9 +316,10 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
   margin:auto; 
 
   @at-root .fnb {
-  width: 100%; height: 60px;
-  margin-bottom: 600px; // 나중에 지울것
-  background-color: $color_beige_01;
+    position: relative; z-index: 100;
+    width: 100%; height: 60px;
+    background-color: $color_beige_01;
+    border-bottom: $line3;
   
   @at-root .fnb_box {
       display: flex; justify-content: space-between;
@@ -337,7 +341,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
           width: 100%; height: auto; 
           margin: auto;
           font-size: 16px;
-          background-color: #ccc; 
+          background-color: $color_beige_01; 
           
           &.on{display:block;}
           & a {display: block;}
