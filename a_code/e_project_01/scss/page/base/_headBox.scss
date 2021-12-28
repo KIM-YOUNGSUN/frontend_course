@@ -37,7 +37,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
 
         @at-root .nav_inner01 {
           display: flex;
-          width: 100%; height: 40px;
+          width: 40px; height: 40px;
 
         @at-root & .menu_btn_part{
           width: 40px; height: 100%;
@@ -51,20 +51,21 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
             & button {display: block;}
             & ul {
               display: none;
-              width: 300px; height: 78px; 
+              width: 100px; height: 350px; 
               font-size: 12px;
               background-color: $color_beige_01;
               & li {
                 float: left;
-                width: 60px; height: 78px;
-                padding: 30px 0; 
+                width: 100px; height: 70px;
+                border-bottom: $line3;
                 font-size: 14px; text-align: center; 
-                text-transform: uppercase; 
+                text-transform: uppercase; line-height: 70px;
                 color: $color_gray_01;
+                &:last-of-type {border-bottom: 0;}
                 
                 & a {
                   display: block;
-                  width: 100%; height: 78px;
+                  width: 100%; height: 70px;
                 }
               }
               &.on{display:block;}
@@ -73,7 +74,6 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
         } // .menu_btn_part
 
         @at-root .search_btn_part { 
-          // display: flex; justify-content: flex-start;
           width: 100%; height: 100%;
         }
           @at-root .search_btn  {
@@ -91,16 +91,12 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
             &.on {display: block;}
 
             & .search_text_inner {
-              // display: none;
               width: 150px; height: 40px;
               margin: auto;
-              // &.on {display: block;}
               & input {
                 width: 150px; height: 40px;
                 border-radius: 6px;
                 text-transform: uppercase;
-                // background-color: $color_beige_01;
-                // border: $line3;
               }
             }
           } // .search_modal
@@ -199,7 +195,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
             text-transform: uppercase;
           }
         }
-      } // .search_modal
+      } // .search_text_area
     } // .nav_inner01
 
     @at-root .nav_inner02 { 
@@ -267,7 +263,6 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
               }
               &.on{display:block;}
             }
-
           } // .menu_btn_part
 
           @at-root .menu_part {
@@ -439,10 +434,9 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       @at-root .menu_part {
         display: flex; justify-content: space-between;
         width: 700px; height: 60px;
-        // margin: auto;
         text-align: center; 
         line-height: 50px; 
-        // font-size: 17px;
+
         > a {
           display: block; 
           width: 100px; height: 50px;
@@ -544,7 +538,6 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       }
       @at-root .login_part {
         width: 80px; height: 50px; 
-        // margin-right: -8px;
       }
       @at-root .join_part {
         width: 80px; height: 50px;

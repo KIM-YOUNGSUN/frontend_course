@@ -34,7 +34,7 @@
   }
   .nav_inner01 {
     display: flex;
-    width: 100%;
+    width: 40px;
     height: 40px;
   }
   .nav_inner01 .menu_btn_part {
@@ -54,25 +54,29 @@
   }
   .nav_inner01 .menu_btn_part ul {
     display: none;
-    width: 300px;
-    height: 78px;
+    width: 100px;
+    height: 350px;
     font-size: 12px;
     background-color: #F6F1EB;
   }
   .nav_inner01 .menu_btn_part ul li {
     float: left;
-    width: 60px;
-    height: 78px;
-    padding: 30px 0;
+    width: 100px;
+    height: 70px;
+    border-bottom: 1px solid #D9D9D9;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
+    line-height: 70px;
     color: #505050;
+  }
+  .nav_inner01 .menu_btn_part ul li:last-of-type {
+    border-bottom: 0;
   }
   .nav_inner01 .menu_btn_part ul li a {
     display: block;
     width: 100%;
-    height: 78px;
+    height: 70px;
   }
   .nav_inner01 .menu_btn_part ul.on {
     display: block;
@@ -1250,7 +1254,7 @@
   .best_inner_01 {
     display: flex;
     justify-content: flex-start;
-    width: 1200px;
+    width: 1600px;
     height: 350px;
   }
   .best_inner_01 li {
@@ -1279,43 +1283,33 @@
     overflow: hidden;
   }
 
-  .indiBox {
-    width: 70px;
-    height: 50px;
+  .prev_next_Box {
+    width: 100px;
+    height: 60px;
     margin: auto;
   }
-  .indiBox .indicator {
+  .prev_next_Box .prev_next_btn {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100%;
   }
-  .indiBox .indicator li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    background-color: #333;
+  .prev_next_Box .prev_next_btn .prev_btn {
+    width: 40px;
+    height: 100%;
+    background-image: url(../../../img/prev.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
-  .indiBox .indicator li button {
-    display: block;
+  .prev_next_Box .prev_next_btn .next_btn {
+    width: 40px;
+    height: 100%;
+    background-image: url(../../../img/next.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
-  .indiBox .indicator li:nth-child(5) {
+  .prev_next_Box .prev_next_btn button {
     display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    z-index: -1;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
-  }
-  .indiBox .indicator li:nth-child(6) {
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    z-index: -1;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1279px) {
@@ -1338,19 +1332,19 @@
   }
   .best_wrap {
     width: 100%;
-    height: 500px;
+    height: 450px;
     overflow: hidden;
   }
 
   .best_inner_01 {
     display: flex;
     justify-content: flex-start;
-    width: 1600px;
+    width: 2000px;
     height: 450px;
-    padding: 50px 20px;
+    margin: auto;
   }
   .best_inner_01 li {
-    width: 320px;
+    width: 350px;
     height: 400px;
     margin-right: 20px;
     background-image: linear-gradient(45deg, #F6F1EB, #F5F5F5);
@@ -1374,24 +1368,34 @@
     overflow: hidden;
   }
 
-  .indiBox {
+  .prev_next_Box {
     width: 100px;
-    height: 50px;
+    height: 60px;
     margin: auto;
   }
-  .indiBox .indicator {
+  .prev_next_Box .prev_next_btn {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100%;
+    margin: auto;
+    margin-top: -30px;
   }
-  .indiBox .indicator li {
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    background-color: #333;
+  .prev_next_Box .prev_next_btn .prev_btn {
+    width: 40px;
+    height: 100%;
+    background-image: url(../../../img/prev.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
-  .indiBox .indicator li button {
+  .prev_next_Box .prev_next_btn .next_btn {
+    width: 40px;
+    height: 100%;
+    background-image: url(../../../img/next.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .prev_next_Box .prev_next_btn button {
     display: block;
   }
 }
@@ -1433,24 +1437,34 @@
     background-image: linear-gradient(45deg, #F6F1EB, #F5F5F5);
   }
 
-  .indiBox {
+  .prev_next_Box {
     width: 100px;
-    height: 50px;
+    height: 60px;
     margin: auto;
   }
-  .indiBox .indicator {
+  .prev_next_Box .prev_next_btn {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100%;
+    margin: auto;
+    margin-top: -30px;
   }
-  .indiBox .indicator li {
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    background-color: #333;
+  .prev_next_Box .prev_next_btn .prev_btn {
+    width: 40px;
+    height: 100%;
+    background-image: url(../../../img/prev.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
-  .indiBox .indicator li button {
+  .prev_next_Box .prev_next_btn .next_btn {
+    width: 40px;
+    height: 100%;
+    background-image: url(../../../img/next.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .prev_next_Box .prev_next_btn button {
     display: block;
   }
 }
@@ -1474,7 +1488,7 @@
   }
   .best_wrap {
     width: 100%;
-    height: 500px;
+    height: 530px;
     overflow: hidden;
   }
 
@@ -1497,31 +1511,33 @@
     height: 100%;
   }
 
-  .indiBox {
+  .prev_next_Box {
     width: 100px;
-    height: 20px;
+    height: 60px;
     margin: auto;
-    margin-top: 50px;
   }
-  .indiBox .indicator {
+  .prev_next_Box .prev_next_btn {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100%;
   }
-  .indiBox .indicator li {
-    width: 14px;
-    height: 14px;
-    border-radius: 100%;
-    background-color: #333;
-  }
-  .indiBox .indicator li.on {
-    display: block;
-  }
-  .indiBox .indicator li button {
-    display: block;
-    width: 100%;
+  .prev_next_Box .prev_next_btn .prev_btn {
+    width: 40px;
     height: 100%;
+    background-image: url(../../../img/prev.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .prev_next_Box .prev_next_btn .next_btn {
+    width: 40px;
+    height: 100%;
+    background-image: url(../../../img/next.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .prev_next_Box .prev_next_btn button {
+    display: block;
   }
 }
 @media all and (max-width: 767px) {

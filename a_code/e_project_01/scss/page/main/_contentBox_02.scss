@@ -18,7 +18,7 @@
     @at-root .best_wrap {width: 100%; height: 400px; overflow: hidden;}
     @at-root .best_inner_01 {
       display: flex; justify-content: flex-start;
-      width: 1200px; height: 350px;
+      width: 1600px; height: 350px;
 
       & li {
         width: 300px; height: 350px; 
@@ -28,26 +28,31 @@
       & .best_part_06 {@include blind;}
     } // .best_inner_01
 
-    @at-root .indiBox {
-      width: 70px; height: 50px;
+    @at-root .prev_next_Box {
+      width: 100px; height: 60px;
       margin: auto;
-      // background-color: #ddd;
-      & .indicator { 
+      
+      @at-root & .prev_next_btn { 
         display: flex; justify-content: space-between;
         width: 100%; height: 100%;
-        
-        & li {
-          width: 10px; height: 10px; 
-          // margin: auto; 
-          border-radius: 100%;
-          background-color: #333;
 
-          & button {display: block;}
+        
+        & .prev_btn {
+          width: 40px; height: 100%;
+          background-image: url(../../../img/prev.png);
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
         }
-        li:nth-child(5) {@include blind;}
-        li:nth-child(6) {@include blind;}
-      }// .indicator
-    } // .indiBox
+        & .next_btn {
+          width: 40px; height: 100%;
+          background-image: url(../../../img/next.png);
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+        }
+        & button {display: block;}
+        
+      }// .prev_next_btn
+    } // .prev_next_btn
   } //.contentBox_02
 } // mobile 320
 
@@ -68,37 +73,46 @@
       margin: auto; margin-bottom: 20px;
     }
 
-    @at-root .best_wrap {width: 100%; height: 500px; overflow: hidden;}
+    @at-root .best_wrap {width: 100%; height: 450px; overflow: hidden;}
     @at-root .best_inner_01 {
       display: flex; justify-content: flex-start;
-      width: 1600px; height: 450px; 
-      padding: 50px 20px;
+      width: 2000px; height: 450px; 
+      margin: auto;
+      // padding: 50px 0;
       & li {
-        width: 320px; height: 400px; 
+        width: 350px; height: 400px; 
         margin-right: 20px; 
         background-image: linear-gradient(45deg,  $color_beige_01, $color_white_02);}
       & .best_part_05 {@include blind;}
       & .best_part_06 {@include blind;}
     }// .best_inner_01
 
-    @at-root .indiBox {
-      width: 100px; height: 50px;
+    @at-root .prev_next_Box {
+      width: 100px; height: 60px;
       margin: auto;
-      // background-color: #ddd;
-      & .indicator { 
+      
+      @at-root & .prev_next_btn { 
         display: flex; justify-content: space-between;
         width: 100%; height: 100%;
-        
-        & li {
-          width: 12px; height: 12px; 
-          // margin: auto; 
-          border-radius: 100%;
-          background-color: #333;
+        margin: auto; margin-top: -30px;
 
-          & button {display: block;}
+        
+        & .prev_btn {
+          width: 40px; height: 100%;
+          background-image: url(../../../img/prev.png);
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
         }
-      }// .indicator
-    } // .indiBox
+        & .next_btn {
+          width: 40px; height: 100%;
+          background-image: url(../../../img/next.png);
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+        }
+        & button {display: block;}
+        
+      }// .prev_next_btn
+    } // .prev_next_btn
   } //.contentBox_02
 } // tablet 768
 
@@ -134,24 +148,32 @@
         background-image: linear-gradient(45deg,  $color_beige_01, $color_white_02);}
     } // .best_inner_01
 
-    @at-root .indiBox {
-      width: 100px; height: 50px;
+    @at-root .prev_next_Box {
+      width: 100px; height: 60px;
       margin: auto;
-      // background-color: #ddd;
-      & .indicator { 
+      
+      @at-root & .prev_next_btn { 
         display: flex; justify-content: space-between;
         width: 100%; height: 100%;
-        
-        & li {
-          width: 12px; height: 12px; 
-          // margin: auto; 
-          border-radius: 100%;
-          background-color: #333;
+        margin: auto; margin-top: -30px;
 
-          & button {display: block;}
+        
+        & .prev_btn {
+          width: 40px; height: 100%;
+          background-image: url(../../../img/prev.png);
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
         }
-      }// .indicator
-    } // .indiBox
+        & .next_btn {
+          width: 40px; height: 100%;
+          background-image: url(../../../img/next.png);
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+        }
+        & button {display: block;}
+        
+      }// .prev_next_btn
+    } // .prev_next_btn
   } //.contentBox_02
 } // laptop 1280
 
@@ -179,7 +201,7 @@
       font-size: 35px;
     }
 
-    @at-root .best_wrap {width: 100%; height: 500px; overflow: hidden; }
+    @at-root .best_wrap {width: 100%; height: 530px; overflow: hidden; }
     @at-root .best_inner_01 {
       display: flex; justify-content: flex-start;
       width: 2400px; height: 500px;
@@ -196,26 +218,31 @@
       }
     } // .best_inner_01
 
-    @at-root .indiBox {
-      width: 100px; height: 20px;
-      margin: auto; margin-top: 50px;
-
-      & .indicator { 
+    @at-root .prev_next_Box {
+      width: 100px; height: 60px;
+      margin: auto;
+      
+      @at-root & .prev_next_btn { 
         display: flex; justify-content: space-between;
-        width: 100%; height: 100%; 
+        width: 100%; height: 100%;
 
-        & li {
-          width: 14px; height: 14px; 
-          border-radius: 100%;
-          background-color: #333;
-          &.on {display: block;}
-          & button {
-            display: block;
-            width: 100%; height: 100%;
-          }
+        
+        & .prev_btn {
+          width: 40px; height: 100%;
+          background-image: url(../../../img/prev.png);
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
         }
-      }// .indicator
-    } // .indiBox
+        & .next_btn {
+          width: 40px; height: 100%;
+          background-image: url(../../../img/next.png);
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+        }
+        & button {display: block;}
+        
+      }// .prev_next_btn
+    } // .prev_next_btn
   } // .contentBox_02
 } // pc 1440
 
