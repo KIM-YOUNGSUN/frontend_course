@@ -1,4 +1,4 @@
-
+// mobile ============================================
 
 @include mobile {
   #cartBox {
@@ -17,9 +17,25 @@
 
   .selectBox {
     width: 100%; height: 36px;
-    margin: auto;
+    margin: auto; padding: 6px 4px;
     border-top: $line2; border-bottom: $line2;
   } // .selectBox
+
+  .select_check_area {
+    width: 100%; height: auto;
+
+    .select_check_inner01 {
+      width: 100%; height: 100%;
+      font-size: 12px; line-height: 20px;
+
+      @at-root .check_part {float:left; margin-top: 2px;}
+      @at-root .select_part {float:left; width: 60px; height: 20px; margin-left: 10px;}
+      @at-root .check_delete_part {float:right; width: 80px; height: 20px;
+        & button {display: block;}
+      }
+    }
+    .select_check_inner02 {@include blind;}
+  }
 
   .itemBox {
     width: 100%; height: 180px;
@@ -34,6 +50,10 @@
   } // .otherBox
 } // 320px
 
+
+
+
+// tablet ============================================
 
 @include tablet {
   #cartBox {
@@ -54,6 +74,26 @@
       border-top: $line2; border-bottom: $line2;
     } // .selectBox
 
+    .select_check_area {
+      width: 100%; height: auto;
+      padding: 0 20px;
+      .select_check_inner01{@include blind;}
+
+      .select_check_inner02 {
+        display: flex; justify-content: space-between;
+        width: 100%; height: 100%;
+        line-height: 32px; font-size: 16px;
+
+        & li {width: auto; height: auto}
+        & input { width: 16px; height: 16px; margin-top: 8px;}
+        // .check_part {}
+        // .item_name_part {}
+        // .item_num_part {}
+        // .item_price_part {}
+        // .select_part {}
+      }
+    } //.select_check_area
+
     .itemBox {
       width: 100%; height: 300px;
       margin: auto;
@@ -67,6 +107,9 @@
     } // .otherBox
 }// 768px
 
+
+
+// laptop ============================================
 
 @include laptop {
   #cartBox {
@@ -88,6 +131,26 @@
       border-top: $line2; border-bottom: $line2;
     } // .selectBox
 
+    .select_check_area {
+      width: 100%; height: auto;
+      padding: 0 30px;
+      .select_check_inner01{@include blind;}
+
+      .select_check_inner02 {
+        display: flex; justify-content: space-between;
+        width: 100%; height: 100%;
+        line-height: 40px; font-size: 18px;
+
+        & li {width: auto; height: auto}
+        & input { width: 18px; height: 18px; margin-top: 12px;}
+        // .check_part {}
+        // .item_name_part {}
+        // .item_num_part {}
+        // .item_price_part {}
+        // .select_part {}
+      }
+    } //.select_check_area
+
     .itemBox {
       width: 100%; height: 350px;
       margin: auto;
@@ -101,6 +164,9 @@
     } // .otherBox
 } // 1280px
 
+
+
+// pc ============================================
 
 @include pc {
   #cartBox {
@@ -125,6 +191,26 @@
       width: 1200px; height: 46px;
       border-top: $line2; border-bottom: $line2;
     } // .selectBox
+
+    .select_check_area {
+      width: 100%; height: auto;
+      padding: 0 30px;
+      .select_check_inner01{@include blind;}
+
+      .select_check_inner02 {
+        display: flex; justify-content: space-between;
+        width: 100%; height: 100%;
+        line-height: 40px; font-size: 18px;
+
+        & li {width: auto; height: auto}
+        & input { width: 18px; height: 18px; margin-top: 12px;}
+        // .check_part {}
+        // .item_name_part {}
+        // .item_num_part {}
+        // .item_price_part {}
+        // .select_part {}
+      }
+    } //.select_check_area
 
     .itemBox {
       width: 100%; height: 400px;

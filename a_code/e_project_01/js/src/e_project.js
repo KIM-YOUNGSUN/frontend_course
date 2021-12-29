@@ -2,7 +2,7 @@
 
 // ------------------------------------------------------------------
 
-// mobile
+// mobile 햄버거 메뉴
 const elNavInner01 = document.querySelector('.nav_inner01');
 const elMenuBtnPart = elNavInner01.querySelector('.menu_btn_part');
 const elMenuBtn = elMenuBtnPart.querySelector('.menu_btn');
@@ -16,7 +16,7 @@ elMenuBtn.addEventListener('click', e => {
   // elMenuBtnInner.classList.toggle('on');
 });
 
-// tablet~
+// tablet~ 햄버거 메뉴
 const elNavInner03 = document.querySelector('.nav_inner03');
 const elMenutBtnPart03 = elNavInner03.querySelector('.menu_btn_part');
 const elMenuBtn03 = elMenutBtnPart03.querySelector('.menu_btn');
@@ -30,6 +30,7 @@ elMenuBtn03.addEventListener('click', e => {
   // elMenuBtnInner.classList.toggle('on');
 });
 // ------------------------------------------------------------------
+
 
 // ------------------------------------------------------------------
 // mobile 검색창
@@ -50,6 +51,27 @@ elSearchBtn.addEventListener('click', e => {
 
 
 
+
+// 선생님 질문!
+// gnb 고정
+const elGnb = document.querySelector('.gnb');
+
+const OPTION_FIX = 'fix';
+const offsetCheck = elGnb.offsetTop;
+console.log(offsetCheck);
+
+window.addEventListener('scroll', e => {
+  const target = parseInt(e.currentTarget.scrollY);
+  const gnbClass = elGnb.classList;
+  (target >= offsetCheck) ? gnbClass.add(OPTION_FIX) : gnbClass.remove(OPTION_FIX);
+});
+
+
+
+
+
+
+
 // ------------------------------------------------------------------
 // fnb 모든 사이즈 적용
 const elFnbBox = document.querySelector('.fnb_box');
@@ -67,82 +89,6 @@ elFnbList.forEach( (el,i)=>{ // forEach는 각각 클릭 될수 있게 만드는
 
 
 
-// ------------------------------------------------------------------
-// contentBox_02 슬라이드 실패 물어볼것
-
-// const elContentBox_02 = document.querySelector('.contentBox_02');
-
-// const elBestWrap = elContentBox_02.querySelector('.best_wrap');
-// const elBestInner_01 = elBestWrap.querySelector('.best_inner_01');
-// const elBetstInner_01_Li = elBestInner_01.querySelectorAll('li');
-
-// const elIndiBox = elContentBox_02.querySelector('.indiBox');
-// const elIndicator = elIndiBox.querySelector('.indicator');
-// const elIndicatorLi = elIndicator.children;
-// const elIndiList = Array.prototype.slice.call(elIndicatorLi);
-
-// const addLen = elBetstInner_01_Li.length;
-// const OPTION_CLASSNAME = 'on';
-// let checkIndex = 0;
-
-
-
-// const fnAddCount1 = () => {
-//   let i = checkIndex;
-//   (checkIndex < addLen -1) ? checkIndex += 1 : checkIndex = 0;
-//   elBetstInner_01_Li[i].classList.remove(OPTION_CLASSNAME);
-//   elBetstInner_01_Li[checkIndex].classList.add(OPTION_CLASSNAME);
-// };
-
-// const fnRemoveCount1 = () => {
-//   let i = checkIndex;
-//   (checkIndex > 0) ? checkIndex -= 1 : checkIndex = addLen -1;
-//   elBetstInner_01_Li[i].classList.remove(OPTION_CLASSNAME);
-//   elBetstInner_01_Li[checkIndex].classList.add(OPTION_CLASSNAME);
-// };
-
-
-// const fnSiblings = (select, idx = checkIndex) => {
-//   const otherArr = [];
-//   select.forEach((element, index)=>{
-//     if(idx !== index){ otherArr.push(element) }
-//   })
-//   return otherArr;
-// };
-
-
-// const fnAddCount2 = () => {
-//   (checkIndex < addLen -1) ? checkIndex += 1 : checkIndex = 0;
-//   elIndicatorLi[checkIndex].classList.add(OPTION_CLASSNAME);
-//   fnSiblings(elIndicatorLi, checkIndex).forEach((el) => {
-//     el.classList.remove(OPTION_CLASSNAME);
-//   });
-// };
-
-// const fnRemoveCount2 = () => {
-//   (checkIndex > 0) ? checkIndex -= 1 : checkIndex = addLen -1;
-//   elBetstInner_01_Li[checkIndex].classList.add(OPTION_CLASSNAME);
-//   fnSiblings(elBetstInner_01_Li, checkIndex).forEach((el) => {
-//     el.classList.remove(OPTION_CLASSNAME);
-//   });
-// }
-
-// const fnnIndexCount2 = () => {
-//   elBetstInner_01_Li[checkIndex].classList.add(OPTION_CLASSNAME);
-//   fnSiblings(elBetstInner_01_Li, checkIndex).forEach((el) => {
-//     el.classList.remove(OPTION_CLASSNAME);
-//   })
-// }
-
-
-// elIndiList.forEach((element, index) => {
-//   let link = element.querySelector('button');
-//   link.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     checkIndex = index;
-//     fnnIndexCount2();
-//   });
-// });
 
 
 

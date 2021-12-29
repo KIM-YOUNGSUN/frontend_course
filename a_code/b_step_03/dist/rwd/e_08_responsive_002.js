@@ -13,7 +13,7 @@
   // const elNavBtn   = elNavBox.querySelector('.nav_btn');
   // const elGnb      = elNavBox.querySelector('.gnb');
 
-  // 각 디바이스 세팅
+//  각 디바이스 세팅
   // const setDevice = [
   //   {type:'mobile', size:600},
   //   {type:'tablet', size:1024},

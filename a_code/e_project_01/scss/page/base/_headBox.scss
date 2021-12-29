@@ -32,7 +32,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
         display: flex; justify-content: space-between;
         position: absolute; top: 0; left: 0;
         width: 100% ; height: 40px;
-        padding: 0 10px; 
+        // padding: 0 10px; 
         background-color: $color_beige_01;
 
         @at-root .nav_inner01 {
@@ -224,7 +224,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
         background-color: $color_beige_01;
       
         @at-root .nav_inner03 {
-          display: flex; justify-content: space-around;
+          display: flex; justify-content: space-between;
           width: 100%; height: 60px; 
           text-transform: uppercase; 
       
@@ -388,7 +388,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
   
   
     @at-root .nav_inner03 {
-      display: flex; justify-content: space-around;
+      display: flex; justify-content: space-between;
       width: 100%; height: 60px;
       margin: auto; 
       text-transform: uppercase; 
@@ -548,10 +548,13 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
   } // .nav_inner02   
 } // .unb
 
-@at-root .gnb {
+@at-root .gnb { 
   width: 1440px; height: 60px;
   margin: auto;
-  background-color: $color_beige_01;
+  background-color: $color_beige_01; 
+  .gnb .fix {
+    position: fixed; top: 0; bottom:auto; 
+  } // 선생님 질문!
 
   @include mobile {display: none;}
 
