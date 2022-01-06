@@ -1,34 +1,48 @@
 
-
+// mobile =============================================
 @include mobile{
-  #historyBox {width: 100%; height: 830px; 
+  #historyBox {width: 100%; height: 1200px; 
     padding-top: 60px; 
-    background-color: #fff;
+
     h2 {
       width: 100%; height: 30px; 
       margin: auto; padding-top: 7px;
       text-align: center; text-transform: uppercase; font-size: 14px;
       background-color: $color_white_01;}
-    .history_area {
-      display: flex; justify-content: space-around;
-      width: auto; height: 500px;
-      margin: auto; margin-top: 60px; 
+
+    @at-root .history_part {width: 100%; height: 500px; overflow: hidden;}
+      .history_area {
+      display: flex; justify-content: flex-start; flex-wrap: nowrap;
+      width: 1800px; height: 450px;
+      margin-top: 60px; 
       background-color: $color_beige_01;
-      & > li {
+
+      
+      & li {
         width: 300px; height: 200px;
-        margin: auto; padding: 84px;
-        text-align: center; 
+        margin: auto; margin-left: 10px;
+        text-align: center; line-height: 150px;
         background-color: #eee;
+
+        & a {display: block;}
       }
-    // & > .indicator_btn {
-    //     background-image: url(../../img/circle-solid.svg);
-    //     background-repeat: no-repeat;
-    //     background-position: 10px 12px;
-    //   } 
     } // .history_area
 
+    .indicatorBox {
+      width: 100px; height: 30px;
+      margin: auto; padding: 8px;
+      // background-color: #eee;
+      & ul {
+        display: flex; justify-content: space-around;
+        width: 100%; height: 100%;}
+      & li {
+        width: 12px; height: 12px; 
+        border-radius: 100px;
+        background-color: $color_gray_01;}
+    }
+
     .develop_area {
-      width: 100%; height: 600px;
+      width: 100%; height: 100px;
       background-color: #fff;
       h2 {width: 100%; height: 40px; margin: auto; margin-top: 110px;}
       .develop_inner {
@@ -44,9 +58,9 @@
 
 
 
-
+// tablet =============================================
 @include tablet{
-  #historyBox {width: 100%; height: 1560px; 
+  #historyBox {width: 100%; height: 2000px; 
     padding-top: 120px; 
     background-color: #fff;
     h2 {
@@ -54,21 +68,38 @@
       margin: auto; padding-top: 42px;
       text-align: center; text-transform: uppercase; font-size: 30px;
       background-color: $color_white_01;}
+
+    @at-root .history_part {width: 100%; height: 750px; overflow: hidden;}
     .history_area {
-      display: flex; justify-content: space-around;
-      width: auto; height: 700px;
+      display: flex; justify-content: flex-start; flex-wrap: nowrap;
+      width: 3800px; height: 700px;
       margin: auto; margin-top: 80px;
       background-color: $color_beige_01;
-      & > li {
+      & li {
         width: 700px; height: 400px;
-        margin: auto; padding: 180px;
+        margin: auto;
         text-align: center; 
         background-color: #eee;
+        & a {display: block;}
       }
     } // .history_area
 
+    .indicatorBox {
+      width: 120px; height: 40px;
+      margin: auto; padding: 10px;
+      // background-color: #eee;
+      & ul {
+        display: flex; justify-content: space-around;
+        width: 100%; height: 100%;}
+      & li {
+        width: 14px; height: 14px; 
+        border-radius: 100px;
+        background-color: $color_gray_01;}
+    }
+
     .develop_area {
       width: 100%; height: 800px;
+
       background-color: #fff;
       h2 {width: 100%; height: 120px;  margin: auto; margin-top: 160px;}
       .develop_inner {
@@ -85,8 +116,10 @@
 
 
 
+
+// laptop =============================================
 @include laptop{
-  #historyBox {width: 100%; height: 1600px; 
+  #historyBox {width: 100%; height: 2300px; 
     padding-top: 120px; 
     background-color: #fff;
     h2 {
@@ -94,18 +127,35 @@
       margin: auto; padding-top: 42px;
       text-align: center; text-transform: uppercase; font-size: 38px;
       background-color: $color_white_01;}
-    .history_area {
-      display: flex; justify-content: space-around;
-      width: auto; height: 750px;
-      margin: auto; margin-top: 80px;
-      background-color: $color_beige_01;
-      & > li {
-        width: 1000px; height: 600px;
-        margin: auto; padding: 300px;
-        text-align: center; 
-        background-color: #eee;
+    @at-root .history_part {width: 100%; height: 760px; overflow: hidden;}
+      .history_area {
+        display: flex; justify-content: flex-start; flex-wrap: nowrap;
+        width: 6500px; height: 750px;
+        margin: auto; 
+        background-color: $color_beige_01;
+        & li {
+          width: 1000px; height: 600px;
+          margin: auto; 
+          text-align: center; 
+          background-color: #eee;
+
+          & a {display: block;}
+        }
+      } // .history_area 
+
+      .indicatorBox {
+        width: 140px; height: 40px;
+        margin: auto; padding: 10px;
+        // background-color: #eee;
+        & ul {
+          display: flex; justify-content: space-around;
+          width: 100%; height: 100%;}
+        & li {
+          width: 15px; height: 15px; 
+          border-radius: 100px;
+          background-color: $color_gray_01;}
       }
-    } // .history_area 
+  
     .develop_area {
       width: 100%; height: 1500px;
       background-color: #fff;
@@ -122,8 +172,12 @@
 } // 1280px
 
 
+
+
+
+// pc =============================================
 @include pc{
-  #historyBox {width: 100%; height: 1600px; 
+  #historyBox {width: 100%; height: 2300px; 
     padding-top: 120px; 
     background-color: #fff;
     h2 {
@@ -131,18 +185,35 @@
       margin: auto; padding-top: 42px;
       text-align: center; text-transform: uppercase; font-size: 38px;
       background-color: $color_white_01;}
-    .history_area {
-      display: flex; justify-content: space-around;
-      width: auto; height: 750px;
-      margin: auto; margin-top: 80px;
-      background-color: $color_beige_01;
-      & > li {
-        width: 1000px; height: 600px;
-        margin: auto; padding: 300px;
-        text-align: center; 
-        background-color: #eee;
+    @at-root .history_part {width: 100%; height: 800px; overflow: hidden;}
+      .history_area {
+        display: flex; justify-content: flex-start; flex-wrap: nowrap;
+        width: 7000px; height: 750px;
+        margin: auto; margin-top: 80px;
+        background-color: $color_beige_01;
+        & li {
+          width: 1200px; height: 600px;
+          margin: auto; margin-right: 70px;
+          text-align: center; 
+          background-color: #eee;
+
+          & a {display: block;}
+        }
+      } // .history_area
+
+      .indicatorBox {
+        width: 140px; height: 40px;
+        margin: auto; padding: 10px;
+        // background-color: #eee;
+        & ul {
+          display: flex; justify-content: space-around;
+          width: 100%; height: 100%;}
+        & li {
+          width: 15px; height: 15px; 
+          border-radius: 100px;
+          background-color: $color_gray_01;}
       }
-    } // .history_area
+
     .develop_area {
       width: 100%; height: 1500px;
       background-color: #fff;

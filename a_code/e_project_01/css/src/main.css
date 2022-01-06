@@ -883,10 +883,13 @@
 @media all and (max-width: 767px) {
   .viewBox {
     width: 100%;
-    height: 400px;
+    height: 350px;
     margin: auto;
     margin-bottom: 110px;
-    background-color: #eee;
+    background-image: url(../../../img/hermes/view_m.jpg);
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+    background-size: cover;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1279px) {
@@ -895,25 +898,34 @@
     height: 500px;
     margin: auto;
     margin-bottom: 230px;
-    background-color: #eee;
+    background-image: url(../../../img/hermes/view.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) {
   .viewBox {
     width: 100%;
-    height: 680px;
+    height: 700px;
     margin: auto;
     margin-bottom: 210px;
-    background-color: #eee;
+    background-image: url(../../../img/hermes/view.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
 }
 @media all and (min-width: 1440px) {
   .viewBox {
     width: 1440px;
-    height: 680px;
+    height: 750px;
     margin: auto;
     margin-bottom: 210px;
-    background-color: #eee;
+    background-image: url(../../../img/hermes/view.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
 }
 @media all and (max-width: 767px) {
@@ -948,8 +960,20 @@
     height: 280px;
     margin: auto;
     margin-bottom: 20px;
-    background-color: #D9D9D9;
   }
+
+  .fw_inner_01 .fw_part_01 {
+    background-image: url(../../../img/hermes/fw_w.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .fw_inner_01 .fw_part_02 {
+    background-image: url(../../../img/hermes/fw_m.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .fw_inner_01 .fw_part_03 {
     display: block;
     width: 0;
@@ -1018,9 +1042,22 @@
   }
   .fw_inner_01 li {
     width: 330px;
-    height: 280px;
-    background-color: #ddd;
+    height: 300px;
   }
+
+  .fw_inner_01 .fw_part_01 {
+    background-image: url(../../../img/hermes/fw_w.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .fw_inner_01 .fw_part_02 {
+    background-image: url(../../../img/hermes/fw_m.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
   .fw_inner_01 .fw_part_03 {
     display: block;
     width: 0;
@@ -1049,9 +1086,24 @@
   }
   .fw_inner_02 li {
     width: 330px;
-    height: 280px;
+    height: 300px;
     background-color: #D9D9D9;
   }
+
+  .fw_inner_02 .fw_part_05 {
+    background-image: url(../../../img/hermes/fw_w_02.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: cover;
+  }
+
+  .fw_inner_02 .fw_part_06 {
+    background-image: url(../../../img/hermes/fw_m_02.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: cover;
+  }
+
   .fw_inner_02 .fw_part_07 {
     display: block;
     width: 0;
@@ -1074,7 +1126,7 @@
   .content_area_01 button {
     width: 150px;
     height: auto;
-    margin-top: 20px;
+    margin-top: 8px;
     font-size: 25px;
   }
 }
@@ -1084,7 +1136,7 @@
     height: 800px;
     margin: auto;
     margin-bottom: 210px;
-    padding: 20px 120px;
+    padding: 40px 120px;
     text-transform: uppercase;
     text-align: center;
     line-height: 50px;
@@ -1101,7 +1153,7 @@
     width: 100%;
     height: 600px;
     margin: auto;
-    padding: 50px 20px;
+    padding: 70px 20px;
   }
   .content_area_01 .fw_wrap_01 {
     width: 500px;
@@ -1120,6 +1172,13 @@
     background-color: #D9D9D9;
   }
 
+  .fw_inner_01 .fw_part_01 {
+    background-image: url(../../../img/hermes/fw.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
   .fw_inner_02 {
     position: absolute;
     top: 110px;
@@ -1129,12 +1188,40 @@
     flex-wrap: wrap;
     width: 500px;
     height: 500px;
-    margin-top: -60px;
+    margin-top: -40px;
   }
   .fw_inner_02 li {
     width: 230px;
     height: 230px;
     background-color: #D9D9D9;
+  }
+
+  .fw_inner_02 .fw_part_05 {
+    background-image: url(../../../img/hermes/fw_w.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .fw_inner_02 .fw_part_06 {
+    background-image: url(../../../img/hermes/fw_m.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .fw_inner_02 .fw_part_07 {
+    background-image: url(../../../img/hermes/fw_w_02.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: cover;
+  }
+
+  .fw_inner_02 .fw_part_08 {
+    background-image: url(../../../img/hermes/fw_m_02.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: cover;
   }
 
   .content_area_01 button {
@@ -1186,6 +1273,12 @@
     height: 580px;
     background-color: #D9D9D9;
   }
+  .fw_inner_01 .fw_part_01 {
+    background-image: url(../../../img/hermes/fw.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
 
   .fw_inner_02 {
     position: absolute;
@@ -1204,6 +1297,30 @@
     height: 280px;
     background-color: #D9D9D9;
   }
+  .fw_inner_02 .fw_part_05 {
+    background-image: url(../../../img/hermes/fw_w.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .fw_inner_02 .fw_part_06 {
+    background-image: url(../../../img/hermes/fw_m.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .fw_inner_02 .fw_part_07 {
+    background-image: url(../../../img/hermes/fw_w_02.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: cover;
+  }
+  .fw_inner_02 .fw_part_08 {
+    background-image: url(../../../img/hermes/fw_m_02.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: cover;
+  }
 
   .content_area_01 button {
     width: 150px;
@@ -1215,17 +1332,23 @@
 @media all and (max-width: 767px) {
   .subBox_01 {
     width: 100%;
-    height: 120px;
+    height: 150px;
     margin-bottom: 200px;
     background-color: #ddd;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1279px) {
   .subBox_01 {
     width: 100%;
-    height: 200px;
+    height: 300px;
     margin-bottom: 280px;
     background-color: #ddd;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) {
@@ -1234,15 +1357,21 @@
     height: 250px;
     margin-bottom: 280px;
     background-color: #ddd;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
 }
 @media all and (min-width: 1440px) {
   .subBox_01 {
     width: 1440px;
-    height: 360px;
+    height: 400px;
     margin: auto;
     margin-bottom: 280px;
     background-color: #ddd;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
 }
 @media all and (max-width: 767px) {
@@ -1251,7 +1380,6 @@
     height: 100%;
     margin: auto;
     margin-bottom: 210px;
-    padding: 20px;
     text-transform: uppercase;
     text-align: center;
     line-height: 40px;
@@ -1264,46 +1392,60 @@
   }
   .best_wrap {
     width: 100%;
-    height: 400px;
+    height: 420px;
     overflow: hidden;
   }
 
   .best_inner_01 {
+    transform: translateX(-300px);
     display: flex;
     justify-content: flex-start;
-    width: 1600px;
-    height: 350px;
+    flex-wrap: nowrap;
+    width: 1900px;
+    height: 340px;
   }
   .best_inner_01 li {
     width: 300px;
-    height: 350px;
-    margin-right: 20px;
+    height: 340px;
     margin-top: 20px;
-    background-image: linear-gradient(45deg, #F6F1EB, #F5F5F5);
+    margin-right: 20px;
+  }
+  .best_inner_01 .best_part_01 {
+    background-image: url(../../../img/hermes/best_01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .best_inner_01 .best_part_02 {
+    background-image: url(../../../img/hermes/best_02.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .best_inner_01 .best_part_03 {
+    background-image: url(../../../img/hermes/best_03.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .best_inner_01 .best_part_04 {
+    background-image: url(../../../img/hermes/best_04.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .best_inner_01 .best_part_05 {
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    z-index: -1;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
+    background-image: url(../../../img/hermes/best_05.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .best_inner_01 .best_part_06 {
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    z-index: -1;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
+    background-image: url(../../../img/hermes/best_06.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .prev_next_Box {
     width: 100px;
     height: 60px;
     margin: auto;
+    margin-top: 20px;
   }
   .prev_next_Box .prev_next_btn {
     display: flex;
@@ -1316,7 +1458,7 @@
     height: 100%;
     background-image: url(../../../img/prev.png);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 60% 50%;
   }
   .prev_next_Box .prev_next_btn .next_btn {
     width: 40px;
@@ -1349,40 +1491,54 @@
   }
   .best_wrap {
     width: 100%;
-    height: 450px;
+    height: 500px;
     overflow: hidden;
   }
 
   .best_inner_01 {
+    transform: translateX(-300px);
     display: flex;
     justify-content: flex-start;
+    flex-wrap: nowrap;
     width: 2000px;
     height: 450px;
     margin: auto;
   }
   .best_inner_01 li {
-    width: 350px;
+    width: 300px;
     height: 400px;
-    margin-right: 20px;
+    margin-right: 30px;
     background-image: linear-gradient(45deg, #F6F1EB, #F5F5F5);
   }
+  .best_inner_01 .best_part_01 {
+    background-image: url(../../../img/hermes/best_01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .best_inner_01 .best_part_02 {
+    background-image: url(../../../img/hermes/best_02.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .best_inner_01 .best_part_03 {
+    background-image: url(../../../img/hermes/best_03.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .best_inner_01 .best_part_04 {
+    background-image: url(../../../img/hermes/best_04.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
   .best_inner_01 .best_part_05 {
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    z-index: -1;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
+    background-image: url(../../../img/hermes/best_05.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .best_inner_01 .best_part_06 {
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    z-index: -1;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
+    background-image: url(../../../img/hermes/best_06.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .prev_next_Box {
@@ -1436,15 +1592,17 @@
   }
   .best_wrap {
     width: 100%;
-    height: 500px;
+    height: 550px;
     overflow: hidden;
   }
 
   .best_inner_01 {
+    transform: translateX(-400px);
     display: flex;
     justify-content: flex-start;
+    flex-wrap: nowrap;
     width: 2400px;
-    height: 450px;
+    height: 510px;
     padding: 0 20px;
   }
   .best_inner_01 li {
@@ -1452,6 +1610,36 @@
     height: 450px;
     margin-right: 30px;
     background-image: linear-gradient(45deg, #F6F1EB, #F5F5F5);
+  }
+  .best_inner_01 .best_part_01 {
+    background-image: url(../../../img/hermes/best_01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .best_inner_01 .best_part_02 {
+    background-image: url(../../../img/hermes/best_02.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .best_inner_01 .best_part_03 {
+    background-image: url(../../../img/hermes/best_03.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .best_inner_01 .best_part_04 {
+    background-image: url(../../../img/hermes/best_04.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .best_inner_01 .best_part_05 {
+    background-image: url(../../../img/hermes/best_05.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .best_inner_01 .best_part_06 {
+    background-image: url(../../../img/hermes/best_06.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .prev_next_Box {
@@ -1505,15 +1693,17 @@
   }
   .best_wrap {
     width: 100%;
-    height: 530px;
+    height: 600px;
     overflow: hidden;
   }
 
   .best_inner_01 {
+    transform: translateX(-400px);
     display: flex;
     justify-content: flex-start;
+    flex-wrap: nowrap;
     width: 2400px;
-    height: 500px;
+    height: 530px;
     padding: 50px 10px;
   }
   .best_inner_01 li {
@@ -1526,6 +1716,36 @@
     display: block;
     width: 100%;
     height: 100%;
+  }
+  .best_inner_01 .best_part_01 {
+    background-image: url(../../../img/hermes/best_01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .best_inner_01 .best_part_02 {
+    background-image: url(../../../img/hermes/best_02.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .best_inner_01 .best_part_03 {
+    background-image: url(../../../img/hermes/best_03.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .best_inner_01 .best_part_04 {
+    background-image: url(../../../img/hermes/best_04.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .best_inner_01 .best_part_05 {
+    background-image: url(../../../img/hermes/best_05.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .best_inner_01 .best_part_06 {
+    background-image: url(../../../img/hermes/best_06.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .prev_next_Box {
@@ -1560,9 +1780,12 @@
 @media all and (max-width: 767px) {
   .subBox_02 {
     width: 100%;
-    height: 120px;
+    height: 100px;
     margin-bottom: 200px;
     background-color: #ddd;
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+    background-size: cover;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1279px) {
@@ -1593,7 +1816,7 @@
 @media all and (max-width: 767px) {
   .contentBox_03 {
     width: 100%;
-    height: 550px;
+    height: 500px;
     margin-bottom: 200px;
     padding: 20px 10px;
     text-transform: uppercase;
@@ -1605,7 +1828,7 @@
     width: 200px;
     height: 30px;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .content_area_03 {
     width: 300px;
@@ -1622,28 +1845,31 @@
     height: auto;
   }
   .scarf_part_01 {
-    width: 260px;
-    height: 260px;
-    background-color: #D9D9D9;
+    width: 270px;
+    height: 300px;
+    background-image: url(../../../img/hermes/scarf_02.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
 
   .scarf_inner li dl {
-    width: 260px;
-    height: 150px;
+    width: 200px;
+    height: 100px;
     padding: 20px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 14px;
   }
   .scarf_inner li dl dt {
     width: 180px;
-    height: 50px;
+    height: 30px;
     margin: auto;
-    background-color: #ECECEC;
   }
   .scarf_inner li dl dd {
     width: 140px;
-    height: 50px;
+    height: 30px;
     margin: auto;
-    margin-top: 14px;
-    background-color: #ECECEC;
   }
   .scarf_inner li:nth-of-type(2) {
     display: none;
@@ -1701,26 +1927,53 @@
   }
   .scarf_inner li div {
     width: 270px;
-    height: 260px;
+    height: 300px;
     background-color: #D9D9D9;
   }
+  .scarf_part_01 {
+    background-image: url(../../../img/hermes/scarf_02.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .scarf_part_02 {
+    background-image: url(../../../img/hermes/scarf_01.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .scarf_part_03 {
+    background-image: url(../../../img/hermes/scarf_03.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .scarf_part_04 {
+    background-image: url(../../../img/hermes/scarf_04.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
   .scarf_inner li dl {
     width: 270px;
     height: 150px;
     padding: 20px;
+    font-weight: bold;
+    font-size: 14px;
   }
   .scarf_inner li dl dt {
     width: 180px;
-    height: 50px;
+    height: 30px;
     margin: auto;
-    background-color: #ECECEC;
   }
   .scarf_inner li dl dd {
     width: 140px;
-    height: 50px;
+    height: 30px;
     margin: auto;
-    margin-top: 10px;
-    background-color: #ECECEC;
   }
   .scarf_inner li:nth-of-type(5) {
     display: none;
@@ -1735,7 +1988,7 @@
     height: auto;
     margin: auto;
     margin-bottom: 200px;
-    padding-top: 20px;
+    padding-top: 30px;
     text-transform: uppercase;
     text-align: center;
     line-height: 50px;
@@ -1751,7 +2004,7 @@
   .content_area_03 {
     width: 100%;
     max-width: 1280px;
-    height: 1100px;
+    height: 1200px;
     margin: auto;
   }
   .scarf_inner {
@@ -1759,36 +2012,78 @@
     justify-content: space-around;
     flex-wrap: wrap;
     width: 1200px;
-    height: 1000px;
+    height: 1200px;
     margin: auto;
     padding: 30px 50px;
   }
   .scarf_inner li {
     width: 300px;
     height: auto;
+    margin-bottom: 50px;
   }
   .scarf_inner li div {
     width: 300px;
     height: 370px;
     background-color: #D9D9D9;
   }
+  .scarf_part_01 {
+    background-image: url(../../../img/hermes/scarf_02.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .scarf_part_02 {
+    background-image: url(../../../img/hermes/scarf_01.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .scarf_part_03 {
+    background-image: url(../../../img/hermes/scarf_03.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .scarf_part_04 {
+    background-image: url(../../../img/hermes/scarf_04.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .scarf_part_05 {
+    background-image: url(../../../img/hermes/scarf_06.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .scarf_part_06 {
+    background-image: url(../../../img/hermes/scarf_05.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
   .scarf_inner li dl {
     width: 300px;
     height: 150px;
     padding: 20px;
+    font-weight: bold;
+    font-size: 16px;
   }
   .scarf_inner li dl dt {
     width: 200px;
-    height: 50px;
+    height: 40px;
     margin: auto;
-    background-color: #ECECEC;
   }
   .scarf_inner li dl dd {
     width: 150px;
-    height: 50px;
+    height: 40px;
     margin: auto;
-    margin-top: 10px;
-    background-color: #ECECEC;
   }
 }
 @media all and (min-width: 1440px) {
@@ -1833,23 +2128,64 @@
     height: 370px;
     background-color: #D9D9D9;
   }
+  .scarf_part_01 {
+    background-image: url(../../../img/hermes/scarf_02.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .scarf_part_02 {
+    background-image: url(../../../img/hermes/scarf_01.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .scarf_part_03 {
+    background-image: url(../../../img/hermes/scarf_03.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .scarf_part_04 {
+    background-image: url(../../../img/hermes/scarf_04.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .scarf_part_05 {
+    background-image: url(../../../img/hermes/scarf_06.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .scarf_part_06 {
+    background-image: url(../../../img/hermes/scarf_05.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
   .scarf_inner li dl {
     width: 300px;
     height: 150px;
     padding: 20px;
+    font-weight: bold;
+    font-size: 16px;
   }
   .scarf_inner li dl dt {
     width: 200px;
-    height: 50px;
+    height: 40px;
     margin: auto;
-    background-color: #ECECEC;
   }
   .scarf_inner li dl dd {
     width: 150px;
-    height: 50px;
+    height: 40px;
     margin: auto;
-    margin-top: 10px;
-    background-color: #ECECEC;
   }
 }
 @media all and (max-width: 767px) {
@@ -1957,6 +2293,30 @@
     height: 28px;
     border-radius: 100%;
     background-color: #D9D9D9;
+  }
+  .sns_part .facebook_area {
+    background-image: url(../../../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .kakaotalk_area {
+    background-image: url(../../../img/kakaotalk.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .instagram_area {
+    background-image: url(../../../img/instagram.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .twitter_area {
+    background-image: url(../../../img/twitter.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
 
   address {
@@ -2098,6 +2458,30 @@
     border-radius: 100%;
     background-color: #D9D9D9;
   }
+  .sns_part .facebook_area {
+    background-image: url(../../../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .kakaotalk_area {
+    background-image: url(../../../img/kakaotalk.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .instagram_area {
+    background-image: url(../../../img/instagram.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .twitter_area {
+    background-image: url(../../../img/twitter.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
 
   address {
     width: 100%;
@@ -2237,6 +2621,30 @@
     margin-bottom: 8px;
     border-radius: 100%;
     background-color: #D9D9D9;
+  }
+  .sns_part .facebook_area {
+    background-image: url(../../../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .kakaotalk_area {
+    background-image: url(../../../img/kakaotalk.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .instagram_area {
+    background-image: url(../../../img/instagram.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .twitter_area {
+    background-image: url(../../../img/twitter.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
 
   address {
@@ -2383,6 +2791,30 @@
     margin-bottom: 8px;
     border-radius: 100%;
     background-color: #D9D9D9;
+  }
+  .sns_part .facebook_area {
+    background-image: url(../../../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .kakaotalk_area {
+    background-image: url(../../../img/kakaotalk.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .instagram_area {
+    background-image: url(../../../img/instagram.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .twitter_area {
+    background-image: url(../../../img/twitter.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
 
   address {

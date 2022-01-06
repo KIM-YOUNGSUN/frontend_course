@@ -22,10 +22,18 @@
         width: 100%; height: 600px; 
         padding: 10px;
 
-        & li {
+        @at-root & li {
           width: 280px; height: 280px; 
           margin: auto; margin-bottom: 20px;
-          background-color: $color_light_gray_02;}
+        }
+        @at-root & .fw_part_01{ 
+          background-image: url(../../../img/hermes/fw_w.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;}
+        @at-root & .fw_part_02{ 
+          background-image: url(../../../img/hermes/fw_m.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;}
         & .fw_part_03 {@include blind}
         & .fw_part_04 {@include blind}
       } // .fw_inner_01
@@ -70,9 +78,18 @@
         width: 100%; height: auto; 
         padding: 10px;
 
-        & li {
-          width: 330px; height: 280px; 
-          background-color: #ddd;}
+        @at-root & li {width: 330px; height: 300px;}
+
+        @at-root & .fw_part_01{ 
+          background-image: url(../../../img/hermes/fw_w.jpg);
+          background-repeat: no-repeat;
+          // background-position: 50% 50%; 
+          background-size: cover;}
+        @at-root & .fw_part_02{ 
+          background-image: url(../../../img/hermes/fw_m.jpg);
+          background-repeat: no-repeat;
+          background-position: 50% 50%; 
+          background-size: cover;}
         & .fw_part_03 {@include blind}
         & .fw_part_04 {@include blind}
       } // .fw_inner_01
@@ -82,16 +99,27 @@
         width: 100%; height: auto; 
         padding: 10px;
 
-        & li {
-          width: 330px; height: 280px; 
+        @at-root & li {
+          width: 330px; height: 300px; 
           background-color: $color_light_gray_02;}
+        @at-root & .fw_part_05{ 
+          background-image: url(../../../img/hermes/fw_w_02.jpg);
+          background-repeat: no-repeat;
+          background-position: 50% 60%; 
+          background-size: cover;} 
+        @at-root & .fw_part_06{ 
+          background-image: url(../../../img/hermes/fw_m_02.jpg);
+          background-repeat: no-repeat;
+          background-position: 50% 60%; 
+          background-size: cover;}   
+
         & .fw_part_07 {@include blind}
         & .fw_part_08 {@include blind}
       } // .fw_inner_02
 
       & button {
         width: 150px; height: auto; 
-        margin-top: 20px;
+        margin-top: 8px;
         font-size: 25px;
       }
     } // .content_part_01 
@@ -115,7 +143,7 @@
   .contentBox_01 {
     width: 100%; height: 800px;
     margin: auto; margin-bottom: 210px; 
-    padding: 20px 120px; 
+    padding: 40px 120px; 
     text-transform: uppercase; text-align: center; line-height: 50px;
     border: $line1;
 
@@ -128,27 +156,61 @@
     @at-root .content_area_01 {
       position: relative;
       width: 100%; height: 600px;
-      margin: auto; padding: 50px 20px;
+      margin: auto; padding: 70px 20px;
       
       .fw_wrap_01 {width: 500px; height: 500px; overflow: hidden;}
+
       @at-root .fw_inner_01 {
         display: flex; justify-content: space-around;
         width: 2000px; height: 500px;  
 
-        & li {
+        @at-root & li {
           width: 490px; height: 480px; 
           background-color: $color_light_gray_02;}
+
+        @at-root & .fw_part_01{ 
+          background-image: url(../../../img/hermes/fw.jpg);
+          background-repeat: no-repeat;
+          background-position: 50% 50%; 
+          background-size: cover;}
+        // & .fw_part_02{ 
+        //   background-image: url(../../../img/hermes/fw_m.jpg);
+        //   background-repeat: no-repeat;
+        //   background-position: 50% 50%; 
+        //   background-size: cover;}
       } // .fw_inner_01
 
       @at-root .fw_inner_02 {
         position: absolute; top: 110px; right: 0;
         display: flex; justify-content: space-around; flex-wrap: wrap;
         width: 500px; height: 500px; 
-        margin-top: -60px;
+        margin-top: -40px;
 
-        & li {
+        @at-root & li {
           width: 230px; height: 230px; 
           background-color: $color_light_gray_02;}
+
+        @at-root & .fw_part_05{ 
+          background-image: url(../../../img/hermes/fw_w.jpg);
+          background-repeat: no-repeat;
+          background-position: 50% 50%; 
+          background-size: cover;}
+        @at-root & .fw_part_06{ 
+          background-image: url(../../../img/hermes/fw_m.jpg);
+          background-repeat: no-repeat;
+          background-position: 50% 50%; 
+          background-size: cover;}
+
+        @at-root  & .fw_part_07{ 
+          background-image: url(../../../img/hermes/fw_w_02.jpg);
+          background-repeat: no-repeat;
+          background-position: 50% 60%; 
+          background-size: cover;} 
+        @at-root & .fw_part_08{ 
+          background-image: url(../../../img/hermes/fw_m_02.jpg);
+          background-repeat: no-repeat;
+          background-position: 50% 60%; 
+          background-size: cover;}   
       } // .fw_inner_02
 
       & button {
@@ -197,6 +259,12 @@
         & li {
           width: 560px; height: 580px; 
           background-color: $color_light_gray_02;}
+
+        & .fw_part_01{ 
+          background-image: url(../../../img/hermes/fw.jpg);
+          background-repeat: no-repeat;
+          background-position: 50% 50%; 
+          background-size: cover;}
       } // .fw_inner_01
 
       @at-root .fw_inner_02 {
@@ -208,6 +276,28 @@
         & li {
           width: 280px; height: 280px; 
           background-color: $color_light_gray_02;}
+
+        & .fw_part_05{ 
+          background-image: url(../../../img/hermes/fw_w.jpg);
+          background-repeat: no-repeat;
+          background-position: 50% 50%; 
+          background-size: cover;}
+        & .fw_part_06{ 
+          background-image: url(../../../img/hermes/fw_m.jpg);
+          background-repeat: no-repeat;
+          background-position: 50% 50%; 
+          background-size: cover;}
+
+        & .fw_part_07{ 
+          background-image: url(../../../img/hermes/fw_w_02.jpg);
+          background-repeat: no-repeat;
+          background-position: 50% 60%; 
+          background-size: cover;} 
+        & .fw_part_08{ 
+          background-image: url(../../../img/hermes/fw_m_02.jpg);
+          background-repeat: no-repeat;
+          background-position: 50% 60%; 
+          background-size: cover;}   
       } // .fw_inner_02
 
       & button {

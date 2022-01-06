@@ -883,9 +883,8 @@
 @media all and (max-width: 767px) {
   #historyBox {
     width: 100%;
-    height: 830px;
+    height: 1200px;
     padding-top: 60px;
-    background-color: #fff;
   }
   #historyBox h2 {
     width: 100%;
@@ -897,26 +896,54 @@
     font-size: 14px;
     background-color: #ffffff;
   }
+  .history_part {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+
   #historyBox .history_area {
     display: flex;
-    justify-content: space-around;
-    width: auto;
-    height: 500px;
-    margin: auto;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 1800px;
+    height: 450px;
     margin-top: 60px;
     background-color: #F6F1EB;
   }
-  #historyBox .history_area > li {
+  #historyBox .history_area li {
     width: 300px;
     height: 200px;
     margin: auto;
-    padding: 84px;
+    margin-left: 10px;
     text-align: center;
+    line-height: 150px;
     background-color: #eee;
+  }
+  #historyBox .history_area li a {
+    display: block;
+  }
+  #historyBox .indicatorBox {
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    padding: 8px;
+  }
+  #historyBox .indicatorBox ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+  }
+  #historyBox .indicatorBox li {
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    background-color: #505050;
   }
   #historyBox .develop_area {
     width: 100%;
-    height: 600px;
+    height: 100px;
     background-color: #fff;
   }
   #historyBox .develop_area h2 {
@@ -943,7 +970,7 @@
 @media all and (min-width: 768px) and (max-width: 1279px) {
   #historyBox {
     width: 100%;
-    height: 1560px;
+    height: 2000px;
     padding-top: 120px;
     background-color: #fff;
   }
@@ -957,22 +984,49 @@
     font-size: 30px;
     background-color: #ffffff;
   }
+  .history_part {
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+  }
+
   #historyBox .history_area {
     display: flex;
-    justify-content: space-around;
-    width: auto;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 3800px;
     height: 700px;
     margin: auto;
     margin-top: 80px;
     background-color: #F6F1EB;
   }
-  #historyBox .history_area > li {
+  #historyBox .history_area li {
     width: 700px;
     height: 400px;
     margin: auto;
-    padding: 180px;
     text-align: center;
     background-color: #eee;
+  }
+  #historyBox .history_area li a {
+    display: block;
+  }
+  #historyBox .indicatorBox {
+    width: 120px;
+    height: 40px;
+    margin: auto;
+    padding: 10px;
+  }
+  #historyBox .indicatorBox ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+  }
+  #historyBox .indicatorBox li {
+    width: 14px;
+    height: 14px;
+    border-radius: 100px;
+    background-color: #505050;
   }
   #historyBox .develop_area {
     width: 100%;
@@ -1003,7 +1057,7 @@
 @media all and (min-width: 1280px) and (max-width: 1439px) {
   #historyBox {
     width: 100%;
-    height: 1600px;
+    height: 2300px;
     padding-top: 120px;
     background-color: #fff;
   }
@@ -1017,22 +1071,48 @@
     font-size: 38px;
     background-color: #ffffff;
   }
+  .history_part {
+    width: 100%;
+    height: 760px;
+    overflow: hidden;
+  }
+
   #historyBox .history_area {
     display: flex;
-    justify-content: space-around;
-    width: auto;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 6500px;
     height: 750px;
     margin: auto;
-    margin-top: 80px;
     background-color: #F6F1EB;
   }
-  #historyBox .history_area > li {
+  #historyBox .history_area li {
     width: 1000px;
     height: 600px;
     margin: auto;
-    padding: 300px;
     text-align: center;
     background-color: #eee;
+  }
+  #historyBox .history_area li a {
+    display: block;
+  }
+  #historyBox .indicatorBox {
+    width: 140px;
+    height: 40px;
+    margin: auto;
+    padding: 10px;
+  }
+  #historyBox .indicatorBox ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+  }
+  #historyBox .indicatorBox li {
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    background-color: #505050;
   }
   #historyBox .develop_area {
     width: 100%;
@@ -1063,7 +1143,7 @@
 @media all and (min-width: 1440px) {
   #historyBox {
     width: 100%;
-    height: 1600px;
+    height: 2300px;
     padding-top: 120px;
     background-color: #fff;
   }
@@ -1077,22 +1157,50 @@
     font-size: 38px;
     background-color: #ffffff;
   }
+  .history_part {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+  }
+
   #historyBox .history_area {
     display: flex;
-    justify-content: space-around;
-    width: auto;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 7000px;
     height: 750px;
     margin: auto;
     margin-top: 80px;
     background-color: #F6F1EB;
   }
-  #historyBox .history_area > li {
-    width: 1000px;
+  #historyBox .history_area li {
+    width: 1200px;
     height: 600px;
     margin: auto;
-    padding: 300px;
+    margin-right: 70px;
     text-align: center;
     background-color: #eee;
+  }
+  #historyBox .history_area li a {
+    display: block;
+  }
+  #historyBox .indicatorBox {
+    width: 140px;
+    height: 40px;
+    margin: auto;
+    padding: 10px;
+  }
+  #historyBox .indicatorBox ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+  }
+  #historyBox .indicatorBox li {
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    background-color: #505050;
   }
   #historyBox .develop_area {
     width: 100%;
@@ -1225,6 +1333,30 @@
     height: 28px;
     border-radius: 100%;
     background-color: #D9D9D9;
+  }
+  .sns_part .facebook_area {
+    background-image: url(../../../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .kakaotalk_area {
+    background-image: url(../../../img/kakaotalk.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .instagram_area {
+    background-image: url(../../../img/instagram.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .twitter_area {
+    background-image: url(../../../img/twitter.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
 
   address {
@@ -1366,6 +1498,30 @@
     border-radius: 100%;
     background-color: #D9D9D9;
   }
+  .sns_part .facebook_area {
+    background-image: url(../../../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .kakaotalk_area {
+    background-image: url(../../../img/kakaotalk.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .instagram_area {
+    background-image: url(../../../img/instagram.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .twitter_area {
+    background-image: url(../../../img/twitter.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
 
   address {
     width: 100%;
@@ -1505,6 +1661,30 @@
     margin-bottom: 8px;
     border-radius: 100%;
     background-color: #D9D9D9;
+  }
+  .sns_part .facebook_area {
+    background-image: url(../../../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .kakaotalk_area {
+    background-image: url(../../../img/kakaotalk.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .instagram_area {
+    background-image: url(../../../img/instagram.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .twitter_area {
+    background-image: url(../../../img/twitter.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
 
   address {
@@ -1651,6 +1831,30 @@
     margin-bottom: 8px;
     border-radius: 100%;
     background-color: #D9D9D9;
+  }
+  .sns_part .facebook_area {
+    background-image: url(../../../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .kakaotalk_area {
+    background-image: url(../../../img/kakaotalk.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .instagram_area {
+    background-image: url(../../../img/instagram.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .sns_part .twitter_area {
+    background-image: url(../../../img/twitter.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
 
   address {

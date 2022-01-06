@@ -54,7 +54,7 @@ const elGnb = document.querySelector('.gnb');
 
 const OPTION_FIX = 'fix';
 const offsetCheck = elGnb.offsetTop;
-console.log(offsetCheck);
+// console.log(offsetCheck);
 
 window.addEventListener('scroll', e => {
   const target = parseInt(e.currentTarget.scrollY);

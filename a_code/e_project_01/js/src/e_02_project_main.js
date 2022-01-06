@@ -17,6 +17,35 @@ fetch(headerData)
   elScript.setAttribute('src', '../js/temp/e_project_header.js');
   elBody.append(elScript);
 })
+// contentBox_02 슬라이드 - mobile, tablet
+.then(() => {
+  let elScript = document.createElement('script');
+  elScript.setAttribute('src', '../js/temp/e_project_contentBox_02_mt_slide.js');
+  elBody.append(elScript);
+})
+// contentBox_02 슬라이드 - laptop, pc
+.then(() => {
+  let elScript = document.createElement('script');
+  elScript.setAttribute('src', '../js/temp/e_project_contentBox_02_lp_slide.js');
+  elBody.append(elScript);
+})
+
+// ------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ------------------------------------------------------------------
 // footer 불러오기
