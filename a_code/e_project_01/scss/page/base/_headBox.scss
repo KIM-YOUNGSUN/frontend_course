@@ -31,6 +31,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     @at-root .unb {
         display: flex; justify-content: space-between;
         position: absolute; top: 0; left: 0;
+        position: fixed;
         width: 100% ; height: 40px;
         // padding: 0 10px; 
         background-color: $color_beige_01;
@@ -112,6 +113,21 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
             background-repeat: no-repeat;
             background-position: 50% 50%;
               &  span {@include blind;}
+
+              & ul {
+                display: none;
+                width: 100%; height: auto; 
+                border: 1px solid #333;
+                background-color: #fff;
+
+                &.on{display: block;}
+              }
+                & li {width: 40px; height: 30px; font-size: 12px;}
+                & button {
+                  display: block; 
+                  width: 100%; height: 100%;
+                  margin: auto;
+                  text-transform: uppercase; }
           }
           @at-root .login_part {
             width: 40px; height: 100%; 
@@ -124,7 +140,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
               &  dd{width: 100%; }
           }
 
-          & .join_part {@include blind;}
+          & .about_part {@include blind;}
           & a {display: block; width: 100%; height: 100%;}
           & button {display: block; width: 100%; height: 100%; }
   
@@ -166,7 +182,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     @at-root .nav_inner01 {
       display: flex;
       width: auto; height: 50px;
-      padding-left: 40px;
+      padding-left: 20px;
       @at-root & .menu_btn {@include blind}
       @at-root & .menu_btn_part {@include blind}
 
@@ -201,18 +217,34 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     @at-root .nav_inner02 { 
       display: flex;
       width: auto; height: 50px;
+      padding: 0 20px;
       text-transform: uppercase; 
-      text-align: center; line-height: 50px; font-size: 12px;
+      text-align: center; line-height: 48px; font-size: 12px;
       @at-root .language_part {
-        width: 80px; height: 50px; 
+        width: 70px; height: 50px; 
         & span {text-transform: uppercase;}
+
+        & ul {
+          display: none;
+          width: 100%; height: auto; 
+          border: 1px solid #333;
+          background-color: #fff;
+
+          &.on {display: block;}
+        }
+          & li {width: 70px; height: 30px;}
+          & button {
+            display: block; 
+            width: 100%; height: 100%;
+            margin: auto;
+            text-transform: uppercase; }
       }
       @at-root .login_part {
-        width: 80px; height: 50px; 
+        width: 70px; height: 50px; 
         margin-right: -8px;
       }
-      @at-root .join_part {
-        width: 80px; height: 50px;
+      @at-root .about_part {
+        width: 70px; height: 50px;
       }
       &  a {display: block; width: auto; height: 100%;}
       &  button {display: block; width: auto; height: 100%; }
@@ -282,10 +314,12 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
           }
       
           @at-root .cart_btn {
-            width: 50px; height: auto;
+            width: 50px; height: 60px;
             background-image: url(../../../img/bag.png); 
             background-repeat: no-repeat;
             background-position: 50% 50%;
+
+            & a {display: block; width: 100%; height: 100%;}
           }
         }// .nav_inner03
       }// .gnb
@@ -365,21 +399,36 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       } // .nav_inner01
     
       @at-root .nav_inner02 { 
-        display: flex;
-        width: 240px; height: 50px;
+        display: flex; 
+        width: auto; height: 50px;
         text-transform: uppercase; 
-        text-align: center; line-height: 50px; font-size: 12px;
+        text-align: center; line-height: 48px; font-size: 12px;
   
         @at-root .language_part {
-          width: 80px; height: 30px; 
-          & span {text-transform: uppercase; text-align: center; line-height: 52px; font-size: 12px;}
+          width: 70px; height: 50px; 
+          & span {text-transform: uppercase; font-size: 12px;}
+
+          & ul {
+            display: none;
+            width: 100%; height: auto; 
+            border: 1px solid #333;
+            background-color: #fff;
+
+            &.on {display: block;}
+          }
+            & li {width: 70px; height: 30px;}
+            & button {
+              display: block; 
+              width: 100%; height: 100%;
+              margin: auto;
+              text-transform: uppercase; }
         }
         @at-root .login_part {
-          width: 80px; height: 50px; 
-          margin-right: -8px;
+          width: 70px; height: 50px; 
+          margin-right: -14px;
         }
-        @at-root .join_part {
-          width: 80px; height: 50px;
+        @at-root .about_part {
+          width: 70px; height: 50px;
         }
         & a {display: block; width: auto; height: 100%;}
         & button {display: block; width: auto; height: 100%;}
@@ -397,7 +446,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     @at-root .nav_inner03 {
       display: flex; justify-content: space-around;
       width: 100%; height: 60px;
-      margin: auto; 
+      margin: auto;
       text-transform: uppercase; 
   
       @at-root .menu_btn_part {
@@ -414,14 +463,14 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
         & button {display: block;}
         & ul {
           display: none;
-          width: 250px; height: auto;
-          padding: 10px 0;
+          width: 200px; height: auto;
+          // padding: 10px 0;
           background-color: $color_beige_01;
           & li {
-            width: 250px; height: 80px;
+            width: 200px; height: 60px;
             border-bottom: $line3;
             font-size: 18px; text-align: center; 
-            text-transform: uppercase; font-weight: bold;
+            text-transform: uppercase; font-weight: bold; font-size: 16px;
             color: $color_gray_01;
 
             &:last-of-type {border-bottom: 0;}
@@ -430,7 +479,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
               display:block; 
               width: 100%; height: 100%; 
               margin: auto;
-              text-align: center; line-height: 80px;
+              text-align: center; line-height: 60px;
             }
           }
           &.on{display:block;}
@@ -451,12 +500,11 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
         }
   
       @at-root .cart_btn {
-        width: 50px; height: auto;
-        padding-top: 58px;
+        width: 50px; height: 60px;
         background-image: url(../../../img/bag.png); 
         background-repeat: no-repeat;
         background-position: 50% 50%;
-          > button {display: block;}
+          & a {display: block; width: 100%; height: 100%;}
           }
         }// .nav_inner03
       }// .gnb
@@ -535,18 +583,34 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
   
     @at-root .nav_inner02 { 
       display: flex;
-      width: 200px; height: 50px;
+      width: auto; height: 50px;
       text-transform: uppercase; 
-      text-align: center; line-height: 50px; font-size: 12px;
+      text-align: center; line-height: 48px; font-size: 12px;
 
       @at-root .language_part {
-        width: 80px; height: 30px; 
-        & span {text-transform: uppercase; text-align: center; line-height: 50px; font-size: 12px;}
+        width: 80px; height: 50px; 
+        & span {text-transform: uppercase; font-size: 12px;}
+
+        & ul {
+          display: none;
+          width: 100%; height: auto; 
+          border: 1px solid #333;
+          background-color: #fff;
+
+          &.on {display: block;}
+        }
+          & li {width: 80px; height: 30px;}
+          & button {
+            display: block; 
+            width: 100%; height: 100%;
+            margin: auto;
+            text-transform: uppercase; }
       }
       @at-root .login_part {
         width: 80px; height: 50px; 
+        margin-right: -14px;
       }
-      @at-root .join_part {
+      @at-root .about_part {
         width: 80px; height: 50px;
       }
       & a {display: block; width: auto; height: 100%;}
@@ -586,14 +650,14 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       & button {display: block;}
       & ul {
         display: none;
-        width: 250px; height: auto;
+        width: 200px; height: auto;
         font-size: 12px;
         background-color: $color_beige_01;
         & li {
-          width: 250px; height: 80px;
+          width: 200px; height: 60px;
           border-bottom: $line3;
           font-size: 18px; text-align: center; 
-          text-transform: uppercase; font-weight: bold;
+          text-transform: uppercase; font-weight: bold; font-size: 16px;
           color: $color_gray_01;
           &:last-of-type {border-bottom: 0;}
 
@@ -601,7 +665,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
             display:block; 
             width: 100%; height: 100%; 
             margin: auto;
-            text-align: center; line-height: 80px;
+            text-align: center; line-height: 60px;
           }
         }
         &.on{display:block;}
@@ -617,11 +681,12 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
     
 
     @at-root .cart_btn {
-      width: 50px; height: auto;
-      padding-top: 58px;
+      width: 50px; height: 60px;
       background-image: url(../../../img/bag.png); 
       background-repeat: no-repeat;
       background-position: 50% 50%;
+
+      & a {display: block; width: 100%; height: 100%;}
         }
       }// .nav_inner03
     }// .gnb

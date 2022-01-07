@@ -1,7 +1,7 @@
 <!-- e_project_header.html -->
 
 
-  <h1><a href="#"><span class="blind">hermes logo</span></a></h1>
+  <h1><a href="#" onclick="MoveMain()"><span class="blind">hermes logo</span></a></h1>
 
   <nav class="unb">
     <h2 class="blind">navigation</h2>
@@ -41,13 +41,19 @@
 
     <div class="nav_inner02">
       <div class="language_part">
-        <button type="button"><span>language</span></button>
+        <button type="button" class="language_btn"><span>language</span></button>
+        <ul>
+          <li><button type="button">kor</button></li>
+          <li><button type="button">eng</button></li>
+          <li><button type="button">chn</button></li>
+          <li><button type="button">jpn</button></li>
+        </ul>
       </div>
       <div class="login_part">
-        <a href="#"><span>login</span></a>
+        <a href="#" onclick="MoveLogin()"><span>login</span></a>
       </div>
-      <div class="join_part">
-        <a href="#">join us</a>
+      <div class="about_part">
+        <a href="#" onclick="MoveHistory()">about</a>
       </div>
     </div><!--nav_inner02-->
   </nav>
@@ -62,14 +68,11 @@
           <span class="blind">메뉴</span>
         </button>
         <ul class="menu_btn_inner">
-          <li><a href="#">여성</a></li>
-          <li><a href="#">남성</a></li>
-          <li><a href="#">가방</a></li>
-          <li><a href="#">스카프</a></li>
-          <li><a href="#">뷰티</a></li>
-          <li><a href="#">악세서리</a></li>
-          <li><a href="#">홈, 아웃도어</a></li>
           <li><a href="#">에르메스 소개</a></li>
+          <li><a href="#">메종 에르메스 도산 파크</a></li>
+          <li><a href="#">매장찾기</a></li>
+          <li><a href="#">마이페이지</a></li>
+          <li><a href="#">고객센터</a></li>
         </ul>
       </div>
   
@@ -82,9 +85,9 @@
       </div>
   
       <div class="cart_btn">
-        <button type="button">
+        <a href="#" onclick="MoveCart()">
           <span class="blind">장바구니</span>
-        </button>
+        </a>
       </div>
     </div>
   </nav>

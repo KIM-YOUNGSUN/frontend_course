@@ -18,6 +18,13 @@ fetch(headerData)
   elBody.append(elScript);
 })
 
+// 아이콘 누르면 해당 페이지 이동
+.then(() => {
+  let elScript = document.createElement('script');
+  elScript.setAttribute('src', '../js/temp/e_project_movepage.js');
+  elBody.append(elScript);
+})
+
 // ------------------------------------------------------------------
 // footer 불러오기
 const elFootBox = document.querySelector('#footBox');

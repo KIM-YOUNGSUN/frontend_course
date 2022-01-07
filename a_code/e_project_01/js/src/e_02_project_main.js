@@ -1,5 +1,7 @@
 // e_02_project_main.js
 
+
+
 // ------------------------------------------------------------------
 
 const elBody = document.querySelector('body');
@@ -17,6 +19,14 @@ fetch(headerData)
   elScript.setAttribute('src', '../js/temp/e_project_header.js');
   elBody.append(elScript);
 })
+
+// 아이콘 누르면 해당 페이지 이동
+.then(() => {
+  let elScript = document.createElement('script');
+  elScript.setAttribute('src', '../js/temp/e_project_movepage.js');
+  elBody.append(elScript);
+})
+
 // contentBox_02 슬라이드 - mobile, tablet
 .then(() => {
   let elScript = document.createElement('script');

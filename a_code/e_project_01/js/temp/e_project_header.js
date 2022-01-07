@@ -1,6 +1,5 @@
 // e_project_header.js
 
-// ------------------------------------------------------------------
 
 // mobile 햄버거 메뉴
 const elNavInner01 = document.querySelector('.nav_inner01');
@@ -46,6 +45,19 @@ elSearchBtn.addEventListener('click', e => {
   (check) ? elSearchTextArea.classList.remove('on') : elSearchTextArea.classList.add('on');
 });
 
+// ------------------------------------------------------------------
+// 언어 선택
+//navinner2 선택, language part 선택, language_bt선택 ul 선택
+const elNavInner02 = document.querySelector('.nav_inner02');
+const elLanPart = elNavInner02.querySelector('.language_part');
+const elLanBtn = elLanPart.querySelector('.language_btn');
+const elUl = elLanPart.querySelector('ul');
+
+elLanBtn.addEventListener('click', e => {
+  e.preventDefault();
+  let check = elUl.classList.contains('on');
+  (check) ? elUl.classList.remove('on') : elUl.classList.add('on');
+});
 
 // ------------------------------------------------------------------
 
