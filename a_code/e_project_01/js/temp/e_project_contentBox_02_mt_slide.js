@@ -20,7 +20,7 @@
   // li값 파악
   const liMargin = parseInt(window.getComputedStyle(bestLiList[1]).marginRight);
   const liWidth = bestLiList[1].clientWidth;
-  const moveWidth = 300; // 400
+  const moveWidth = 300; // 300
 
   //다음버튼 클릭시 -> bestUl을 li크기만큼 왼쪽으로 이동!!
   const fnMoveNext = function() {

@@ -27,6 +27,7 @@
     top: 0;
     left: 0;
     position: fixed;
+    z-index: 100;
     width: 100%;
     height: 40px;
     background-color: #F6F1EB;
@@ -60,6 +61,7 @@
   }
   .nav_inner01 .menu_btn_part ul li {
     float: left;
+    z-index: 100;
     width: 100px;
     height: 70px;
     border-bottom: 1px solid #D9D9D9;
@@ -388,7 +390,7 @@
   }
   .nav_inner03 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     height: 60px;
     text-transform: uppercase;
@@ -410,6 +412,7 @@
   }
   .nav_inner03 .menu_btn_part ul {
     display: none;
+    transform: translateX(-43px);
     width: 200px;
     height: auto;
     background-color: #F6F1EB;
@@ -662,6 +665,7 @@
   }
   .menu_btn_part ul {
     display: none;
+    transform: translateX(-80px);
     width: 200px;
     height: auto;
     background-color: #F6F1EB;
@@ -920,13 +924,14 @@
   }
   .menu_btn_part ul {
     display: none;
-    width: 200px;
+    transform: translateX(-172px);
+    width: 250px;
     height: auto;
     font-size: 12px;
     background-color: #F6F1EB;
   }
   .menu_btn_part ul li {
-    width: 200px;
+    width: 250px;
     height: 60px;
     border-bottom: 1px solid #D9D9D9;
     font-size: 18px;
@@ -993,7 +998,6 @@
   }
 
   .cart_area {
-    position: relative;
     width: 100%;
     height: 400px;
   }
@@ -1050,7 +1054,7 @@
 
   .itemBox {
     width: 100%;
-    height: 180px;
+    height: 80px;
     margin: auto;
     padding: 4px 6px;
     border-bottom: 2px solid #D9D9D9;
@@ -1086,13 +1090,37 @@
     background-position: 50% 50%;
   }
 
+  .item_area p {
+    width: 170px;
+    height: 20px;
+    margin: auto;
+    font-size: 14px;
+  }
+
   .otherBox {
-    position: absolute;
-    bottom: 145px;
-    right: 0;
-    width: 200px;
+    width: 250px;
     height: 40px;
-    background-color: #ccc;
+    margin: auto;
+  }
+  .otherBox ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+  .otherBox li {
+    width: 110px;
+    height: 34px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 32px;
+    border: 2px solid #D9D9D9;
+  }
+  .otherBox li button {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1279px) {
@@ -1114,7 +1142,6 @@
   }
 
   .cart_area {
-    position: relative;
     width: 100%;
     height: 600px;
   }
@@ -1168,7 +1195,7 @@
 
   .itemBox {
     width: 100%;
-    height: 300px;
+    height: 100px;
     margin: auto;
     border-bottom: 2px solid #D9D9D9;
   }
@@ -1206,80 +1233,38 @@
     overflow: hidden;
   }
 
-  .item_inner02 {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 200px;
-    padding: 20px 10px;
-  }
-
-  .item_img_part {
-    width: 90px;
-    height: 150px;
-    background-color: #ccc;
-  }
-
-  .item_name_detail_part {
-    width: 140px;
-    height: 60px;
-    background-color: #eee;
-  }
-
-  .item_num_change_inner {
-    width: 120px;
-    height: 120px;
-    padding: 16px 0;
-    background-color: #fda;
-  }
-  .item_num_change_inner .item_num_check_part {
-    width: 100px;
+  .item_area p {
+    width: 200px;
     height: 40px;
     margin: auto;
-    margin-bottom: 10px;
-    background-color: #ddd;
-  }
-  .item_num_change_inner .item_num_change_part {
-    width: 100px;
-    height: 40px;
-    margin: auto;
-    background-color: #ddd;
-  }
-
-  .item_price_detail_part {
-    width: 90px;
-    height: 60px;
-    background-color: #aaa;
-  }
-
-  .item_order_delete_inner {
-    width: 120px;
-    height: 120px;
-    padding: 16px 0;
-    background-color: #fda;
-  }
-  .item_order_delete_inner .item_order_part {
-    width: 100px;
-    height: 40px;
-    margin: auto;
-    margin-bottom: 10px;
-    background-color: #ddd;
-  }
-  .item_order_delete_inner .item_delete_part {
-    width: 100px;
-    height: 40px;
-    margin: auto;
-    margin-bottom: 10px;
-    background-color: #ddd;
+    font-size: 16px;
+    line-height: 40px;
   }
 
   .otherBox {
-    position: absolute;
-    bottom: 190px;
-    right: 0;
     width: 350px;
     height: 74px;
-    background-color: #ccc;
+    margin: auto;
+  }
+  .otherBox ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+  .otherBox li {
+    width: 150px;
+    height: 46px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    border: 2px solid #D9D9D9;
+  }
+  .otherBox li button {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) {
@@ -1301,7 +1286,6 @@
   }
 
   .cart_area {
-    position: relative;
     width: 100%;
     height: 1000px;
   }
@@ -1356,7 +1340,7 @@
 
   .itemBox {
     width: 100%;
-    height: 350px;
+    height: 150px;
     margin: auto;
     border-bottom: 2px solid #D9D9D9;
   }
@@ -1394,80 +1378,39 @@
     overflow: hidden;
   }
 
-  .item_inner02 {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 300px;
-    padding: 30px 20px;
-  }
-
-  .item_img_part {
-    width: 160px;
-    height: 230px;
-    background-color: #ccc;
-  }
-
-  .item_name_detail_part {
-    width: 180px;
-    height: 60px;
-    background-color: #eee;
-  }
-
-  .item_num_change_inner {
-    width: 160px;
-    height: 160px;
-    padding: 16px 0;
-    background-color: #fda;
-  }
-  .item_num_change_inner .item_num_check_part {
-    width: 120px;
-    height: 60px;
+  .item_area p {
+    width: 230px;
+    height: 50px;
     margin: auto;
-    margin-bottom: 10px;
-    background-color: #ddd;
-  }
-  .item_num_change_inner .item_num_change_part {
-    width: 120px;
-    height: 60px;
-    margin: auto;
-    background-color: #ddd;
-  }
-
-  .item_price_detail_part {
-    width: 140px;
-    height: 60px;
-    background-color: #aaa;
-  }
-
-  .item_order_delete_inner {
-    width: 160px;
-    height: 160px;
-    padding: 16px 0;
-    background-color: #fda;
-  }
-  .item_order_delete_inner .item_order_part {
-    width: 120px;
-    height: 60px;
-    margin: auto;
-    margin-bottom: 10px;
-    background-color: #ddd;
-  }
-  .item_order_delete_inner .item_delete_part {
-    width: 120px;
-    height: 60px;
-    margin: auto;
-    margin-bottom: 10px;
-    background-color: #ddd;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 50px;
   }
 
   .otherBox {
-    position: absolute;
-    bottom: 530px;
-    right: 0;
-    width: 350px;
+    width: 400px;
     height: 74px;
-    background-color: #ccc;
+    margin: auto;
+  }
+  .otherBox ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+  .otherBox li {
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    border: 2px solid #D9D9D9;
+  }
+  .otherBox li button {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 @media all and (min-width: 1440px) {
@@ -1490,7 +1433,6 @@
   }
 
   .cart_area {
-    position: relative;
     width: 1200px;
     height: 1000px;
     margin: auto;
@@ -1549,7 +1491,7 @@
 
   .itemBox {
     width: 100%;
-    height: 400px;
+    height: 150px;
     border-bottom: 2px solid #D9D9D9;
   }
 
@@ -1586,79 +1528,39 @@
     overflow: hidden;
   }
 
-  .item_inner02 {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 300px;
-    padding: 30px 20px;
-  }
-
-  .item_img_part {
-    width: 180px;
-    height: 250px;
-    background-color: #ccc;
-  }
-
-  .item_name_detail_part {
-    width: 200px;
-    height: 80px;
-    background-color: #eee;
-  }
-
-  .item_num_change_inner {
-    width: 180px;
-    height: 200px;
-    padding: 16px 0;
-    background-color: #fda;
-  }
-  .item_num_change_inner .item_num_check_part {
-    width: 140px;
-    height: 80px;
+  .item_area p {
+    width: 230px;
+    height: 50px;
     margin: auto;
-    margin-bottom: 10px;
-    background-color: #ddd;
-  }
-  .item_num_change_inner .item_num_change_part {
-    width: 140px;
-    height: 80px;
-    margin: auto;
-    background-color: #ddd;
-  }
-
-  .item_price_detail_part {
-    width: 160px;
-    height: 80px;
-    background-color: #aaa;
-  }
-
-  .item_order_delete_inner {
-    width: 180px;
-    height: 200px;
-    padding: 16px 0;
-    background-color: #fda;
-  }
-  .item_order_delete_inner .item_order_part {
-    width: 140px;
-    height: 80px;
-    margin: auto;
-    margin-bottom: 10px;
-    background-color: #ddd;
-  }
-  .item_order_delete_inner .item_delete_part {
-    width: 140px;
-    height: 80px;
-    margin: auto;
-    background-color: #ddd;
+    padding-left: 20px;
+    font-size: 17px;
+    line-height: 50px;
   }
 
   .otherBox {
-    position: absolute;
-    bottom: 480px;
-    right: 0;
-    width: 350px;
+    width: 450px;
     height: 74px;
-    background-color: #ccc;
+    margin: auto;
+  }
+  .otherBox ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+  .otherBox li {
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    border: 2px solid #D9D9D9;
+  }
+  .otherBox li button {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 @media all and (max-width: 767px) {

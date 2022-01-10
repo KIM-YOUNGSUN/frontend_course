@@ -41,3 +41,4 @@ fetch(footerData)
   elScript.setAttribute('src', '../js/temp/e_project_footer.js');
   elBody.append(elScript);
 })
+

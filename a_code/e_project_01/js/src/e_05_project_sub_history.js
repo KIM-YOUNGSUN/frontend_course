@@ -25,6 +25,23 @@ fetch(headerData)
   elBody.append(elScript);
 })
 
+// historyBox 슬라이드 구현
+// .then(() => {
+//   let elScript = document.createElement('script');
+//   elScript.setAttribute('src', '../js/temp/e_project_historyBox_m_slide.js');
+//   elBody.append(elScript);
+// })
+// .then(() => {
+//   let elScript = document.createElement('script');
+//   elScript.setAttribute('src', '../js/temp/e_project_historyBox_t_slide.js');
+//   elBody.append(elScript);
+// })
+.then(() => {
+  let elScript = document.createElement('script');
+  elScript.setAttribute('src', '../js/temp/e_project_historyBox_lp_slide.js');
+  elBody.append(elScript);
+})
+
 // ------------------------------------------------------------------
 // footer 불러오기
 const elFootBox = document.querySelector('#footBox');
