@@ -48,7 +48,7 @@
     const fnAutoMove = () => {
       move = setInterval(()=>{
         fnMoveNext();
-      }, 2000);
+      }, 5000);
     }
     const fnPause =() => {
       clearInterval(move);

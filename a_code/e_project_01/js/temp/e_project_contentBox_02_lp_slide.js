@@ -1,6 +1,8 @@
 // e_project_contentBox_02_lp_slide.js
 
 
+
+
 // 버튼을 선택하여 클릭
 {
   const bestWrap = document.querySelector('.best_wrap');
@@ -20,7 +22,7 @@
   // li값 파악
   const liMargin = parseInt(window.getComputedStyle(bestLiList[1]).marginRight);
   const liWidth = bestLiList[1].clientWidth;
-  const moveWidth = liMargin + liWidth; // 400
+  const moveWidth = 400; // 400
 
   //다음버튼 클릭시 -> bestUl을 li크기만큼 왼쪽으로 이동!!
   const fnMoveNext = function() {
@@ -48,7 +50,7 @@
     const fnAutoMove = () => {
       move = setInterval(()=>{
         fnMoveNext();
-      }, 2000);
+      }, 5000);
     }
     const fnPause =() => {
       clearInterval(move);

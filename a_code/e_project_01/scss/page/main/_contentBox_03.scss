@@ -35,7 +35,8 @@
 
         & dl {
             width: 200px; height: 100px;
-            padding: 20px; margin: auto; 
+            padding-top: 20px; 
+            margin: auto; 
             font-weight: bold; font-size: 14px;
 
           & dt {
@@ -315,16 +316,16 @@
         background-size: cover;
       } //.scarf_part_06
 
-      & dl {
+      &  dl {
         width: 300px; height: 150px;
         padding: 20px; 
         font-weight: bold; font-size: 16px;
 
-        & dt {
+        &  dt {
           width: 200px; height: 40px;
           margin: auto; 
           }
-        & dd {
+        &  dd {
           width: 150px; height: 40px; 
           margin: auto;
           }

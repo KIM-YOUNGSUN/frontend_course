@@ -28,17 +28,65 @@ fetch(headerData)
 })
 
 // contentBox_02 슬라이드 - mobile, tablet
-.then(() => {
-  let elScript = document.createElement('script');
-  elScript.setAttribute('src', '../js/temp/e_project_contentBox_02_mt_slide.js');
-  elBody.append(elScript);
+
+const setDevice = [
+  {type:'mobile', size:'1280', script:'../js/temp/e_project_contentBox_02_mt_slide.js'}, // tablet과 mobile의 JS가 같아서 통합
+  {type:'pc', script:'../js/temp/e_project_contentBox_02_lp_slide.js'}
+]
+const mediaSize = `screen and (max-width:${setDevice[0].size}px)`
+const mediaMatches = window.matchMedia(mediaSize);
+console.log(mediaMatches); 
+ 
+
+const elScript = (data)=>{
+  const elsc = document.createElement('script');
+  elsc.setAttribute('src', data);
+  elsc.setAttribute('class', 'navScript');
+  elBody.append(elsc);
+}
+
+
+const delScript=()=>{ // 사이즈가 변경될때 삽입되어있던 JS코드 삭제하는 함수
+  const scScript=document.querySelector('.navScript');
+  if(scScript){scScript.remove();}
+}
+
+// fetch(setDevice[0].script)
+// .then(() => {elScript(setDevice[0].script)}) 
+
+
+const MbCk = (type=mediaMatches.matches)=>{
+  if(type){
+    fetch(setDevice[0].script)    
+    .then(() => {elScript(setDevice[0].script)}) //1280 이하의 PX에서 mobile JS삽입
+    .then(delScript())  //이전 JS 삭제 
+  }else{
+    fetch(setDevice[1].script)    
+    .then(() => {elScript(setDevice[1].script)})  //1280 초과의 px에서 lp JS삽입
+    .then(delScript()) //이전 JS삭제
+  }
+};
+MbCk();
+
+mediaMatches.addEventListener('change',(e)=>{ // 변화감지 이벤트 
+  MbCk(e.matches);
 })
-// contentBox_02 슬라이드 - laptop, pc
-.then(() => {
-  let elScript = document.createElement('script');
-  elScript.setAttribute('src', '../js/temp/e_project_contentBox_02_lp_slide.js');
-  elBody.append(elScript);
-})
+
+
+
+
+
+// .then(() => {
+//   let elScript = document.createElement('script');
+//   elScript.setAttribute('src', '../js/temp/e_project_contentBox_02_mt_slide.js');
+//   elBody.append(elScript);
+// })
+// // contentBox_02 슬라이드 - laptop, pc
+// .then(() => {
+//   let elScript = document.createElement('script');
+//   elScript.setAttribute('src', '../js/temp/e_project_contentBox_02_lp_slide.js');
+//   elBody.append(elScript);
+// })
 
 // ------------------------------------------------------------------
 
