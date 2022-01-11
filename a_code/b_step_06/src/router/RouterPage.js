@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
 import {Routes, Route} from 'react-router-dom';
 import Main from '../page/Main';
 // import Company from '../page/Company';
-import {Manual, Person, Rule, Etc} from '../page/Company';
+import Product from '../component/Product';
+import {Manual, Person, Rule} from '../page/Company';
+import NotFound from '../component/NotFound';
 
 export default function RouterPage() {
   return (
@@ -14,10 +16,11 @@ export default function RouterPage() {
       <Route path="/manual" element={<Manual />} />
       <Route path="/person" element={<Person />} />
       <Route path="/rule" element={<Rule />} />
-      <Route path="/etc" element={<Etc />} />
+      <Route path="/product" element={<Product />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   )
 }
 
 
-// 'react-router-dom' -> {BrowserRouter, Routes, Route}
+// 'react-router-dom' -> {BroserRouter, Routes, Route}
