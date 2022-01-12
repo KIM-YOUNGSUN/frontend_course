@@ -1,17 +1,14 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../style/Footer.scss';
-
 
 export default function Footer(props){
 
-  const fnAction = (isActive)=>{
-    return isActive ? "on" : ''
-  }
+  const fnAction = ({isActive})=> isActive ? "on" : '' ;
 
   return (
     <footer id="footBox">
-      <h2>{props.heading} 정보</h2>
+      <h2>{props.heading}<br />정보</h2>
       <div className="company_info">
         <ul>
           <li><NavLink className={fnAction} to="/manual">이용약관</NavLink></li>
@@ -20,7 +17,6 @@ export default function Footer(props){
           <li><NavLink className={fnAction} to="/etc">기타</NavLink></li>
         </ul>
       </div>
-
     </footer>
   )
 }

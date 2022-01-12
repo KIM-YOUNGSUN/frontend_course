@@ -1,15 +1,18 @@
 // ProductLi.js
 
-import React from 'react'
+import React from 'react';
 
 export default function ProductLi({data}) {
-  const pr = data;
-  return (
+  console.log( data );
+  return (  
     <li>
-      <dl>
-        <dt>{pr.product}</dt>
-        <dd>{pr.narr}</dd>
+      <div className='img_detail'></div>
+        <dl>
+          <dt>{data.product}</dt>
+          <dd>{data.narr}</dd>
       </dl>
     </li>
   )
+  
+  
 }
