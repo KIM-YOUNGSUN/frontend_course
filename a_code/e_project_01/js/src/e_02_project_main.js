@@ -1,5 +1,5 @@
 // e_02_project_main.js
-
+window.alert('교육목적으로 제작된 웹페이지입니다.')
 
 
 // ------------------------------------------------------------------
@@ -20,23 +20,16 @@ fetch(headerData)
   elBody.append(elScript);
 })
 
-// 아이콘 누르면 해당 페이지 이동
-.then(() => {
-  let elScript = document.createElement('script');
-  elScript.setAttribute('src', '../js/temp/e_project_movepage.js');
-  elBody.append(elScript);
-})
-
 // contentBox_02 슬라이드 - mobile, tablet
 
 const setDevice = [
-  {type:'mobile', size:'1280', script:'../js/temp/e_project_contentBox_02_mt_slide.js'}, // tablet과 mobile의 JS가 같아서 통합
+  {type:'mobile', size:'1279', script:'../js/temp/e_project_contentBox_02_mt_slide.js'}, // tablet과 mobile의 JS가 같아서 통합
   {type:'pc', script:'../js/temp/e_project_contentBox_02_lp_slide.js'}
 ]
 const mediaSize = `screen and (max-width:${setDevice[0].size}px)`
 const mediaMatches = window.matchMedia(mediaSize);
 console.log(mediaMatches); 
- 
+
 
 const elScript = (data)=>{
   const elsc = document.createElement('script');

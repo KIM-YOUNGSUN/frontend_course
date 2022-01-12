@@ -65,3 +65,4 @@
   bestWrap.addEventListener('mouseenter', fnPause);
   bestWrap.addEventListener('mouseleave', fnAutoMove);
 }
+
