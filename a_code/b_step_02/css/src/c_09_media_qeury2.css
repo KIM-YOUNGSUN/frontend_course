@@ -1,0 +1,35 @@
+
+
+
+  /* 
+  web vs app (swfit+html/css+js)/(and+html/css/js)
+  - app이 더 화려하거나 무거운 data를 처리 가능
+  - 서버 내용의 변경이 바로 처리/별도의 업데이트
+
+  PWA
+  - html/css 반응형 웹
+   */
+
+  /* 필요한 구성을 처리하기 위해
+    - 동일한 디자인 구성을 가지고 있는 영역을 설정
+    - @media query
+    - 웹 제작 구성 화면구성이며 보이는 영역의 최대 크기는 600px 
+    -> @media screen and (max-width: 600px) {내가 설명하고자 하는 내용}
+    
+    - 웹 제작 구성 모든 환경을 고려하고 보여주는 기준 크기를 최소 10mm 최대 100mm
+    -> @media print and (min-width: 10mm) (max-width: 100mm) {구성 내용을 설정}
+    
+    -> 제작 구성 모든 환경 고려하고 기준 크기는 최소 320px이며 최대 600px
+    -> @media app and (min-width:320px) and (max-width:600px) {구성내용을 설정}
+  */
+
+body {background-color: #eee;}
+h2 {
+  width: 1440px; height: 100px;
+  margin: auto;
+  background-color: #f06;
+  }
+
+  @media all and (min-wiidth:320px) and (max-width:600px) {
+
+  } /* @media (320px ~ 600px)*/

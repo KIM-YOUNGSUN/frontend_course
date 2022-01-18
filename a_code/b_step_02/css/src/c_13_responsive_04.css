@@ -1,0 +1,29 @@
+/* c_13_responsive_04.css */
+
+/* desgin */
+#wrap {width: 100%; height: auto; background-color: #ddd;}
+
+
+
+
+/* max-width:479px / design 기준:320px */
+@media all and (max-width:479px) {
+
+  #headBox { width: 100%; height: 40px; background-color: #333;}
+  #viewBox { width: 100%; height: 480px; background-color: #BBAA77;}
+  #contentBox {width: 100%; height: 480px; background-color: #547D77;}
+  #infoBox {width: 100%; height: 480px; background-color: #957DE9;}
+  #footBox {width: 100%; height: 40px; background-color: #333;}
+
+}
+
+
+/* width:480px~767px */
+@media all and (min-width:480px) and (max-width:767px) {
+
+  
+} 
+
+/* width:768px~959px */
+
+/* min-width:960px / design 기준:960px */
