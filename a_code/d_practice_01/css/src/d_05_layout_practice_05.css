@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* d_05_layout_practice_05.css */
+
+#wrap {
+  width: 980px; height: 850px;
+}
+
+/* aside ============================================== */
+.sideBox {
+  position: relative;
+  width: 100%; height: 30px;
+  background-color: #ded;
+}
+
+.aside_inner_box {
+  position: absolute; top: 0; left: 56%;
+  width: 100%; height: 100%;
+}
+
+  .aside_inner01 {
+    float: left;
+    width: 94px; height: 30px;
+    text-align: center;
+  }
+  .aside_inner02 {
+    float: left;
+    width: 94px; height: 30px;
+    text-align: center;
+  }
+  .aside_inner03 {
+    float: left;
+    margin-right: 50px;
+    width: 240px; height: 30px;
+    text-align: left;
+  }
+  .arrow {
+    float: right;
+    width: 60px; height: 10px;
+    margin: 10px;
+    background-color: #fff;
+  }
+
+/* headBox ============================================== */
+
+.headBox {
+  float: left;
+  width: 250px; height: 710px;
+  padding: 50px; box-sizing: border-box;
+  background-color: #ddd;
+}
+    .nav_01 { 
+      width: 154px; height: 104px; 
+      margin: auto; 
+      background-color: #fff;}
+    .nav_02 { 
+      width: 140px; height: 30px; 
+      margin: auto; margin-top: 20px;
+      background-color: #fff;}
+    .nav_03 { 
+      width: 140px; height: 30px; 
+      margin: auto; margin-top: 20px;
+      background-color: #fff;}
+    .nav_04 { 
+      width: 140px; height: 30px; 
+      margin: auto; margin-top: 20px;
+      background-color: #fff;}
+    .nav_05 { 
+      width: 140px; height: 30px; 
+      margin: auto; margin-top: 20px; 
+      background-color: #fff;}
+    .nav_06 { 
+      width: 140px; height: 30px; 
+      margin: auto; margin-top: 20px;
+      background-color: #fff;}
+
+
+.viewBox {
+  float: left;
+  width: 730px; height: 710px;
+  background-color: #ede;
+}
+
+.footBox {
+  clear:both;
+  width: 980px; height: 110px;
+  background-color: #ded;
+}

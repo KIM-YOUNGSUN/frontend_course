@@ -1,0 +1,85 @@
+// main.scss
+/* main.css */
+
+@import "../common/reset", "../common/mixin";
+
+$yellow : #fa0;
+
+$blue : (#00f, #0af, #0df, #7af, #adf);
+
+$psuedoCode: (
+  "hover":#87f,
+  "focus":#4f3,
+  "active":#fda,
+  "selected":#dfd
+); // dic(map)
+
+#wrap{
+  width: 100%; height: 500px;
+  background-color: nth($blue, 1);
+}
+#headBox{
+  width: 100%; height: 100px;
+  background-color: nth($blue,2);
+}
+#viewBox{
+  width: 100%; height: 400px;
+  background-color: nth($blue,3);
+}
+#contentBox{
+  width: 100%; height: 200px;
+  background-color: nth($blue,4);
+}
+#asideBox{
+  width: 100%; height: 100px;
+  background-color: nth($blue,5);
+}
+#footBox{
+  width: 100%; height: 100px;
+  background-color: map-get($map:$psuedoCode, $key:active);
+  &:hover{
+    background-color: map-get($psuedoCode, hover);
+  }
+}
+
+// ---------------------------------------------------
+
+
+// .coffee_#{nth($coffee,1)} { width:100%; }
+// .coffee_#{2} {width: 100%;} length($coffee)
+
+$coffee: ("espresso","latte","choco","vanilla","other");
+$blue: (#00f, #0af, #0df, #7af, #adf);
+
+@for $key from 1 through 5{
+  .li_#{ nth($coffee, $key) } {
+    width:$key * 10%; height:100%;
+    background-color: nth($blue, $key);
+    margin:auto; padding:0; box-sizing:border-box;
+  }
+}
+
+
+// @for $key from 1 through length ($coffee){
+//   .area_#{ nth($coffee, $key) } {
+//     width:$key * 10%; height:100%;
+//     background-color: nth($blue, $key);
+//     margin:auto; padding:0; box-sizing:border-box;
+//   }
+// }
+
+$pink: #fad;
+
+.mixin_text{
+  @include clearfix();
+  & > li{
+    float: left ;
+    width: 300px; height: 50px;
+    margin-bottom: 20px;
+    background-color: $pink;
+    @at-root .blind{  // 코드 이름이 길어지는 것을 방지하기 위해 class blind 불러온것
+      @include full(); // mixin의 full을 불러온다
+    }
+  }
+}
+

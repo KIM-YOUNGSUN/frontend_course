@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* d_06_login_practice.css */
+
+html,body {width: 100%; height: 100%;}
+
+#wrap {
+  width: 800px; height: 900px;
+  background-color: #eee;
+}
+.login_part {
+  width: 100%; height: 100%;
+}
+
+h1 {
+  width: 800px; height: auto;
+  margin: auto; text-align: center;
+  background-color: #fff;
+}
+h1  a {
+  width: 800px; height: 100px;
+}

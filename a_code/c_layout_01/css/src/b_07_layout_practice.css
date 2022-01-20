@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* b_07_layout_practice.css */
+
+#wrap {
+  width: 1000px; height: 650px;
+  background-color: #eee;
+}
+
+#headBox {
+  float: left;
+  width: 200px; height: 40px;
+  background-color: #dad;
+}
+
+h1 {
+  width: 100%; height: 100%;
+  background-color: #faf;
+}
+
+.navigation {
+  width: 180px; height: 250px;
+  margin-top: 15px; margin-left: 10px;
+  background-color: #ddd;
+}
+
+.navigation > ul {
+  width: 100%; height: auto;
+}
+
+#viewBox {
+  float: left;
+  width: 800px; height: 350px;
+  background-color: #ddd;
+}
+
+#conBox {
+  float: right;
+  width: 800px; height: 200px;
+  background-color: #dad;
+}
+
+.notice_gallery {
+  width: 100%; height: 100%;
+  background-color: #faf;
+}
+
+#footBox {
+  float: right;
+  width: 800px; height: 100px;
+  background-color: #ddd;
+}
