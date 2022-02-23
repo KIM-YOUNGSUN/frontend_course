@@ -76,3 +76,56 @@ console.log(stringFive != numberFive); // false
 // === : 타입까지 체크
 console.log(stringFive === numberFive); // false
 console.log(stringFive !== numberFive); // true
+
+// 8. if 조건 연산자
+const name = 'df';
+if (name === 'ellie') {
+  console.log('Welcome, Ellie!');
+}else if (name === 'coder'){
+  console.log('You are amazing coder');
+}else {
+  console.log('unknown');
+}
+
+// 9. 삼항 연산자
+// 조건 ? 값 1 : 값 2
+console.log(name === 'ellie' ? 'yes' : 'no');
+
+// 10. switch 연산자
+const browser = 'IE';
+switch (browser) {
+  case 'IE' :
+    console.log('go way');
+    break;
+  case 'Chrome' : 
+  case 'FireFox' :
+    console.log('love you');
+    break;
+  default :
+    console.log('same all');
+    break;
+}
+
+// 11. while 반복문
+let i = 3;
+while (i > 0) {
+  console.log(`while: ${i}`);
+  i--;
+}
+
+// 12. for 반복문
+for (i = 3; i > 0; i--) {
+  console.log(`for: ${i}`);
+}
+
+for (let i = 3; i > 0; i = i - 2) { // 지역변수를 내부에 직접 쓰는 것
+  console.log(`inline variable for: ${i}`);
+}
+
+// 13. 중첩 반복문
+for (let i = 0; i < 10; i++) {
+  for (let j = 0; j < 10; j++) {
+    console.log(`i: ${i}, j: ${j}`);
+  }
+} // 이런 구문은 cpu에 좋지 않기 때문에 사용 비추
+
