@@ -11,8 +11,9 @@ function saveToDos() {
 
 function deleteToDo (event) {
   // X버튼을 눌렀을때 어떤 것이 눌렸는지 알기 위해 발생된 이벤트의 부모를 찾아줘-> button 부모가 li
-  const li = event.target.parentElement; 
+  const li = event.target.parentElement;
   li.remove();
+  toDos = toDos = toDos.filter((toDo) => toDo.id !== li.id);
 }
 
 function paintToDo(newTodo){
@@ -31,9 +32,21 @@ function handleToDosubmit(event) {
   event.preventDefault();
   const newTodo = toDoInput.value; // input의 현재 value를 새로운 변수에 복사 
   toDoInput.value = ""; // toDoInput의 값을 비운 것(입력하고 엔터하면 썼던 텍스트 사라지게) 다만 얘를 비웠다고 해서 위의 newTodo도 비운 것은 아님
-  toDos.push(newTodo);
-  paintToDo(newTodo);
+  const newTodoObj = {
+    text: newTodo,
+    id: Date.now(),
+  };
+  toDos.push(newTodoObj);
+  paintToDo(newTodoObj);
   saveToDos();
 }
 
 toDoForm.addEventListener("submit", handleToDosubmit);
+
+const saveToDos = localStorage.getItem(TODOS_KEY);
+
+if(saveToDos !== null) {
+  const parsedToDos = JSON.parse(saveToDos);
+  toDos = parsedToDos;
+  parsedToDos.forEach(paintToDo);
+}
