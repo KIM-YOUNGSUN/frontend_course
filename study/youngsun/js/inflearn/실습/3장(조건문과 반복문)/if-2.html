@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>조건문-2</title>
+</head>
+<body>
+  <script>
+    // 짝수 검사하는 프로그램
+    let value = window.prompt("숫자를 입력해주세요.");
+
+    value = parseInt(value); // prompt()에서 받은 value값을 string이기 때문에 숫자로 바꿔줘야함
+
+    if(value % 2 == 0) {
+      alert("짝수입니다.");
+    }else {
+      alert("홀수입니다.");
+    }
+  </script>
+</body>
+</html>
