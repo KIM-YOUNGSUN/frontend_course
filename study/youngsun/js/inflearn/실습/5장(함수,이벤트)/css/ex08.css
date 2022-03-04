@@ -1,0 +1,16 @@
+body {
+  font-size: 10pt;
+}
+#panel {
+  position: relative;
+  width: 600px; height: 500px;
+  border: 1px solid #999;
+}
+#gigu {
+  position: absolute; left: 50px; top: 120px;
+  width: 80px;
+}
+#nav {
+  text-align: center;
+  width: 600px;
+}
