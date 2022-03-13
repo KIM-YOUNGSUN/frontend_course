@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math 클래스-1</title>
+  <script src="libs/jquery-3.6.0.min.js"></script>
+  <script>
+    let $info = null; // 전역변수 선언
+    
+    $(document).ready(function(){
+      $info = $("#panel");
+      showRandom();
+      setInterval(showRandom, 1000);
+    });
+
+    function showRandom(){
+      // Math.random()는 실수값을 리턴하기 때문에 강제로 정수로 출력하게끔 parseInt를 사용
+      // * 10의 자리는 범위 지정, + 1의 자리는 시작값 지정 (1부터 10까지만 나옴)
+      let num = parseInt(Math.random() * 10) + 1;
+      $info.html(num);
+    }
+  </script>
+</head>
+<body>
+  <div id="panel">
+    0
+  </div>
+</body>
+</html>
