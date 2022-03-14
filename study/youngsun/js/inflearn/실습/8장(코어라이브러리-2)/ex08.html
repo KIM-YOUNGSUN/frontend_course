@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String클래스-8(왼쪽만 공백제거)</title>
+  <style>
+    body {
+      font-size: 20px;
+    }
+    #input {
+      width: 300px;
+    }
+    #output {
+      width: 600px;
+      height: 200px;
+      border: 2px solid red;
+      text-align: left;
+      vertical-align: top;
+    }
+  </style>
+  <script src="libs/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      let $output = $("#output");
+      let $input = $("#input");
+      // 버튼 이벤트 등록
+      $("#confirm").click(function(){
+        // 입력한 값을 알아내기
+        let value = $input.val();
+
+        // 앞쪽(왼쪽) 공백 문자 제거
+        let result = ltrim(value);
+        $output.html(result);
+      });
+    });
+
+    // 앞쪽 공백 제거 함수
+    function ltrim(str){
+      // 문자열이 없는 경우
+      if(str.length <= 0){
+        return "";
+      }
+
+      // 첫번째 문자가 공백이 아니라면 검사할 필요가 없음
+      let firstChar = str.charAt(0);
+      if(firstChar != " "){
+        return str;
+      }
+      
+      let index;
+      // 공백이 끝나는 위치 찾기
+      for(index=1; index<str.length; index++){
+        // 공백 문자가 아닐때까지 찾기
+        let ch = str.charAt(index);
+        if(ch != " "){ // 공백이 아니다라는 것은 곧 문자를 의미
+          break;
+        }
+      }
+      // index위치에서 마지막 위치까지의 문자열을 잘라내고 있음
+      let result = str.slice(index, str.length);
+      return result;
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <input type="text" id="input">
+    <button id="confirm">확인</button>
+  </div>
+  <br/>
+    <textarea id="output">실행결과</textarea>
+</body>
+</html>
